@@ -3,3 +3,5 @@ Máquina Trust de la plataforma DockerLabs.es, es de dificultad Muy Fácil y es 
 # TRUST
 
 🔎 ENUMERACIÓN
+
+<img width="403" height="258" alt="pruebagithub" src="https://github.com/user-attachments/assets/8ffef39f-1d43-4b5a-9097-38f2b331348a" />
