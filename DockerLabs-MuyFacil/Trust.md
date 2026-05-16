@@ -2,13 +2,13 @@ La máquina Trust de la plataforma dockerlabs.es, es de dificultad "Muy Fácil" 
 
 # TRUST
 
-🚀 DESPLIEGUE DE MÁQUINA
+## 🚀 DESPLIEGUE DE MÁQUINA
 
 Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprime con el comando unzip y se despliega de la siguiente manera:
 
 <img width="726" height="544" alt="maquinatrust1" src="https://github.com/user-attachments/assets/f7c9decb-5d8f-4668-adda-d8f0a63f5bb0" />
 
-🔎 ENUMERACIÓN
+## 🔎 ENUMERACIÓN
 
 Tendremos en nuestras manos la ip de la máquina víctima, en este caso la 171.21.0.2, por lo tanto, procedemos a enumerar los puertos abiertos/expuestos con nmap:
 
@@ -30,7 +30,7 @@ Hemos encontrado un directorio llamado /secret.php, se procede a acceder a él, 
 
 <img width="1514" height="788" alt="maquinatrust6" src="https://github.com/user-attachments/assets/761755b4-5f1a-417a-875e-819fd0f0b6cf" />
 
-💣 EXPLOTACIÓN
+## 💣 EXPLOTACIÓN
 
 Una vez que ya tenemos un posible usuario válido, se realizará fuerza bruta de ssh con la herramienta hydra, para intentar encontrar la contraseña del usuario "Mario", esto empleando un diccionario de contraseñas, el típico rockyou.txt
 
@@ -40,7 +40,7 @@ Una vez que ya tenemos un posible usuario válido, se realizará fuerza bruta de
 
 <img width="1345" height="402" alt="maquinatrust8" src="https://github.com/user-attachments/assets/2aff00ee-7363-4725-8838-2fd839f81de4" />
 
-🔑 ESCALADA DE PRIVILEGIOS
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 Ya dentro de la máquina víctima, lo primero que realizaremos es ver si tenemos permisos a nivel de sudoers, con el comando sudo -l
 
