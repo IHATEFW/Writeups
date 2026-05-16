@@ -10,4 +10,7 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 🔎 ENUMERACIÓN
 
-<img width="403" height="258" alt="pruebagithub" src="https://github.com/user-attachments/assets/8ffef39f-1d43-4b5a-9097-38f2b331348a" />
+Tendremos en nuestras manos la ip de la máquina víctima, en este caso la 171.21.0.2, por lo tanto, procedemos a enumerar los puertos abiertos/expuestos con nmap:
+
+<img width="1140" height="789" alt="maquinatrust2" src="https://github.com/user-attachments/assets/c5d5b952-8707-4789-83dd-b844b7ad9f56" />
+
