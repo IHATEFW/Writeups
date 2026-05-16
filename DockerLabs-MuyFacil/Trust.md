@@ -1,4 +1,4 @@
-Máquina Trust de la plataforma DockerLabs.es, es de dificultad Muy Fácil y es una de las primeras máquinas que recomiendo realizar cuando estas iniciando en el mundo del hacking/pentesting
+La máquina Trust de la plataforma dockerlabs.es, es de dificultad "Muy Fácil" y es una de las primeras máquinas que recomiendo realizar cuando estas iniciando en el mundo del hacking/pentesting
 
 # TRUST
 
@@ -14,3 +14,6 @@ Tendremos en nuestras manos la ip de la máquina víctima, en este caso la 171.2
 
 <img width="1140" height="789" alt="maquinatrust2" src="https://github.com/user-attachments/assets/c5d5b952-8707-4789-83dd-b844b7ad9f56" />
 
+Vemos que está expuesto el puerto 22 relacionado al servicio ssh y el puerto 80 relacionado al servicio http, seguiremos enumerando un poco más exhaustivo, solicitando a nmap que enumere las versiones de dichos servicios y que arroje un conjunto básico de script de reconocimiento:
+
+<img width="1533" height="788" alt="maquinatrust3" src="https://github.com/user-attachments/assets/653129a0-fa0e-4178-be74-1c51411a966c" />
