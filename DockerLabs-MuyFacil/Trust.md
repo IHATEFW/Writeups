@@ -17,3 +17,14 @@ Tendremos en nuestras manos la ip de la máquina víctima, en este caso la 171.2
 Vemos que está expuesto el puerto 22 relacionado al servicio ssh y el puerto 80 relacionado al servicio http, seguiremos enumerando un poco más exhaustivo, solicitando a nmap que enumere las versiones de dichos servicios y que arroje un conjunto básico de script de reconocimiento:
 
 <img width="1533" height="788" alt="maquinatrust3" src="https://github.com/user-attachments/assets/653129a0-fa0e-4178-be74-1c51411a966c" />
+
+Se procede a acceder al servicio http, encontrando la página por defecto de Apache2, se inspecciona el código fuente con CTRL + U pero no se encuentra nada importante:
+
+<img width="1525" height="788" alt="maquinatrust4" src="https://github.com/user-attachments/assets/55929186-0754-4034-8b1f-63943ec21d82" />
+
+En este punto, intentaremos aplicar fuerza bruta de directorios con la herramienta gobuster, con la finalidad de encontrar directorios luego del /, lanzaremos el siguiente comando:
+
+<img width="1294" height="589" alt="maquinatrust5" src="https://github.com/user-attachments/assets/41306be6-22a1-4bfd-81f2-8c48110aa2dc" />
+
+
+
