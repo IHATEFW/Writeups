@@ -1,4 +1,4 @@
-La máquina Trust de la plataforma dockerlabs.es, es de dificultad "Muy Fácil" y es una de las primeras máquinas que recomiendo realizar cuando estas iniciando en el mundo del hacking/pentesting
+La máquina Trust de la plataforma dockerlabs.es, es de dificultad "Muy Fácil" y es una de las primeras máquinas que recomiendo realizar cuando estas iniciando en el mundo del hacking/pentesting . .
 
 # TRUST
 
@@ -26,5 +26,26 @@ En este punto, intentaremos aplicar fuerza bruta de directorios con la herramien
 
 <img width="1294" height="589" alt="maquinatrust5" src="https://github.com/user-attachments/assets/41306be6-22a1-4bfd-81f2-8c48110aa2dc" />
 
+Hemos encontrado un directorio llamado /secret.php, se procede a acceder a él, vemos que existe un posible usuario válido llamado "Mario".
 
+<img width="1514" height="788" alt="maquinatrust6" src="https://github.com/user-attachments/assets/761755b4-5f1a-417a-875e-819fd0f0b6cf" />
 
+💣 EXPLOTACIÓN
+
+Una vez que ya tenemos un posible usuario válido, se realizará fuerza bruta de ssh con la herramienta hydra, para intentar encontrar la contraseña del usuario "Mario", esto empleando un diccionario de contraseñas, el típico rockyou.txt
+
+<img width="1352" height="345" alt="maquinatrust7" src="https://github.com/user-attachments/assets/ab185750-1411-4034-ba4f-c18ecdc6002b" />
+
+¡Hemos encontrado la contraseña válida!, en este caso "chocolate", por lo tanto, ganamos acceso a la máquina víctima.
+
+<img width="1345" height="402" alt="maquinatrust8" src="https://github.com/user-attachments/assets/2aff00ee-7363-4725-8838-2fd839f81de4" />
+
+🔑 ESCALADA DE PRIVILEGIOS
+
+Ya dentro de la máquina víctima, lo primero que realizaremos es ver si tenemos permisos a nivel de sudoers, con el comando sudo -l
+
+<img width="1328" height="277" alt="maquinatrust9" src="https://github.com/user-attachments/assets/1c0bf15c-749f-4d22-9b51-acbb9fa124b2" />
+
+Vemos que sí tenemos permisos para ejecutar el binario /usr/bin/vim como el usuario root, ya casí lo tenemos, finalmente procederemos a recurrir a la página gtfobins.org, la cual es vital para ejecutar comandos para pivotar de usuarios, filtramos por vim y nos indica los comandos a ejecutar, o simplemente ejecutamos el comando sudo -u root vim y dentro del editor presionamos ESC + :, y le damos !/bin/bash, en este caso yo ejecuté el comando sudo -u root vim -c ':!/bin/sh' ya somos root, máquina hackeada,
+
+<img width="477" height="107" alt="maquinatrust10" src="https://github.com/user-attachments/assets/665afcb7-c89d-461b-924d-6c6fb3fc9029" />
