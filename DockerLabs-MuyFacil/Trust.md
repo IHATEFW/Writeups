@@ -6,7 +6,7 @@ La máquina Trust de la plataforma dockerlabs.es, es de dificultad "Muy Fácil" 
 
 Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprime con el comando unzip y se despliega de la siguiente manera:
 
-<img width="726" height="544" alt="maquinatrust1" src="https://github.com/user-attachments/assets/f7c9decb-5d8f-4668-adda-d8f0a63f5bb0" />
+<img width="1514" height="605" alt="maquinatrust1" src="https://github.com/user-attachments/assets/16eed5ae-377f-4484-9a88-e8070f5e84d5" />
 
 ## 🔎 ENUMERACIÓN
 
