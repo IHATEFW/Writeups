@@ -4,4 +4,6 @@ Segunda máquina de la plataforma dockerlabs.es, de la categoría "Muy Fácil", 
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
+Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprime con el comando unzip y se despliega de la siguiente manera:
+
 <img width="905" height="329" alt="firsthacking1" src="https://github.com/user-attachments/assets/655bdf60-aecf-44ea-b56d-fc668cb4aa11" />
