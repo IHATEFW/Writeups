@@ -20,7 +20,7 @@ Vemos que están expuestos los puertos 22 y 80, de ssh y http, seguiremos enumer
 
 Ya tenemos las versiones de los servicios, y además, nos muestra el titulo de la página web (del puerto 80), seguiremos enumerando, realizando fuerza bruta de directorios con la herramienta gobuster, esto para descubrir directorios que se encuentran despues del /, con el siguiente comando:
 
-<img width="1337" height="549" alt="borazu4" src="https://github.com/user-attachments/assets/852739cc-04f3-4c9b-9126-8b352356bb70" />
+<img width="1513" height="589" alt="borazu4" src="https://github.com/user-attachments/assets/9c1e7d5a-77bf-4152-b6e6-569957129487" />
 
 
 Pero vemos que no existe nada importante, solo el index.html que es la misma página web que ingresaremos a continuación:
