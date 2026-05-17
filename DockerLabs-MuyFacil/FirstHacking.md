@@ -14,3 +14,4 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 💣 EXPLOTACIÓN
 
+## 🔑 ESCALADA DE PRIVILEGIOS
