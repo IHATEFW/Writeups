@@ -37,11 +37,4 @@ Ahora pinta mejor la cosa, ya que recordemos que tenemos el puerto 22 expuesto, 
 
 ¡Encontramos la password del usuario!, ahora podemos entrar por ssh, ganando acceso a la máquina víctima, finalmente veremos si tenemos permisos para escalar privilegios a nivel de sudores con el comando sudo -l, y vemos que podemos ejecutar el binario /bin/bash como el usuario root, lanzamos el siguiente comando y pivotamos al usuario root, máquina hackeada 🔥.
 
-
-
-
-
-
-
-
-
+<img width="973" height="330" alt="borazu8" src="https://github.com/user-attachments/assets/b038c9dc-6a49-4efb-9b28-3ff23f67a726" />
