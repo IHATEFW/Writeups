@@ -1,4 +1,4 @@
-<img width="1526" height="784" alt="image" src="https://github.com/user-attachments/assets/d0a9d7de-dd70-4928-978d-6e004c9c2a50" />Tercera máquina de la plataforma dockerlabs.es de dificultad "Muy Fácil", aquí el escenario es distinto, ya que con comandos básicos lograremos tocar Esteganografía, el arte de ocultar información en una imágen 🎭. .
+Tercera máquina de la plataforma dockerlabs.es de dificultad "Muy Fácil", aquí el escenario es distinto, ya que con comandos básicos lograremos tocar Esteganografía, el arte de ocultar información en una imágen 🎭. .
 
 ## BORAZUWARAHCTF
 
