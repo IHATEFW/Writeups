@@ -2,3 +2,6 @@ Segunda máquina de la plataforma dockerlabs.es, de la categoría "Muy Fácil", 
 
 # FIRSTHACKING
 
+## 🚀 DESPLIEGUE DE MÁQUINA
+
+<img width="905" height="329" alt="firsthacking1" src="https://github.com/user-attachments/assets/655bdf60-aecf-44ea-b56d-fc668cb4aa11" />
