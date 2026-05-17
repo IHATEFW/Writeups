@@ -27,6 +27,11 @@ Pero vemos que no existe nada importante, solo el index.html que es la misma pá
 
 <img width="1337" height="549" alt="borazu5" src="https://github.com/user-attachments/assets/755093e8-c2e3-4d3e-aa60-443b47e39100" />
 
+Ya dentro de la web expuesta, podemos visualizar una imágen de un "Kinder Sorpresa", recordando la niñez :(, intentamos ver el código fuente con CTRL + U pero no hay nada importante, por lo tanto, procederemos a descargar la imágen en nuestra máquina para mirar los metadatos y ver si existe algo con el comando wget y la url, y luego con la herramienta exiftool examinamos la imágen, logrando encontrar un usuario posiblemente válido "borazuwarah":
+
+<img width="1525" height="781" alt="borazu6" src="https://github.com/user-attachments/assets/d687cbfc-f075-46c3-a815-40458d4dd9aa" />
+
+
 
 
 
