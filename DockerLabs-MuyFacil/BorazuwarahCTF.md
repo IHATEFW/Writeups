@@ -31,6 +31,15 @@ Ya dentro de la web expuesta, podemos visualizar una imágen de un "Kinder Sorpr
 
 <img width="1525" height="781" alt="borazu6" src="https://github.com/user-attachments/assets/d687cbfc-f075-46c3-a815-40458d4dd9aa" />
 
+Ahora pinta mejor la cosa, ya que recordemos que tenemos el puerto 22 expuesto, por lo tanto, procederemos a realizar fuerza bruta de ssh con la herramienta hydra, adjuntandole el usuario encontrado y aplicando el típico diccionario de contraseñas rockyou.txt
+
+<img width="1521" height="785" alt="borazu7" src="https://github.com/user-attachments/assets/b94fb294-773c-4873-9b45-b8f6830ed837" />
+
+¡Encontramos la password del usuario!, ahora podemos entrar por ssh, ganando acceso a la máquina víctima, finalmente veremos si tenemos permisos para escalar privilegios a nivel de sudores con el comando sudo -l, y vemos que podemos ejecutar el binario /bin/bash como el usuario root, lanzamos el siguiente comando y pivotamos al usuario root, máquina hackeada 🔥.
+
+
+
+
 
 
 
