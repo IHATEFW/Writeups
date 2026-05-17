@@ -11,3 +11,6 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 ## 🔎 ENUMERACIÓN
 
 <img width="1501" height="785" alt="firsthacking2" src="https://github.com/user-attachments/assets/58fc2bf3-a16a-4c43-9f5d-eae895be89c3" />
+
+## 💣 EXPLOTACIÓN
+
