@@ -26,17 +26,22 @@ Aquí está la evidencia que existen exploits para esta versión vulnerable de O
 
 <img width="1519" height="297" alt="breakmyssh4" src="https://github.com/user-attachments/assets/f312bc41-c306-4c94-abd1-724c0820cfc2" />
 
-Abriremos msfconsole, ejecutaremos el comando "searchsploit ssh enumerate" y seleccionaremos el exploit con dígito "1" con el comando "use 1", ejecutaremos options para ver lo que nos piden configurar, en este caso el RHOSTS que es la ip de la máquina víctima y el USER_FILE que le otorgaremos serán 2 diccionarios de usuarios básicos que es el top-usernames-shortlists.txt y el xato-net-10-million-usernames.txt, finalmente le daremos run, con el primero encontramos el usuario root y con el segundo el usuario lovely.
+Abriremos msfconsole, ejecutaremos el comando "searchsploit ssh enumerate" y seleccionaremos el exploit con dígito "1" con el comando "use 1", ejecutaremos options para ver lo que nos piden configurar, en este caso el RHOSTS que es la ip de la máquina víctima y el USER_FILE que le otorgaremos serán 2 diccionarios de usuarios básicos que es el top-usernames-shortlists.txt y el xato-net-10-million-usernames.txt, uno primero y el otro despues, finalmente le daremos run, con el primero encontramos el usuario root y con el segundo el usuario lovely.
 
 <img width="1521" height="784" alt="breakmyssh5" src="https://github.com/user-attachments/assets/15c6f238-2893-4d24-b643-deb143744054" />
 
+<img width="1525" height="784" alt="breakmyssh6" src="https://github.com/user-attachments/assets/a8aa32b7-4063-49fd-955c-5a92e0995ee9" />
 
+Una vez ya encontramos el usuario válido lovely, ejecutaremos un ataque de fuerza bruta SSH con hydra, con el siguiente comando, encontramos la contraseña correspondiente y accedemos por SSH, ¡Ganamos acceso a la máquina víctima!
 
-
-
-
-
-
-
+<img width="1528" height="492" alt="breakmyssh7" src="https://github.com/user-attachments/assets/aa8c19a1-a7a7-400a-889e-d241ad8a3844" />
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
+
+Por último, para escalar privilegios intentaremos probar con el comando "sudo -l" para ver si tenemos permisos a nivel de sudoers, pero no existe el comando "sudo", empezaremos a buscar en directorios típicos como /opt, le damos ls -ltra para buscar archivos ocultos y encontramos un archivo .hash, lo leemos y nos muestra un hash misterioso, nos dirigiremos a la página hashes.com para descodear el hash, y encontramos la password de root, máquina hackeada . .
+
+<img width="1036" height="620" alt="breakmyssh9" src="https://github.com/user-attachments/assets/542c884d-23ae-4e3d-851c-a8c517cbcf5f" />
+
+<img width="315" height="101" alt="breakmyssh10" src="https://github.com/user-attachments/assets/5c09d5ba-2e55-49b2-acc2-f674bba6bcc9" />
+
+
