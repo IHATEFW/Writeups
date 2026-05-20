@@ -1,4 +1,4 @@
-Quinta máquina de la plataforma dockerlabs.es de dificultad "Muy Fácil", 
+Quinta máquina de la plataforma dockerlabs.es de dificultad "Muy Fácil", esta máquina es clave para conocer una vulnerabilidad aún existente en versiones 7.7 de OpenSSH, que permite enumerar usuarios válidos de la máquina víctima, a continuación la resolveremos paso a paso:
 
 # BREAKMYSSH
 
