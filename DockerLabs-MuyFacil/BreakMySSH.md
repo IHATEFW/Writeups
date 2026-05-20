@@ -18,7 +18,7 @@ Como ya sabemos que existe el puerto 22 abierto, seguiremos enumerando con la he
 
 <img width="1517" height="786" alt="breakmyssh3" src="https://github.com/user-attachments/assets/b37dab37-7675-469b-8828-6026be6b4788" />
 
-Vemos que nos encontró la versión 7.7 de OpenSSH, la cual es vulnerable a una enumeración de usuarios, si buscamos con el comando "searchsploit ssh 7.7", encontraremos un exploit que nos permitirá enumerar usuarios válidos dentro de la máquina víctima, esto ya está parchado, y solo es útil en esa versión, quiere decir que posterior a la 7.7 ya no aplica, por lo tanto, utilizaremos metasploit para utilizar dicho exploit y encontrar algun usuario válido:
+Vemos que nos encontró la versión 7.7 de OpenSSH, la cual es vulnerable a una enumeración de usuarios, si buscamos con el comando "searchsploit ssh 7.7", encontraremos un exploit que nos permitirá enumerar usuarios válidos dentro de la máquina víctima, esto ya está parchado, y solo es útil en esa versión, quiere decir que posterior a la 7.7 ya no aplica, por lo tanto, utilizaremos metasploit para utilizarlo y encontrar algun usuario válido:
 
 ## 💣 EXPLOTACIÓN
 
