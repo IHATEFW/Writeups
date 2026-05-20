@@ -24,6 +24,8 @@ Vemos que es la típica web por defecto de Apache2, exploramos el código fuente
 
 <img width="922" height="390" alt="tproot5" src="https://github.com/user-attachments/assets/606f2be6-0f8e-4816-97cd-fd123d64cfc7" />
 
+## 💣 EXPLOTACIÓN
+
 Pero vemos que no nos deja, por lo tanto, abriremos metasploit con el comando msfconsole para buscar algun exploit que pueda explotar dicha versión vsftpd 2.3.4, de la siguiente manera:
 
 <img width="1518" height="756" alt="tproot6" src="https://github.com/user-attachments/assets/160cb32e-52a1-43e0-b602-e5d128e22b82" />
