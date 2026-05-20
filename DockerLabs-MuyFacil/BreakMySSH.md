@@ -1,4 +1,4 @@
-<img width="1905" height="376" alt="image" src="https://github.com/user-attachments/assets/10e5c33c-a510-4630-84b9-f2b7f319cccc" />Quinta máquina de la plataforma dockerlabs.es de dificultad "Muy Fácil", 
+Quinta máquina de la plataforma dockerlabs.es de dificultad "Muy Fácil", 
 
 # BREAKMYSSH
 
@@ -39,6 +39,8 @@ Una vez ya encontramos el usuario válido lovely, ejecutaremos un ataque de fuer
 ## 🔑 ESCALADA DE PRIVILEGIOS
 
 Por último, para escalar privilegios intentaremos probar con el comando "sudo -l" para ver si tenemos permisos a nivel de sudoers, pero no existe el comando "sudo", empezaremos a buscar en directorios típicos como /opt, le damos ls -ltra para buscar archivos ocultos y encontramos un archivo .hash, lo leemos y nos muestra un hash misterioso, nos dirigiremos a la página hashes.com para descodear el hash, y encontramos la password de root, máquina hackeada . .
+
+<img width="888" height="361" alt="breakmyssh8" src="https://github.com/user-attachments/assets/634f734a-351e-4a4a-a8d0-430490c4262b" />
 
 <img width="1036" height="620" alt="breakmyssh9" src="https://github.com/user-attachments/assets/542c884d-23ae-4e3d-851c-a8c517cbcf5f" />
 
