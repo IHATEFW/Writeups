@@ -32,7 +32,7 @@ Abriremos msfconsole, ejecutaremos el comando "searchsploit ssh enumerate" y sel
 
 <img width="1525" height="784" alt="breakmyssh6" src="https://github.com/user-attachments/assets/a8aa32b7-4063-49fd-955c-5a92e0995ee9" />
 
-Una vez ya encontramos el usuario válido lovely, ejecutaremos un ataque de fuerza bruta SSH con hydra, con el siguiente comando, encontramos la contraseña correspondiente y accedemos por SSH, ¡Ganamos acceso a la máquina víctima!
+Una vez ya encontramos el usuario válido lovely, ejecutaremos un ataque de fuerza bruta SSH con hydra, con el siguiente comando, encontramos la contraseña correspondiente y accedemos por SSH, ¡Ganamos acceso a la máquina víctima! 🔥
 
 <img width="1528" height="492" alt="breakmyssh7" src="https://github.com/user-attachments/assets/aa8c19a1-a7a7-400a-889e-d241ad8a3844" />
 
