@@ -38,7 +38,7 @@ Una vez ya encontramos el usuario válido lovely, ejecutaremos un ataque de fuer
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
 
-Por último, para escalar privilegios intentaremos probar con el comando "sudo -l" para ver si tenemos permisos a nivel de sudoers, pero no existe el comando "sudo", empezaremos a buscar en directorios típicos como /opt, le damos ls -ltra para buscar archivos ocultos y encontramos un archivo .hash, lo leemos y nos muestra un hash misterioso, nos dirigiremos a la página hashes.com para descodear el hash, y encontramos la password de root, máquina hackeada . .
+Por último, para escalar privilegios intentaremos probar con el comando "sudo -l" para ver si tenemos permisos a nivel de sudoers, pero no existe el comando "sudo", empezaremos a buscar en directorios típicos como /opt, le damos ls -ltra para buscar archivos ocultos y encontramos un archivo .hash, lo leemos y nos muestra un hash misterioso, nos dirigiremos a la página hashes.com para descodear el hash, y encontramos la password de root, máquina hackeada ✨ . .
 
 <img width="888" height="361" alt="breakmyssh8" src="https://github.com/user-attachments/assets/634f734a-351e-4a4a-a8d0-430490c4262b" />
 
