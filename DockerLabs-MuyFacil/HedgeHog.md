@@ -26,6 +26,11 @@ Ya identificadas las versiones de estos servicios, nos damos cuenta que de prime
 
 En base a la fuerza bruta de directorios, no encontramos nada interesante, pero en la página web podemos visualizar una especie de nombre, que es "tails", por lo tanto, podemos intuir que es posiblemente un usuario válido, entonces en este punto realizaremos fuerza bruta de ssh con hydra para encontrar la contraseña válida:
 
+## 💣 EXPLOTACIÓN
+
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+
 
 
 
