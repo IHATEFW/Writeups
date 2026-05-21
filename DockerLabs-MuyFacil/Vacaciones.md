@@ -12,7 +12,7 @@ Comenzaremos a resolver esta máquina utilizando la herramienta nmap para enumer
 
 <img width="1510" height="780" alt="vacaciones2" src="https://github.com/user-attachments/assets/bf806d9a-e180-4991-afb8-a3ca504ac0ba" />
 
-Una vez identificados los puertos abiertos, procederemos a seguir enumerando con la herramienta nmap, pero esta vez, indicandole que nos encuentre las versiones que corren detrás de esos servicios, como tambien, indicandole que nos arroje un conjunto básico de scripts de reconocimientos:
+Una vez identificados los puertos abiertos, procederemos a seguir enumerando con la herramienta nmap, pero esta vez, indicandole que nos encuentre las versiones que corren detrás de esos servicios, como tambien, indicandole que nos arroje un conjunto básico de scripts de reconocimiento:
 
 <img width="1505" height="792" alt="vacaciones3" src="https://github.com/user-attachments/assets/637737af-0a54-486a-9822-309de7bde2de" />
 
@@ -42,7 +42,7 @@ Ya con usuario Juan, damos el comando "sudo -l" para ver si tenemos permisos sud
 
 <img width="1457" height="245" alt="vacaciones8" src="https://github.com/user-attachments/assets/0737cb9e-8cf3-4da5-b079-d21aaa6b6525" />
 
-Por último, nos dirigiremos a la página web gtfobins.org, y filtraremos por "Ruby", logrando encontrar el comando correcto para elevar privilegios a root con Ruby, finalmente somos root, ¡máquina hackeada!
+Por último, nos dirigiremos a la página web gtfobins.org, y filtraremos por "Ruby", logrando encontrar el comando correcto para elevar privilegios a root con Ruby, finalmente somos root, ¡máquina hackeada! 🔥
 
 <img width="1504" height="512" alt="vacaciones9" src="https://github.com/user-attachments/assets/76331d60-93e7-494e-b880-a1cd6565ee3e" />
 
