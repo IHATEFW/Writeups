@@ -1,4 +1,4 @@
-Séptima máquina de la plataforma dockerlabs.es de dificultad "Muy Fácil", esta máquina expone en la página web del puerto 80, un usuario válido, del cual se aprovecha para ganar acceso a la máquina víctima . .
+Séptima máquina de la plataforma dockerlabs.es de dificultad "Muy Fácil", esta máquina expone una página web con un mensaje oculto, haciendo referencia a 2 posibles usuarios válidos, uno de ellos es el correcto . .
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
