@@ -12,6 +12,11 @@ Comenzaremos a resolver esta máquina utilizando la herramienta nmap para enumer
 
 <img width="1510" height="780" alt="vacaciones2" src="https://github.com/user-attachments/assets/bf806d9a-e180-4991-afb8-a3ca504ac0ba" />
 
+Una vez identificados los puertos abiertos, procederemos a seguir enumerando con la herramienta nmap, pero esta vez, indicandole que nos encuentre las versiones que corren detrás de esos servicios, como tambien, indicandole que nos arroje un conjunto básico de scripts de reconocimientos:
+
+<img width="1505" height="792" alt="vacaciones3" src="https://github.com/user-attachments/assets/637737af-0a54-486a-9822-309de7bde2de" />
+
+Podemos darnos cuenta que nos enumeró la versión de SSH OpenSSH 7.6, la cual es vulnerable a una enumeración de usuarios, hasta la versión 7.7 de OpenSSH se puede ejecutar un exploit que nos permita la enumeración de usuarios válidos dentro de la máquina víctima, lo cual es grave de cara a un atacante, por lo tanto, procederemos 
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
