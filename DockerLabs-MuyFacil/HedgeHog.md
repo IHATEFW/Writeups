@@ -36,14 +36,15 @@ Entonces procederemos a voltear el diccionario para que comienze de abajo hacía
 
 <img width="900" height="328" alt="hedgehog7" src="https://github.com/user-attachments/assets/8a043ebf-75a7-4a57-8dee-8236d7bd30e7" />
 
-Lanzamos nuevamente la fuerza bruta con hydra, encontrando de inmediato la contraseña:
+Lanzamos nuevamente la fuerza bruta con hydra, encontrando de inmediato la contraseña, para así ganar acceso a la máquina víctima:
 
 <img width="1520" height="512" alt="hedgehog8" src="https://github.com/user-attachments/assets/18a6210b-6675-4ea6-a4ca-15d186162f49" />
 
-
-
 ## 🔑 ESCALADA DE PRIVILEGIOS
 
+Una vez dentro de la máquina víctima, procederemos con la escalada de privilegios, daremos el comando "sudo -l" para ver si tener permisos a nivel de sudoers, y efectivamente podemos ejecutar cualquier binario con el usuario sonic, pivotamos al usuario sonic con el siguiente comando, luego ya como sonic, volveremos a ejecutar "sudo -l", encontrando que ahora como root tambien podemos ejecutar cualquier binario, daremos el mismo comando pero con usuario root y ¡máquina hackeada!
+
+<img width="1004" height="566" alt="hedgehog9" src="https://github.com/user-attachments/assets/70d97db7-6a6a-48ef-925c-861bd3194093" />
 
 
 
