@@ -44,7 +44,7 @@ Prodeceremos a ejecutar fuerza bruta de SSH con la herramienta Hydra de la sigui
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
 
-Una vez dentro de la máquina víctima, tenemos 2 opciones para elevar privilegios a root, la primera es dando el comando "sudo -l", donde podemos ejecutar el binario /usr/bin/vim con privilegios de root, de la siguiente manera:
+Una vez dentro de la máquina víctima, tenemos 2 opciones para elevar privilegios a root, la primera es dando el comando "sudo -l", para ver si tenemos permisos a nivel de sudoers, donde podemos ejecutar el binario /usr/bin/vim con privilegios de root, de la siguiente manera:
 
 <img width="1161" height="268" alt="obsession10" src="https://github.com/user-attachments/assets/6ee1b8d9-d69d-4ea3-8837-e9ac8763aac7" />
 
