@@ -1,4 +1,4 @@
-Octava máquina de la plataforma dockerlabs.es de dificultad "Muy Fácil", esta máquina expone una página web con un mensaje oculto, haciendo referencia a 2 posibles usuarios válidos, uno de ellos es el correcto . .
+Octava máquina de la plataforma dockerlabs.es de dificultad "Muy Fácil", esta máquina permite loguearnos en el servicio FTP con el usuario Anonymous, donde se roban 2 archivos .txt, en los cuales se exponen usuarios válidos . .
 
 ## OBSESSION
 
@@ -28,19 +28,21 @@ Una vez ya tenemos los archivos .txt en nuestra máquina atacante, vemos que con
 
 <img width="1193" height="477" alt="obsession5" src="https://github.com/user-attachments/assets/befc6134-b5e9-4814-a68f-15af83eb91f8" />
 
-Podemos darnos cuenta que posiblemente existan 2 usuarios válidos (Russosky y Gonza), en este punto procederemos a revisar la página web que está en el puerto 80, abrimos un navegador y colocamos la ip de la máquina víctima, nos muestra la siguiente página web, del supuesto Russosky, quien es entrenador personal e informático, tiene comentarios machistas sobre las mujeres, con mayor razón hackearemos su máquina.
+Podemos darnos cuenta que posiblemente existan 2 usuarios válidos (Russosky y Gonza), en este punto procederemos a revisar la página web que está en el puerto 80, abrimos un navegador y colocamos la ip de la máquina víctima, nos muestra la siguiente página web, del supuesto Russoski, quien es entrenador personal e informático, tiene comentarios machistas sobre las mujeres, con mayor razón hackearemos su máquina 😈.
 
 <img width="1521" height="788" alt="obsession6" src="https://github.com/user-attachments/assets/edf6dd49-1404-4191-a692-5ea8ed32b674" />
 
 <img width="1524" height="788" alt="obsession7" src="https://github.com/user-attachments/assets/5477a453-43f1-401f-b39f-680274ab2b28" />
 
-Exploraremos el código fuente con CTRL + U, y nos damos cuenta de un comentario que el mismo pone "Utilizando el mismo usuario para todos mis servicios, podré recordarlo fácilmente", por lo tanto, sabemos que el usuario Russosky es el indicado.
+Exploraremos el código fuente con CTRL + U, y nos damos cuenta de un comentario que el mismo pone "Utilizando el mismo usuario para todos mis servicios, podré recordarlo fácilmente", por lo tanto, sabemos que el usuario Russoski es el indicado.
 
 <img width="1520" height="424" alt="obsession8" src="https://github.com/user-attachments/assets/ae33722a-0204-47b1-b03a-5279ecec5798" />
 
-Prodeceremos a ejecutar fuerza bruta de SSH con la herramienta Hydra de la siguiente manera, encontrando la contraseña de Russoski, ¡Ganamos acceso a la máquina víctima!
+Prodeceremos a ejecutar fuerza bruta de SSH con la herramienta Hydra de la siguiente manera, encontrando la contraseña de Russoski, ¡Ganamos acceso a la máquina víctima! 🔥
 
 <img width="1518" height="625" alt="obsession9" src="https://github.com/user-attachments/assets/52357220-4c92-4c7c-8911-658c79adfd61" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 Una vez dentro de la máquina víctima, tenemos 2 opciones para elevar privilegios a root, la primera es dando el comando "sudo -l", donde podemos ejecutar el binario /usr/bin/vim con privilegios de root, de la siguiente manera:
 
@@ -48,10 +50,14 @@ Una vez dentro de la máquina víctima, tenemos 2 opciones para elevar privilegi
 
 Una vez dentro del editor vim, daremos el comando :!/bin/bash y seremos root
 
+<img width="1534" height="789" alt="obsession12" src="https://github.com/user-attachments/assets/40bdfacb-9866-4c9b-8294-4432ffc66143" />
+
 <img width="384" height="80" alt="obsession11" src="https://github.com/user-attachments/assets/f722cec7-1be5-4f25-8737-b875f86b0835" />
 
+La otra opción es encontrar un archivo, en la ruta /var/www/html/important, que se llama .root-passwd.txt, en el cual existe un hash, que al decodearlo nos muestra la contraseña de root.
 
+<img width="1042" height="224" alt="obsession13" src="https://github.com/user-attachments/assets/52c664d2-1290-4124-adab-00224e087c30" />
 
+<img width="1496" height="432" alt="obsession14" src="https://github.com/user-attachments/assets/b47dd798-b752-4353-a186-c33f8b613ed4" />
 
-
-## 🔑 ESCALADA DE PRIVILEGIOS
+Máquina hackeada ✨
