@@ -1,6 +1,6 @@
 Octava máquina de la plataforma dockerlabs.es de dificultad "Muy Fácil", esta máquina permite loguearnos en el servicio FTP con el usuario Anonymous, donde se roban 2 archivos .txt, en los cuales se exponen usuarios válidos . .
 
-## OBSESSION
+# OBSESSION
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
