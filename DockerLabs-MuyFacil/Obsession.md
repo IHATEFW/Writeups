@@ -1,4 +1,4 @@
-<img width="1472" height="552" alt="image" src="https://github.com/user-attachments/assets/0d5ec771-a4e9-4293-99ff-50d29312e44a" />Octava máquina de la plataforma dockerlabs.es de dificultad "Muy Fácil", esta máquina expone una página web con un mensaje oculto, haciendo referencia a 2 posibles usuarios válidos, uno de ellos es el correcto . .
+Octava máquina de la plataforma dockerlabs.es de dificultad "Muy Fácil", esta máquina expone una página web con un mensaje oculto, haciendo referencia a 2 posibles usuarios válidos, uno de ellos es el correcto . .
 
 ## OBSESSION
 
