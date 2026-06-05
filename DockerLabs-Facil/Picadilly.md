@@ -26,14 +26,49 @@ Nos copiamos el mensaje encriptado, y en google buscamos alguna web que nos haga
 
 <img width="1197" height="643" alt="picadilly5" src="https://github.com/user-attachments/assets/cfa23112-3466-4379-b091-2c0aa01ef422" />
 
-Ya tenemos la contraseña, la guardamos para déspues, ahora procederemos a revisar la web detrás del puerto 443, vemos que la web nos deja subir un archivo, abrimos las herramientas del desarrollado o también llamado inspector para ver donde se guardaría dicho archivo, vemos un directorio /uploads.php.
+Ya tenemos la contraseña, la guardamos para déspues, ahora procederemos a revisar la web detrás del puerto 443, vemos que la web nos deja subir un archivo, abrimos las herramientas del desarrollado o también llamado inspector para ver donde se guardaría dicho archivo, vemos un directorio /uploads.php, perfecto, en este punto ya sabemos que deberemos subir una reverse shell .php
 
 <img width="1241" height="643" alt="picadilly6" src="https://github.com/user-attachments/assets/3fc8d1ac-b443-4bcc-8709-107c527646b1" />
 
 <img width="819" height="654" alt="picadilly7" src="https://github.com/user-attachments/assets/c242dc85-63d5-42b9-9475-383b848293ef" />
 
-
-
 ## 💣 EXPLOTACIÓN
 
+Comenzamos la explotación, de inmediato nos dirigiremos a la web revshells.com para escoger la reverse shell que más nos acomode, yo escogí la Pentest Monkey de PHP, la configuramos con nuestra ip atacante y el puerto que queramos ponernos en escucha:
+
+<img width="1191" height="643" alt="picadilly8" src="https://github.com/user-attachments/assets/8829be5a-9b72-4ba3-a0e2-015c2d89b221" />
+
+La guardamos en un archivo .php en nuestro directorio, la subiremos a la web y nos ponemos en escucha con netcat con el siguiente comando, nos dirigimos al directorio /uploads y le damos click, volvemos a la terminal y vemos que ya tenemos acceso a la máquina víctima.
+
+<img width="962" height="308" alt="picadilly9" src="https://github.com/user-attachments/assets/f8b5169a-2048-4589-835d-c254fd52b010" />
+
+<img width="896" height="571" alt="picadilly10" src="https://github.com/user-attachments/assets/e62b519f-fbfc-44f7-b707-0def11b7dc31" />
+
+<img width="1204" height="376" alt="picadilly11" src="https://github.com/user-attachments/assets/d7dc87a9-0af1-4be6-bf47-aad2c1427ce0" />
+
 ## 🔑 ESCALADA DE PRIVILEGIOS
+
+Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
+
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+
+<img width="545" height="169" alt="picadilly12" src="https://github.com/user-attachments/assets/c3b3ed40-5b68-4a4d-b78e-76c490fa3e55" />
+
+<img width="562" height="238" alt="picadilly13" src="https://github.com/user-attachments/assets/430533e2-7773-4cd6-ab4d-9aa2a93fd3d1" />
+
+Ya con una tty estable, vamos a leer el archivo /etc/passwd para ver si mateo es el único usuario o exísten más, vemos que mateo es el unico usuario que tiene /bin/bash, por lo tanto, utilizaremos la password que decodeamos con Cifrado César hace un rato, y nos convertimos al usuario mateo.
+
+<img width="1222" height="639" alt="picadilly14" src="https://github.com/user-attachments/assets/578afcd1-9902-4d90-8a5e-f194ca3df103" />
+
+Ya con el usuario mateo, daremos el comando sudo -l para ver si podemos ejecutar algun binario con privilegios a nivel de sudoers, y vemos que efectivamente podemos ejecutar php como el usuario root, procederemos a recurrir a la web gtfobins.org y filtramos por php, no dirigimos al apartado "Sudo" y utilizamos el comando que aparece para subir a root, máquina hackeada.
+
+<img width="662" height="135" alt="picadilly15" src="https://github.com/user-attachments/assets/e8ca1f3d-5719-4aa7-99b0-f09e6e815394" />
+
+<img width="1106" height="639" alt="picadilly16" src="https://github.com/user-attachments/assets/0ab5facc-bb2b-4603-941e-a68e0e048b03" />
+
+<img width="578" height="242" alt="picadilly17" src="https://github.com/user-attachments/assets/26eb06b8-58bf-4c99-9396-8b3407b128fb" />
+
