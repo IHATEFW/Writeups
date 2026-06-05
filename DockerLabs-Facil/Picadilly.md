@@ -50,11 +50,13 @@ La guardamos en un archivo .php en nuestro directorio, la subiremos a la web y n
 
 Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
 
+```bash
 script /dev/null -c bash
 CTRL + Z
 stty raw -echo;fg
 reset xterm
 export TERM=xterm && export SHELL=bash
+```
 
 <img width="545" height="169" alt="picadilly12" src="https://github.com/user-attachments/assets/c3b3ed40-5b68-4a4d-b78e-76c490fa3e55" />
 
