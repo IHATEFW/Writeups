@@ -2,3 +2,10 @@ Esta máquina llamada Picadilly de la plataforma DockerLabs.es, es de dificultad
 
 # PICADILLY
 
+## 🚀 DESPLIEGUE DE MÁQUINA
+
+## 🔎 ENUMERACIÓN
+
+## 💣 EXPLOTACIÓN
+
+## 🔑 ESCALADA DE PRIVILEGIOS
