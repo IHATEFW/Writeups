@@ -10,7 +10,7 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
-El primer paso que realizaremos, es la enumeración, en este caso utilizaremos la herramienta nmap para enumar todos los puertos que tenga abierta la máquina víctima, con el siguiente comando, una vez ejecutado, podemos visualizar que exísten los puertos 80 y 443 expuestos, correspondientes a los servicios HTTP y HTTPS.
+El primer paso que realizaremos, es la enumeración, en este caso utilizaremos la herramienta nmap para enumerar todos los puertos que tenga abierta la máquina víctima, con el siguiente comando, una vez ejecutado, podemos visualizar que exísten los puertos 80 y 443 expuestos, correspondientes a los servicios HTTP y HTTPS.
 
 <img width="881" height="631" alt="picadilly2" src="https://github.com/user-attachments/assets/39c68dae-5b26-495a-bb2e-db26d6e92282" />
 
