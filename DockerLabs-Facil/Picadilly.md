@@ -18,7 +18,7 @@ Seguíremos enumerando con la herramienta nmap, pero esta vez indicandole a nmap
 
 <img width="844" height="647" alt="picadilly3" src="https://github.com/user-attachments/assets/e25c91b6-b4e6-46a6-b407-a2ff6c83824a" />
 
-Ingresamos al archivo backup.txt y podemos visualizar que exíste un mensaje encriptado, aparentemente la contraseña del usuario mateo, con un mensaje que dice "Para resolver este enigma, piensa en un antiguo emperador romando y su sencillo método de cambiar letras", de primera ya nos damos cuenta que hace referencia al cifrado César.
+Ingresamos al archivo backup.txt y podemos visualizar que exíste un mensaje encriptado, aparentemente la contraseña del usuario mateo, con un mensaje que dice "Para resolver este enigma, piensa en un antiguo emperador romano y su sencillo método de cambiar letras", de primera ya nos damos cuenta que hace referencia al cifrado César.
 
 <img width="1143" height="504" alt="picadilly4" src="https://github.com/user-attachments/assets/ec00a7ba-ab70-4d0d-a836-79bb07ee9b24" />
 
