@@ -64,7 +64,7 @@ Ya con una tty estable, vamos a leer el archivo /etc/passwd para ver si mateo es
 
 <img width="1222" height="639" alt="picadilly14" src="https://github.com/user-attachments/assets/578afcd1-9902-4d90-8a5e-f194ca3df103" />
 
-Ya con el usuario mateo, daremos el comando sudo -l para ver si podemos ejecutar algun binario con privilegios a nivel de sudoers, y vemos que efectivamente podemos ejecutar php como el usuario root, procederemos a recurrir a la web gtfobins.org y filtramos por php, no dirigimos al apartado "Sudo" y utilizamos el comando que aparece para subir a root, máquina hackeada.
+Ya con el usuario mateo, daremos el comando sudo -l para ver si podemos ejecutar algun binario con privilegios a nivel de sudoers, y vemos que efectivamente podemos ejecutar php como el usuario root, procederemos a recurrir a la web gtfobins.org y filtramos por php, no dirigimos al apartado "Sudo" y utilizamos el comando que aparece para subir a root, máquina hackeada 🔥.
 
 <img width="662" height="135" alt="picadilly15" src="https://github.com/user-attachments/assets/e8ca1f3d-5719-4aa7-99b0-f09e6e815394" />
 
