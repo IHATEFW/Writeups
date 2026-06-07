@@ -31,7 +31,7 @@ Por terminal daremos el comando
 ```bash
 echo "c2FubHVpczEyMzQ1" | base64 -d;echo
 ```
-<img width="1227" height="627" alt="candy7" src="https://github.com/user-attachments/assets/6875ba97-e84e-4ff4-a909-b736fd417b22" />
+<img width="560" height="277" alt="candy7" src="https://github.com/user-attachments/assets/a8f55653-98a2-43a5-bb38-e48918bd9de6" />
 
 
 
