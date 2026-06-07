@@ -40,7 +40,9 @@ Una vez ya tenemos la password de admin, nos loguearemos en el panel de Joomla, 
 
 <img width="1210" height="619" alt="candy9" src="https://github.com/user-attachments/assets/dc0dc793-bc8e-48a2-a460-e86b5af54e16" />
 
-Encontramos un archivo llamado error.php, del cual nos aprovecharemos para invocar la función "cmd" y lograr ejecutar comandos a nivel de sistema, esto colandole lo siguiente:
+## 💣 EXPLOTACIÓN
+
+Encontramos un archivo llamado error.php, del cual nos aprovecharemos para invocar el parámetro "cmd" y lograr ejecutar comandos a nivel de sistema, colandole lo siguiente:
 
 ```bash
 if(isset($_GET['cmd']))
@@ -51,7 +53,8 @@ if(isset($_GET['cmd']))
 
 <img width="1210" height="619" alt="candy10" src="https://github.com/user-attachments/assets/0483b2af-d85a-4988-ab99-66e5789a8bfc" />
 
+Le damos a guardar y probamos inyectar un "id" en la url, nos devuelve el usuario por defecto de la máquina víctima, ¡en este punto logramos ejecutar comandos a nivel de sistema!
 
-## 💣 EXPLOTACIÓN
+
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
