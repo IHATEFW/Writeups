@@ -34,7 +34,6 @@ echo "c2FubHVpczEyMzQ1" | base64 -d;echo
 <img width="560" height="277" alt="candy7" src="https://github.com/user-attachments/assets/a8f55653-98a2-43a5-bb38-e48918bd9de6" />
 
 
-
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
