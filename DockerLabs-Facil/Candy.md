@@ -26,12 +26,15 @@ Ya en este punto, iremos a verificar la web, vemos el típico login de Joomla, c
 
 <img width="1227" height="627" alt="candy6" src="https://github.com/user-attachments/assets/42e2742e-a8f0-4383-a015-cfb0bdd30e13" />
 
-Por terminal daremos el comando 
+Por terminal daremos el siguiente comando, que nos permitirá decodificar la password de admin.
 
 ```bash
 echo "c2FubHVpczEyMzQ1" | base64 -d;echo
 ```
 <img width="560" height="277" alt="candy7" src="https://github.com/user-attachments/assets/a8f55653-98a2-43a5-bb38-e48918bd9de6" />
+
+Una vez ya tenemos la password de admin, nos loguearemos en el panel de Joomla, pero esta vez en el directorio /administrator, para acceder de una al dashboard de administrador.
+
 
 
 ## 💣 EXPLOTACIÓN
