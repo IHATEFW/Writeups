@@ -14,9 +14,11 @@ Una vez que ya tenemos la ip de la máquina víctima, procederemos a realizar un
 
 <img width="1148" height="516" alt="candy2" src="https://github.com/user-attachments/assets/0f7b80a8-0606-421f-ae93-e67e40b020f4" />
 
+Ya sabemos que exíste el puerto 80 abierto, por lo tanto, procederemos nuevamente a realizar un escaneo más exhaustivo con nmap, esta vez, indicandole a nmap que nos enumere la versión de dicho servicio HTTP, a su vez, tambien indicandole que nos arroje un conjunto básico de scripts de reconocimiento, ya ejecutado podemos visualizar que nos encontró un directorio llamado /otro_caramelo, que no es común, por lo tanto, nos genera sospecha, tambien nos muestra que exíste el archivo robots.txt expuesto, que tambien puede contener directorios sensibles, además, nos muestra que estamos frente a un gestor de contenido (CMS), llamado Joomla.
+
 <img width="1060" height="637" alt="candy3 1" src="https://github.com/user-attachments/assets/0e3a8490-4707-4694-ab7c-ac2849f0c7e3" />
 
-
+Ya en este punto, iremos a verificar la web, 
 
 ## 💣 EXPLOTACIÓN
 
