@@ -52,4 +52,20 @@ Como anteriormente vimos que exíste el puerto 22 SSH abierto, con esas credenci
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
 
-Ya dentro de la máquina víctima
+Ya dentro de la máquina víctima, revisaremos si tenemos permisos de nivel de sudoers con el comando sudo -l, pero nada, entonces revisaremos en primera instancia el archivo /etc/passwd y vemos que exíste el usuario conx, por lo tanto, deberemos pivotar a dicho usuario.
+
+<img width="933" height="565" alt="bypassme10" src="https://github.com/user-attachments/assets/f8aa8f14-dce4-4cb8-9d94-f57f2385d145" />
+
+Ahora nos ponemos a revisar los directorios básicos que siempre debemos revisar, como /tmp, /opt, /srv, /var, y dentro de este último, vemos que exíste la ruta /var/backups, dentro hay una shell llamada backup.sh que se puede ejecutar como root con el usuario conx, seguimos revisando y vemos que exíste un proceso corriendo con el comando ps -aux, que hace referencia a que puedo lanzarme una /bin/bash con el usuario conx con el comando socat, esto es simple ya que está en LISTENER, pero debemos cambiarlo a CONNECT, y ya somos el usuario conx, como la tty se arruina, nos lanzamos una reverse shell a otra terminal de nuestra máquina.
+
+<img width="1034" height="629" alt="bypassme11" src="https://github.com/user-attachments/assets/4b2f684e-0163-405d-96eb-fc911854134a" />
+
+<img width="726" height="238" alt="bypassme12" src="https://github.com/user-attachments/assets/8111a65a-9706-4025-a476-19a7fea612e9" />
+
+<img width="740" height="259" alt="bypassme13" src="https://github.com/user-attachments/assets/7b1938d0-06c7-4c08-8860-4711171962b8" />
+
+Para dejar la tty 100% estable, hacemos el típico tratamiento de la tty de la siguienta manera:
+
+
+
+
