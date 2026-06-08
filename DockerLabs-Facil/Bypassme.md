@@ -81,7 +81,9 @@ echo "chmod u+s /bin/bash" > backup.sh
 ```
 <img width="678" height="500" alt="bypassme14" src="https://github.com/user-attachments/assets/303a3217-7c22-4fff-af6c-77ffb77ccea7" />
 
+Esperamos unos minutos ya que backup.sh se ejecuta solo, ¡Finalmente ya somos root!, máquina hackeada.
+
 <img width="595" height="230" alt="bypassme15" src="https://github.com/user-attachments/assets/455dc4c6-7f2b-4cfd-8624-39817e7bbe82" />
 
-¡Finalmente ya somos root!, máquina hackeada.
+
 
