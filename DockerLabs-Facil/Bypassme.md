@@ -22,9 +22,11 @@ Vemos que efectivamente estamos frente a un login, intentamos la típica inyecci
 
 <img width="1193" height="638" alt="bypassme4" src="https://github.com/user-attachments/assets/9d1a9d8f-65d4-467f-bfc0-7f2fa5dba5fc" />
 
-Seguimos inyectandole cáracteres raros y probamos este comando en el campo de la password
+Seguimos inyectandole cáracteres raros y probamos este comando en el campo de la password:
 
+```bash
 '1'='1 -- -
+```
 
 ¡Logramos acceso al panel!
 
