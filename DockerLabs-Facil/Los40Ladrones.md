@@ -36,10 +36,10 @@ Ya lanzado el comando, volveremos a realizar un escaneo de puertos abiertos, par
 
 <img width="951" height="622" alt="los40ladrones8" src="https://github.com/user-attachments/assets/81205e12-746a-42af-a6cf-f46289e11358" />
 
-Accedemos por SSH con la password encontrada como muestra la evidencia anterior, ¡y ya ganamos acceso a la máquina víctima!
+Accedemos por SSH con la password encontrada como muestra la evidencia anterior, ¡y ya ganamos acceso a la máquina víctima! 🔥
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
 
-Ya dentro de la máquina víctima, daremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers, y efectivamente podemos ejecutar el binario /opt/bash como el usuario root, daremos el comando sudo -u root /opt/bash ¡y ya somos root!, máquina hackeada.
+Ya dentro de la máquina víctima, daremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers, y efectivamente podemos ejecutar el binario /opt/bash como el usuario root, daremos el comando sudo -u root /opt/bash ¡y ya somos root!, máquina hackeada 🔥
 
 <img width="1031" height="466" alt="los40ladrones9" src="https://github.com/user-attachments/assets/65f3cf3f-dac1-4061-815e-7471a9e8831d" />
