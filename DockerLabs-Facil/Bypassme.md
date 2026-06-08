@@ -1,3 +1,5 @@
+La máquina Bypassme de la plataforma DockerLabs.es es de dificultad Fácil y nos enseña como una mala configuración en un panel de login nos permite una inyección SQL, para luego encontrar credenciales expuestas en directorios/archivos y ganar acceso a la máquina víctima. .
+
 # BYPASSME
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
@@ -46,7 +48,7 @@ Ahora si logramos acceder a esta URL http://172.17.0.2/index.php?page=/logs/logs
 
 <img width="1005" height="619" alt="bypassme8" src="https://github.com/user-attachments/assets/89200d94-a785-47cb-b332-3e626103b654" />
 
-Como anteriormente vimos que exíste el puerto 22 SSH abierto, con esas credenciales ¡logramos ganar acceso a la máquina víctima!
+Como anteriormente vimos que exíste el puerto 22 SSH abierto, con esas credenciales ¡logramos ganar acceso a la máquina víctima! 🔥
 
 <img width="931" height="468" alt="bypassme9" src="https://github.com/user-attachments/assets/fb31fd3b-ca56-4071-a7b1-01e6852d7d00" />
 
@@ -81,9 +83,6 @@ echo "chmod u+s /bin/bash" > backup.sh
 ```
 <img width="678" height="500" alt="bypassme14" src="https://github.com/user-attachments/assets/303a3217-7c22-4fff-af6c-77ffb77ccea7" />
 
-Esperamos unos minutos ya que backup.sh se ejecuta solo, ¡Finalmente ya somos root!, máquina hackeada.
+Esperamos unos minutos ya que backup.sh se ejecuta solo, ¡Finalmente ya somos root!, máquina hackeada 🔥
 
 <img width="595" height="230" alt="bypassme15" src="https://github.com/user-attachments/assets/455dc4c6-7f2b-4cfd-8624-39817e7bbe82" />
-
-
-
