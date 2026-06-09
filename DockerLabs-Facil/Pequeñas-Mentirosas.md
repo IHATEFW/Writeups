@@ -42,3 +42,10 @@ Seguiremos revisando directorios que son básicos y que siempre debemos revisar,
 
 <img width="944" height="305" alt="pequenas9" src="https://github.com/user-attachments/assets/8699e9c2-549c-4c54-8529-241bf8ffabc9" />
 
+Efectivamente podemos ejecutar comandos de python3 como el usuario root, nos vamos a la página gtfobins.org y filtramos por python, nos copiamos el siguiente comando y subimos privilegios máximos con el siguiente comando.
+
+<img width="1049" height="456" alt="pequenas10" src="https://github.com/user-attachments/assets/f7658d51-de15-416d-acf9-355221fd5f6a" />
+
+<img width="912" height="409" alt="pequenas11" src="https://github.com/user-attachments/assets/dc495a2a-416c-4baf-8b77-eae0110f71cf" />
+
+¡Finalmente somos root!, máquina hackeada. . 
