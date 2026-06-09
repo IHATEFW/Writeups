@@ -32,3 +32,7 @@ Una vez dentro de la máquina víctima, daremos el comando sudo -l para ver si t
 
 <img width="637" height="539" alt="pequenas6" src="https://github.com/user-attachments/assets/715ee3af-4318-4271-83bd-27ef687e47b4" />
 
+Seguiremos revisando directorios que son básicos y que siempre debemos revisar, como /tmp, /opt, /srv, y este último tiene la ruta /srv/ftp donde exísten varios archivos sospechosos, uno en particular nos dice la pista de realizar fuerza bruta SSH para encontrar la password de "spencer", procederemos a realizar lo indicado desde otra terminal.
+
+<img width="785" height="630" alt="pequenas7" src="https://github.com/user-attachments/assets/c9893bc4-22bf-4c84-949d-e56a77c9c8c8" />
+
