@@ -12,9 +12,13 @@ Una vez que ya tenemos la ip de la máquina víctima, procederemos a realizar un
 
 <img width="777" height="517" alt="galeria2" src="https://github.com/user-attachments/assets/d50b1e8c-2449-4cf4-b07b-be472e1641f0" />
 
+Ya sabemos que está el puerto 80 abierto, ahora seguiremos realizando un escaneo pero más exhaustivo con nmap, esta vez indicandole que nos enumere la versión de dicho servicio HTTP y que nos arroje un conjunto básico de scripts de reconocimiento, de la siguiente manera, una vez ejecutado, vemos que exíste una web llamada "Gallery", la cual vamos a revisar.
+
 <img width="808" height="635" alt="galeria3" src="https://github.com/user-attachments/assets/b81951e6-b1c1-4dfc-b560-ce79178f4ed8" />
 
 <img width="1321" height="619" alt="galeria4" src="https://github.com/user-attachments/assets/dc77d7a6-1d1d-49b8-9b12-e005a23ad854" />
+
+Vemos que la web está ambientada en civilizaciones antiguas, en una especie de galeria, daremos CTRL + U para exáminar el código fuente y vemos que en la URL de las imágenes exíste un directorio llamado /uploads, accederemos a él y vemos que hay un archivo llamado handler.php, el cual nos permite realizar una subida de archivos.
 
 <img width="752" height="640" alt="galeria5" src="https://github.com/user-attachments/assets/f815a451-a69a-458e-8b3d-6ab88103f257" />
 
