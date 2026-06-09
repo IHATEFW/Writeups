@@ -50,3 +50,8 @@ reset xterm
 export TERM=xterm && export SHELL=bash
 stty rows 50 columns 236
 ```
+
+<img width="548" height="179" alt="galeria12" src="https://github.com/user-attachments/assets/06e45ad6-b78f-457f-9260-e8e6c375ced1" />
+
+<img width="520" height="277" alt="galeria13" src="https://github.com/user-attachments/assets/b9f4e711-ec6d-44b4-ab6c-3bf71a18d76c" />
+
