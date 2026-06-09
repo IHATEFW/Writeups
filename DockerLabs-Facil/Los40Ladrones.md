@@ -26,6 +26,10 @@ Revisamos el código fuente con CTRL + U, pero no vemos nada interesante, en est
 
 Nos encontró un archivo .txt llamado qdefense.txt, procederemos a revisarlo, vemos que nos está dando la pista de un posible usuario llamado "toctoc", y nos entrega unos posibles puertos, el 7000, 8000 y 9000, perfecto, realizaremos una técnica que se llamada Port Knocking, que realiza un "golpe secreto" o "golpeteo de puertos" para abrir puertos secuencialmente que se cerraron por seguridad, una vez la máquina detecta que se efectuó la combinación de puertos adecuada, los abre, esto de la siguiente manera:
 
+```bash
+nc -w 1 -z 172.17.0.2 7000; nc -w 1 -z 172.17.0.2 8000; nc -w 1 -z 172.17.0.2 9000
+```
+
 <img width="733" height="247" alt="los40ladrones6" src="https://github.com/user-attachments/assets/fbf0fe2d-b27b-4e33-ab32-abe79ea5224b" />
 
 ## 💣 EXPLOTACIÓN
