@@ -30,6 +30,11 @@ Lo primero que se me ocurre es subir una reverse shell en php, esta la sacaremos
 
 <img width="1217" height="615" alt="galeria8" src="https://github.com/user-attachments/assets/f93990df-73b0-4176-a450-04f15c9a65e6" />
 
+<img width="786" height="606" alt="galeria9" src="https://github.com/user-attachments/assets/cc5a8922-bcac-43c4-ab02-5cc4a521cd4b" />
+
+<img width="521" height="236" alt="galeria10" src="https://github.com/user-attachments/assets/de2c3c64-c0bd-4b9a-a409-d128954f6aac" />
+
+<img width="1029" height="381" alt="galeria11" src="https://github.com/user-attachments/assets/8e8b38fc-4422-4540-8719-d3c15fb53dc7" />
 
 
 ## 💣 EXPLOTACIÓN
