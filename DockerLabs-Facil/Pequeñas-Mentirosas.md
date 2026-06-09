@@ -1,3 +1,5 @@
+La máquina Pequeñas-Mentirosas de la plataforma DockerLabs.es, es una máquina de dificultad Fácil, la cual nos muestra como mediante ataques de fuerza bruta SSH podemos encontrar la password de 2 usuarios y llegar al que tiene permisos a nivel de sudoers y conseguir pivotar a root. . 
+
 # PEQUEÑAS-MENTIROSAS
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
