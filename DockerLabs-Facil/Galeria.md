@@ -26,6 +26,8 @@ Vemos que la web está ambientada en civilizaciones antiguas, en una especie de 
 
 <img width="546" height="389" alt="galeria7" src="https://github.com/user-attachments/assets/55b3ee3f-4847-4359-820e-fa8bcb242fec" />
 
+## 💣 EXPLOTACIÓN
+
 Lo primero que se me ocurre es subir una reverse shell en php, esta la sacaremos de la web revshells.com, es la que se llama PentestMonkey, la configuraremos con nuestra ip de la máquina atacante y con cualquier puerto que queramos, nos la descargamos en un archivo .php y la subimos al campo de subida, nos ponemos en escucha con netcat y le daremos click al archivo que hemos subido (recordar que se subirá al directorio /uploads/image, y listo, ¡ya ganamos acceso a la máquina víctima!
 
 <img width="1217" height="615" alt="galeria8" src="https://github.com/user-attachments/assets/f93990df-73b0-4176-a450-04f15c9a65e6" />
@@ -35,8 +37,5 @@ Lo primero que se me ocurre es subir una reverse shell en php, esta la sacaremos
 <img width="521" height="236" alt="galeria10" src="https://github.com/user-attachments/assets/de2c3c64-c0bd-4b9a-a409-d128954f6aac" />
 
 <img width="1029" height="381" alt="galeria11" src="https://github.com/user-attachments/assets/8e8b38fc-4422-4540-8719-d3c15fb53dc7" />
-
-
-## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
