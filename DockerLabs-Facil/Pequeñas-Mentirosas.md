@@ -36,3 +36,9 @@ Seguiremos revisando directorios que son básicos y que siempre debemos revisar,
 
 <img width="785" height="630" alt="pequenas7" src="https://github.com/user-attachments/assets/c9893bc4-22bf-4c84-949d-e56a77c9c8c8" />
 
+¡Encontramos la password de el usuario "spencer"!, procedemos a pivotar a spencer, y le damos sudo -l para ver si podemos ejecutar algún comando como root.
+
+<img width="933" height="364" alt="pequenas8" src="https://github.com/user-attachments/assets/5c44a34a-b103-4f2e-b73e-b8bfea35f6bf" />
+
+<img width="944" height="305" alt="pequenas9" src="https://github.com/user-attachments/assets/8699e9c2-549c-4c54-8529-241bf8ffabc9" />
+
