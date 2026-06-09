@@ -24,7 +24,7 @@ Dentro de la web, vemos que tenemos una pista de un posible usuario válido llam
 
 <img width="959" height="371" alt="pequenas5" src="https://github.com/user-attachments/assets/cb6693b0-4ae5-4bc9-a94f-c9dddc50fd98" />
 
-¡Ya tenemos la contraseña del usuario "A"!, nos loguearemos por SSH con las credenciales.
+¡Ya tenemos la contraseña del usuario "A"! 🔥, nos loguearemos por SSH con las credenciales.
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
 
@@ -36,7 +36,7 @@ Seguiremos revisando directorios que son básicos y que siempre debemos revisar,
 
 <img width="785" height="630" alt="pequenas7" src="https://github.com/user-attachments/assets/c9893bc4-22bf-4c84-949d-e56a77c9c8c8" />
 
-¡Encontramos la password de el usuario "spencer"!, procedemos a pivotar a spencer, y le damos sudo -l para ver si podemos ejecutar algún comando como root.
+¡Encontramos la password de el usuario "spencer"! 🔥, procedemos a pivotar a spencer, y le damos sudo -l para ver si podemos ejecutar algún comando como root.
 
 <img width="933" height="364" alt="pequenas8" src="https://github.com/user-attachments/assets/5c44a34a-b103-4f2e-b73e-b8bfea35f6bf" />
 
@@ -48,4 +48,4 @@ Efectivamente podemos ejecutar comandos de python3 como el usuario root, nos vam
 
 <img width="912" height="409" alt="pequenas11" src="https://github.com/user-attachments/assets/dc495a2a-416c-4baf-8b77-eae0110f71cf" />
 
-¡Finalmente somos root!, máquina hackeada. . 
+¡Finalmente somos root! 🔥, máquina hackeada. . 
