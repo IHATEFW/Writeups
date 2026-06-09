@@ -39,3 +39,14 @@ Lo primero que se me ocurre es subir una reverse shell en php, esta la sacaremos
 <img width="1029" height="381" alt="galeria11" src="https://github.com/user-attachments/assets/8e8b38fc-4422-4540-8719-d3c15fb53dc7" />
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
+
+Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+stty rows 50 columns 236
+```
