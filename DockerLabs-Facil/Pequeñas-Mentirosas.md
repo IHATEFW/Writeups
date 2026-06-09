@@ -18,10 +18,17 @@ Ya sabemos que exísten los puertos 22 y 80 abiertos, ahora volveremos a realiza
 
 <img width="950" height="351" alt="pequenas4" src="https://github.com/user-attachments/assets/7acf2e94-00c7-468e-af83-99db52aabd17" />
 
+## 💣 EXPLOTACIÓN
+
 Dentro de la web, vemos que tenemos una pista de un posible usuario válido llamado "A", exáminaremos el código fuente con CTRL + U, pero no vemos nada interesante, en este punto, procederemos a realizar un ataque de fuerza bruta de SSH con la herramienta hydra, esto al posible usuario para intentar encontrar la contraseña, esto de la siguiente manera:
 
 <img width="959" height="371" alt="pequenas5" src="https://github.com/user-attachments/assets/cb6693b0-4ae5-4bc9-a94f-c9dddc50fd98" />
 
-## 💣 EXPLOTACIÓN
+¡Ya tenemos la contraseña del usuario "A"!, nos loguearemos por SSH con las credenciales.
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
+
+Una vez dentro de la máquina víctima, daremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers, pero no tenemos, miraremos el archivo /etc/passwd para ver si exísten más usuarios, y nos damos cuenta que exíste el usuario "spencer", por lo tanto, deberemos pivotar a dicho usuario.
+
+<img width="637" height="539" alt="pequenas6" src="https://github.com/user-attachments/assets/715ee3af-4318-4271-83bd-27ef687e47b4" />
+
