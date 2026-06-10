@@ -75,4 +75,5 @@ Ya como el usuario gallery, daremos nuevamente el comando sudo -l y vemos que po
 
 <img width="508" height="262" alt="galeria17" src="https://github.com/user-attachments/assets/c73d58d4-63e2-4709-8bb0-0406ed6c41b8" />
 
+<img width="1341" height="417" alt="galeria18" src="https://github.com/user-attachments/assets/95a47a59-8b7e-4a1d-8bfa-06e31cd9f2c5" />
 
