@@ -72,3 +72,5 @@ reset; sh 1>&0 2>&0
 ¡Y ya somos el usuario "gallery"!, pero tenemos nuevamente la tty inestable, la establizaremos con el comando script /dev/null -c bash, y ya estamos OK.
 
 Ya como el usuario gallery, daremos nuevamente el comando sudo -l y vemos que podemos ejecutar el binario /usr/local/bin/runme, que no es un binario conocido 
+
+<img width="508" height="262" alt="galeria17" src="https://github.com/user-attachments/assets/c73d58d4-63e2-4709-8bb0-0406ed6c41b8" />
