@@ -55,6 +55,8 @@ stty rows 50 columns 236
 
 <img width="520" height="277" alt="galeria13" src="https://github.com/user-attachments/assets/b9f4e711-ec6d-44b4-ab6c-3bf71a18d76c" />
 
+Una vez que ya tenemos una tty estable, lo primero que haremos es dar el comando sudo -l para ver si tenemos privilegios de nivel de sudoers y efectivamente podemos ejecutar el binario nano 
+
 <img width="1169" height="542" alt="galeria14" src="https://github.com/user-attachments/assets/8e387b3e-3828-4e43-b9b2-9f4518573276" />
 
 <img width="929" height="244" alt="galeria15" src="https://github.com/user-attachments/assets/71ea131b-23a6-4a7c-86bb-24a05b23cf58" />
