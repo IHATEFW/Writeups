@@ -64,9 +64,11 @@ sudu -u gallery /bin/nano
 ^R^X
 reset; sh 1>&0 2>&0
 ```
-¡Y ya somos el usuario "gallery"!, pero tenemos nuevamente la tty inestable, la establizaremos con el comando script /dev/null -c bash, y ya estamos OK
 
 <img width="929" height="244" alt="galeria15" src="https://github.com/user-attachments/assets/71ea131b-23a6-4a7c-86bb-24a05b23cf58" />
 
 <img width="1084" height="178" alt="galeria16" src="https://github.com/user-attachments/assets/cfe2e4a6-15b7-41b2-991d-3d996bd54ee6" />
 
+¡Y ya somos el usuario "gallery"!, pero tenemos nuevamente la tty inestable, la establizaremos con el comando script /dev/null -c bash, y ya estamos OK.
+
+Ya como el usuario gallery, daremos nuevamente el comando sudo -l y vemos que podemos ejecutar el binario /usr/local/bin/runme, que no es un binario conocido 
