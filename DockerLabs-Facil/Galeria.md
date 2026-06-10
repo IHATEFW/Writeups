@@ -60,7 +60,7 @@ Una vez que ya tenemos una tty estable, lo primero que haremos es dar el comando
 <img width="1169" height="542" alt="galeria14" src="https://github.com/user-attachments/assets/8e387b3e-3828-4e43-b9b2-9f4518573276" />
 
 ```bash
-sudu -u gallery /bin/nano
+sudo -u gallery /bin/nano
 ^R^X
 reset; sh 1>&0 2>&0
 ```
@@ -76,4 +76,23 @@ Ya como el usuario gallery, daremos nuevamente el comando sudo -l y vemos que po
 <img width="508" height="262" alt="galeria17" src="https://github.com/user-attachments/assets/c73d58d4-63e2-4709-8bb0-0406ed6c41b8" />
 
 <img width="1341" height="417" alt="galeria18" src="https://github.com/user-attachments/assets/95a47a59-8b7e-4a1d-8bfa-06e31cd9f2c5" />
+
+Es aquí como abusaremos de una técnica que se llama Library Hijacking, que consiste en secuestrar una libreria para reemplazarla por una que se llama de manera identica pero que contenga código malicioso, esto lo realizaremos de la siguiente manera.
+
+Nos iremos al directorio /tmp, crearemos una archivo llamado convert, con el comando nano convert, dentro de el, pondremos los comandos maliciosos para convertir el /bin/bash como SUID y así subir privilegios a root.
+
+```bash
+#!/bin/bash
+
+chmod u+s "/bin/bash"
+```
+
+Luego modificaremos el PATH para que nuestro archivo se ejecute antes que la libreria original, dejando el directorio /tmp de los primeros, esto con el comando:
+
+```bash
+export PATH="/tmp:$PATH"
+```
+
+Luego lo ejecutaremos con el comando sudo -u root /usr/local/bin/runme y vemos que los cambios se aplicaron, validamos dando ls -ltr /bin/bash y ya contiene la letra "s", damos bash -p ¡y somos root!, máquina hackeada.
+
 
