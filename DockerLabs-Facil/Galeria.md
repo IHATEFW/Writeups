@@ -53,9 +53,16 @@ stty rows 50 columns 236
 
 <img width="548" height="179" alt="galeria12" src="https://github.com/user-attachments/assets/06e45ad6-b78f-457f-9260-e8e6c375ced1" />
 
-<img width="520" height="277" alt="galeria13" src="https://github.com/user-attachments/assets/b9f4e711-ec6d-44b4-ab6c-3bf71a18d76c" />
+Una vez que ya tenemos una tty estable, lo primero que haremos es dar el comando sudo -l para ver si tenemos privilegios de nivel de sudoers y efectivamente podemos ejecutar el binario nano /bin/nano como el usuario "gallery", por lo tanto, nos dirigiremos a la web gtfobins.org para ver que comando podemos ejecutar filtrando por nano para pivotar a gallery, encontramos que podemos ejecutar la siguiente secuencia:
 
-Una vez que ya tenemos una tty estable, lo primero que haremos es dar el comando sudo -l para ver si tenemos privilegios de nivel de sudoers y efectivamente podemos ejecutar el binario nano 
+```bash
+sudu -u gallery /bin/nano
+^R^X
+reset; sh 1>&0 2>&0
+```
+¡Y ya somos el usuario "gallery"!, pero tenemos nuevamente la tty inestable, la establizaremos con el comando script /dev/null -c bash, y ya estamos OK
+
+<img width="520" height="277" alt="galeria13" src="https://github.com/user-attachments/assets/b9f4e711-ec6d-44b4-ab6c-3bf71a18d76c" />
 
 <img width="1169" height="542" alt="galeria14" src="https://github.com/user-attachments/assets/8e387b3e-3828-4e43-b9b2-9f4518573276" />
 
