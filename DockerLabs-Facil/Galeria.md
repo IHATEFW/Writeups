@@ -1,3 +1,5 @@
+La máquina Galeria de la plataforma DockerLabs.es, es una máquina de dificultad Fácil, que nos enseña como un campo de subida de archivos en una web nos permite subir una reverse shell para ganar acceso a la máquina víctima, para así finalmente abusar de privilegios a nivel de sudoers y emplear la técnica Library Hijacking . .
+
 # GALERIA
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
@@ -28,7 +30,7 @@ Vemos que la web está ambientada en civilizaciones antiguas, en una especie de 
 
 ## 💣 EXPLOTACIÓN
 
-Lo primero que se me ocurre es subir una reverse shell en php, esta la sacaremos de la web revshells.com, es la que se llama PentestMonkey, la configuraremos con nuestra ip de la máquina atacante y con cualquier puerto que queramos, nos la descargamos en un archivo .php y la subimos al campo de subida, nos ponemos en escucha con netcat y le daremos click al archivo que hemos subido (recordar que se subirá al directorio /uploads/image, y listo, ¡ya ganamos acceso a la máquina víctima!
+Lo primero que se me ocurre es subir una reverse shell en php, esta la sacaremos de la web revshells.com, es la que se llama PentestMonkey, la configuraremos con nuestra ip de la máquina atacante y con cualquier puerto que queramos, nos la descargamos en un archivo .php y la subimos al campo de subida, nos ponemos en escucha con netcat y le daremos click al archivo que hemos subido (recordar que se subirá al directorio /uploads/image, y listo, ¡ya ganamos acceso a la máquina víctima! 🔥.
 
 <img width="1217" height="615" alt="galeria8" src="https://github.com/user-attachments/assets/f93990df-73b0-4176-a450-04f15c9a65e6" />
 
@@ -69,7 +71,7 @@ reset; sh 1>&0 2>&0
 
 <img width="1084" height="178" alt="galeria16" src="https://github.com/user-attachments/assets/cfe2e4a6-15b7-41b2-991d-3d996bd54ee6" />
 
-¡Y ya somos el usuario "gallery"!, pero tenemos nuevamente la tty inestable, la establizaremos con el comando script /dev/null -c bash, y ya estamos OK.
+¡Y ya somos el usuario "gallery"! 🔥, pero tenemos nuevamente la tty inestable, la establizaremos con el comando script /dev/null -c bash, y ya estamos OK.
 
 Ya como el usuario gallery, daremos nuevamente el comando sudo -l y vemos que podemos ejecutar el binario /usr/local/bin/runme, que no es un binario conocido, pero eso no importa, ya que daremos un cat /usr/local/bin/runme y podemos visualizar que se está ejecutando el comando "convert" para convertir una imágen.
 
@@ -93,7 +95,7 @@ Luego modificaremos el PATH para que nuestro archivo se ejecute antes que la lib
 export PATH="/tmp:$PATH"
 ```
 
-Le daremos permisos de ejecución a nuestro archivo malicioso con chmod 777 convert, luego lo ejecutaremos con el comando sudo -u root /usr/local/bin/runme y vemos que los cambios se aplicaron, validamos dando ls -ltr /bin/bash y ya contiene la letra "s", damos bash -p ¡y somos root!, máquina hackeada.
+Le daremos permisos de ejecución a nuestro archivo malicioso con chmod 777 convert, luego lo ejecutaremos con el comando sudo -u root /usr/local/bin/runme y vemos que los cambios se aplicaron, validamos dando ls -ltr /bin/bash y ya contiene la letra "s", damos bash -p ¡y somos root!, máquina hackeada 🔥 . .
 
 <img width="605" height="418" alt="galeria19" src="https://github.com/user-attachments/assets/5bbda6c3-3dbd-4945-b8d7-6e976e3dcfe1" />
 
