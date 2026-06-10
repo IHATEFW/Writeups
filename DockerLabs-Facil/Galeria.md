@@ -95,4 +95,5 @@ export PATH="/tmp:$PATH"
 
 Luego lo ejecutaremos con el comando sudo -u root /usr/local/bin/runme y vemos que los cambios se aplicaron, validamos dando ls -ltr /bin/bash y ya contiene la letra "s", damos bash -p ¡y somos root!, máquina hackeada.
 
+<img width="605" height="418" alt="galeria19" src="https://github.com/user-attachments/assets/5bbda6c3-3dbd-4945-b8d7-6e976e3dcfe1" />
 
