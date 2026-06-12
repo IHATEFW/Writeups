@@ -9,6 +9,9 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+<img width="835" height="578" alt="file2" src="https://github.com/user-attachments/assets/b8c15b8c-395b-4ac7-bc64-a3b42f5b8f7d" />
+
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
