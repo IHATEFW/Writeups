@@ -17,7 +17,7 @@ Como ya sabemos los puertos abiertos, seguiremos realizando un escaneo pero más
 
 <img width="851" height="633" alt="file3" src="https://github.com/user-attachments/assets/7e43a9e8-8283-4999-b5f2-0935808f63cb" />
 
-Ingresamos por FTP
+Ingresamos por FTP y con el comando dir vemos que hay un archivo llamado anon.txt, lo descargaremos con el comando get a nuestra máquina atacante para revisarlo.
 
 <img width="861" height="486" alt="file4" src="https://github.com/user-attachments/assets/47f4c7b3-65a1-42b6-bb64-897b062363ea" />
 
