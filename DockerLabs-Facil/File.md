@@ -23,13 +23,21 @@ Ingresamos por FTP y con el comando dir vemos que hay un archivo llamado anon.tx
 
 <img width="580" height="261" alt="file5" src="https://github.com/user-attachments/assets/80d3f34e-0f19-4219-aed0-7c786c1617ba" />
 
+Vemos que se trata de una cadena cifrada, la decodearemos con la web hashes.com y nos muestra el nombre "justin", que puede ser un posible usuario válido.
+
 <img width="864" height="520" alt="file6" src="https://github.com/user-attachments/assets/9a29352e-3a9f-4a5f-97f3-599392945644" />
 
+Ya no tenemos nada más que hacer vía FTP, por lo tanto, miraremos la web que está por el puerto 80, vemos que está montada la tipica web Apache2 por defecto, le damos CTRL + U para ver el código fuente y encontramos una pista, indicando que existe un directorio raro.
+
 <img width="779" height="638" alt="file7" src="https://github.com/user-attachments/assets/b8ee82a6-2541-4960-ac02-89dff24cb7b0" />
+
+Procedemos a realizar fuerza bruta de directorios con la herramienta gobuster, encontrando un directorio llamado file_upload.php, en el cual se puede subir un archivo.
 
 <img width="1334" height="638" alt="file8" src="https://github.com/user-attachments/assets/5ce89941-6add-4fb8-ac6c-89cc4dd13c99" />
 
 <img width="759" height="284" alt="file9" src="https://github.com/user-attachments/assets/40a97124-08a0-4014-8a7c-13b41c0be073" />
+
+Probamos subir la típica reverse shell de php que sacamos de revshells.com llamada PentestMonkey, pero no nos deja, indicando error al subirlo, eso quiere decirnos que la extensión .php no le gusta.-
 
 <img width="759" height="284" alt="file10" src="https://github.com/user-attachments/assets/f9843929-81d9-435a-b734-8f7f86de785a" />
 
