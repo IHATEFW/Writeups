@@ -121,6 +121,8 @@ Nos vamos a la web gtfobins.org para filtrar por awk y encontrar el comando perf
 
 <img width="989" height="401" alt="file29" src="https://github.com/user-attachments/assets/87fb0090-c793-4458-b5a6-5f02e88de88b" />
 
+Ya como iker una vez más daremos el comando sudo -l y vemos que podemos ejecutar como root un script .py llamado geo_ip.py, procederemos a eliminar dicho archivo ya que está en nuestro directorio y podemos crear uno nuevo llamado igual pero con código malicioso.
+
 <img width="996" height="473" alt="file30" src="https://github.com/user-attachments/assets/b3907f0a-a4a0-4d7e-90de-f3dfdd76be76" />
 
 <img width="756" height="627" alt="file31" src="https://github.com/user-attachments/assets/1220986b-0ae5-4eea-a5fa-2f4f1090ac85" />
