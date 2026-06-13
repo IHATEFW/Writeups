@@ -97,13 +97,23 @@ Ahora lanzaremos el escaneo para el usuario fernando en primera instancia, despu
 
 <img width="636" height="406" alt="file22" src="https://github.com/user-attachments/assets/1b99a50d-076e-4452-b221-1a7437dd3034" />
 
+Ya como el usuario fernando, nos iremos al directorio /home/fernando, donde encontramos una imágen, la cual posiblemente tenga metadatos o alguna información escondida dentro de ella, esto se llama Esteganografía "El arte de ocultar información dentro de una imágen".
+
 <img width="701" height="447" alt="file23" src="https://github.com/user-attachments/assets/79743572-618a-43a9-b8a9-e3c4711a1395" />
+
+La descargamos a nuestra máquina atacante con el mismo metodo del servidor web http pero esta vez al revés.
 
 <img width="1312" height="411" alt="file24" src="https://github.com/user-attachments/assets/03a44e59-24a6-43d2-a341-b4cfa0ee3f91" />
 
+Y con la herramienta stegcracker (si no la tienes dale un sudo apt install stegcracker) encontramos una nueva cadena encriptada, la decodearemos y vemos una password "password123".
+
 <img width="724" height="502" alt="file25" src="https://github.com/user-attachments/assets/aaa1752c-4bdd-4a1b-a125-28757c80fb1c" />
 
+Probaremos con el segundo usuario "mario", y efectivamente pivotamos a dicho usuario, ya como mario, daremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers y vemos que podemos ejecutar el binario /usr/bin/awk como el usuario julen.
+
 <img width="1034" height="564" alt="file26" src="https://github.com/user-attachments/assets/b02732ae-c383-4b8b-93f0-22960ffae48e" />
+
+Nos vamos a la web gtfobins.org para filtrar por awk y encontrar el comando perfecto y elevaremos privilegios como julen, nuevamente daremos el comando sudo -l y vemos que podemos ejecutar el binario /usr/bin/env como el usuario iker, ejecutamos sudo -u iker env /bin/sh y somos iker. 
 
 <img width="969" height="281" alt="file27" src="https://github.com/user-attachments/assets/58ad4f17-a71e-4b62-a644-b6f3d3d51968" />
 
