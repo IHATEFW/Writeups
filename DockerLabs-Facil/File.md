@@ -9,9 +9,15 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+Una vez que ya tenemos la ip de la máquina víctima, realizaremos un escaneo con la herramienta nmap, que nos arroje todos los puertos abiertos existentes para así lograr acceso a la máquina, esto con el siguiente comando, una vez ejecutado, nos damos cuenta que existen los puertos 21 y 80 expuestos, correspondientes a los servicios FTP y HTTP.
+
 <img width="835" height="578" alt="file2" src="https://github.com/user-attachments/assets/b8c15b8c-395b-4ac7-bc64-a3b42f5b8f7d" />
 
+Como ya sabemos los puertos abiertos, seguiremos realizando un escaneo pero más exhaustivo con nmap, esta vez indicandole que nos enumere la versión de dichos servicios y que nos arroje un conjunto básico de scripts de reconocimiento, de la siguiente manera, una vez ejecutado, vemos que se puede ingresar vía FTP con el usuario "Anonymous", dicho usuario no nos pedirá contraseña y en caso que lo haga podemos poner cualquiera y nos dejará ingresar igual.
+
 <img width="851" height="633" alt="file3" src="https://github.com/user-attachments/assets/7e43a9e8-8283-4999-b5f2-0935808f63cb" />
+
+Ingresamos por FTP
 
 <img width="861" height="486" alt="file4" src="https://github.com/user-attachments/assets/47f4c7b3-65a1-42b6-bb64-897b062363ea" />
 
