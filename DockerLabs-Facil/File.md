@@ -41,15 +41,25 @@ Probamos subir la típica reverse shell de php que sacamos de revshells.com llam
 
 <img width="759" height="284" alt="file10" src="https://github.com/user-attachments/assets/f9843929-81d9-435a-b734-8f7f86de785a" />
 
+En este punto, abriremos Burpsuite para ver como se está tramitando la petición y poder realizar fuzzing de extensiones con un diccionario, para encontrar la extensión válida de php, activamos el foxyproxy, interceptamos la petición y la mandamos al Intruder. 
+
 <img width="1187" height="582" alt="file11" src="https://github.com/user-attachments/assets/d99027b7-d2fb-4e0e-a082-c81e6d2d92e6" />
+
+Ya en el intruder configuraremos el payload/carga útil seleccionando el siguiente diccionario de extensiones.
 
 <img width="1187" height="582" alt="file12" src="https://github.com/user-attachments/assets/5c125fbb-148f-4ec1-9e23-bb1b1f05bc17" />
 
+Estas son las extensiones que podrían resultar exitosas.
+
 <img width="434" height="582" alt="file13" src="https://github.com/user-attachments/assets/16f4f023-e11b-43f3-add4-ff2303af32ee" />
+
+Le damos "Start Attack" y encontramos que se subió solo el archivo pero con la extensión .phar, excelente trabajo.
 
 <img width="1334" height="638" alt="file14" src="https://github.com/user-attachments/assets/25a3da60-6399-4fdc-abd1-37e8415e5157" />
 
 <img width="681" height="582" alt="file15" src="https://github.com/user-attachments/assets/e0759171-85e2-410c-8ade-f285d1ac797c" />
+
+Nos pondremos en escucha con netcat por el puerto 443 y daremos click en el archivo subido en /uploads, ¡Ganamos acceso a la máquina víctima!.
 
 <img width="1037" height="380" alt="file16" src="https://github.com/user-attachments/assets/f364417b-e178-4ecf-9d97-81fdc0c678d6" />
 
