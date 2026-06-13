@@ -63,6 +63,8 @@ Nos pondremos en escucha con netcat por el puerto 443 y daremos click en el arch
 
 <img width="1037" height="380" alt="file16" src="https://github.com/user-attachments/assets/f364417b-e178-4ecf-9d97-81fdc0c678d6" />
 
+
+
 <img width="746" height="603" alt="file17" src="https://github.com/user-attachments/assets/922789cb-8866-4e0f-be04-ae96c51460ac" />
 
 <img width="1189" height="629" alt="file18" src="https://github.com/user-attachments/assets/5da702cc-bbca-42a4-98c1-45a89d271dde" />
