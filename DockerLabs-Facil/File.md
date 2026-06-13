@@ -77,23 +77,29 @@ stty rows 50 columns 236
 ```
 ## 🔑 ESCALADA DE PRIVILEGIOS
 
+Para pivotar al usuario root, leeremos el archivo /etc/passwd para ver si existen más usuarios dentro de la máquina y efectivamente se visualizan 4 usuarios más, fernando, mario, julen e iker.
+
 <img width="746" height="603" alt="file17" src="https://github.com/user-attachments/assets/922789cb-8866-4e0f-be04-ae96c51460ac" />
+
+Como son varios usuarios, realizaremos fuerza bruta para identificar alguna posible clave válida, esto lo haremos con la herramienta suForce del amigo d4t4s3c, cuyo repositorio y los comandos para descargar la herramienta las dejaré a continuación.
 
 <img width="1189" height="629" alt="file18" src="https://github.com/user-attachments/assets/5da702cc-bbca-42a4-98c1-45a89d271dde" />
 
 <img width="984" height="240" alt="file19" src="https://github.com/user-attachments/assets/55d8f640-7152-423a-a0f5-c1d6dcd4d76c" />
 
+La herramienta nos pide un diccionario, como la máquina víctima no tiene el rockyou.txt, haremos una copia desde la máquina atacante a la víctima, montando un servidor web http por el puerto 8080 con python3.
+
 <img width="682" height="284" alt="file20" src="https://github.com/user-attachments/assets/424da8b3-dc89-43fc-af6e-50d31f62ee8c" />
 
 <img width="1139" height="561" alt="file21" src="https://github.com/user-attachments/assets/f1eabf22-99e5-4483-a2f0-280c8accc37d" />
 
-<img width="636" height="406" alt="file22" src="https://github.com/user-attachments/assets/1b99a50d-076e-4452-b221-1a7437dd3034" />
+Ahora lanzaremos el escaneo para el usuario fernando en primera instancia, despues de unos segundos encontramos la contraseña "chocolate" 
 
-<img width="1312" height="411" alt="file24" src="https://github.com/user-attachments/assets/03a44e59-24a6-43d2-a341-b4cfa0ee3f91" />
+<img width="636" height="406" alt="file22" src="https://github.com/user-attachments/assets/1b99a50d-076e-4452-b221-1a7437dd3034" />
 
 <img width="701" height="447" alt="file23" src="https://github.com/user-attachments/assets/79743572-618a-43a9-b8a9-e3c4711a1395" />
 
-<img width="1312" height="411" alt="file24" src="https://github.com/user-attachments/assets/76448457-15d9-435f-88a2-1a8351a20423" />
+<img width="1312" height="411" alt="file24" src="https://github.com/user-attachments/assets/03a44e59-24a6-43d2-a341-b4cfa0ee3f91" />
 
 <img width="724" height="502" alt="file25" src="https://github.com/user-attachments/assets/aaa1752c-4bdd-4a1b-a125-28757c80fb1c" />
 
