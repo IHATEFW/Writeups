@@ -41,6 +41,8 @@ Probamos subir la típica reverse shell de php que sacamos de revshells.com llam
 
 <img width="759" height="284" alt="file10" src="https://github.com/user-attachments/assets/f9843929-81d9-435a-b734-8f7f86de785a" />
 
+## 💣 EXPLOTACIÓN
+
 En este punto, abriremos Burpsuite para ver como se está tramitando la petición y poder realizar fuzzing de extensiones con un diccionario, para encontrar la extensión válida de php, activamos el foxyproxy, interceptamos la petición y la mandamos al Intruder. 
 
 <img width="1187" height="582" alt="file11" src="https://github.com/user-attachments/assets/d99027b7-d2fb-4e0e-a082-c81e6d2d92e6" />
@@ -63,7 +65,17 @@ Nos pondremos en escucha con netcat por el puerto 443 y daremos click en el arch
 
 <img width="1037" height="380" alt="file16" src="https://github.com/user-attachments/assets/f364417b-e178-4ecf-9d97-81fdc0c678d6" />
 
+Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
 
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+stty rows 50 columns 236
+```
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 <img width="746" height="603" alt="file17" src="https://github.com/user-attachments/assets/922789cb-8866-4e0f-be04-ae96c51460ac" />
 
@@ -98,7 +110,3 @@ Nos pondremos en escucha con netcat por el puerto 443 y daremos click en el arch
 <img width="756" height="627" alt="file31" src="https://github.com/user-attachments/assets/1220986b-0ae5-4eea-a5fa-2f4f1090ac85" />
 
 <img width="957" height="314" alt="file32" src="https://github.com/user-attachments/assets/3a5808df-1043-4745-8964-7c06f3fc43e6" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
