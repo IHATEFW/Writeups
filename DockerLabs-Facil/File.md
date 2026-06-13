@@ -127,4 +127,6 @@ Ya como iker una vez más daremos el comando sudo -l y vemos que podemos ejecuta
 
 <img width="756" height="627" alt="file31" src="https://github.com/user-attachments/assets/1220986b-0ae5-4eea-a5fa-2f4f1090ac85" />
 
+Damos el comando sudo -u root /usr/bin/python3 /home/iker/geo_ip.py ¡y ya somos root!, máquina hackeada. .
+
 <img width="957" height="314" alt="file32" src="https://github.com/user-attachments/assets/3a5808df-1043-4745-8964-7c06f3fc43e6" />
