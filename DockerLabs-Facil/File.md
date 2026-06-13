@@ -113,9 +113,9 @@ Y con la herramienta stegcracker (si no la tienes dale un sudo apt install stegc
 
 Probaremos con el segundo usuario "mario", y efectivamente pivotamos a dicho usuario, ya como mario, daremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers y vemos que podemos ejecutar el binario /usr/bin/awk como el usuario julen.
 
-Nos vamos a la web gtfobins.org para filtrar por awk y encontrar el comando perfecto y elevaremos privilegios como julen, nuevamente daremos el comando sudo -l y vemos que podemos ejecutar el binario /usr/bin/env como el usuario iker, ejecutamos sudo -u iker env /bin/sh y somos iker. 
-
 <img width="969" height="281" alt="file27" src="https://github.com/user-attachments/assets/58ad4f17-a71e-4b62-a644-b6f3d3d51968" />
+
+Nos vamos a la web gtfobins.org para filtrar por awk y encontrar el comando perfecto, elevamos privilegios como julen, nuevamente daremos el comando sudo -l y vemos que podemos ejecutar el binario /usr/bin/env como el usuario iker, ejecutamos sudo -u iker env /bin/sh y somos iker. 
 
 <img width="1184" height="609" alt="file28" src="https://github.com/user-attachments/assets/0efa30e1-d58a-4a91-b4ab-b11b6e6ee641" />
 
