@@ -1,3 +1,4 @@
+La máquina File de la plataforma DockerLabs.es es una máquina de dificultad "Fácil", que nos enseña como ejecutar fuzzing con burpsuite para lograr identificar la extensión correcta de un archivo php, para así lograr subir una reverse shell y ganar acceso a la máquina víctima, finalmente se aplican diferentes técnicas para pivotar al usuario root . .
 
 # FILE
 
@@ -61,7 +62,7 @@ Le damos "Start Attack" y encontramos que se subió solo el archivo pero con la 
 
 <img width="681" height="582" alt="file15" src="https://github.com/user-attachments/assets/e0759171-85e2-410c-8ade-f285d1ac797c" />
 
-Nos pondremos en escucha con netcat por el puerto 443 y daremos click en el archivo subido en /uploads, ¡Ganamos acceso a la máquina víctima!.
+Nos pondremos en escucha con netcat por el puerto 443 y daremos click en el archivo subido en /uploads, ¡Ganamos acceso a la máquina víctima! 🔥 . .
 
 <img width="1037" height="380" alt="file16" src="https://github.com/user-attachments/assets/f364417b-e178-4ecf-9d97-81fdc0c678d6" />
 
@@ -127,6 +128,6 @@ Ya como iker una vez más daremos el comando sudo -l y vemos que podemos ejecuta
 
 <img width="756" height="627" alt="file31" src="https://github.com/user-attachments/assets/1220986b-0ae5-4eea-a5fa-2f4f1090ac85" />
 
-Damos el comando sudo -u root /usr/bin/python3 /home/iker/geo_ip.py ¡y ya somos root!, máquina hackeada. .
+Damos el comando sudo -u root /usr/bin/python3 /home/iker/geo_ip.py ¡y ya somos root!, máquina hackeada 🔥. .
 
 <img width="957" height="314" alt="file32" src="https://github.com/user-attachments/assets/3a5808df-1043-4745-8964-7c06f3fc43e6" />
