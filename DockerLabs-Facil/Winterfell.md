@@ -33,7 +33,14 @@ En donde se exponen todos los episodios de la temporada 1 de Juego de Tronos, pe
 
 <img width="910" height="450" alt="winter7" src="https://github.com/user-attachments/assets/e2409b28-5720-47af-8ca6-efaaa5acf12a" />
 
+Copiamos todas las contraseñas y la ingresamos en un archivo llamado pass.txt, así como tambien ingresamos los 3 posibles usuarios en un archivo llamado users.txt, esto debemos hacerlo SIEMPRE cuando encontremos información importante.
+
 <img width="541" height="432" alt="winter8" src="https://github.com/user-attachments/assets/4d133e7c-1ff3-4d2a-99ed-dbbb684b8b2c" />
+
+Como sabemos que está abierto el servicio Samba (SMB), procederemos a realizar fuerza bruta con la herramienta netexec, que es la nueva herramienta que está sustituyendo a crackmapexec (perdió soporte), esto lo haremos con el siguiente comando:
+
+
+Lo ejecutamos solo con el primer usuario "jon", una vez ejecutado, podemos ver que nos encontró su password correcta "seacercaelinvierno".
 
 <img width="1261" height="585" alt="winter9" src="https://github.com/user-attachments/assets/7e70a8a7-cd2f-44b6-a8d4-9214e234e54b" />
 
