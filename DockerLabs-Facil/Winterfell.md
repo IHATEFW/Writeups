@@ -47,6 +47,13 @@ Lo ejecutamos solo con el primer usuario "jon", una vez ejecutado, podemos ver q
 
 <img width="1261" height="585" alt="winter9" src="https://github.com/user-attachments/assets/7e70a8a7-cd2f-44b6-a8d4-9214e234e54b" />
 
+Accedemos con esa password vía smbclient con el comando:
+
+```bash
+smbclient  -U 'jon' //172.17.0.2/shared 
+```
+Vemos que hay dentro un archivo, lo traemos a nuestra máquina con el comando get.
+
 <img width="984" height="329" alt="winter10" src="https://github.com/user-attachments/assets/fe5fa91b-fd04-4e24-a79b-62feebf7a25b" />
 
 <img width="1181" height="162" alt="winter11" src="https://github.com/user-attachments/assets/25fba1c8-c719-474c-9ff4-71eaaa59c12d" />
