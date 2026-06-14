@@ -59,7 +59,7 @@ Vemos que hay dentro un archivo, lo traemos a nuestra máquina con el comando ge
 
 <img width="984" height="329" alt="winter10" src="https://github.com/user-attachments/assets/fe5fa91b-fd04-4e24-a79b-62feebf7a25b" />
 
-Lo abrimos con cat y encontramos la contraseña de SSH de jon, pero codificada en base64, la decodificamos con el siguiente comando y vemos la contraseña en texto claro "hijodelanister".
+Lo abrimos con cat y encontramos la contraseña de SSH de jon, pero codificada en base64, la decodificamos con el siguiente comando y vemos la contraseña en texto claro "hijodelanister" 🔥.
 
 <img width="1181" height="162" alt="winter11" src="https://github.com/user-attachments/assets/25fba1c8-c719-474c-9ff4-71eaaa59c12d" />
 
@@ -73,7 +73,7 @@ Nos creamos el script nuevo.
 
 <img width="297" height="212" alt="winter13" src="https://github.com/user-attachments/assets/245b451e-e1f4-4398-8ea4-1287be7d005c" />
 
-Lo lanzamos y ¡somos aria!
+Lo lanzamos y ¡somos aria! 🔥.
 
 <img width="928" height="353" alt="winter14" src="https://github.com/user-attachments/assets/28a3bda5-7a93-499f-8e6f-695c953b958c" />
 
@@ -81,7 +81,7 @@ Ya como el usuario aria, damos nuevamente el comando sudo -l y podemos ejecutar 
 
 <img width="1155" height="413" alt="winter15" src="https://github.com/user-attachments/assets/e57c88ae-3131-49ce-9bc1-37230a6d0d21" />
 
-Ya como el usuario daenerys, damos una vez más el comando sudo -l y vemos que podemos ejecutar otro script pero esta vez una shell .sh, la revisamos y no tiene algo que nos sirva, por lo tanto con el siguiente comando logramos modificar el binario /bin/bash para convertirlo en SUID y así dar un bash -p y ser root, máquina hackeada . .
+Ya como el usuario daenerys, damos una vez más el comando sudo -l y vemos que podemos ejecutar otro script pero esta vez una shell .sh, la revisamos y no tiene algo que nos sirva, por lo tanto con el siguiente comando logramos modificar el binario /bin/bash para convertirlo en SUID y así dar un bash -p y ser root, máquina hackeada 🔥 . .
 
 ```bash
 echo "chmod u+s /bin/bash" > .shell.sh
