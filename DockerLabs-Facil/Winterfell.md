@@ -37,6 +37,8 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 <img width="1155" height="413" alt="winter15" src="https://github.com/user-attachments/assets/e57c88ae-3131-49ce-9bc1-37230a6d0d21" />
 
+<img width="933" height="472" alt="winter16" src="https://github.com/user-attachments/assets/6f34297b-06be-418f-8d90-e954960792fe" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
