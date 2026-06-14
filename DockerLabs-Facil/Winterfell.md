@@ -56,7 +56,11 @@ Vemos que hay dentro un archivo, lo traemos a nuestra máquina con el comando ge
 
 <img width="984" height="329" alt="winter10" src="https://github.com/user-attachments/assets/fe5fa91b-fd04-4e24-a79b-62feebf7a25b" />
 
+Lo abrimos con cat y encontramos la contraseña de SSH de jon, pero codificada en base64, la decodificamos con el siguiente comando y vemos la contraseña en texto claro "hijodelanister".
+
 <img width="1181" height="162" alt="winter11" src="https://github.com/user-attachments/assets/25fba1c8-c719-474c-9ff4-71eaaa59c12d" />
+
+Accedemos vía SSH con usuario jon, damos un sudo -l para ver si tenemos privilegios a nivel de sudoers y efectivamente podemos ejecutar un script de python3 llamado .mensaje.py como el usuario aria, procederemos a borrarlo para crear uno nuevo con el mismo nombre pero con código malicioso.
 
 <img width="926" height="419" alt="winter12" src="https://github.com/user-attachments/assets/06489144-2ea2-49c1-b587-b25ef354712c" />
 
