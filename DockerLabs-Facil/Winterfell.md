@@ -9,11 +9,19 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+Para comprometer esta máquina, procederemos a realizar un escaneo de puertos con la herramienta nmap, esto para visualizar los puertos abiertos existentes, lo realizaremos con el siguiente comando, una vez ejecutado, podemos ver que existen varios puertos abiertos, 22, 80, 139 y 445, correspondientes a los servicios SSH, HTTP y Samba (SMB).
+
 <img width="809" height="608" alt="winter2" src="https://github.com/user-attachments/assets/eb7b039f-0c22-4345-816e-ca95319ca676" />
+
+Una vez que ya tenemos los puertos abiertos, seguiremos enumerando con la herramienta nmap, pero esta vez, indicandole que nos enumere la versión de dichos servicios, a su vez, que nos arroje un conjunto básico de scripts de reconocimiento, una vez ejecutado, podemos ver el titulo de la web que está detrás del puerto 80, se llama "Juego de Tronos", como tambien corroboramos que está el servicio Samba corriendo.
 
 <img width="946" height="631" alt="winter3" src="https://github.com/user-attachments/assets/69786cf8-a558-4368-bf0e-ee116190f8ca" />
 
+Ahora procederemos a revisar la web, y efectivamente está ambientada en la serie "Juego de Tronos" de HBO, con la típica musica de fondo; Vemos que nos está mostrando 3 posibles usuarios, jon, arya y daenerys. 
+
 <img width="1192" height="638" alt="winter4" src="https://github.com/user-attachments/assets/5f540fb1-39d7-4716-86a3-b3ff6974906b" />
+
+En este punto realizaremos fuerza bruta de directorios con la herramienta gobuster
 
 <img width="1342" height="564" alt="winter5" src="https://github.com/user-attachments/assets/0b2235b9-83f1-4d54-acc5-749f25c50d9f" />
 
