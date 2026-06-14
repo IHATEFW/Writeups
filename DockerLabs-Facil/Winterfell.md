@@ -1,3 +1,4 @@
+La máquina Winterfell de la plataforma DockerLabs.es es una máquina de dificultad "Fácil", que está ambientada en la serie Juego de Tronos de HBO, la cual entretenidamente nos enseña como enumerar el servicio Samba y encontrar pistas, contraseñas válidas de usuarios, para así lograr pivotar al usuario root . .
 
 # WINTERFELL
 
@@ -37,6 +38,8 @@ Copiamos todas las contraseñas y la ingresamos en un archivo llamado pass.txt, 
 
 <img width="541" height="432" alt="winter8" src="https://github.com/user-attachments/assets/4d133e7c-1ff3-4d2a-99ed-dbbb684b8b2c" />
 
+## 💣 EXPLOTACIÓN
+
 Como sabemos que está abierto el servicio Samba (SMB), procederemos a realizar fuerza bruta con la herramienta netexec, que es la nueva herramienta que está sustituyendo a crackmapexec (perdió soporte), esto lo haremos con el siguiente comando:
 
 ```bash
@@ -60,6 +63,8 @@ Lo abrimos con cat y encontramos la contraseña de SSH de jon, pero codificada e
 
 <img width="1181" height="162" alt="winter11" src="https://github.com/user-attachments/assets/25fba1c8-c719-474c-9ff4-71eaaa59c12d" />
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
 Accedemos vía SSH con usuario jon, damos un sudo -l para ver si tenemos privilegios a nivel de sudoers y efectivamente podemos ejecutar un script de python3 llamado .mensaje.py como el usuario aria, procederemos a borrarlo para crear uno nuevo con el mismo nombre pero con código malicioso.
 
 <img width="926" height="419" alt="winter12" src="https://github.com/user-attachments/assets/06489144-2ea2-49c1-b587-b25ef354712c" />
@@ -72,10 +77,14 @@ Lo lanzamos y ¡somos aria!
 
 <img width="928" height="353" alt="winter14" src="https://github.com/user-attachments/assets/28a3bda5-7a93-499f-8e6f-695c953b958c" />
 
+Ya como el usuario aria, damos nuevamente el comando sudo -l y podemos ejecutar los binarios /usr/bin/cat y /usr/bin/ls como el usuario daenerys, por lo tanto, procedemos a listar el directorio /home/daenerys y leer el archivo "mensajeParaJon", donde se expone la password de daenerys, pivotamos a daenerys.
+
 <img width="1155" height="413" alt="winter15" src="https://github.com/user-attachments/assets/e57c88ae-3131-49ce-9bc1-37230a6d0d21" />
 
+Ya como el usuario daenerys, damos una vez más el comando sudo -l y vemos que podemos ejecutar otro script pero esta vez una shell .sh, la revisamos y no tiene algo que nos sirva, por lo tanto con el siguiente comando logramos modificar el binario /bin/bash para convertirlo en SUID y así dar un bash -p y ser root, máquina hackeada . .
+
+```bash
+echo "chmod u+s /bin/bash" > .shell.sh
+```
+
 <img width="933" height="472" alt="winter16" src="https://github.com/user-attachments/assets/6f34297b-06be-418f-8d90-e954960792fe" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
