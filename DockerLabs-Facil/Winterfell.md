@@ -21,9 +21,11 @@ Ahora procederemos a revisar la web, y efectivamente está ambientada en la seri
 
 <img width="1192" height="638" alt="winter4" src="https://github.com/user-attachments/assets/5f540fb1-39d7-4716-86a3-b3ff6974906b" />
 
-En este punto realizaremos fuerza bruta de directorios con la herramienta gobuster
+En este punto realizaremos fuerza bruta de directorios con la herramienta gobuster, esto para encontrar posibles directorios luego de la /, encontramos un directorio llamado /dragon.
 
 <img width="1342" height="564" alt="winter5" src="https://github.com/user-attachments/assets/0b2235b9-83f1-4d54-acc5-749f25c50d9f" />
+
+Lo revisaremos y existe un directorio más llamado "EpisodiosT1"
 
 <img width="606" height="404" alt="winter6" src="https://github.com/user-attachments/assets/d73fa55e-92e8-4e5f-9465-f6daee69c3c3" />
 
