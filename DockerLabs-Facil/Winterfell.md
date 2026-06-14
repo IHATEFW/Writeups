@@ -64,7 +64,11 @@ Accedemos vía SSH con usuario jon, damos un sudo -l para ver si tenemos privile
 
 <img width="926" height="419" alt="winter12" src="https://github.com/user-attachments/assets/06489144-2ea2-49c1-b587-b25ef354712c" />
 
+Nos creamos el script nuevo.
+
 <img width="297" height="212" alt="winter13" src="https://github.com/user-attachments/assets/245b451e-e1f4-4398-8ea4-1287be7d005c" />
+
+Lo lanzamos y ¡somos aria!
 
 <img width="928" height="353" alt="winter14" src="https://github.com/user-attachments/assets/28a3bda5-7a93-499f-8e6f-695c953b958c" />
 
