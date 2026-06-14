@@ -29,6 +29,8 @@ Lo revisaremos y existe un directorio más llamado "EpisodiosT1"
 
 <img width="606" height="404" alt="winter6" src="https://github.com/user-attachments/assets/d73fa55e-92e8-4e5f-9465-f6daee69c3c3" />
 
+En donde se exponen todos los episodios de la temporada 1 de Juego de Tronos, pero posiblemente son contraseñas ya que están sin espacios.
+
 <img width="910" height="450" alt="winter7" src="https://github.com/user-attachments/assets/e2409b28-5720-47af-8ca6-efaaa5acf12a" />
 
 <img width="541" height="432" alt="winter8" src="https://github.com/user-attachments/assets/4d133e7c-1ff3-4d2a-99ed-dbbb684b8b2c" />
