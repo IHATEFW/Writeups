@@ -39,6 +39,9 @@ Copiamos todas las contraseñas y la ingresamos en un archivo llamado pass.txt, 
 
 Como sabemos que está abierto el servicio Samba (SMB), procederemos a realizar fuerza bruta con la herramienta netexec, que es la nueva herramienta que está sustituyendo a crackmapexec (perdió soporte), esto lo haremos con el siguiente comando:
 
+```bash
+netexec smb 172.17.0.2 -u 'jon' -p pass.txt
+```
 
 Lo ejecutamos solo con el primer usuario "jon", una vez ejecutado, podemos ver que nos encontró su password correcta "seacercaelinvierno".
 
