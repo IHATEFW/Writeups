@@ -1,4 +1,4 @@
-La máquina Walking Dead de la plataforma DockerLabs.es es una máquina de dificultad 
+La máquina Walking Dead de la plataforma DockerLabs.es es una máquina de dificultad Fácil, que nos enseña
 # WALKING DEAD
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
