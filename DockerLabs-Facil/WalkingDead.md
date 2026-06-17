@@ -10,6 +10,8 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+Para comprometer esta máquina, primero realizaremos comenzaremos la enumeración realizando un escaneo de puertos con la herramienta nmap, esto con el fin de poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado podemos visualizar que tenemos dos puertos abiertos, el 22 y el 80, correspondientes a los servicios SSH y HTTP.
+
 <img width="821" height="514" alt="walking2" src="https://github.com/user-attachments/assets/db818163-fae0-4f29-8777-d9e84bc4846f" />
 
 <img width="923" height="631" alt="walking3" src="https://github.com/user-attachments/assets/f9aba068-3f45-4f92-bf40-4b7435e2c626" />
