@@ -32,6 +32,8 @@ Revisamos y lo inyectamos en la url, de la mano con el comando "id", y efectivam
 
 <img width="775" height="215" alt="walking7" src="https://github.com/user-attachments/assets/1b97cbcf-4804-4e64-8a70-aefb5ccb07d4" />
 
+Tambien podemos leer el archivo /etc/passwd, dandonos cuenta que existen 2 usuarios más antes que root (rick y negan).
+
 <img width="1355" height="435" alt="walking8" src="https://github.com/user-attachments/assets/f80be05a-5361-4053-af1e-7bf07bc03f04" />
 
 <img width="928" height="210" alt="walking9" src="https://github.com/user-attachments/assets/1235bd98-a973-4f86-be73-23ccafae63d8" />
