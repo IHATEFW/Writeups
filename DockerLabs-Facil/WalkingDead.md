@@ -24,6 +24,8 @@ Vemos que no dice "Sobrevive si puedes", no encontramos nada interesante, por lo
 
 <img width="1241" height="382" alt="walking5" src="https://github.com/user-attachments/assets/37c61c72-7dc5-4e79-af2e-d622140edcf6" />
 
+## 💣 EXPLOTACIÓN
+
 Por lo cual, en este punto procederemos a realizar fuzzing parámetros para concatenar detrás del signo ?, algo como php?FUZZ=id, esto con el fin de lograr un inyectar comandos a nivel de sistema, esto con el siguiente comando, una vez ejecutado, podemos visualizar que nos encontró el parámetro "cmd".
 
 <img width="1244" height="573" alt="walking6" src="https://github.com/user-attachments/assets/cb9c0240-ab22-4b6a-bdbd-865f719f9b7f" />
@@ -44,12 +46,21 @@ Nos ponemos en escucha por la terminal con la herramienta netcat por el puerto q
 
 <img width="700" height="347" alt="walking10" src="https://github.com/user-attachments/assets/595ddf37-6027-4d07-b5b8-26fa4286c606" />
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Ejecutaremos los siguientes comandos para tener una tty estable, esto se llama tratamiento de la tty y se realiza con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+```
+
 <img width="578" height="398" alt="walking11" src="https://github.com/user-attachments/assets/350246ad-8ac3-4db1-98eb-68d49cb352a1" />
 
 <img width="1193" height="584" alt="walking12" src="https://github.com/user-attachments/assets/e1cbedba-cea7-4dcb-a265-fe3546a8c9b5" />
 
 <img width="784" height="458" alt="walking13" src="https://github.com/user-attachments/assets/172d0dca-ab57-4d1b-a989-c7a93cb1ab33" />
 
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
