@@ -1,4 +1,5 @@
-La máquina Walking Dead de la plataforma DockerLabs.es es una máquina de dificultad Fácil, que nos enseña una tecnica
+La máquina Walking Dead de la plataforma DockerLabs.es es una máquina de dificultad Fácil, que nos enseña como útilizar fuzzing con la herramienta wfuzz, ya que encontramos un directorio /.shell.php, encontrando el parámetro perfecto para pasar de un LFI a un RCE, luego abusamos de un binario SUID para pivotar a root. .
+
 # WALKING DEAD
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
