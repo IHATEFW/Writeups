@@ -36,7 +36,11 @@ Tambien podemos leer el archivo /etc/passwd, dandonos cuenta que existen 2 usuar
 
 <img width="1355" height="435" alt="walking8" src="https://github.com/user-attachments/assets/f80be05a-5361-4053-af1e-7bf07bc03f04" />
 
+Nos preparamos la típica reverse shell de bash, con el siguiente comando:
+
 <img width="928" height="210" alt="walking9" src="https://github.com/user-attachments/assets/1235bd98-a973-4f86-be73-23ccafae63d8" />
+
+Nos ponemos en escucha por la terminal con la herramienta netcat por el puerto que queramos, ejecutamos el comando en la web y ¡Ganamos acceso a la máquina víctima!.
 
 <img width="700" height="347" alt="walking10" src="https://github.com/user-attachments/assets/595ddf37-6027-4d07-b5b8-26fa4286c606" />
 
