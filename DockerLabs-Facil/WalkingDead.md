@@ -24,7 +24,7 @@ Vemos que no dice "Sobrevive si puedes", no encontramos nada interesante, por lo
 
 <img width="1241" height="382" alt="walking5" src="https://github.com/user-attachments/assets/37c61c72-7dc5-4e79-af2e-d622140edcf6" />
 
-Por lo cual, en este punto procederemos a realizar fuzzing parámetros para concatenar detrás del signo ?, algo como php?FUZZ=id, esto con el fin de lograr un inyectar comandos a nivel de sistema, esto con el siguiente comando:
+Por lo cual, en este punto procederemos a realizar fuzzing parámetros para concatenar detrás del signo ?, algo como php?FUZZ=id, esto con el fin de lograr un inyectar comandos a nivel de sistema, esto con el siguiente comando, una vez ejecutado, podemos visualizar que nos encontró el parámetro "cmd".
 
 <img width="1244" height="573" alt="walking6" src="https://github.com/user-attachments/assets/cb9c0240-ab22-4b6a-bdbd-865f719f9b7f" />
 
