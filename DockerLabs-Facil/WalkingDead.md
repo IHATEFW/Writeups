@@ -58,13 +58,13 @@ reset xterm
 export TERM=xterm && export SHELL=bash
 ```
 
-<img width="578" height="398" alt="walking11" src="https://github.com/user-attachments/assets/350246ad-8ac3-4db1-98eb-68d49cb352a1" />
-
 Una vez dentro de la máquina víctima, daremos el siguiente comando para ver si tenemos permisos para ejecutar binarios SUID:
 
 ```bash
 find / -perm -4000 2>/dev/null
 ```
+
+<img width="578" height="398" alt="walking11" src="https://github.com/user-attachments/assets/350246ad-8ac3-4db1-98eb-68d49cb352a1" />
 
 Y efectivamente podemos ejecutar el binario python3.8 como root.
 
