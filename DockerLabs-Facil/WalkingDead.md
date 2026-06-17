@@ -28,6 +28,8 @@ Por lo cual, en este punto procederemos a realizar fuzzing parámetros para conc
 
 <img width="1244" height="573" alt="walking6" src="https://github.com/user-attachments/assets/cb9c0240-ab22-4b6a-bdbd-865f719f9b7f" />
 
+Revisamos y lo inyectamos en la url, de la mano con el comando "id", y efectivamente podemos ejecutar comandos a nivel de sistema, nos devuelve el usuario que somos dentro de la máquina (www-data).
+
 <img width="775" height="215" alt="walking7" src="https://github.com/user-attachments/assets/1b97cbcf-4804-4e64-8a70-aefb5ccb07d4" />
 
 <img width="1355" height="435" alt="walking8" src="https://github.com/user-attachments/assets/f80be05a-5361-4053-af1e-7bf07bc03f04" />
