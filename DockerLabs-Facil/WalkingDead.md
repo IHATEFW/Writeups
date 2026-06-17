@@ -42,7 +42,7 @@ Nos preparamos la típica reverse shell de bash, con el siguiente comando:
 
 <img width="928" height="210" alt="walking9" src="https://github.com/user-attachments/assets/1235bd98-a973-4f86-be73-23ccafae63d8" />
 
-Nos ponemos en escucha por la terminal con la herramienta netcat por el puerto que queramos, ejecutamos el comando en la web y ¡Ganamos acceso a la máquina víctima!.
+Nos ponemos en escucha por la terminal con la herramienta netcat por el puerto que queramos, ejecutamos el comando en la web y ¡Ganamos acceso a la máquina víctima! 🔥.
 
 <img width="700" height="347" alt="walking10" src="https://github.com/user-attachments/assets/595ddf37-6027-4d07-b5b8-26fa4286c606" />
 
@@ -68,7 +68,11 @@ find / -perm -4000 2>/dev/null
 
 Y efectivamente podemos ejecutar el binario python3.8 como root.
 
+Nos vamos a la web gtfobins.org y filtramos por SUID python, copiamos el comando y lo ejecutamos:
+
 <img width="1193" height="584" alt="walking12" src="https://github.com/user-attachments/assets/e1cbedba-cea7-4dcb-a265-fe3546a8c9b5" />
 
 <img width="784" height="458" alt="walking13" src="https://github.com/user-attachments/assets/172d0dca-ab57-4d1b-a989-c7a93cb1ab33" />
+
+¡Finalmente somos root!, máquina hackeada 🔥. .
 
