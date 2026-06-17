@@ -14,11 +14,17 @@ Para comprometer esta máquina, primero realizaremos comenzaremos la enumeració
 
 <img width="821" height="514" alt="walking2" src="https://github.com/user-attachments/assets/db818163-fae0-4f29-8777-d9e84bc4846f" />
 
+Una vez ejecutado el primer escaneo y ya teniendo los puertos abiertos en mano, continuaremos realizando otro escaneo con la herramienta nmap, pero esta vez más exhaustivo, indicandole a nmap que nos encuentre la versión de dichos servicios, como tambien, que nos arroje un conjunto básico de scripts de reconocimiento, esto de la siguiente manera, una vez ejecutado, podemos visualizar el nomnbre de la web que corre detrás de puerto 80, se llama "The Walking Dead - CTF", procederemos a revisarla:
+
 <img width="923" height="631" alt="walking3" src="https://github.com/user-attachments/assets/f9aba068-3f45-4f92-bf40-4b7435e2c626" />
 
 <img width="1220" height="608" alt="walking4" src="https://github.com/user-attachments/assets/3ab84004-4344-4a46-9d8f-0fe70ba05c26" />
 
+Vemos que no dice "Sobrevive si puedes", no encontramos nada interesante, por lo tanto, procederemos a revisar el código fuente con CTRL + U, al final, vemos un directorio llamado /hidden/.shell.php
+
 <img width="1241" height="382" alt="walking5" src="https://github.com/user-attachments/assets/37c61c72-7dc5-4e79-af2e-d622140edcf6" />
+
+Por lo cual, en este punto procederemos a realizar fuzzing parámetros para concatenar detrás del signo ?, algo como php?FUZZ=id, esto con el fin de lograr un inyectar comandos a nivel de sistema, esto con el siguiente comando:
 
 <img width="1244" height="573" alt="walking6" src="https://github.com/user-attachments/assets/cb9c0240-ab22-4b6a-bdbd-865f719f9b7f" />
 
