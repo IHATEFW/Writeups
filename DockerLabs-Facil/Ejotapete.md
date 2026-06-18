@@ -48,7 +48,9 @@ Pero vemos que no se puede ejecutar ya que nos falta la gema highline, vamos a p
 
 <img width="1157" height="335" alt="ejota10" src="https://github.com/user-attachments/assets/12b42ebd-a280-4a24-90ff-be4a2ecc4d1d" />
 
-Ahora que ya tenemos todo OK, procedemos a lanzar el script y ¡Ganamos acceso a la máquina víctima!, pero nos llama la atencion que se está haciendo referencia a shell.php, donde podemos utilizar el parámetro "c" para lanzar la petición, esto mediante la URL.
+## 💣 EXPLOTACIÓN
+
+Ahora que ya tenemos todo OK, procedemos a lanzar el script y ¡Ganamos acceso a la máquina víctima! 🔥, pero nos llama la atencion que se está haciendo referencia a shell.php, donde podemos utilizar el parámetro "c" para lanzar la petición, esto mediante la URL.
 
 <img width="1178" height="595" alt="ejota11" src="https://github.com/user-attachments/assets/e120d50b-cba1-4f0c-af38-b405187537a4" />
 
@@ -75,6 +77,8 @@ export TERM=xterm && export SHELL=bash
 stty rows 50 columns 236
 ```
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
 Ya con la tty estable, vamos a revisar el archivo /etc/passwd para ver si existen más usuarios en la máquina y vemos el usuario "ballenita", por lo tanto, tendremos que pivotar a dicho usuario.
 
 <img width="673" height="467" alt="ejota15" src="https://github.com/user-attachments/assets/04e6372b-06f5-4877-a2a0-ce5fd34028bf" />
@@ -85,7 +89,7 @@ Revisamos todos los archivos que contenía el drupal, pero no encontramos nada, 
 find / -iname "settings.php" 2>/dev/null
 ```
 
-Encontramos el archivo y lo miramos, ¡Encontramos las credenciales de ballenita!.
+Encontramos el archivo y lo miramos, ¡Encontramos las credenciales de ballenita! 🔥.
 
 <img width="989" height="461" alt="ejota16" src="https://github.com/user-attachments/assets/f4f7637e-ff61-4c97-8494-214c0280ab8e" />
 
@@ -101,8 +105,6 @@ Ahora utilizaremos el binario /bin/grep para leer dicho archivo, para eso nos di
 
 <img width="1166" height="558" alt="ejota19" src="https://github.com/user-attachments/assets/e5c865a9-8c2f-4291-ad1a-cfb9013a4c38" />
 
+Lo lanzamos con el usuario root y podemos leer una posible password, probamos subir a root y efectivamente podemos, máquina hackeada 🔥. .
+
 <img width="662" height="407" alt="ejota20" src="https://github.com/user-attachments/assets/8a38deb3-46a2-4bbe-928a-15b25c9e7244" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
