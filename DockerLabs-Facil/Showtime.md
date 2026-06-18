@@ -11,6 +11,8 @@
 
 <img width="876" height="629" alt="show3" src="https://github.com/user-attachments/assets/b5b80feb-4108-4eba-af40-f3031a77765f" />
 
+<img width="1307" height="621" alt="show4" src="https://github.com/user-attachments/assets/2d1670c3-8b65-43a0-b816-f4ad2fe21bf5" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
