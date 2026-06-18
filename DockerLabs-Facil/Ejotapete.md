@@ -10,6 +10,8 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que solo existe el puerto 80 abierto, correspondiente al servicio HTTP.
+
 <img width="772" height="519" alt="ejota2" src="https://github.com/user-attachments/assets/0ba0f0bc-7d42-4aa4-aa9f-c3454eb9de49" />
 
 <img width="812" height="638" alt="ejota3" src="https://github.com/user-attachments/assets/96ab42ba-c47e-499a-a450-4d5fdb9b8f4e" />
