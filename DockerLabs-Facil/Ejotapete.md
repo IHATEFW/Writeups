@@ -42,7 +42,13 @@ Lo descargamos con el comando searchsploit -m 44449.rb.
 
 <img width="823" height="342" alt="ejota9" src="https://github.com/user-attachments/assets/29df034e-e1ef-418e-b857-ad253ddbe52f" />
 
+Antes de ejecutarlo, vamos a revisar con el comando which ruby si efectivamente tenemos ruby instalado en la máquina, y efectivamente, ahora lo ejecutado con el siguiente comando
+
+Pero vemos que no se puede ejecutar ya que nos falta la gema highline, vamos a proceder a instalarla con el comando
+
 <img width="1157" height="335" alt="ejota10" src="https://github.com/user-attachments/assets/12b42ebd-a280-4a24-90ff-be4a2ecc4d1d" />
+
+Ahora que ya tenemos todo OK, procedemos a lanzar el script y ¡Ganamos acceso a la máquina víctima!, pero nos llama la atencion que se está haciendo referencia a shell.php, donde podemos utilizar el parámetro "c" para lanzar la petición, esto mediante la URL.
 
 <img width="1178" height="595" alt="ejota11" src="https://github.com/user-attachments/assets/e120d50b-cba1-4f0c-af38-b405187537a4" />
 
