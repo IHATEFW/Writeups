@@ -14,9 +14,15 @@ En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap
 
 <img width="772" height="519" alt="ejota2" src="https://github.com/user-attachments/assets/0ba0f0bc-7d42-4aa4-aa9f-c3454eb9de49" />
 
+Una vez que ya tenemos el puerto abierto, procederemos a realizar otro escaneo con nmap, pero esta vez un poco más exhaustivo, indicandole a nmap que nos encuentre la versión de dicho servicio HTTP y que nos arroje un conjunto básico de scripts de reconomiento, esto de la siguiente manera, una vez ejecutado, podemos visualizar el titulo de la página web, que dice "Forbidden" con código de estado 403, significa que no tenemos permisos para acceder a ella, vamos a verificarla.
+
 <img width="812" height="638" alt="ejota3" src="https://github.com/user-attachments/assets/96ab42ba-c47e-499a-a450-4d5fdb9b8f4e" />
 
+Efectivamente nos arroja el estado 403.
+
 <img width="828" height="406" alt="ejota4" src="https://github.com/user-attachments/assets/e6e99229-1a9c-4924-b5b1-e7c141683287" />
+
+Haremos fuerza bruta de directorios con la herramienta gobuster, esto para poder encontrar directorios ocultos que estén despues de la /, con el siguiente comando:
 
 <img width="1339" height="559" alt="ejota5" src="https://github.com/user-attachments/assets/3805b413-fc35-4e1d-97b4-5bdfbd538393" />
 
