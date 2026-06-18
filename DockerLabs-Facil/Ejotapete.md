@@ -52,9 +52,15 @@ Ahora que ya tenemos todo OK, procedemos a lanzar el script y ¡Ganamos acceso a
 
 <img width="1178" height="595" alt="ejota11" src="https://github.com/user-attachments/assets/e120d50b-cba1-4f0c-af38-b405187537a4" />
 
+En otra terminal procedemos a ponernos en escucha con la herramienta netcat por el puerto que queramos.
+
 <img width="513" height="233" alt="ejota12" src="https://github.com/user-attachments/assets/a24d4bb0-15f3-49c4-ae6c-6d8812dd01f5" />
 
+Y lanzamos la típica reverse shell mediante la URL utilizando el parámetro "c".
+
 <img width="843" height="182" alt="ejota13" src="https://github.com/user-attachments/assets/8c920171-bd57-4780-8485-05a95ba3f655" />
+
+Ahora si que estamos dentro de la máquina víctima.
 
 <img width="614" height="319" alt="ejota14" src="https://github.com/user-attachments/assets/b2029007-5eee-4af0-9e32-c303fd183ed7" />
 
