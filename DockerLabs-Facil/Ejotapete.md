@@ -85,7 +85,11 @@ Revisamos todos los archivos que contenía el drupal, pero no encontramos nada, 
 find / -iname "settings.php" 2>/dev/null
 ```
 
+Encontramos el archivo y lo miramos, ¡Encontramos las credenciales de ballenita!.
+
 <img width="989" height="461" alt="ejota16" src="https://github.com/user-attachments/assets/f4f7637e-ff61-4c97-8494-214c0280ab8e" />
+
+Ya como el usuario ballenita, daremos un sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algún binario, y efectivamente podemos ejecutar /bin/ls y /bin/grep
 
 <img width="857" height="258" alt="ejota17" src="https://github.com/user-attachments/assets/a7782ec3-2933-4523-8788-64a2d3064c60" />
 
