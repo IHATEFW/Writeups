@@ -93,7 +93,11 @@ Ya como el usuario ballenita, daremos un sudo -l para ver si tenemos privilegios
 
 <img width="857" height="258" alt="ejota17" src="https://github.com/user-attachments/assets/a7782ec3-2933-4523-8788-64a2d3064c60" />
 
+Listamos el directorio /root con /bin/ls y vemos un archivo llamado secretitomaximo.txt 
+
 <img width="774" height="280" alt="ejota18" src="https://github.com/user-attachments/assets/b1630f48-0f95-46a0-a977-a4679a179c43" />
+
+Ahora utilizaremos el binario /bin/grep para leer dicho archivo, para eso nos dirigiremos a la web gtfobins.org, donde filtraremos con grep y copiaremos el comando.
 
 <img width="1166" height="558" alt="ejota19" src="https://github.com/user-attachments/assets/e5c865a9-8c2f-4291-ad1a-cfb9013a4c38" />
 
