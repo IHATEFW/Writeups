@@ -34,9 +34,11 @@ Procedemos a revisar el c√≥digo fuente con CTRL + U, y encontramos que la versi√
 
 <img width="1346" height="560" alt="ejota7" src="https://github.com/user-attachments/assets/267eb941-4c20-441a-88a7-047e60d2ac2b" />
 
-En este punto procederemos a utilizar la base de datos de exploit-db para ver si existe algun exploit para Drupal 8, pero a nivel de terminal, esto con el comando searchsploit Drupal 8.
+En este punto procederemos a utilizar la base de datos de exploit-db para ver si existe algun exploit para Drupal 8, pero a nivel de terminal, esto con el comando searchsploit Drupal 8 y vemos que es vulnerable a un script de ruby, que permite explotar un "Remote Code Execution".
 
 <img width="1346" height="560" alt="ejota8" src="https://github.com/user-attachments/assets/99520ae1-8644-43b5-b663-a2c641fd0332" />
+
+Lo descargamos con el comando searchsploit -m 44449.rb.
 
 <img width="823" height="342" alt="ejota9" src="https://github.com/user-attachments/assets/29df034e-e1ef-418e-b857-ad253ddbe52f" />
 
