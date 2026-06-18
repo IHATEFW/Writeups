@@ -42,9 +42,17 @@ Lo descargamos con el comando searchsploit -m 44449.rb.
 
 <img width="823" height="342" alt="ejota9" src="https://github.com/user-attachments/assets/29df034e-e1ef-418e-b857-ad253ddbe52f" />
 
-Antes de ejecutarlo, vamos a revisar con el comando which ruby si efectivamente tenemos ruby instalado en la máquina, y efectivamente, ahora lo ejecutado con el siguiente comando
+Antes de ejecutarlo, vamos a revisar con el comando which ruby si efectivamente tenemos ruby instalado en la máquina, y efectivamente, ahora lo ejecutamos con el siguiente comando
+
+```bash
+sudo ruby 44449.rb http://172.17.0.2/drupal/
+```
 
 Pero vemos que no se puede ejecutar ya que nos falta la gema highline, vamos a proceder a instalarla con el comando
+
+```bash
+sudo gem install highline
+```
 
 <img width="1157" height="335" alt="ejota10" src="https://github.com/user-attachments/assets/12b42ebd-a280-4a24-90ff-be4a2ecc4d1d" />
 
