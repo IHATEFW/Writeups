@@ -64,6 +64,17 @@ Ahora si que estamos dentro de la máquina víctima.
 
 <img width="614" height="319" alt="ejota14" src="https://github.com/user-attachments/assets/b2029007-5eee-4af0-9e32-c303fd183ed7" />
 
+Procedemos a realizar el tratamiento de la tty con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+stty rows 50 columns 236
+```
+
 <img width="673" height="467" alt="ejota15" src="https://github.com/user-attachments/assets/04e6372b-06f5-4877-a2a0-ce5fd34028bf" />
 
 <img width="989" height="461" alt="ejota16" src="https://github.com/user-attachments/assets/f4f7637e-ff61-4c97-8494-214c0280ab8e" />
