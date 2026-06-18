@@ -28,9 +28,13 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 <img width="1157" height="335" alt="ejota10" src="https://github.com/user-attachments/assets/12b42ebd-a280-4a24-90ff-be4a2ecc4d1d" />
 
-<img width="1177" height="635" alt="ejota11" src="https://github.com/user-attachments/assets/97a1e91b-e81a-49ca-bda8-f8f058d8bc6c" />
+<img width="1178" height="595" alt="ejota11" src="https://github.com/user-attachments/assets/e120d50b-cba1-4f0c-af38-b405187537a4" />
 
 <img width="513" height="233" alt="ejota12" src="https://github.com/user-attachments/assets/a24d4bb0-15f3-49c4-ae6c-6d8812dd01f5" />
+
+<img width="843" height="182" alt="ejota13" src="https://github.com/user-attachments/assets/8c920171-bd57-4780-8485-05a95ba3f655" />
+
+<img width="614" height="319" alt="ejota14" src="https://github.com/user-attachments/assets/b2029007-5eee-4af0-9e32-c303fd183ed7" />
 
 ## 💣 EXPLOTACIÓN
 
