@@ -30,6 +30,8 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 <img width="1177" height="635" alt="ejota11" src="https://github.com/user-attachments/assets/97a1e91b-e81a-49ca-bda8-f8f058d8bc6c" />
 
+<img width="513" height="233" alt="ejota12" src="https://github.com/user-attachments/assets/a24d4bb0-15f3-49c4-ae6c-6d8812dd01f5" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
