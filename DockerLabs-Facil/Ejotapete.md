@@ -75,6 +75,8 @@ export TERM=xterm && export SHELL=bash
 stty rows 50 columns 236
 ```
 
+Ya con la tty estable, vamos a revisar el archivo /etc/passwd para ver si existen más usuarios en la máquina y vemos el usuario "ballenita", por lo tanto, tendremos que pivotar a dicho usuario.
+
 <img width="673" height="467" alt="ejota15" src="https://github.com/user-attachments/assets/04e6372b-06f5-4877-a2a0-ce5fd34028bf" />
 
 <img width="989" height="461" alt="ejota16" src="https://github.com/user-attachments/assets/f4f7637e-ff61-4c97-8494-214c0280ab8e" />
