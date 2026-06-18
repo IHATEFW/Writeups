@@ -1,4 +1,4 @@
-La máquina Ejotapete de la plafaforma DockerLabs.es
+La máquina Ejotapete de la plafaforma DockerLabs.es es una máquina de dificultad "Fácil", la cual nos enseña como explotar un CMS Drupal versión 8, para ganar acceso a la máquina víctima y luego por exponer passwords en archivos de configuración logramos pivotar al usuario root. .
 
 # EJOTAPETE
 
