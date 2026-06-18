@@ -10,6 +10,8 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+<img width="772" height="519" alt="ejota2" src="https://github.com/user-attachments/assets/0ba0f0bc-7d42-4aa4-aa9f-c3454eb9de49" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
