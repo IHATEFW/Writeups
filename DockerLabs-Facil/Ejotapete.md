@@ -79,6 +79,12 @@ Ya con la tty estable, vamos a revisar el archivo /etc/passwd para ver si existe
 
 <img width="673" height="467" alt="ejota15" src="https://github.com/user-attachments/assets/04e6372b-06f5-4877-a2a0-ce5fd34028bf" />
 
+Revisamos todos los archivos que contenía el drupal, pero no encontramos nada, por lo tanto, procedemos a buscar el archivo "settings.php" que casí siempre expone credenciales válidas, con el comando:
+
+```bash
+find / -iname "settings.php" 2>/dev/null
+```
+
 <img width="989" height="461" alt="ejota16" src="https://github.com/user-attachments/assets/f4f7637e-ff61-4c97-8494-214c0280ab8e" />
 
 <img width="857" height="258" alt="ejota17" src="https://github.com/user-attachments/assets/a7782ec3-2933-4523-8788-64a2d3064c60" />
