@@ -22,13 +22,19 @@ Efectivamente nos arroja el estado 403.
 
 <img width="828" height="406" alt="ejota4" src="https://github.com/user-attachments/assets/e6e99229-1a9c-4924-b5b1-e7c141683287" />
 
-Haremos fuerza bruta de directorios con la herramienta gobuster, esto para poder encontrar directorios ocultos que estén despues de la /, con el siguiente comando:
+Haremos fuerza bruta de directorios con la herramienta gobuster, esto para poder encontrar directorios ocultos que estén despues de la /, con el siguiente comando, una vez ejecutado, podemos visualizar un directorio llamado /drupal, esto significa que posiblemente estamos ante un CMS drupal, vamos a verificarlo.
 
 <img width="1339" height="559" alt="ejota5" src="https://github.com/user-attachments/assets/3805b413-fc35-4e1d-97b4-5bdfbd538393" />
 
+Dentro del directorio, podemos ver que efectivamente es la página por defecto de Drupal.
+
 <img width="1346" height="560" alt="ejota6" src="https://github.com/user-attachments/assets/2417f780-0675-4030-a48f-24aa644623d5" />
 
+Procedemos a revisar el código fuente con CTRL + U, y encontramos que la versión es Drupal 8.
+
 <img width="1346" height="560" alt="ejota7" src="https://github.com/user-attachments/assets/267eb941-4c20-441a-88a7-047e60d2ac2b" />
+
+En este punto procederemos a utilizar la base de datos de exploit-db para ver si existe algun exploit para Drupal 8, pero a nivel de terminal, esto con el comando searchsploit Drupal 8.
 
 <img width="1346" height="560" alt="ejota8" src="https://github.com/user-attachments/assets/99520ae1-8644-43b5-b663-a2c641fd0332" />
 
