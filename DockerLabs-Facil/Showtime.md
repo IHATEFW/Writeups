@@ -35,9 +35,11 @@ En este punto, procederemos a activar nuestro foxyproxy y abrir burpsuite en seg
 
 <img width="1146" height="582" alt="show8" src="https://github.com/user-attachments/assets/b99bee5a-16d1-44ac-bdf8-a4ff6b0851da" />
 
-Nos copiamos toda la petición para proceder a guardarla en un archivo .txt
+Nos copiamos toda la petición para proceder a guardarla en un archivo .txt, de la siguiente manera:
 
 <img width="721" height="461" alt="show9" src="https://github.com/user-attachments/assets/e4b6737f-91a9-4b65-8040-f1ce60509fc6" />
+
+Ahora utilizaremos la herramienta sqlmap, para intentar enumerar la base de datos (las tablas).
 
 <img width="876" height="615" alt="show10" src="https://github.com/user-attachments/assets/56952f8c-1e16-44c1-85ae-dbe8cab49b67" />
 
