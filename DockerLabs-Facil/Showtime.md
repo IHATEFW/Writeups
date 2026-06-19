@@ -9,6 +9,8 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+Como primer paso para compremeter esta máquina, procederemos a realizar un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos de la máquina víctima, esto de la siguiente manera, una vez ejecutado el comando, podemos visualizar que existen dos puertos abiertos, el 22 y el 80, correspondientes a los servicios SSH y HTTP.
+
 <img width="766" height="545" alt="show2" src="https://github.com/user-attachments/assets/5ac5c813-266c-4c81-907e-4fb3435881cd" />
 
 <img width="876" height="629" alt="show3" src="https://github.com/user-attachments/assets/b5b80feb-4108-4eba-af40-f3031a77765f" />
