@@ -39,6 +39,28 @@ Una vez ya tenemos identificado el único puerto abierto, seguiremos enumerando 
 
 <img width="1346" height="631" alt="pressenter14" src="https://github.com/user-attachments/assets/a5a41b62-01b6-4189-8c7e-36b21c63e5d4" />
 
+<img width="1346" height="631" alt="pressenter15" src="https://github.com/user-attachments/assets/c72d0af0-f5ae-4d9d-a806-0a8cb526f33b" />
+
+<img width="1235" height="631" alt="pressenter16" src="https://github.com/user-attachments/assets/7df76b75-b061-4f20-8a73-bac2ea37de79" />
+
+<img width="784" height="330" alt="pressenter17" src="https://github.com/user-attachments/assets/d3f2c597-6e5a-47cf-98bc-05f2522b2e5c" />
+
+<img width="785" height="250" alt="pressenter18" src="https://github.com/user-attachments/assets/818ae73b-0777-4bba-a9da-c2ffc65343b6" />
+
+<img width="616" height="539" alt="pressenter19" src="https://github.com/user-attachments/assets/33a10ba8-e29a-44f6-b6c7-5da3a795685b" />
+
+<img width="616" height="539" alt="pressenter20" src="https://github.com/user-attachments/assets/e93d30e5-dd50-4996-b191-aefe3c12ed1d" />
+
+<img width="633" height="388" alt="pressenter21" src="https://github.com/user-attachments/assets/c5c8f5d1-1bc2-4485-9275-06924f5574a3" />
+
+<img width="612" height="393" alt="pressenter22" src="https://github.com/user-attachments/assets/fa2e0e54-a6ef-49f4-8b76-1bd6b680c150" />
+
+<img width="526" height="137" alt="pressenter23" src="https://github.com/user-attachments/assets/08095f11-9d8c-416d-9ced-787429aa97e7" />
+
+<img width="1026" height="182" alt="pressenter24" src="https://github.com/user-attachments/assets/572ba525-6a36-4d02-b212-cafe9b827bf5" />
+
+<img width="519" height="496" alt="pressenter25" src="https://github.com/user-attachments/assets/eb9fa2c3-5733-4d44-b6f9-dd19673d9a27" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
