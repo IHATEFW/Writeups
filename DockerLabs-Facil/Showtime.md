@@ -97,7 +97,13 @@ Le daremos permisos de ejecución con chmod 777.
 
 <img width="1017" height="631" alt="show22" src="https://github.com/user-attachments/assets/0e6b4ee0-ecfb-4a5e-a8b0-7a365a796291" />
 
+La ejecutamos con el siguiente comando:
+
+Y encontramos la contraseña válida para el usuario joe, entramos y damos el comando sudo -l para ver si tenemos permisos a nivel de sudoers y vemos que efectivamente podemos ejecutar el binario /bin/posh como el usuario luciano.
+
 <img width="535" height="217" alt="show23" src="https://github.com/user-attachments/assets/c200c6b5-6a7b-449f-a00b-8e35186f59e5" />
+
+Ejecutamos sudo -u luciano posh y ya somos luciano, hacemos lo mismo y vemos que podemos ejecutar un script que se encuentra en el directorio /home/luciano
 
 <img width="1026" height="338" alt="show24" src="https://github.com/user-attachments/assets/93cc1fe2-6080-4af5-bd3b-01e97200d489" />
 
