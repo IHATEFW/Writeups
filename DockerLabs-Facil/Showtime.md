@@ -73,6 +73,8 @@ reset xterm
 export TERM=xterm && export SHELL=bash
 ```
 
+Ya con la tty más estable, procederemos a leer el archivo /etc/passwd para ver si existen más usuarios dentro del sistema y vemos que existen los usuarios "joe" y "luciano".
+
 <img width="734" height="573" alt="show17" src="https://github.com/user-attachments/assets/b3573d84-9630-4051-a463-ed6ad0c966a9" />
 
 <img width="603" height="631" alt="show18" src="https://github.com/user-attachments/assets/c5d65429-a29f-47e0-a02a-8de322c8a201" />
