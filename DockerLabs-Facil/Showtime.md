@@ -93,6 +93,8 @@ Descargaremos el script .sh, lo pondremos en formato "Raw" y nos traeremos la he
 
 <img width="856" height="631" alt="show21" src="https://github.com/user-attachments/assets/395dc7f9-32ce-414d-8a70-dbf8f901ae49" />
 
+Le daremos permisos de ejecución con chmod 777.
+
 <img width="1017" height="631" alt="show22" src="https://github.com/user-attachments/assets/0e6b4ee0-ecfb-4a5e-a8b0-7a365a796291" />
 
 <img width="535" height="217" alt="show23" src="https://github.com/user-attachments/assets/c200c6b5-6a7b-449f-a00b-8e35186f59e5" />
