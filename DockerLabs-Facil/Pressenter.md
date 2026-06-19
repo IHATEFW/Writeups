@@ -1,3 +1,4 @@
+<img width="747" height="616" alt="pressenter1" src="https://github.com/user-attachments/assets/b0691f01-081f-46f5-a8eb-74dc1a2d7ff7" />
 
 # LOS 40 LADRONES
 
