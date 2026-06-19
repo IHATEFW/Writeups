@@ -25,7 +25,7 @@ Una vez dentro del panel de login, como no tenemos credenciales válidas, probar
 
 <img width="1313" height="611" alt="show5" src="https://github.com/user-attachments/assets/03deb10e-fca4-4603-a8dc-953dd00ff569" />
 
-Vemos que estamos dentro, por lo tanto, es vulnerable a un SQLi
+Vemos que estamos dentro, por lo tanto, es vulnerable a un SQLi, esta técnica permite validar como OK cualquier entrada en dicho panel, logrando acceso.
 
 <img width="1159" height="541" alt="show6" src="https://github.com/user-attachments/assets/8a29a148-cf78-4343-8370-f52da024b51c" />
 
