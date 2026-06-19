@@ -77,11 +77,19 @@ Ya con la tty más estable, procederemos a leer el archivo /etc/passwd para ver 
 
 <img width="734" height="573" alt="show17" src="https://github.com/user-attachments/assets/b3573d84-9630-4051-a463-ed6ad0c966a9" />
 
+Nos dirigiremos al directorio /tmp y con ls -ltra vemos que existe un archivo llamado .hidden_text.txt, donde se exponen credenciales válidas pero en mayusculas.
+
 <img width="603" height="631" alt="show18" src="https://github.com/user-attachments/assets/c5d65429-a29f-47e0-a02a-8de322c8a201" />
+
+Procederemos a ponerlas en minusculas con el siguiente comando:
 
 <img width="777" height="631" alt="show19" src="https://github.com/user-attachments/assets/6b6762b2-3138-4d37-8423-6b0e5d25d72b" />
 
+Ahora vamos a realizar fuerza bruta con la herramienta Sudo_BruteForce del pinguino de Mario (Mario Fernández), la que nos permitirá saber cual es la contraseña válida para joe o luciano.
+
 <img width="856" height="631" alt="show20" src="https://github.com/user-attachments/assets/759f23e3-eeff-4bc2-9965-499d4ca5f864" />
+
+Descargaremos el script .sh, lo pondremos en formato "Raw" y nos traeremos la herramienta con el siguiente comando
 
 <img width="856" height="631" alt="show21" src="https://github.com/user-attachments/assets/395dc7f9-32ce-414d-8a70-dbf8f901ae49" />
 
