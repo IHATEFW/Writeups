@@ -17,9 +17,15 @@ Una vez ya sabemos los puertos que existen abiertos, procederemos a seguir enume
 
 <img width="876" height="629" alt="show3" src="https://github.com/user-attachments/assets/b5b80feb-4108-4eba-af40-f3031a77765f" />
 
+Es una web que hace referencia a una especie de "casino", donde tiene un panel de Login, vamos abrirlo.
+
 <img width="1307" height="621" alt="show4" src="https://github.com/user-attachments/assets/2d1670c3-8b65-43a0-b816-f4ad2fe21bf5" />
 
+Una vez dentro del panel de login, como no tenemos credenciales válidas, probaremos a realizar una inyección SQL, con el típico comando admin'OR 1=1;-- -
+
 <img width="1313" height="611" alt="show5" src="https://github.com/user-attachments/assets/03deb10e-fca4-4603-a8dc-953dd00ff569" />
+
+Vemos que estamos dentro, por lo tanto, es vulnerable a un SQLi
 
 <img width="1159" height="541" alt="show6" src="https://github.com/user-attachments/assets/8a29a148-cf78-4343-8370-f52da024b51c" />
 
