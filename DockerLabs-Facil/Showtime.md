@@ -103,9 +103,10 @@ Y encontramos la contraseña válida para el usuario joe, entramos y damos el co
 
 <img width="535" height="217" alt="show23" src="https://github.com/user-attachments/assets/c200c6b5-6a7b-449f-a00b-8e35186f59e5" />
 
+<img width="1026" height="338" alt="show24" src="https://github.com/user-attachments/assets/93cc1fe2-6080-4af5-bd3b-01e97200d489" />
+
 Ejecutamos sudo -u luciano posh y ya somos luciano, hacemos lo mismo y vemos que podemos ejecutar un script que se encuentra en el directorio /home/luciano
 
-<img width="1026" height="338" alt="show24" src="https://github.com/user-attachments/assets/93cc1fe2-6080-4af5-bd3b-01e97200d489" />
 
 <img width="1024" height="146" alt="show25" src="https://github.com/user-attachments/assets/5749c507-1246-490a-ad62-d25df246a159" />
 
