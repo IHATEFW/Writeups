@@ -1,3 +1,4 @@
+La máquina Showtime de la plataforma DockerLabs.es, es una máquina de dificultad Fácil, la cual nos enseña como un login mal configurado nos permite realizar una inyección SQL, logrando dumpear toda la base de datos y encontrar credenciales válidas, para posteriormente ganar acceso a la máquina víctima, finalmente se hace pivoting a root con permisos a nivel de sudoers. .
 
 # SHOWTIME
 
