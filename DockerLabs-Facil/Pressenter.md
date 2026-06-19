@@ -37,6 +37,8 @@ Una vez ya tenemos identificado el único puerto abierto, seguiremos enumerando 
 
 <img width="1346" height="631" alt="pressenter13" src="https://github.com/user-attachments/assets/fbdf8d09-ae15-4d76-a2c0-7cb210b752dc" />
 
+<img width="1346" height="631" alt="pressenter14" src="https://github.com/user-attachments/assets/a5a41b62-01b6-4189-8c7e-36b21c63e5d4" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
