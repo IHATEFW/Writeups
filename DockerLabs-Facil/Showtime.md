@@ -13,6 +13,8 @@ Como primer paso para compremeter esta máquina, procederemos a realizar un esca
 
 <img width="766" height="545" alt="show2" src="https://github.com/user-attachments/assets/5ac5c813-266c-4c81-907e-4fb3435881cd" />
 
+Una vez ya sabemos los puertos que existen abiertos, procederemos a seguir enumerando con la herramienta nmap, pero esta vez con un escaneo más exhaustivo, le diremos a nmap que nos encuentre la versión de dichos servicios y además, que nos arroje un conjunto básico de scripts de reconomiento, esto de la siguiente manera, una vez ejecutado, podemos visualizar que el titulo de la página web es "cs", procederemos a revisarla.
+
 <img width="876" height="629" alt="show3" src="https://github.com/user-attachments/assets/b5b80feb-4108-4eba-af40-f3031a77765f" />
 
 <img width="1307" height="621" alt="show4" src="https://github.com/user-attachments/assets/2d1670c3-8b65-43a0-b816-f4ad2fe21bf5" />
