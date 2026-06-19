@@ -39,11 +39,13 @@ Nos copiamos toda la petición para proceder a guardarla en un archivo .txt, de 
 
 <img width="721" height="461" alt="show9" src="https://github.com/user-attachments/assets/e4b6737f-91a9-4b65-8040-f1ce60509fc6" />
 
-Ahora utilizaremos la herramienta sqlmap, para intentar enumerar la base de datos (las tablas).
+Ahora utilizaremos la herramienta sqlmap, para intentar enumerar la base de datos (las tablas), con el siguiente comando:
 
 <img width="876" height="615" alt="show10" src="https://github.com/user-attachments/assets/56952f8c-1e16-44c1-85ae-dbe8cab49b67" />
 
 <img width="876" height="615" alt="show11" src="https://github.com/user-attachments/assets/ce53d4de-b9bb-4acf-96d5-7707c13014da" />
+
+Vemos que se enumeran las tablas, ahora seguiremos utilizando la herramienta sqlmap, pero esta vez para explotar y dumpearla para que nos arroje usuarios y contraseñas válidas.
 
 <img width="876" height="615" alt="show12" src="https://github.com/user-attachments/assets/14737cb0-9923-428f-ac72-6ceadb6cb655" />
 
