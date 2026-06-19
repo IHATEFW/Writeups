@@ -29,9 +29,13 @@ Vemos que estamos dentro, por lo tanto, es vulnerable a un SQLi, esta técnica p
 
 <img width="1159" height="541" alt="show6" src="https://github.com/user-attachments/assets/8a29a148-cf78-4343-8370-f52da024b51c" />
 
+En este punto, procederemos a activar nuestro foxyproxy y abrir burpsuite en segundo plano, para así volver a lanzar esa petición y así poder ver como se está tramitando.
+
 <img width="1330" height="580" alt="show7" src="https://github.com/user-attachments/assets/c8de1c3f-d590-42b7-ad92-98ed8545e054" />
 
 <img width="1146" height="582" alt="show8" src="https://github.com/user-attachments/assets/b99bee5a-16d1-44ac-bdf8-a4ff6b0851da" />
+
+Nos copiamos toda la petición para proceder a guardarla en un archivo .txt
 
 <img width="721" height="461" alt="show9" src="https://github.com/user-attachments/assets/e4b6737f-91a9-4b65-8040-f1ce60509fc6" />
 
