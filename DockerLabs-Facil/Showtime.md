@@ -41,11 +41,21 @@ Nos copiamos toda la petición para proceder a guardarla en un archivo .txt, de 
 
 Ahora utilizaremos la herramienta sqlmap, para intentar enumerar la base de datos (las tablas), con el siguiente comando:
 
+```bash
+sqlmap -r peticion.txt --batch --dbs
+```
+
 <img width="876" height="615" alt="show10" src="https://github.com/user-attachments/assets/56952f8c-1e16-44c1-85ae-dbe8cab49b67" />
 
 <img width="876" height="615" alt="show11" src="https://github.com/user-attachments/assets/ce53d4de-b9bb-4acf-96d5-7707c13014da" />
 
+## 💣 EXPLOTACIÓN
+
 Vemos que se enumeran las tablas, ahora seguiremos utilizando la herramienta sqlmap, pero esta vez para explotar y dumpearla para que nos arroje usuarios y contraseñas válidas.
+
+```bash
+sqlmap -r peticion.txt --batch --dump
+```
 
 <img width="876" height="615" alt="show12" src="https://github.com/user-attachments/assets/14737cb0-9923-428f-ac72-6ceadb6cb655" />
 
@@ -59,7 +69,7 @@ Procederemos a inyectar código python para lanzarnos una reverse shell a nuestr
 
 <img width="883" height="622" alt="show15" src="https://github.com/user-attachments/assets/4ca63db1-65be-47ee-a115-6803a083d01f" />
 
-Nos ponemos en escucha con la herramienta netcat por el puerto 443, lanzamos el comando y ¡Ganamos acceso a la máquina víctima!
+Nos ponemos en escucha con la herramienta netcat por el puerto 443, lanzamos el comando y ¡Ganamos acceso a la máquina víctima! 🔥
 
 <img width="743" height="372" alt="show16" src="https://github.com/user-attachments/assets/757b82ce-3540-49de-99be-6a410e9b4dc9" />
 
@@ -73,6 +83,8 @@ reset xterm
 export TERM=xterm && export SHELL=bash
 ```
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
 Ya con la tty más estable, procederemos a leer el archivo /etc/passwd para ver si existen más usuarios dentro del sistema y vemos que existen los usuarios "joe" y "luciano".
 
 <img width="734" height="573" alt="show17" src="https://github.com/user-attachments/assets/b3573d84-9630-4051-a463-ed6ad0c966a9" />
@@ -83,13 +95,17 @@ Nos dirigiremos al directorio /tmp y con ls -ltra vemos que existe un archivo ll
 
 Procederemos a ponerlas en minusculas con el siguiente comando:
 
+```bash
+tr '[:upper:]' '[:lower:]' < .hidden_text.txt > nuevodiccionario.txt
+```
+
 <img width="777" height="631" alt="show19" src="https://github.com/user-attachments/assets/6b6762b2-3138-4d37-8423-6b0e5d25d72b" />
 
 Ahora vamos a realizar fuerza bruta con la herramienta Sudo_BruteForce del pinguino de Mario (Mario Fernández), la que nos permitirá saber cual es la contraseña válida para joe o luciano.
 
 <img width="856" height="631" alt="show20" src="https://github.com/user-attachments/assets/759f23e3-eeff-4bc2-9965-499d4ca5f864" />
 
-Descargaremos el script .sh, lo pondremos en formato "Raw" y nos traeremos la herramienta con el siguiente comando
+Descargaremos el script .sh, lo pondremos en formato "Raw" y nos traeremos la herramienta con el comando wget + la URL.
 
 <img width="856" height="631" alt="show21" src="https://github.com/user-attachments/assets/395dc7f9-32ce-414d-8a70-dbf8f901ae49" />
 
@@ -97,7 +113,11 @@ Le daremos permisos de ejecución con chmod 777.
 
 <img width="1017" height="631" alt="show22" src="https://github.com/user-attachments/assets/0e6b4ee0-ecfb-4a5e-a8b0-7a365a796291" />
 
-La ejecutamos con el siguiente comando:
+La ejecutamos con el siguiente comando
+
+```bash
+bash Linux-Su-Force.sh joe nuevodiccionario.txt
+```
 
 Y encontramos la contraseña válida para el usuario joe, entramos y damos el comando sudo -l para ver si tenemos permisos a nivel de sudoers y vemos que efectivamente podemos ejecutar el binario /bin/posh como el usuario luciano.
 
@@ -105,13 +125,10 @@ Y encontramos la contraseña válida para el usuario joe, entramos y damos el co
 
 <img width="1026" height="338" alt="show24" src="https://github.com/user-attachments/assets/93cc1fe2-6080-4af5-bd3b-01e97200d489" />
 
-Ejecutamos sudo -u luciano posh y ya somos luciano, hacemos lo mismo y vemos que podemos ejecutar un script que se encuentra en el directorio /home/luciano
-
+Ejecutamos sudo -u luciano posh y ya somos luciano, hacemos lo mismo y vemos que podemos ejecutar un script llamado script.sh que se encuentra en el directorio /home/luciano.
 
 <img width="1024" height="146" alt="show25" src="https://github.com/user-attachments/assets/5749c507-1246-490a-ad62-d25df246a159" />
 
+Lo revisamos y modificamos su contenido, ingresando el comando chmod u+s /bin/bash para dejar dicho binario como SUID y poderlo ejecutar como root, lanzamos el script, damos bash -p y ¡Ya somos root!, máquina hackeada 🔥 . .
+
 <img width="588" height="425" alt="show26" src="https://github.com/user-attachments/assets/fef02d0f-88fd-45f0-bd2d-0f7fc4461126" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
