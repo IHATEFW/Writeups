@@ -55,7 +55,11 @@ Vemos que nos arrojó credenciales válidas, probaremos ingresar al anterior pan
 
 <img width="883" height="622" alt="show14" src="https://github.com/user-attachments/assets/c8f84454-4cad-4f6c-9561-1d2c4965d3db" />
 
+Procederemos a inyectar código python para lanzarnos una reverse shell a nuestra máquina atacante.
+
 <img width="883" height="622" alt="show15" src="https://github.com/user-attachments/assets/4ca63db1-65be-47ee-a115-6803a083d01f" />
+
+Nos ponemos en escucha con la herramienta netcat por el puerto 443, lanzamos el comando y ¡Ganamos acceso a la máquina víctima!
 
 <img width="743" height="372" alt="show16" src="https://github.com/user-attachments/assets/757b82ce-3540-49de-99be-6a410e9b4dc9" />
 
