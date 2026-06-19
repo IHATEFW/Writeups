@@ -51,6 +51,8 @@ Vemos que se enumeran las tablas, ahora seguiremos utilizando la herramienta sql
 
 <img width="883" height="622" alt="show13" src="https://github.com/user-attachments/assets/49c9141b-c40c-4111-b350-3f50ae418b2b" />
 
+Vemos que nos arrojó credenciales válidas, probaremos ingresar al anterior panel de login con los 3 usuarios, pero solo nos muestra información importante el usuario "joe", que es un panel de administración que nos permite ejecutar código python.
+
 <img width="883" height="622" alt="show14" src="https://github.com/user-attachments/assets/c8f84454-4cad-4f6c-9561-1d2c4965d3db" />
 
 <img width="883" height="622" alt="show15" src="https://github.com/user-attachments/assets/4ca63db1-65be-47ee-a115-6803a083d01f" />
