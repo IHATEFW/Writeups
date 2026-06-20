@@ -19,9 +19,11 @@ Una vez ya tenemos identificado el único puerto abierto, seguiremos enumerando 
 
 <img width="1243" height="636" alt="pressenter4" src="https://github.com/user-attachments/assets/2bd43a0c-3d45-4d2a-a71c-a865e2666bcf" />
 
-Ya dentro de la web, podemos visualizar que esteticamente no es muy amigable, por lo tanto, vamos a revisar el código fuente con CTRL + U.
+Ya dentro de la web, podemos visualizar que esteticamente no es muy amigable, por lo tanto, vamos a revisar el código fuente con CTRL + U y nos damos cuenta que hace referencia a un dominio "pressenter.hl", por lo tanto, lo vamos agregar a nuestro archivo /etc/hosts para ver si la web responde distinto.
 
 <img width="1229" height="279" alt="pressenter5" src="https://github.com/user-attachments/assets/d6416418-2889-4685-898d-37b1015e2636" />
+
+Una vez ya agregado el dominio con la ip a dicho archivo
 
 <img width="786" height="330" alt="pressenter6" src="https://github.com/user-attachments/assets/ff960d10-0e5d-462c-81ee-7285acdd1a61" />
 
