@@ -67,7 +67,11 @@ Se nos ocurre dirigirnos a la web revshells.com, donde filtraremos por "php" y l
 
 <img width="1235" height="631" alt="pressenter16" src="https://github.com/user-attachments/assets/7df76b75-b061-4f20-8a73-bac2ea37de79" />
 
+La copiamos y la pegamos de la siguiente manera en el archivo, lo guardamos.
+
 <img width="784" height="330" alt="pressenter17" src="https://github.com/user-attachments/assets/d3f2c597-6e5a-47cf-98bc-05f2522b2e5c" />
+
+Nos ponemos en escucha en una terminal con la herramienta netcat por el puerto 443, volvemos al dashboard y activamos el plugin, y ¡Ganamos acceso a la máquina víctima!
 
 <img width="785" height="250" alt="pressenter18" src="https://github.com/user-attachments/assets/818ae73b-0777-4bba-a9da-c2ffc65343b6" />
 
