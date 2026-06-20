@@ -31,9 +31,11 @@ Y vemos que efectivamente la web se ve mucho más bonita y nos muestra la inform
 
 <img width="1223" height="628" alt="pressenter7" src="https://github.com/user-attachments/assets/3155b533-59af-4367-90bb-7440e0d08b76" />
 
-Damos nuevamente CTRL + U, y filtramos por la palabra 'generator', donde nos muestra la versión de dicho WordPress
+Damos nuevamente CTRL + U, y filtramos por la palabra 'generator', donde nos muestra la versión de dicho WordPress que es la 6.6.1.
 
 <img width="1115" height="573" alt="pressenter8" src="https://github.com/user-attachments/assets/d6e65442-806d-4da8-9317-fbd2479f328a" />
+
+En este punto, ya sabemos que nos estamos enfrentando a dicho CMS, por lo tanto, existe una herramienta que viene preinstalada en parrot o kali, que se llama wpscan, la cual nos permite enumerar dicho WordPress, nos enumera usuarios, contraseñas válidas, plugins, la versión, etc, vamos a ocuparla con el siguiente comando:
 
 <img width="752" height="631" alt="pressenter9" src="https://github.com/user-attachments/assets/30417a55-ebce-4919-b2ac-bab28ee7b9cb" />
 
