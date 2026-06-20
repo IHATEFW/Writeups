@@ -75,7 +75,7 @@ Nos ponemos en escucha en una terminal con la herramienta netcat por el puerto 4
 
 <img width="785" height="250" alt="pressenter18" src="https://github.com/user-attachments/assets/818ae73b-0777-4bba-a9da-c2ffc65343b6" />
 
-Ya dentro de la máquina víctima, vamos a realizar el tratamiento de la tty.
+Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
 
 ```bash
 script /dev/null -c bash
@@ -84,8 +84,11 @@ stty raw -echo;fg
 reset xterm
 export TERM=xterm && export SHELL=bash
 ```
+Ya con la tty estable, leeremos el archivo llamado wp-config.php.
 
 <img width="616" height="539" alt="pressenter19" src="https://github.com/user-attachments/assets/33a10ba8-e29a-44f6-b6c7-5da3a795685b" />
+
+En el cual encontramos el usuario admin con su contraseña de mysql.
 
 <img width="616" height="539" alt="pressenter20" src="https://github.com/user-attachments/assets/e93d30e5-dd50-4996-b191-aefe3c12ed1d" />
 
