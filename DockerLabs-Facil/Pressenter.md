@@ -19,6 +19,8 @@ Una vez ya tenemos identificado el único puerto abierto, seguiremos enumerando 
 
 <img width="1243" height="636" alt="pressenter4" src="https://github.com/user-attachments/assets/2bd43a0c-3d45-4d2a-a71c-a865e2666bcf" />
 
+Ya dentro de la web, podemos visualizar que esteticamente no es muy amigable, por lo tanto, vamos a revisar el código fuente con CTRL + U.
+
 <img width="1229" height="279" alt="pressenter5" src="https://github.com/user-attachments/assets/d6416418-2889-4685-898d-37b1015e2636" />
 
 <img width="786" height="330" alt="pressenter6" src="https://github.com/user-attachments/assets/ff960d10-0e5d-462c-81ee-7285acdd1a61" />
