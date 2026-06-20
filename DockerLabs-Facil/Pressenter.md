@@ -47,6 +47,8 @@ Ya teniendo en nuestras manos usuarios válidos, vamos a seguir enumerando con l
 
 <img width="752" height="631" alt="pressenter11" src="https://github.com/user-attachments/assets/5e0b52f4-b169-4b2e-917d-32b4e0c1c91d" />
 
+¡Y efectivamente nos encuentra la contraseña del usuario pressi!, vamos a probarla en el login que existe en la dirección /wp-login.php, que es un panel de autenticación para ingresar al dashboard.
+
 <img width="752" height="631" alt="pressenter12" src="https://github.com/user-attachments/assets/b3fe5989-2ec0-488b-a636-b0c3aec7f6ee" />
 
 <img width="1346" height="631" alt="pressenter13" src="https://github.com/user-attachments/assets/fbdf8d09-ae15-4d76-a2c0-7cb210b752dc" />
