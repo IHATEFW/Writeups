@@ -51,11 +51,19 @@ Ya teniendo en nuestras manos usuarios válidos, vamos a seguir enumerando con l
 
 <img width="752" height="631" alt="pressenter12" src="https://github.com/user-attachments/assets/b3fe5989-2ec0-488b-a636-b0c3aec7f6ee" />
 
+Es la contraseña correcta y ganamos acceso al dashboard de WordPress.
+
 <img width="1346" height="631" alt="pressenter13" src="https://github.com/user-attachments/assets/fbdf8d09-ae15-4d76-a2c0-7cb210b752dc" />
+
+Nos dirigimos al apartado donde dice "Plugins" y vemos que se encuentra el plugin "Hello Dolly", que actualmente no está activado.
 
 <img width="1346" height="631" alt="pressenter14" src="https://github.com/user-attachments/assets/a5a41b62-01b6-4189-8c7e-36b21c63e5d4" />
 
+Ahora nos vamos al apartado donde dice "Herramienta" y accedemos a editar los plugins instalados, dicho plugin mencionado anteriormente tiene un archivo llamado hello.php, que es básicamente puro código php.
+
 <img width="1346" height="631" alt="pressenter15" src="https://github.com/user-attachments/assets/c72d0af0-f5ae-4d9d-a806-0a8cb526f33b" />
+
+Se nos ocurre dirigirnos a la web revshells.com, donde filtraremos por "php" y la última reverse shell vamos a escoger. 
 
 <img width="1235" height="631" alt="pressenter16" src="https://github.com/user-attachments/assets/7df76b75-b061-4f20-8a73-bac2ea37de79" />
 
