@@ -92,6 +92,18 @@ En el cual encontramos el usuario admin con su contraseña de mysql.
 
 <img width="616" height="539" alt="pressenter20" src="https://github.com/user-attachments/assets/e93d30e5-dd50-4996-b191-aefe3c12ed1d" />
 
+Ingresaremos con el siguiente comando:
+
+```bash
+mysql -u admin -p
+```
+
+Y listaremos las bases de datos con el comando:
+
+```bash
+SHOW DATABASES;
+```
+
 <img width="633" height="388" alt="pressenter21" src="https://github.com/user-attachments/assets/c5c8f5d1-1bc2-4485-9275-06924f5574a3" />
 
 <img width="612" height="393" alt="pressenter22" src="https://github.com/user-attachments/assets/fa2e0e54-a6ef-49f4-8b76-1bd6b680c150" />
