@@ -71,7 +71,7 @@ La copiamos y la pegamos de la siguiente manera en el archivo, lo guardamos.
 
 <img width="784" height="330" alt="pressenter17" src="https://github.com/user-attachments/assets/d3f2c597-6e5a-47cf-98bc-05f2522b2e5c" />
 
-Nos ponemos en escucha en una terminal con la herramienta netcat por el puerto 443, volvemos al dashboard y activamos el plugin, y ¡Ganamos acceso a la máquina víctima!
+Nos ponemos en escucha en una terminal con la herramienta netcat por el puerto 443, volvemos al dashboard y activamos el plugin, y ¡Ganamos acceso a la máquina víctima! 🔥
 
 <img width="785" height="250" alt="pressenter18" src="https://github.com/user-attachments/assets/818ae73b-0777-4bba-a9da-c2ffc65343b6" />
 
@@ -110,11 +110,15 @@ Encontramos una base de datos llamada "wordpress", accederemos a ella y haremos 
 
 <img width="612" height="393" alt="pressenter22" src="https://github.com/user-attachments/assets/fa2e0e54-a6ef-49f4-8b76-1bd6b680c150" />
 
-Seleccionaremos la tabla que nos parezca más importante y ¡encontramos la contraseña del usuario "enter"!
+Seleccionaremos la tabla que nos parezca más importante y ¡encontramos la contraseña del usuario "enter"! 🔥
 
 <img width="526" height="137" alt="pressenter23" src="https://github.com/user-attachments/assets/08095f11-9d8c-416d-9ced-787429aa97e7" />
 
+Subiremos al usuario enter con esa contraseña y daremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algun binario, vemos que podemos ejecutar /usr/bin/cat y /usr/bin/whoami
+
 <img width="1026" height="182" alt="pressenter24" src="https://github.com/user-attachments/assets/572ba525-6a36-4d02-b212-cafe9b827bf5" />
+
+Luego de un rato intentando subir privilegios, nos damos cuenta que dichos permisos sudoers fueron solo utilizados para distraernos ya que la password del usuario root es la misma que la del usuario enter, aquí se utilizó reutilización de contraseñas, así que de una nos metemos como usuario root, ¡máquina hackeada! 🔥. .
 
 <img width="519" height="496" alt="pressenter25" src="https://github.com/user-attachments/assets/eb9fa2c3-5733-4d44-b6f9-dd19673d9a27" />
 
