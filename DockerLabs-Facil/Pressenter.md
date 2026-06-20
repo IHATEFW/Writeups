@@ -43,6 +43,8 @@ Una vez ejecutado, podemos visualizar que nos enumeró usuarios válidos, como "
 
 <img width="752" height="631" alt="pressenter10" src="https://github.com/user-attachments/assets/d0ab3cbf-911b-4146-9660-d9c30a2f4de8" />
 
+Ya teniendo en nuestras manos usuarios válidos, vamos a seguir enumerando con la herramienta wpscan, pero esta vez, le cambiaremos los parametros para otorgarle el rockyou.txt y que nos encuentre la contraseña de dichos usuarios, esto con el siguiente comando:
+
 <img width="752" height="631" alt="pressenter11" src="https://github.com/user-attachments/assets/5e0b52f4-b169-4b2e-917d-32b4e0c1c91d" />
 
 <img width="752" height="631" alt="pressenter12" src="https://github.com/user-attachments/assets/b3fe5989-2ec0-488b-a636-b0c3aec7f6ee" />
