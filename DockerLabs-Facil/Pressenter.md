@@ -23,11 +23,15 @@ Ya dentro de la web, podemos visualizar que esteticamente no es muy amigable, po
 
 <img width="1229" height="279" alt="pressenter5" src="https://github.com/user-attachments/assets/d6416418-2889-4685-898d-37b1015e2636" />
 
-Una vez ya agregado el dominio con la ip a dicho archivo
+Una vez ya agregado el dominio con la ip a dicho archivo, procederemos a recargar la web con F5.
 
 <img width="786" height="330" alt="pressenter6" src="https://github.com/user-attachments/assets/ff960d10-0e5d-462c-81ee-7285acdd1a61" />
 
+Y vemos que efectivamente la web se ve mucho más bonita y nos muestra la información distinta, podemos visualizar que estamos ante la típica web desarrollada con el CMS WordPress.
+
 <img width="1223" height="628" alt="pressenter7" src="https://github.com/user-attachments/assets/3155b533-59af-4367-90bb-7440e0d08b76" />
+
+Damos nuevamente CTRL + U, y filtramos por la palabra 'generator', donde nos muestra la versión de dicho WordPress
 
 <img width="1115" height="573" alt="pressenter8" src="https://github.com/user-attachments/assets/d6e65442-806d-4da8-9317-fbd2479f328a" />
 
