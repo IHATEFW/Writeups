@@ -106,7 +106,11 @@ SHOW DATABASES;
 
 <img width="633" height="388" alt="pressenter21" src="https://github.com/user-attachments/assets/c5c8f5d1-1bc2-4485-9275-06924f5574a3" />
 
+Encontramos una base de datos llamada "wordpress", accederemos a ella y haremos que nos muestre las tablas.
+
 <img width="612" height="393" alt="pressenter22" src="https://github.com/user-attachments/assets/fa2e0e54-a6ef-49f4-8b76-1bd6b680c150" />
+
+Seleccionaremos la tabla que nos parezca más importante y ¡encontramos la contraseña del usuario "enter"!
 
 <img width="526" height="137" alt="pressenter23" src="https://github.com/user-attachments/assets/08095f11-9d8c-416d-9ced-787429aa97e7" />
 
