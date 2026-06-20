@@ -75,6 +75,16 @@ Nos ponemos en escucha en una terminal con la herramienta netcat por el puerto 4
 
 <img width="785" height="250" alt="pressenter18" src="https://github.com/user-attachments/assets/818ae73b-0777-4bba-a9da-c2ffc65343b6" />
 
+Ya dentro de la máquina víctima, vamos a realizar el tratamiento de la tty.
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+```
+
 <img width="616" height="539" alt="pressenter19" src="https://github.com/user-attachments/assets/33a10ba8-e29a-44f6-b6c7-5da3a795685b" />
 
 <img width="616" height="539" alt="pressenter20" src="https://github.com/user-attachments/assets/e93d30e5-dd50-4996-b191-aefe3c12ed1d" />
