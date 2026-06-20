@@ -63,6 +63,8 @@ Ahora nos vamos al apartado donde dice "Herramienta" y accedemos a editar los pl
 
 <img width="1346" height="631" alt="pressenter15" src="https://github.com/user-attachments/assets/c72d0af0-f5ae-4d9d-a806-0a8cb526f33b" />
 
+## 💣 EXPLOTACIÓN
+
 Se nos ocurre dirigirnos a la web revshells.com, donde filtraremos por "php" y la última reverse shell vamos a escoger. 
 
 <img width="1235" height="631" alt="pressenter16" src="https://github.com/user-attachments/assets/7df76b75-b061-4f20-8a73-bac2ea37de79" />
@@ -74,6 +76,8 @@ La copiamos y la pegamos de la siguiente manera en el archivo, lo guardamos.
 Nos ponemos en escucha en una terminal con la herramienta netcat por el puerto 443, volvemos al dashboard y activamos el plugin, y ¡Ganamos acceso a la máquina víctima! 🔥
 
 <img width="785" height="250" alt="pressenter18" src="https://github.com/user-attachments/assets/818ae73b-0777-4bba-a9da-c2ffc65343b6" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
 
@@ -121,8 +125,3 @@ Subiremos al usuario enter con esa contraseña y daremos el comando sudo -l para
 Luego de un rato intentando subir privilegios, nos damos cuenta que dichos permisos sudoers fueron solo utilizados para distraernos ya que la password del usuario root es la misma que la del usuario enter, aquí se utilizó reutilización de contraseñas, así que de una nos metemos como usuario root, ¡máquina hackeada! 🔥. .
 
 <img width="519" height="496" alt="pressenter25" src="https://github.com/user-attachments/assets/eb9fa2c3-5733-4d44-b6f9-dd19673d9a27" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
-
