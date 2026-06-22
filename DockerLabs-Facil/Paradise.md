@@ -13,6 +13,8 @@ El primer paso para comprometer esta máquina, será enumerar los puertos con la
 
 <img width="841" height="612" alt="paradise2" src="https://github.com/user-attachments/assets/e7af8c70-5ce2-43e8-b724-892a2aa9978e" />
 
+Una vez ya logramos saber los puertos abiertos, seguiremos utilizando la herramienta nmap para escanear nuevamente, pero esta vez, indicandole a nmap que nos encuentre la versión de dichos servicios, como tambien, que nos arroje un conjunto básico de scripts de reconocimiento, una vez ejecutado, podemos visualizar que el servicio SSH tiene la versión OpenSSH 6.6.1, la cual es vulnerable a una enumeración de usuarios del sistema, despues de la versión 7.7 esta vulnerabilidad fue parchada.
+
 <img width="992" height="634" alt="paradise3" src="https://github.com/user-attachments/assets/fa3d14b3-8204-41f0-9f37-f5e68c9c9582" />
 
 <img width="992" height="634" alt="paradise4" src="https://github.com/user-attachments/assets/16b1e13a-84c7-412a-9079-83bf39250599" />
