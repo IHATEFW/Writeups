@@ -23,6 +23,8 @@ Como ya sabemos que procederemos a enumerar usuarios del sistema, podemos usar u
 
 <img width="992" height="634" alt="paradise5" src="https://github.com/user-attachments/assets/c1db72e5-dabf-4368-86c0-a3aa54b678fc" />
 
+Como ya tenemos usuarios válidos, procederemos a realizar fuerza bruta SSH de contraseñas con la herramienta hydra, esto de la siguiente manera, una vez ejecutado, podemos visualizar que se encontró la password del usuario lucas.
+
 <img width="1008" height="547" alt="paradise6" src="https://github.com/user-attachments/assets/15f2dff9-d4ea-41bc-848b-bdd5cd8ac74f" />
 
 <img width="993" height="434" alt="paradise7" src="https://github.com/user-attachments/assets/b374179f-2fae-4386-b87e-62ed84d04d0d" />
