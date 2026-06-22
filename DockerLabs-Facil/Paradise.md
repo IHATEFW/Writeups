@@ -9,6 +9,8 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+El primer paso para comprometer esta máquina, será enumerar los puertos con la herramienta nmap, esto para lograr identificar posibles puertos abiertos/expuestos que tenga la máquina víctima, una vez ejecutado el primer escaneo, vemos que se visualizan tres puertos abiertos, el 22, 139 y 445, correspondientes a SSH y SMB.
+
 <img width="841" height="612" alt="paradise2" src="https://github.com/user-attachments/assets/e7af8c70-5ce2-43e8-b724-892a2aa9978e" />
 
 <img width="992" height="634" alt="paradise3" src="https://github.com/user-attachments/assets/fa3d14b3-8204-41f0-9f37-f5e68c9c9582" />
