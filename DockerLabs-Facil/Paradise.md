@@ -7,6 +7,8 @@
 
 ## 🔎 ENUMERACIÓN
 
+<img width="841" height="612" alt="paradise2" src="https://github.com/user-attachments/assets/e7af8c70-5ce2-43e8-b724-892a2aa9978e" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
