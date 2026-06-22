@@ -23,9 +23,13 @@ Como ya sabemos que procederemos a enumerar usuarios del sistema, podemos usar u
 
 <img width="992" height="634" alt="paradise5" src="https://github.com/user-attachments/assets/c1db72e5-dabf-4368-86c0-a3aa54b678fc" />
 
+## 💣 EXPLOTACIÓN
+
 Como ya tenemos usuarios válidos, procederemos a realizar fuerza bruta SSH de contraseñas con la herramienta hydra, esto de la siguiente manera, una vez ejecutado, podemos visualizar que se encontró la password del usuario lucas.
 
 <img width="1008" height="547" alt="paradise6" src="https://github.com/user-attachments/assets/15f2dff9-d4ea-41bc-848b-bdd5cd8ac74f" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 Ganamos acceso a la máquina, ya con el usuario lucas, daremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algun binario, y efectivamente podemos ejecutar el binario /bin/sed como el usuario andy.
 
@@ -35,7 +39,7 @@ Nos vamos a la web gtfobins.org, filtramos por "sed" y copiamos el primer comand
 
 <img width="1160" height="527" alt="paradise8" src="https://github.com/user-attachments/assets/8185e063-6e57-466b-97d7-0261d8b70168" />
 
-Lo ejecutamos, y ¡ya pivotamos al usuario andy!
+Lo ejecutamos, y ¡ya pivotamos al usuario andy! 🔥
 
 <img width="1160" height="527" alt="paradise9" src="https://github.com/user-attachments/assets/d6c419d5-6ffe-4ed9-a500-815fb70a7bc1" />
 
@@ -43,10 +47,10 @@ En este punto, veremos si tenemos algun binario SUID que podamos ejecutar, esto 
 
 <img width="458" height="422" alt="paradise10" src="https://github.com/user-attachments/assets/3e609917-94ee-479a-a86a-4ee9c5405b43" />
 
+Leemos el primero, pero no tiene nada interesante, leemos el segundo y vemos que tiene permisos para ejecutar comandos como el usuario root.
+
 <img width="1332" height="612" alt="paradise11" src="https://github.com/user-attachments/assets/098ecae5-0f07-4278-ae46-3243790c7693" />
 
+Lo ejecutamos, y ¡ya somos root!, máquina hackeada 🔥.
+
 <img width="523" height="337" alt="paradise12" src="https://github.com/user-attachments/assets/270c2890-1183-4f12-9b60-18bd3e8bdb48" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
