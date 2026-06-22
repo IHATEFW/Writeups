@@ -11,6 +11,10 @@
 
 <img width="992" height="634" alt="paradise3" src="https://github.com/user-attachments/assets/fa3d14b3-8204-41f0-9f37-f5e68c9c9582" />
 
+<img width="992" height="634" alt="paradise4" src="https://github.com/user-attachments/assets/16b1e13a-84c7-412a-9079-83bf39250599" />
+
+<img width="992" height="634" alt="paradise5" src="https://github.com/user-attachments/assets/c1db72e5-dabf-4368-86c0-a3aa54b678fc" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
