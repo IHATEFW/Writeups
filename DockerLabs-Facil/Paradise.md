@@ -3,6 +3,8 @@
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
+Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprime con el comando unzip y se despliega de la siguiente manera:
+
 <img width="641" height="612" alt="paradise1" src="https://github.com/user-attachments/assets/5d811302-9002-44ba-a672-c250bae15142" />
 
 ## 🔎 ENUMERACIÓN
