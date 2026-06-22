@@ -1,3 +1,4 @@
+La máquina Paradise de la plataforma DockerLabs.es, es una máquina de dificultad "Fácil", la cual nos enseña a explotar la vulnerabilidad de enumeración de usuarios de OpenSSH 6.6, esto con la herramienta hydra, una vez ganamos acceso a la máquina, se pivota a usuarios con permisos de nivel de sudoers y se gana acceso a root ejecutando un binario mal configurado . .
 
 # PARADISE
 
