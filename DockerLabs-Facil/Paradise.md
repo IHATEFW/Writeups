@@ -27,6 +27,8 @@ Como ya tenemos usuarios válidos, procederemos a realizar fuerza bruta SSH de c
 
 <img width="1008" height="547" alt="paradise6" src="https://github.com/user-attachments/assets/15f2dff9-d4ea-41bc-848b-bdd5cd8ac74f" />
 
+Ganamos acceso a la máquina, ya con el usuario lucas, daremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algun binario, y efectivamente podemos ejecutar el binario /bin/sed como el usuario andy.
+
 <img width="993" height="434" alt="paradise7" src="https://github.com/user-attachments/assets/b374179f-2fae-4386-b87e-62ed84d04d0d" />
 
 <img width="1160" height="527" alt="paradise8" src="https://github.com/user-attachments/assets/8185e063-6e57-466b-97d7-0261d8b70168" />
