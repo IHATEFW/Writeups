@@ -27,6 +27,8 @@
 
 <img width="1332" height="612" alt="paradise11" src="https://github.com/user-attachments/assets/098ecae5-0f07-4278-ae46-3243790c7693" />
 
+<img width="523" height="337" alt="paradise12" src="https://github.com/user-attachments/assets/270c2890-1183-4f12-9b60-18bd3e8bdb48" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
