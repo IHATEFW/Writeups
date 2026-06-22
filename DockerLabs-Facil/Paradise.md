@@ -31,9 +31,15 @@ Ganamos acceso a la máquina, ya con el usuario lucas, daremos el comando sudo -
 
 <img width="993" height="434" alt="paradise7" src="https://github.com/user-attachments/assets/b374179f-2fae-4386-b87e-62ed84d04d0d" />
 
+Nos vamos a la web gtfobins.org, filtramos por "sed" y copiamos el primer comando que nos aparezca.
+
 <img width="1160" height="527" alt="paradise8" src="https://github.com/user-attachments/assets/8185e063-6e57-466b-97d7-0261d8b70168" />
 
+Lo ejecutamos, y ¡ya pivotamos al usuario andy!
+
 <img width="1160" height="527" alt="paradise9" src="https://github.com/user-attachments/assets/d6c419d5-6ffe-4ed9-a500-815fb70a7bc1" />
+
+En este punto, veremos si tenemos algun binario SUID que podamos ejecutar, esto con el siguiente comando, una vez ejecutado, vemos que existen dos binarios peculiares y no los de siempre.
 
 <img width="458" height="422" alt="paradise10" src="https://github.com/user-attachments/assets/3e609917-94ee-479a-a86a-4ee9c5405b43" />
 
