@@ -17,6 +17,8 @@ Una vez ya logramos saber los puertos abiertos, seguiremos utilizando la herrami
 
 <img width="992" height="634" alt="paradise3" src="https://github.com/user-attachments/assets/fa3d14b3-8204-41f0-9f37-f5e68c9c9582" />
 
+Como ya sabemos que procederemos a enumerar usuarios del sistema, podemos usar un diccionario de usuarios que vienen en parrot o kali, pero antes, procederemos a enumerar usuarios con la herramienta enum4linux ya que tenemos el servicio SMB abierto, una vez ejecutado de la siguiente manera, podemos ver que nos muestra los usuarios andy y lucas.
+
 <img width="992" height="634" alt="paradise4" src="https://github.com/user-attachments/assets/16b1e13a-84c7-412a-9079-83bf39250599" />
 
 <img width="992" height="634" alt="paradise5" src="https://github.com/user-attachments/assets/c1db72e5-dabf-4368-86c0-a3aa54b678fc" />
