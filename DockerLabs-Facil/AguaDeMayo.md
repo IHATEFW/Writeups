@@ -13,6 +13,8 @@ El primer paso que deberemos realizar para comprometer esta máquina, es comenza
 
 <img width="781" height="558" alt="agua2" src="https://github.com/user-attachments/assets/e019f889-0741-4296-8e08-7b61bdea9a7e" />
 
+Una vez ya tenemos los puertos abiertos identificados, procederemos a seguir enumerando con nmap, pero esta vez indicandole que nos encuentre las versiones de esos servicios y que nos arroje un conjunto básico de scripts de reconomiento, una vez ejecutado, podemos visualizar que la web detrás del puerto 80 es la típica de Apache2 que viene por defecto.
+
 <img width="847" height="629" alt="agua3" src="https://github.com/user-attachments/assets/500c570b-1821-4c92-a750-3bf2e2711bbf" />
 
 <img width="1136" height="628" alt="agua4" src="https://github.com/user-attachments/assets/0b7396a1-1695-4c2e-9001-5ec752de1ea7" />
