@@ -33,9 +33,13 @@ Lo decodeamos y ¡podemos visualizar que nos encontró una posible password!
 
 <img width="913" height="597" alt="agua7" src="https://github.com/user-attachments/assets/35e20e8e-6354-4b2b-9f9f-24ae30a434e9" />
 
+## 💣 EXPLOTACIÓN
+
 Se nos ocurre probar con el usuario "agua" por SSH y efectivamente ¡Ganamos acceso a la máquina víctima!
 
 <img width="860" height="412" alt="agua8" src="https://github.com/user-attachments/assets/69627f7b-da96-4b26-8321-5b620c784d47" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 Ya dentro de la máquina, probamos dar el comando sudo -l para ver si tenemos permisos a nivel de sudoers para ejecutar algun binario, y efectivamente podemos ejecutar el binario /usr/bin/bettercap
 
@@ -49,8 +53,6 @@ Le damos help para ver que comandos podemos ejecutar que permita el sistema y po
 
 <img width="929" height="421" alt="agua11" src="https://github.com/user-attachments/assets/5dfb7dbc-0183-40fb-a7e3-55ed3ee6598d" />
 
+Intentamos modificar el binario /bin/bash para que se convierta en SUID y así poder dar un bash -p y ser root, y efectivamente funciona, ¡Somos el usuario root!, máquina hackeada.
+
 <img width="789" height="251" alt="agua12" src="https://github.com/user-attachments/assets/9ae09195-7faf-402d-ad63-b49d328e8437" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
