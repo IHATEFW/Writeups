@@ -29,6 +29,8 @@ Lo copiamos y procedemos abrir alguna decoder de brainfuck que nos desencripte d
 
 <img width="913" height="597" alt="agua6" src="https://github.com/user-attachments/assets/52546348-8503-4c49-bca2-f63bf03d0ecf" />
 
+Lo decodeamos y ¡podemos visualizar que nos encontró una posible password!
+
 <img width="913" height="597" alt="agua7" src="https://github.com/user-attachments/assets/35e20e8e-6354-4b2b-9f9f-24ae30a434e9" />
 
 <img width="860" height="412" alt="agua8" src="https://github.com/user-attachments/assets/69627f7b-da96-4b26-8321-5b620c784d47" />
