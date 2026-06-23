@@ -1,3 +1,4 @@
+La máquina AguadeMayo de la plataforma DockerLabs.es, es una máquina de dificultad "Fácil", que nos enseña como una posible password pueden esconderla bajo caracteres extraños sabiendo que en realidad se trata del lenguaje de programación "Brainfuck", luego con esa misma password ganamos acceso a la máquina víctima y finalmente abusamos de la herramienta bettercap para pivotar a root. .
 
 # AGUADEMAYO
 
@@ -29,13 +30,13 @@ Lo copiamos y procedemos abrir alguna decoder de brainfuck que nos desencripte d
 
 <img width="913" height="597" alt="agua6" src="https://github.com/user-attachments/assets/52546348-8503-4c49-bca2-f63bf03d0ecf" />
 
-Lo decodeamos y ¡podemos visualizar que nos encontró una posible password!
+Lo decodeamos y ¡podemos visualizar que nos encontró una posible password! 🔥
 
 <img width="913" height="597" alt="agua7" src="https://github.com/user-attachments/assets/35e20e8e-6354-4b2b-9f9f-24ae30a434e9" />
 
 ## 💣 EXPLOTACIÓN
 
-Se nos ocurre probar con el usuario "agua" por SSH y efectivamente ¡Ganamos acceso a la máquina víctima!
+Se nos ocurre probar con el usuario "agua" por SSH y efectivamente ¡Ganamos acceso a la máquina víctima! 🔥
 
 <img width="860" height="412" alt="agua8" src="https://github.com/user-attachments/assets/69627f7b-da96-4b26-8321-5b620c784d47" />
 
@@ -53,6 +54,6 @@ Le damos help para ver que comandos podemos ejecutar que permita el sistema y po
 
 <img width="929" height="421" alt="agua11" src="https://github.com/user-attachments/assets/5dfb7dbc-0183-40fb-a7e3-55ed3ee6598d" />
 
-Intentamos modificar el binario /bin/bash para que se convierta en SUID y así poder dar un bash -p y ser root, y efectivamente funciona, ¡Somos el usuario root!, máquina hackeada.
+Intentamos modificar el binario /bin/bash para que se convierta en SUID y así poder dar un bash -p y ser root, y efectivamente funciona, ¡Somos el usuario root!, máquina hackeada 🔥.
 
 <img width="789" height="251" alt="agua12" src="https://github.com/user-attachments/assets/9ae09195-7faf-402d-ad63-b49d328e8437" />
