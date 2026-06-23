@@ -7,6 +7,8 @@
 
 ## 🔎 ENUMERACIÓN
 
+<img width="781" height="558" alt="agua2" src="https://github.com/user-attachments/assets/e019f889-0741-4296-8e08-7b61bdea9a7e" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
