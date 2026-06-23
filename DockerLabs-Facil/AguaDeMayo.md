@@ -37,9 +37,11 @@ Se nos ocurre probar con el usuario "agua" por SSH y efectivamente ¡Ganamos acc
 
 <img width="860" height="412" alt="agua8" src="https://github.com/user-attachments/assets/69627f7b-da96-4b26-8321-5b620c784d47" />
 
-Ya dentro de la máquina, probamos dar el comando sudo -l para ver si tenemos permisos a nivel de sudoers para ejecutar algun binario, y efectivamente podemos ejecutar el binario /bin/bettercap
+Ya dentro de la máquina, probamos dar el comando sudo -l para ver si tenemos permisos a nivel de sudoers para ejecutar algun binario, y efectivamente podemos ejecutar el binario /usr/bin/bettercap
 
 <img width="930" height="286" alt="agua9" src="https://github.com/user-attachments/assets/06281975-75f2-45aa-aa04-cb00e10fc9b0" />
+
+Lo ejecutamos como el usuario root.
 
 <img width="934" height="105" alt="agua10" src="https://github.com/user-attachments/assets/3387bdb5-6d4e-4a89-8c5b-ea0396db3836" />
 
