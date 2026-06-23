@@ -45,6 +45,8 @@ Lo ejecutamos como el usuario root.
 
 <img width="934" height="105" alt="agua10" src="https://github.com/user-attachments/assets/3387bdb5-6d4e-4a89-8c5b-ea0396db3836" />
 
+Le damos help para ver que comandos podemos ejecutar que permita el sistema y podemos visualizar que si ponemos un "!" podemos ingresar comandos.
+
 <img width="929" height="421" alt="agua11" src="https://github.com/user-attachments/assets/5dfb7dbc-0183-40fb-a7e3-55ed3ee6598d" />
 
 <img width="789" height="251" alt="agua12" src="https://github.com/user-attachments/assets/9ae09195-7faf-402d-ad63-b49d328e8437" />
