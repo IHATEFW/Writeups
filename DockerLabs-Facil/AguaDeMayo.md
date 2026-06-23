@@ -21,6 +21,8 @@
 
 <img width="860" height="412" alt="agua8" src="https://github.com/user-attachments/assets/69627f7b-da96-4b26-8321-5b620c784d47" />
 
+<img width="930" height="286" alt="agua9" src="https://github.com/user-attachments/assets/06281975-75f2-45aa-aa04-cb00e10fc9b0" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
