@@ -25,6 +25,8 @@ Pero le damos un CTRL + U y podemos visualizar al final de la web que nos entreg
 
 <img width="1236" height="630" alt="agua5" src="https://github.com/user-attachments/assets/a13ebbf8-2443-45e1-8fd0-f4623d0e4654" />
 
+Lo copiamos y procedemos abrir alguna decoder de brainfuck que nos desencripte dicho mensaje.
+
 <img width="913" height="597" alt="agua6" src="https://github.com/user-attachments/assets/52546348-8503-4c49-bca2-f63bf03d0ecf" />
 
 <img width="913" height="597" alt="agua7" src="https://github.com/user-attachments/assets/35e20e8e-6354-4b2b-9f9f-24ae30a434e9" />
