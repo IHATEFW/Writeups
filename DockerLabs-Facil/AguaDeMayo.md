@@ -17,6 +17,8 @@ Una vez ya tenemos los puertos abiertos identificados, procederemos a seguir enu
 
 <img width="847" height="629" alt="agua3" src="https://github.com/user-attachments/assets/500c570b-1821-4c92-a750-3bf2e2711bbf" />
 
+Le echamos un vistazo y ha simple vista no tiene nada importante, le damos un CTRL + U y podemos visualizar al final de la web que nos entrega una especie de mensaje encriptado, o caracteres raros
+
 <img width="1136" height="628" alt="agua4" src="https://github.com/user-attachments/assets/0b7396a1-1695-4c2e-9001-5ec752de1ea7" />
 
 <img width="1236" height="630" alt="agua5" src="https://github.com/user-attachments/assets/a13ebbf8-2443-45e1-8fd0-f4623d0e4654" />
