@@ -7,6 +7,8 @@
 
 ## 🔎 ENUMERACIÓN
 
+<img width="777" height="547" alt="stellar2" src="https://github.com/user-attachments/assets/e5ebc204-313d-4bd9-a09f-e450a455a6b3" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
