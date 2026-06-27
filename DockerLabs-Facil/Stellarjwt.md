@@ -21,6 +21,8 @@
 
 <img width="1219" height="639" alt="stellar8" src="https://github.com/user-attachments/assets/8538d3ad-d083-4ca8-850c-04d2cf3c0b27" />
 
+<img width="1219" height="639" alt="stellar9" src="https://github.com/user-attachments/assets/3e6bb9c5-e9d5-4d4c-9145-fa6005115d6a" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
