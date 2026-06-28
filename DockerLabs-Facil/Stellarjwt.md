@@ -17,9 +17,15 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 
 <img width="867" height="547" alt="stellar3" src="https://github.com/user-attachments/assets/c43e444c-cc6e-4cc7-89fa-92f4d7a9c6a4" />
 
+Antes de revisarla, en paralelo, lanzaremos un escaneo de fuerza bruta de directorios con la herramienta gobuster, esto con el fin de identificar posibles directorios luego de la /, así es como logramos encontrar el directorio /universe.
+
 <img width="969" height="572" alt="stellar4" src="https://github.com/user-attachments/assets/fe1f1f2e-602a-49e4-b655-b3d28360ad04" />
 
+Ya dentro de la web, vemos que está ambientada en la NASA, haciendonos una pregunta de cual es el astronomo alemán que descubrió Neptuno.
+
 <img width="1219" height="639" alt="stellar5" src="https://github.com/user-attachments/assets/0f547197-7b4c-4e5a-a9e2-947a1396419c" />
+
+Revisaremos el directorio /universe, logrando visualizar la imagen del universo.
 
 <img width="1219" height="639" alt="stellar6" src="https://github.com/user-attachments/assets/4e8312fc-a692-4fd4-aa01-96cb6932cd6e" />
 
