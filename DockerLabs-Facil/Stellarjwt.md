@@ -39,7 +39,11 @@ Lo copiamos y lo debugueamos en alguna web, esto buscando en google JWT decoded,
 
 <img width="1219" height="639" alt="stellar9" src="https://github.com/user-attachments/assets/3e6bb9c5-e9d5-4d4c-9145-fa6005115d6a" />
 
+Luego seguiremos con la pregunta que no hicieron, googleandola y dandonos cuenta del nombre del astronomo alemán.
+
 <img width="1219" height="639" alt="stellar10" src="https://github.com/user-attachments/assets/06deac1a-d70b-4545-8c47-dbbdb7db65b2" />
+
+Nos conectaremos por SSH con el usuario neptuno y la password "Gottfried" y ¡Ganamos acceso a la máquina!
 
 <img width="719" height="433" alt="stellar11" src="https://github.com/user-attachments/assets/d9ad1754-5809-4960-bb84-ad85c67e631a" />
 
