@@ -1,3 +1,4 @@
+La máquina Stellarjwt, es una máquina de dificultar "Fácil", la cual nos enseña a decodear un Json Web Token expuesto en un directorio oculto, el cual se convierte en un usuario válido, su password la encontramos con una pista que nos dan en la web del puerto 80 y finalmente pivotamos entre usuarios hasta llegar al usuario root . .
 
 # STELLARJWT
 
@@ -55,7 +56,7 @@ Lo primero que realizaremos dentro de la máquina víctima, será leer el archiv
 
 <img width="729" height="567" alt="stellar12" src="https://github.com/user-attachments/assets/beeac135-bd23-4dd4-a9f7-0b0971cbc83b" />
 
-Accedemos a nuestro directorio y vemos un archivo, lo leemos y nos muestra la password del usuario nasa, ¡pivotamos al usuario nasa!
+Accedemos a nuestro directorio y vemos un archivo, lo leemos y nos muestra la password del usuario nasa, ¡pivotamos al usuario nasa! 🔥
 
 <img width="965" height="615" alt="stellar13" src="https://github.com/user-attachments/assets/9f94ab0b-87c3-4ed2-be54-6ca6a1338056" />
 
@@ -89,6 +90,6 @@ Ejecutaremos el comando sed -i de la siguiente manera para quitar la "x" y efect
 
 <img width="614" height="573" alt="stellar21" src="https://github.com/user-attachments/assets/23b6c7a5-545f-4fd5-8687-d7f4a0e101b8" />
 
-Finalmente daremos un su root y ¡somos root! máquina hackeada, en el directorio /root existe una shell que puedes ejecutar con un quiz, ¡la idea es que lo revises!
+Finalmente daremos un su root y ¡somos root! máquina hackeada 🔥, en el directorio /root existe una shell que puedes ejecutar con un quiz, ¡la idea es que lo revises!
 
 <img width="556" height="184" alt="stellar22" src="https://github.com/user-attachments/assets/6bb1b913-9fc1-492e-91e8-8292ee789708" />
