@@ -57,9 +57,11 @@ Accedemos a nuestro directorio y vemos un archivo, lo leemos y nos muestra la pa
 
 <img width="965" height="615" alt="stellar13" src="https://github.com/user-attachments/assets/9f94ab0b-87c3-4ed2-be54-6ca6a1338056" />
 
-<img width="1171" height="615" alt="stellar14" src="https://github.com/user-attachments/assets/8faa6f04-eb0c-40d7-9cb8-c76cac3225fa" />
+Ya como el usuario nasa, damos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algun binario, y vemos que podemos ejecutar el binario socat como el usuario elite, lo ejecutamos de la siguiente manera y logramos pivotar al usuario elite.
 
 <img width="1052" height="422" alt="stellar15" src="https://github.com/user-attachments/assets/df0ade67-49a3-4a38-ae5a-49fc9ba69fa7" />
+
+<img width="1171" height="615" alt="stellar14" src="https://github.com/user-attachments/assets/8faa6f04-eb0c-40d7-9cb8-c76cac3225fa" />
 
 <img width="803" height="179" alt="stellar16" src="https://github.com/user-attachments/assets/2bf9dedd-e3bb-45ac-80f0-2a74f8d6dc6d" />
 
