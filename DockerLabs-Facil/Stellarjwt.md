@@ -29,7 +29,11 @@ Revisaremos el directorio /universe, logrando visualizar la imagen del universo.
 
 <img width="1219" height="639" alt="stellar6" src="https://github.com/user-attachments/assets/4e8312fc-a692-4fd4-aa01-96cb6932cd6e" />
 
+Revisaremos el código fuente con CTRL + U, y vemos que encontramos información sobre la historia de la NASA, al final, vemos un Json Web Token escondido.
+
 <img width="1219" height="639" alt="stellar7" src="https://github.com/user-attachments/assets/253d1200-8dcc-4669-a726-087c54e547f2" />
+
+Lo copiamos y lo debugueamos en alguna web, esto buscando en google JWT decoded, lo ingresamos y vemos que encontramos un posible usuario "neptuno".
 
 <img width="1219" height="639" alt="stellar8" src="https://github.com/user-attachments/assets/8538d3ad-d083-4ca8-850c-04d2cf3c0b27" />
 
