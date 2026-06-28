@@ -23,6 +23,8 @@
 
 <img width="1111" height="635" alt="amor9" src="https://github.com/user-attachments/assets/ad611fdb-8897-4a2a-879d-22ae5805515c" />
 
+<img width="520" height="561" alt="amor10" src="https://github.com/user-attachments/assets/d0191183-ca04-4950-93ec-9e77c8154634" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
