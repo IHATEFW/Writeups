@@ -35,6 +35,8 @@
 
 <img width="1018" height="265" alt="amor15" src="https://github.com/user-attachments/assets/d402eb5e-068a-444b-947a-7caee5498f4a" />
 
+<img width="1015" height="599" alt="amor16" src="https://github.com/user-attachments/assets/5c1103e3-560a-4862-9ec4-f4289cf04ed8" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
