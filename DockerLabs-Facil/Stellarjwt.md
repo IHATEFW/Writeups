@@ -13,6 +13,8 @@ Lo primero que realizaremos para comprometer esta máquina, es lograr identifica
 
 <img width="777" height="547" alt="stellar2" src="https://github.com/user-attachments/assets/e5ebc204-313d-4bd9-a09f-e450a455a6b3" />
 
+Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, le indicaremos que nos encuentre la versión de dichos servicios, como tambien, que nos arroje un conjunto básico de scripts de reconomiento, esto de la siguiente manera, una vez ejecutado, podemos visualizar que existe una web detrás del puerto 80, con el titulo "NASA Hackeada", vamos a revisarla.
+
 <img width="867" height="547" alt="stellar3" src="https://github.com/user-attachments/assets/c43e444c-cc6e-4cc7-89fa-92f4d7a9c6a4" />
 
 <img width="969" height="572" alt="stellar4" src="https://github.com/user-attachments/assets/fe1f1f2e-602a-49e4-b655-b3d28360ad04" />
