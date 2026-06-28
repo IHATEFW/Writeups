@@ -33,6 +33,8 @@
 
 <img width="624" height="271" alt="amor14" src="https://github.com/user-attachments/assets/b4d03e53-3aee-4475-a784-6761b239fe23" />
 
+<img width="1018" height="265" alt="amor15" src="https://github.com/user-attachments/assets/d402eb5e-068a-444b-947a-7caee5498f4a" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
