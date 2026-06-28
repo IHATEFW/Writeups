@@ -35,6 +35,8 @@ Revisaremos el código fuente con CTRL + U, y vemos que encontramos información
 
 <img width="1219" height="639" alt="stellar8" src="https://github.com/user-attachments/assets/8538d3ad-d083-4ca8-850c-04d2cf3c0b27" />
 
+## 💣 EXPLOTACIÓN
+
 Lo copiamos y lo debugueamos en alguna web, esto buscando en google JWT decoded, lo ingresamos y vemos que encontramos un posible usuario "neptuno".
 
 <img width="1219" height="639" alt="stellar9" src="https://github.com/user-attachments/assets/3e6bb9c5-e9d5-4d4c-9145-fa6005115d6a" />
@@ -63,18 +65,30 @@ Ya como el usuario nasa, damos el comando sudo -l para ver si tenemos privilegio
 
 <img width="1171" height="615" alt="stellar14" src="https://github.com/user-attachments/assets/8faa6f04-eb0c-40d7-9cb8-c76cac3225fa" />
 
+Ya como el usuario elite, nuevamente daremos el comando sudo -l y vemos que podemos ejecutar el binario /usr/bin/chown como el usuario root, dicho binario nos permite cambiar el propietario de algun archivo/directorio y poner nuestro usuario actual como dueño.
+
 <img width="803" height="179" alt="stellar16" src="https://github.com/user-attachments/assets/2bf9dedd-e3bb-45ac-80f0-2a74f8d6dc6d" />
+
+Nos vamos a la web gtfobins.org y filtramos por chown, copiamos el comando.
 
 <img width="1174" height="593" alt="stellar17" src="https://github.com/user-attachments/assets/565a8c0c-772b-4f63-9dc8-43771f95fc17" />
 
+Lo ejecutamos y el primer paso es modificar el dueño del directorio /etc.
+
 <img width="718" height="519" alt="stellar18" src="https://github.com/user-attachments/assets/570db3ed-3f5f-420f-9baf-1993e9d9499d" />
+
+Segundo paso cambiaremos el dueño del archivo /etc/passwd para poder modificar su contenido.
 
 <img width="452" height="99" alt="stellar19" src="https://github.com/user-attachments/assets/e8e142e9-1767-49da-a2db-d187345ccb33" />
 
+En este punto quitaremos la "x" que existe en el usuario root, para poder pivotar a root sin clave, esa es nuestra idea. 
+
 <img width="606" height="412" alt="stellar20" src="https://github.com/user-attachments/assets/9f126abe-df39-4f90-9756-d1db32d1a7ca" />
+
+Ejecutaremos el comando sed -i de la siguiente manera para quitar la "x" y efectivamente logramos quitarla.
 
 <img width="614" height="573" alt="stellar21" src="https://github.com/user-attachments/assets/23b6c7a5-545f-4fd5-8687-d7f4a0e101b8" />
 
-<img width="556" height="184" alt="stellar22" src="https://github.com/user-attachments/assets/6bb1b913-9fc1-492e-91e8-8292ee789708" />
+Finalmente daremos un su root y ¡somos root! máquina hackeada, en el directorio /root existe una shell que puedes ejecutar con un quiz, ¡la idea es que lo revises!
 
-## 💣 EXPLOTACIÓN
+<img width="556" height="184" alt="stellar22" src="https://github.com/user-attachments/assets/6bb1b913-9fc1-492e-91e8-8292ee789708" />
