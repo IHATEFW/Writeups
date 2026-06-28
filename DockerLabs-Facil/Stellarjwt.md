@@ -47,7 +47,13 @@ Nos conectaremos por SSH con el usuario neptuno y la password "Gottfried" y ¡Ga
 
 <img width="719" height="433" alt="stellar11" src="https://github.com/user-attachments/assets/d9ad1754-5809-4960-bb84-ad85c67e631a" />
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Lo primero que realizaremos dentro de la máquina víctima, será leer el archivo /etc/passwd para lograr identificar posible usuarios dentro de la máquina para ver si tenemos que pivotar a alguno y vemos que existen dos usuarios "nasa" y "elite"
+
 <img width="729" height="567" alt="stellar12" src="https://github.com/user-attachments/assets/beeac135-bd23-4dd4-a9f7-0b0971cbc83b" />
+
+Accedemos a nuestro directorio y vemos un archivo, lo leemos y nos muestra la password del usuario nasa, ¡pivotamos al usuario nasa!
 
 <img width="965" height="615" alt="stellar13" src="https://github.com/user-attachments/assets/9f94ab0b-87c3-4ed2-be54-6ca6a1338056" />
 
@@ -70,5 +76,3 @@ Nos conectaremos por SSH con el usuario neptuno y la password "Gottfried" y ¡Ga
 <img width="556" height="184" alt="stellar22" src="https://github.com/user-attachments/assets/6bb1b913-9fc1-492e-91e8-8292ee789708" />
 
 ## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
