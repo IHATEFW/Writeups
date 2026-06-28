@@ -33,9 +33,9 @@ Revisaremos el código fuente con CTRL + U, y vemos que encontramos información
 
 <img width="1219" height="639" alt="stellar7" src="https://github.com/user-attachments/assets/253d1200-8dcc-4669-a726-087c54e547f2" />
 
-Lo copiamos y lo debugueamos en alguna web, esto buscando en google JWT decoded, lo ingresamos y vemos que encontramos un posible usuario "neptuno".
-
 <img width="1219" height="639" alt="stellar8" src="https://github.com/user-attachments/assets/8538d3ad-d083-4ca8-850c-04d2cf3c0b27" />
+
+Lo copiamos y lo debugueamos en alguna web, esto buscando en google JWT decoded, lo ingresamos y vemos que encontramos un posible usuario "neptuno".
 
 <img width="1219" height="639" alt="stellar9" src="https://github.com/user-attachments/assets/3e6bb9c5-e9d5-4d4c-9145-fa6005115d6a" />
 
