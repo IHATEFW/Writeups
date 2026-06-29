@@ -1,3 +1,4 @@
+La máquina Amor de la plataforma DockerLabs.es es de dificultad Fácil y toca de todo un poco, como fuerza bruta por SSH con la herramienta hydra, hasta Esteganografía para lograr identificar información oculta en una imágen. .
 
 # AMOR
 
@@ -31,7 +32,7 @@ Una vez ya tenemos posibles usuarios válidos, procederemos a realizar un ataque
 
 <img width="944" height="510" alt="amor6" src="https://github.com/user-attachments/assets/763f9b0f-26ae-41c3-a768-26e91b5069fc" />
 
-Nos logueamos por SSH y ¡Ganamos acceso a la máquina víctima".
+Nos logueamos por SSH y ¡Ganamos acceso a la máquina víctima" 🔥.
 
 <img width="696" height="451" alt="amor7" src="https://github.com/user-attachments/assets/a92533eb-826f-47da-8922-79e5162f563c" />
 
@@ -61,7 +62,7 @@ La decodearemos de la siguiente manera y nos muestra una clave en texto claro.
 
 <img width="630" height="202" alt="amor13" src="https://github.com/user-attachments/assets/f20d2884-3ae9-468e-83be-c9385da7180a" />
 
-Intentaremos pivotar al usuario "oscar" con dicha password y ¡Logramos acceder como dicho usuario!
+Intentaremos pivotar al usuario "oscar" con dicha password y ¡Logramos acceder como dicho usuario! 🔥
 
 <img width="624" height="271" alt="amor14" src="https://github.com/user-attachments/assets/b4d03e53-3aee-4475-a784-6761b239fe23" />
 
@@ -73,6 +74,6 @@ Nos dirigiremos a la web gtfobins.org y filtraremos por la palabra "ruby", copia
 
 <img width="1015" height="599" alt="amor16" src="https://github.com/user-attachments/assets/5c1103e3-560a-4862-9ec4-f4289cf04ed8" />
 
-Lo ejecutaremos como el usuario root y ¡Listo!, ganamos acceso como el usuario de máximos privilegios, máquina hackeada.
+Lo ejecutaremos como el usuario root y ¡Listo!, ganamos acceso como el usuario de máximos privilegios, máquina hackeada 🔥
 
 <img width="577" height="216" alt="amor17" src="https://github.com/user-attachments/assets/3e42ad2a-0aa6-4d4b-b07d-e8febbe4a801" />
