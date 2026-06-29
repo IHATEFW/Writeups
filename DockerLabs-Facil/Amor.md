@@ -41,13 +41,23 @@ En este punto, nos dirigiremos al directorio /home/carlota, donde leeremos el ar
 
 <img width="1111" height="635" alt="amor9" src="https://github.com/user-attachments/assets/ad611fdb-8897-4a2a-879d-22ae5805515c" />
 
+Nos dirigiremos al directorio /home/carlota/Desktop/fotos/vacaciones y dentro existe una imagen.jpg.
+
 <img width="520" height="561" alt="amor10" src="https://github.com/user-attachments/assets/d0191183-ca04-4950-93ec-9e77c8154634" />
+
+La vamos a revisar con la herramienta steghide para ver si se está aplicando Esteganografía, pero nos da error de permisos al intentar guardar la información que encontró
 
 <img width="684" height="224" alt="amor11" src="https://github.com/user-attachments/assets/ec6903d3-4847-4898-8e5e-07790440c90c" />
 
+Por lo tanto, nos iremos al directorio /tmp y haremos lo mismo, logrando guardar con éxito el archivo secret.txt, lo leemos y es una cadena en base64.
+
 <img width="822" height="377" alt="amor12" src="https://github.com/user-attachments/assets/5dfaa33f-e1b8-4027-8fc9-bb495e3029bf" />
 
+La decodearemos de la siguiente manera y nos muestra una clave en texto claro.
+
 <img width="630" height="202" alt="amor13" src="https://github.com/user-attachments/assets/f20d2884-3ae9-468e-83be-c9385da7180a" />
+
+Intentaremos pivotar al usuario "oscar" con dicha password y ¡Logramos acceder como dicho usuario!
 
 <img width="624" height="271" alt="amor14" src="https://github.com/user-attachments/assets/b4d03e53-3aee-4475-a784-6761b239fe23" />
 
