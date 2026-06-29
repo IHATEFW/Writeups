@@ -25,11 +25,19 @@ Si bajamos un poco, podemos ver un comentario curioso, en el cual se expone el u
 
 <img width="710" height="396" alt="amor5" src="https://github.com/user-attachments/assets/bd40804c-dede-4b57-a732-5c81b0ac58f7" />
 
+Una vez ya tenemos posibles usuarios válidos, procederemos a realizar un ataque de fuerza bruta por SSH con la herramienta hydra, logrando identificar la password del usuario "Carlota".
+
 <img width="944" height="510" alt="amor6" src="https://github.com/user-attachments/assets/763f9b0f-26ae-41c3-a768-26e91b5069fc" />
+
+Nos logueamos por SSH y ¡Ganamos acceso a la máquina víctima".
 
 <img width="696" height="451" alt="amor7" src="https://github.com/user-attachments/assets/a92533eb-826f-47da-8922-79e5162f563c" />
 
+Procederemos a leer el archivo /etc/passwd para ver si existen más usuarios válidos para así pivotar y vemos que existe el usuario "oscar".
+
 <img width="633" height="560" alt="amor8" src="https://github.com/user-attachments/assets/736ead99-4428-4fd4-a6dd-8e0dd64fc172" />
+
+En este punto, nos dirigiremos al directorio /home/carlota, donde leeremos el archivo .bashrc, donde se exponen las configuraciones de la bash de dicho usuario, pero alfinal, vemos un mensaje interesante, indicando que dentro del directorio /vacaciones puede haber una pista.
 
 <img width="1111" height="635" alt="amor9" src="https://github.com/user-attachments/assets/ad611fdb-8897-4a2a-879d-22ae5805515c" />
 
