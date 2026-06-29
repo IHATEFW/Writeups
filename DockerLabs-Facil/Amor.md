@@ -25,6 +25,8 @@ Si bajamos un poco, podemos ver un comentario curioso, en el cual se expone el u
 
 <img width="710" height="396" alt="amor5" src="https://github.com/user-attachments/assets/bd40804c-dede-4b57-a732-5c81b0ac58f7" />
 
+## 💣 EXPLOTACIÓN
+
 Una vez ya tenemos posibles usuarios válidos, procederemos a realizar un ataque de fuerza bruta por SSH con la herramienta hydra, logrando identificar la password del usuario "Carlota".
 
 <img width="944" height="510" alt="amor6" src="https://github.com/user-attachments/assets/763f9b0f-26ae-41c3-a768-26e91b5069fc" />
@@ -32,6 +34,8 @@ Una vez ya tenemos posibles usuarios válidos, procederemos a realizar un ataque
 Nos logueamos por SSH y ¡Ganamos acceso a la máquina víctima".
 
 <img width="696" height="451" alt="amor7" src="https://github.com/user-attachments/assets/a92533eb-826f-47da-8922-79e5162f563c" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 Procederemos a leer el archivo /etc/passwd para ver si existen más usuarios válidos para así pivotar y vemos que existe el usuario "oscar".
 
@@ -61,12 +65,14 @@ Intentaremos pivotar al usuario "oscar" con dicha password y ¡Logramos acceder 
 
 <img width="624" height="271" alt="amor14" src="https://github.com/user-attachments/assets/b4d03e53-3aee-4475-a784-6761b239fe23" />
 
+Ya como el usuario oscar, daremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers para intentar ejecutar algun binario y vemos que podemos ejecutar comandos en ruby.
+
 <img width="1018" height="265" alt="amor15" src="https://github.com/user-attachments/assets/d402eb5e-068a-444b-947a-7caee5498f4a" />
+
+Nos dirigiremos a la web gtfobins.org y filtraremos por la palabra "ruby", copiaremos el siguiente comando.
 
 <img width="1015" height="599" alt="amor16" src="https://github.com/user-attachments/assets/5c1103e3-560a-4862-9ec4-f4289cf04ed8" />
 
+Lo ejecutaremos como el usuario root y ¡Listo!, ganamos acceso como el usuario de máximos privilegios, máquina hackeada.
+
 <img width="577" height="216" alt="amor17" src="https://github.com/user-attachments/assets/3e42ad2a-0aa6-4d4b-b07d-e8febbe4a801" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
