@@ -13,9 +13,15 @@ Una vez ya tenemos la ip de la máquina víctima, procederemos a realizar un esc
 
 <img width="1038" height="635" alt="amor2" src="https://github.com/user-attachments/assets/2f723c44-4b7b-47ea-80bb-629c4b7f9950" />
 
+Seguiremos enumerando con la herramienta nmap, pero esta vez realizaremos un escaneo de manera más exhaustiva, indicandole a nmap que nos enumere la versión de dichos servicios, como tambien, que nos arroje un conjunto básico de scripts de reconocimiento, esto de la siguiente manera, una vez ejecutado, podemos visualizar que existe una web llamada "SecurSEC S.L" detrás del puerto 80, vamos a revisarla.
+
 <img width="1038" height="635" alt="amor3" src="https://github.com/user-attachments/assets/8b210844-aa7e-4582-b389-b1d91777afc0" />
 
+Una vez dentro de la web, podemos visualizar que existen distintos tipos de "recomendaciones" que se les da a los usuarios de alguna empresa, como actualizar contraseñas, estar atentos a phishing, etc.
+
 <img width="1181" height="628" alt="amor4" src="https://github.com/user-attachments/assets/3064c7ad-1cf5-4acc-9669-76911b96007b" />
+
+Si bajamos un poco, podemos ver un comentario curioso, en el cual se expone el usuario "Juan" y el usuario "Carlota".
 
 <img width="710" height="396" alt="amor5" src="https://github.com/user-attachments/assets/bd40804c-dede-4b57-a732-5c81b0ac58f7" />
 
