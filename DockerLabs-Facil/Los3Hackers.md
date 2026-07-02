@@ -45,6 +45,24 @@
 
 <img width="625" height="623" alt="los3hackers19" src="https://github.com/user-attachments/assets/0703bff5-f2ab-48bd-a932-2610ca2cd8ce" />
 
+<img width="914" height="509" alt="los3hackers20" src="https://github.com/user-attachments/assets/e33d4811-d8a2-4715-b71a-ff4422584976" />
+
+<img width="534" height="341" alt="los3hackers21" src="https://github.com/user-attachments/assets/e6cad113-dabc-459d-a190-f1c6eaf44e23" />
+
+<img width="564" height="638" alt="los3hackers22" src="https://github.com/user-attachments/assets/05359e33-aec3-463e-80cd-fa5748c0a5f8" />
+
+<img width="553" height="300" alt="los3hackers23" src="https://github.com/user-attachments/assets/153953f7-b6f0-4037-9910-25229d328efb" />
+
+<img width="558" height="391" alt="los3hackers24" src="https://github.com/user-attachments/assets/5352d5df-f1b5-4234-9b30-e69929e12f45" />
+
+<img width="587" height="272" alt="los3hackers25" src="https://github.com/user-attachments/assets/2eac39ff-da2d-4eea-9554-feb8137ccf50" />
+
+<img width="1075" height="597" alt="los3hackers26" src="https://github.com/user-attachments/assets/92906a97-f43f-4ef0-8919-8fb0c26d4f89" />
+
+<img width="642" height="633" alt="los3hackers27" src="https://github.com/user-attachments/assets/753b73e3-45f9-4079-96f2-f4d6a623c6ce" />
+
+<img width="732" height="579" alt="los3hackers28" src="https://github.com/user-attachments/assets/00abec29-3cf1-483f-a950-4a9becac15fb" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
