@@ -103,13 +103,23 @@ Esperamos que se ejecuta la shell y nos haga lo que le pedimos, y efectivamente 
 
 <img width="553" height="300" alt="los3hackers23" src="https://github.com/user-attachments/assets/153953f7-b6f0-4037-9910-25229d328efb" />
 
+Ya como el usuario blackhacer, encontramos un archivo .txt en el directorio /home/blackhacker que nos da la pista que tenemos algun binario con permisos especiales.
+
 <img width="558" height="391" alt="los3hackers24" src="https://github.com/user-attachments/assets/5352d5df-f1b5-4234-9b30-e69929e12f45" />
+
+Despues de revisar múltiples directorios, procesos, permisos a nivel de sudoers, no encontramos nada, como última instancia se nos ocurre ver si tenemos permisos para ejecutar capabilities y encontramos un binario llamado syscheck, lo revisamos y vemos que ejecuta comandos python.
 
 <img width="587" height="272" alt="los3hackers25" src="https://github.com/user-attachments/assets/2eac39ff-da2d-4eea-9554-feb8137ccf50" />
 
+Procederemos a dirigirnos a la web gtfobins.org y filtrar por python/capabilities y copiamos el primer comando.
+
 <img width="1075" height="597" alt="los3hackers26" src="https://github.com/user-attachments/assets/92906a97-f43f-4ef0-8919-8fb0c26d4f89" />
 
+Lo ejecutamos y finalmente ¡somos root!, máquina hackeada
+
 <img width="642" height="633" alt="los3hackers27" src="https://github.com/user-attachments/assets/753b73e3-45f9-4079-96f2-f4d6a623c6ce" />
+
+Finalmente en el directorio root se encuentra un archivo .txt con una pequeña reflexión.-
 
 ## 💣 EXPLOTACIÓN
 
