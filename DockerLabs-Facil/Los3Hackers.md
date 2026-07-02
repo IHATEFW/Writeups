@@ -21,23 +21,39 @@ Una vez dentro de la web, podemos visualizar una temática relacionada a 3 hacke
 
 <img width="1150" height="635" alt="los3hackers3" src="https://github.com/user-attachments/assets/9179039c-578e-4395-b282-6d01ac13e0cf" />
 
-Bajando un poco más, vemos que se da la problemática que red hacker no recuerda su contraseña, y es el jugador quien deberá ayudarlo a encontrarla, aparentemente está dentro de algún dashboard, se visualiza un botón que se llama "AYUDA AL RED HACKER".-
+Bajando un poco más, vemos que se da la problemática que red hacker no recuerda su contraseña, y es el jugador quien deberá ayudarlo a encontrarla, aparentemente está dentro de algún dashboard, además, se visualiza un botón que se llama "AYUDA AL RED HACKER".-
 
 <img width="1240" height="635" alt="los3hackers4" src="https://github.com/user-attachments/assets/b3c1f9c5-4f38-4c02-8f1a-6988fd9fa605" />
 
+Nos redirecciona a un login de autenticación.
+
 <img width="1240" height="635" alt="los3hackers5" src="https://github.com/user-attachments/assets/ca9e2fba-b70f-42db-b402-7931d959e162" />
+
+Como no tenemos credenciales válidas, se procede a realizar el típico 'OR 1=1;-- - de SQLi, pero indica que el patrón no es válido, existe una blacklist bloqueando ciertos comandos por detrás.-
 
 <img width="1240" height="635" alt="los3hackers6" src="https://github.com/user-attachments/assets/9c7374d6-f161-4bfd-b7a3-ce7c729e41b0" />
 
+Se prueban distintos comandos y podemos visualizar que existe un rate limit en el login, ya que tras algunos intentos se bloquea por 30 segundos.
+
 <img width="1240" height="635" alt="los3hackers7" src="https://github.com/user-attachments/assets/fc64233b-5191-43d8-b3fa-9adde562baf0" />
+
+Finalmente nos damos cuenta que los comandos válidos son los siguientes:
 
 <img width="529" height="331" alt="los3hackers8" src="https://github.com/user-attachments/assets/a2cf8345-0cc4-46ec-9f67-922a630c0f9b" />
 
+¡Logramos acceder al dashboard!, dentro de aquel, podemos ver una "Flag", pero solo es una distracción, debido a que explica la vuln que se explotó.
+
 <img width="1315" height="637" alt="los3hackers9" src="https://github.com/user-attachments/assets/e0475295-5d54-4683-bf85-f57754ef569a" />
+
+Seguimos revisando y podemos visualizar un apartado que dice "Respaldos", accedemos a él y nos indica "Error 403" acceso denegado".
 
 <img width="1225" height="637" alt="los3hackers10" src="https://github.com/user-attachments/assets/0f0c350d-3782-4e55-a144-59692ae896fb" />
 
+Revisamos el código fuente con CTRL + U y vemos una pista que indica que efectivamente la credencial de red hacker no se encuentra dentro del dashboard.
+
 <img width="1225" height="637" alt="los3hackers11" src="https://github.com/user-attachments/assets/36ed9c1c-2f6d-4cf2-a01c-39412a078f4c" />
+
+Por lo tanto, en este punto, seguiremos enumerando pero esta vez con la herramienta GoBuster, logrando encontrar un archivo .zip, llamado wow.zip, el cual lo colamos en la URL despues de la /, y nos descarga automaticamente, pero OJO, se necesita estar logueado en el dashboard, por lo tanto, el jugador SIEMPRE debe explotar la SQLi antes de descargar el archivo.
 
 <img width="1300" height="615" alt="los3hackers12" src="https://github.com/user-attachments/assets/d6876253-6c58-4163-be6a-de5e3bee55c2" />
 
