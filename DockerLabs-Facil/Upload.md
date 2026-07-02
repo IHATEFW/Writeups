@@ -1,4 +1,4 @@
-
+La máquina "Upload", de la plataforma DockerLabs.es, es una máquina de dificultad "Fácil", la cual nos muestra con una web expone una subida de archivos, pudiendo colar una reverse shell maliciosa en .php, la cual nos da acceso a la máquina víctima, luego con permisos a nivel de sudoers podemos ejecutar el binario /env. .
 # UPLOAD
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
@@ -20,6 +20,8 @@ Ya sabemos que el puerto 80 está abierto, ahora seguiremos realizando un escane
 Una vez dentro, vemos que se puede subir un archivo.
 
 <img width="1220" height="641" alt="upload4" src="https://github.com/user-attachments/assets/32f6817b-2e08-4487-99ca-72eff6181cfa" />
+
+## 💣 EXPLOTACIÓN
 
 Probamos subiendo una reverse shell .php, la cual la configuramos en la web revshells.com, con nuestra ip atacante y puerto que queramos ponernos en escucha, la subimos y vemos que se sube exitosamente.
 
@@ -49,10 +51,14 @@ reset xterm
 export TERM=xterm && export SHELL=bash
 ```
 
+Ya con una tty más estable, procederemos a revisar si tenemos permisos a nivel de sudoers para poder ejecutar algun binario, dando el comando sudo -l y vemos que efectivamente podemos ejecutar /usr/bin/env 
+
 <img width="1028" height="275" alt="upload9" src="https://github.com/user-attachments/assets/8972bac3-03c9-45bb-95b0-b3c5932be8c7" />
+
+Nos dirigiremos a la web gtfobins.org y filtraremos con "env", nos copiamos el comando.
 
 <img width="1130" height="609" alt="upload10" src="https://github.com/user-attachments/assets/82235ee8-4f02-4514-bcbb-2cca45e64290" />
 
-<img width="518" height="347" alt="upload11" src="https://github.com/user-attachments/assets/9511bf8f-90e2-43dd-ac65-514fbe7f45d4" />
+Lo ejecutamos y ¡Ganamos acceso como root!, máquina hackeada.-
 
-## 💣 EXPLOTACIÓN
+<img width="518" height="347" alt="upload11" src="https://github.com/user-attachments/assets/9511bf8f-90e2-43dd-ac65-514fbe7f45d4" />
