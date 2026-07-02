@@ -59,9 +59,15 @@ Por lo tanto, en este punto, seguiremos enumerando pero esta vez con la herramie
 
 <img width="1300" height="615" alt="los3hackers13" src="https://github.com/user-attachments/assets/6046fdf6-6e6b-47e2-b28d-32b22dba86f6" />
 
+Una vez nos descargamos el comprimido, le damos unzip y visualizamos que ¡encontramos las credenciales de red hacker!
+
 <img width="613" height="406" alt="los3hackers14" src="https://github.com/user-attachments/assets/f7e22b87-86de-4d77-a8e6-6831342ced64" />
 
+Accedemos por SSH y ¡Ganamos acceso a la máquina!, procederemos en primera instancia a leer el archivo /etc/passwd, para visualizar si existen más usuarios en el sistema y efectivamente existen 2 usuario más "bluehacker y blackhacker", ahora cuadra la imágen de los hackers en la web detrás del puerto 80.
+
 <img width="732" height="579" alt="los3hackers28" src="https://github.com/user-attachments/assets/00abec29-3cf1-483f-a950-4a9becac15fb" />
+
+En el 
 
 <img width="815" height="571" alt="los3hackers15" src="https://github.com/user-attachments/assets/14b5df00-0f03-4f65-a680-ecaaf445ac7c" />
 
