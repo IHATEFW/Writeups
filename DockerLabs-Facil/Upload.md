@@ -25,9 +25,15 @@ Probamos subiendo una reverse shell .php, la cual la configuramos en la web revs
 
 <img width="548" height="276" alt="upload5" src="https://github.com/user-attachments/assets/73c9d6da-fdd1-4dc5-ad96-399f28364029" />
 
+En este punto, procederemos a realizar un ataque de fuerza bruta con GoBuster para lograr identificar el directorio donde se almacena dicho archivo que subidos, y encontramos /uploads.
+
 <img width="876" height="638" alt="upload6" src="https://github.com/user-attachments/assets/c289480b-15d9-48db-a6a3-0691350cee33" />
 
+Ingresamos y está la reverse shell que subimos.
+
 <img width="876" height="638" alt="upload7" src="https://github.com/user-attachments/assets/8c0e8e2d-b651-47dd-8358-756d0a086a8d" />
+
+Nos ponemos en escucha con netcat por el puerto 443, ingresamos al archiv y ¡Ganamos acceso a la máquina víctima!
 
 <img width="1029" height="409" alt="upload8" src="https://github.com/user-attachments/assets/b4fe741e-dd2a-486c-9210-845c1d24b96e" />
 
