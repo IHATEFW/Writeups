@@ -13,6 +13,8 @@ Ya tenemos la ip de la máquina víctima, por lo tanto, procederemos a realizar 
 
 <img width="878" height="565" alt="los3hackers1" src="https://github.com/user-attachments/assets/6b80150b-6f67-4663-b204-7418432e7f88" />
 
+Ya sabemos que los puertos 22 y 80 están abiertos, ahora seguiremos realizando un escaneo pero más exhaustivo con nmap, esta vez indicandole que nos enumere la versión de dichos servicios y que nos arroje un conjunto básico de scripts de reconocimiento, de la siguiente manera, una vez ejecutado, vemos que exíste una web llamada "Los 3 Hackers", la cual vamos a revisar.
+
 <img width="881" height="637" alt="los3hackers2" src="https://github.com/user-attachments/assets/a7d12877-73fc-453f-a38e-62badb2ac12c" />
 
 <img width="1150" height="635" alt="los3hackers3" src="https://github.com/user-attachments/assets/9179039c-578e-4395-b282-6d01ac13e0cf" />
