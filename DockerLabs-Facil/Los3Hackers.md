@@ -11,6 +11,8 @@
 
 <img width="881" height="637" alt="los3hackers2" src="https://github.com/user-attachments/assets/a7d12877-73fc-453f-a38e-62badb2ac12c" />
 
+<img width="1150" height="635" alt="los3hackers3" src="https://github.com/user-attachments/assets/9179039c-578e-4395-b282-6d01ac13e0cf" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
