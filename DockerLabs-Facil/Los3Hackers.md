@@ -7,6 +7,8 @@
 
 ## 🔎 ENUMERACIÓN
 
+<img width="878" height="565" alt="los3hackers1" src="https://github.com/user-attachments/assets/6b80150b-6f67-4663-b204-7418432e7f88" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
