@@ -13,6 +13,8 @@ Ya tenemos la ip de la máquina víctima, por lo tanto, procederemos a realizar 
 
 <img width="779" height="534" alt="upload2" src="https://github.com/user-attachments/assets/ab9d3dd5-bd4f-4393-adb2-d2ac17febaf6" />
 
+Ya sabemos que el puerto 80 está abierto, ahora seguiremos realizando un escaneo pero más exhaustivo con nmap, esta vez indicandole que nos enumere la versión de dicho servicio HTTP y que nos arroje un conjunto básico de scripts de reconocimiento, de la siguiente manera, una vez ejecutado, vemos que exíste una web 
+
 <img width="829" height="641" alt="upload3" src="https://github.com/user-attachments/assets/356e5c52-6fbb-4732-9758-6b1edb21bfe5" />
 
 <img width="1220" height="641" alt="upload4" src="https://github.com/user-attachments/assets/32f6817b-2e08-4487-99ca-72eff6181cfa" />
