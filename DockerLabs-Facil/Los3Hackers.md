@@ -17,7 +17,11 @@ Ya sabemos que los puertos 22 y 80 están abiertos, ahora seguiremos realizando 
 
 <img width="881" height="637" alt="los3hackers2" src="https://github.com/user-attachments/assets/a7d12877-73fc-453f-a38e-62badb2ac12c" />
 
+Una vez dentro de la web, podemos visualizar una temática relacionada a 3 hackers, un red hacker, otro blue hacker y el último black hacker.
+
 <img width="1150" height="635" alt="los3hackers3" src="https://github.com/user-attachments/assets/9179039c-578e-4395-b282-6d01ac13e0cf" />
+
+Bajando un poco más, vemos que se da la problemática que red hacker no recuerda su contraseña, y es el jugador quien deberá ayudarlo a encontrarla, aparentemente está dentro de algún dashboard, se visualiza un botón que se llama "AYUDA AL RED HACKER".-
 
 <img width="1240" height="635" alt="los3hackers4" src="https://github.com/user-attachments/assets/b3c1f9c5-4f38-4c02-8f1a-6988fd9fa605" />
 
