@@ -37,6 +37,18 @@ Nos ponemos en escucha con netcat por el puerto 443, ingresamos al archiv y ¡Ga
 
 <img width="1029" height="409" alt="upload8" src="https://github.com/user-attachments/assets/b4fe741e-dd2a-486c-9210-845c1d24b96e" />
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+```
+
 <img width="1028" height="275" alt="upload9" src="https://github.com/user-attachments/assets/8972bac3-03c9-45bb-95b0-b3c5932be8c7" />
 
 <img width="1130" height="609" alt="upload10" src="https://github.com/user-attachments/assets/82235ee8-4f02-4514-bcbb-2cca45e64290" />
@@ -44,5 +56,3 @@ Nos ponemos en escucha con netcat por el puerto 443, ingresamos al archiv y ¡Ga
 <img width="518" height="347" alt="upload11" src="https://github.com/user-attachments/assets/9511bf8f-90e2-43dd-ac65-514fbe7f45d4" />
 
 ## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
