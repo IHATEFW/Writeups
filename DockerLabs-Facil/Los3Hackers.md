@@ -67,23 +67,39 @@ Accedemos por SSH y ¡Ganamos acceso a la máquina!, procederemos en primera ins
 
 <img width="732" height="579" alt="los3hackers28" src="https://github.com/user-attachments/assets/00abec29-3cf1-483f-a950-4a9becac15fb" />
 
-En el 
+En el directorio /home/redhacker, se encuentra un archivo .txt, que contiene una pista, la cual hace referencia a un "portal interno" donde aparentemente bluehacker almacena su contraseña.
 
 <img width="815" height="571" alt="los3hackers15" src="https://github.com/user-attachments/assets/14b5df00-0f03-4f65-a680-ecaaf445ac7c" />
 
+Lo primero que se nos ocurre es revisar las conexiones de red de la máquina víctima, con netstat -nat, donde visualizamos el puerto 5000 activo y escuchando.
+
 <img width="659" height="293" alt="los3hackers16" src="https://github.com/user-attachments/assets/6253828d-e9c6-4f64-9879-3679f324bb28" />
+
+Por lo tanto, se nos ocurre realizar un Port Forwarding para hacer que dicho puerto 5000 se convierta en cualquier puerto de nuestro localhost, esto de la siguiente manera: 
 
 <img width="562" height="215" alt="los3hackers17" src="https://github.com/user-attachments/assets/edaf979d-c924-4cda-bdd5-30bd72af5622" />
 
+Ahora revisaremos el portal interno y ¡Encontramos la password del usuario bluehacker!.
+
 <img width="1227" height="588" alt="los3hackers18" src="https://github.com/user-attachments/assets/07eed70d-45b0-43ad-aecc-8ae7676ceba5" />
+
+pivotamos al usuario bluehacker y dentro del directorio /home/bluehacker, encontramos un archivo .txt con otra pista, indicando que posiblemente existe un proceso corriendo cada 1 minuto.
 
 <img width="625" height="623" alt="los3hackers19" src="https://github.com/user-attachments/assets/0703bff5-f2ab-48bd-a932-2610ca2cd8ce" />
 
+Efectivamente vemos con ps -aux que está corriendo la shell m.sh como el usuario blackhacker.
+
 <img width="914" height="509" alt="los3hackers20" src="https://github.com/user-attachments/assets/e33d4811-d8a2-4715-b71a-ff4422584976" />
+
+Procederemos a revisarla y vemos que el la shell no hace nada interesante, pero vemos que tenemos permisos de edición y ejecución como nuestro usuario.
 
 <img width="534" height="341" alt="los3hackers21" src="https://github.com/user-attachments/assets/e6cad113-dabc-459d-a190-f1c6eaf44e23" />
 
+Por lo tanto, procederemos a modificar su contenido, pero vemos que no existe el editor "nano" por lo tanto, el jugador se ve obligado a editar la shell con el editor vi, realizaremos lo siguiente, copiaremos el binario /bin/bash en un nueva nueva shell y le daremos permisos para que se convierta en SUID.
+
 <img width="564" height="638" alt="los3hackers22" src="https://github.com/user-attachments/assets/05359e33-aec3-463e-80cd-fa5748c0a5f8" />
+
+Esperamos que se ejecuta la shell y nos haga lo que le pedimos, y efectivamente ya contiene la letra "s", la lanzamos con el parametro -p de forma privilegiada y ¡ya somos el usuario "blackhacker"!
 
 <img width="553" height="300" alt="los3hackers23" src="https://github.com/user-attachments/assets/153953f7-b6f0-4037-9910-25229d328efb" />
 
