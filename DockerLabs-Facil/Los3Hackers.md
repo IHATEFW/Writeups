@@ -1,3 +1,4 @@
+La máquina "Los 3 Hackers", es una máquina de dificultad "Fácil", la cual nos enseña a explotar distintas técnicas de evasión, entre ellas SQLi con una blacklist de por medio + rate limit, una vez explotada accedemos al dashboard y nos obliga a seguir enumerando, logrando un comprimido con las credenciales del 1er usuario, ya dentro de la máquina víctima pivotamos a 2 usuarios más, abusando de un Port Forwarding, procesos cron mal configurados, y finalmente para acceder a root se explota un binario con permisos capabilities. .
 
 # LOS 3 HACKERS
 
@@ -28,6 +29,8 @@ Bajando un poco más, vemos que se da la problemática que red hacker no recuerd
 Nos redirecciona a un login de autenticación.
 
 <img width="1240" height="635" alt="los3hackers5" src="https://github.com/user-attachments/assets/ca9e2fba-b70f-42db-b402-7931d959e162" />
+
+## 💣 EXPLOTACIÓN
 
 Como no tenemos credenciales válidas, se procede a realizar el típico 'OR 1=1;-- - de SQLi, pero indica que el patrón no es válido, existe una blacklist bloqueando ciertos comandos por detrás.-
 
@@ -66,6 +69,8 @@ Una vez nos descargamos el comprimido, le damos unzip y visualizamos que ¡encon
 Accedemos por SSH y ¡Ganamos acceso a la máquina!, procederemos en primera instancia a leer el archivo /etc/passwd, para visualizar si existen más usuarios en el sistema y efectivamente existen 2 usuario más "bluehacker y blackhacker", ahora cuadra la imágen de los hackers en la web detrás del puerto 80.
 
 <img width="732" height="579" alt="los3hackers28" src="https://github.com/user-attachments/assets/00abec29-3cf1-483f-a950-4a9becac15fb" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 En el directorio /home/redhacker, se encuentra un archivo .txt, que contiene una pista, la cual hace referencia a un "portal interno" donde aparentemente bluehacker almacena su contraseña.
 
@@ -120,7 +125,3 @@ Lo ejecutamos y finalmente ¡somos root!, máquina hackeada
 <img width="642" height="633" alt="los3hackers27" src="https://github.com/user-attachments/assets/753b73e3-45f9-4079-96f2-f4d6a623c6ce" />
 
 Finalmente en el directorio root se encuentra un archivo .txt con una pequeña reflexión.-
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
