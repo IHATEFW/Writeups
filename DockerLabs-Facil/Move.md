@@ -9,6 +9,10 @@
 
 <img width="886" height="638" alt="move2" src="https://github.com/user-attachments/assets/0b1fd2de-fee4-475e-a7d1-1527e58eb80d" />
 
+<img width="1041" height="638" alt="move3" src="https://github.com/user-attachments/assets/8330288a-14e6-4aab-b3ac-5f1955956243" />
+
+<img width="1146" height="554" alt="move4" src="https://github.com/user-attachments/assets/8a9ebaf9-2fc4-4d8c-a8d6-ec5e0c665205" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
