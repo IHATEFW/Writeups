@@ -7,6 +7,8 @@
 
 ## 🔎 ENUMERACIÓN
 
+<img width="802" height="615" alt="move2" src="https://github.com/user-attachments/assets/0d68db00-bee7-474c-b57c-1432b7898a75" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
