@@ -29,9 +29,15 @@ Ahora si revisamos el Grafana que está en el puerto 3000, y nos muestra el típ
 
 <img width="1214" height="638" alt="move6" src="https://github.com/user-attachments/assets/92eb2571-0f33-415b-8bef-88fd2693cf05" />
 
+En este punto, procederemos a buscar por la terminal con la herramienta searchsploit que utiliza la BDD de exploit-db, para ver si existen posibles exploits para Grafana 8.3.0, encontramos un script .py que es un vulnerable a "Directory Traversal and Arbitrary File Read", lo cual nos permitirá leer archivos del sistema. 
+
 <img width="1330" height="331" alt="move7" src="https://github.com/user-attachments/assets/9f521ff7-c216-4b22-b19a-9738baca2183" />
 
+Lo descargamos de la siguiente manera.
+
 <img width="780" height="630" alt="move8" src="https://github.com/user-attachments/assets/0488b912-58cf-4bcf-8386-9e1cf22f0bfe" />
+
+Y lo ejecutamos, de inmediato vamos a leer la pista que nos dejaron, el /tmp/pass.txt, encontrando una posible contraseña, luego vamos a leer el archivo /etc/passwd para identificar usuarios válidos y encontramos el usuario "freddy".
 
 <img width="780" height="630" alt="move9" src="https://github.com/user-attachments/assets/af848510-ef53-463d-af03-ff2357da863f" />
 
