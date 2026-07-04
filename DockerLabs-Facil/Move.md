@@ -1,4 +1,4 @@
-La máquina Move de la plataforma DockerLabs.es, es una máquina de dificultar "Fácil", la cual nos enseña que existe una versión vulnerable de Grafana, la 8.3.0, la cual nos permite leer archivos del sistema, una vez leeemos archivos sensibles, procedemos a ganar acceso a la máquina, finalmente con privilegios a nivel de sudoers pivotamos a root.-
+La máquina Move de la plataforma DockerLabs.es, es una máquina de dificultar "Fácil", la cual nos enseña que existe una versión vulnerable de Grafana, la 8.3.0, la cual nos permite leer archivos del sistema, una vez leemos archivos sensibles, procedemos a ganar acceso a la máquina, finalmente con privilegios a nivel de sudoers pivotamos a root.-
 
 
 # MOVE
