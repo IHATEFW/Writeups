@@ -29,6 +29,10 @@
 
 <img width="669" height="490" alt="extraviado13" src="https://github.com/user-attachments/assets/108c39dc-2d9c-4e21-a717-ef8f583be0c1" />
 
+<img width="461" height="167" alt="extraviado14" src="https://github.com/user-attachments/assets/86b0ac88-2a95-47cf-baf9-b3497cf9aea0" />
+
+<img width="462" height="509" alt="extraviado15" src="https://github.com/user-attachments/assets/2fc1629e-3ade-4233-b07e-323fa9fcd345" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
