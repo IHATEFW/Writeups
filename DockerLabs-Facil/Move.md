@@ -17,9 +17,15 @@ Una vez ya tenemos identificados los puertos abiertos, procederemos a seguir enu
 
 <img width="1041" height="638" alt="move3" src="https://github.com/user-attachments/assets/8330288a-14e6-4aab-b3ac-5f1955956243" />
 
+Pero antes de revisarlo, vamos a realizar fuerza bruta de directorios con la herramienta GoBuster, esto con la finalidad de encontrar posibles directorios ocultos despues de la /, una vez ejecutado, visualizamos que nos encontró un directorio maintenance.html, lo procederemos a revisar.-
+
 <img width="1146" height="554" alt="move4" src="https://github.com/user-attachments/assets/8a9ebaf9-2fc4-4d8c-a8d6-ec5e0c665205" />
 
+Vemos que nos indica una pista, revisar el archivo /tmp/pass.txt, lo intentamos colar en la url, pero no deja de ninguna manera.
+
 <img width="1076" height="331" alt="move5" src="https://github.com/user-attachments/assets/0aa94fdd-58c1-4a8a-a678-b16e4199b5c4" />
+
+Ahora si revisamos el Grafana que está en el puerto 3000, y nos muestra el típico login inicio de sesión, pero abajo, nos muestra la versión de dicho Grafana, la 8.3.0
 
 <img width="1214" height="638" alt="move6" src="https://github.com/user-attachments/assets/92eb2571-0f33-415b-8bef-88fd2693cf05" />
 
