@@ -1,3 +1,5 @@
+La máquina Move de la plataforma DockerLabs.es, es una máquina de dificultar "Fácil", la cual nos enseña que existe una versión vulnerable de Grafana, la 8.3.0, la cual nos permite leer archivos del sistema, una vez leeemos archivos sensibles, procedemos a ganar acceso a la máquina, finalmente con privilegios a nivel de sudoers pivotamos a root.-
+
 
 # MOVE
 
@@ -33,6 +35,8 @@ En este punto, procederemos a buscar por la terminal con la herramienta searchsp
 
 <img width="1330" height="331" alt="move7" src="https://github.com/user-attachments/assets/9f521ff7-c216-4b22-b19a-9738baca2183" />
 
+## 💣 EXPLOTACIÓN
+
 Lo descargamos de la siguiente manera.
 
 <img width="780" height="630" alt="move8" src="https://github.com/user-attachments/assets/0488b912-58cf-4bcf-8386-9e1cf22f0bfe" />
@@ -41,12 +45,16 @@ Y lo ejecutamos, de inmediato vamos a leer la pista que nos dejaron, el /tmp/pas
 
 <img width="780" height="630" alt="move9" src="https://github.com/user-attachments/assets/af848510-ef53-463d-af03-ff2357da863f" />
 
+Nos logueamos por SSH como freddy, y ¡Ganamos acceso a la máquina víctima!
+
 <img width="857" height="514" alt="move10" src="https://github.com/user-attachments/assets/6201d938-7ea4-4559-b06d-88935ca0ad09" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Una vez dentro de la máquina víctima, daremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers para poder ejecutar algun binario y vemos que si, podemos ejecutar un script .py como el usuario root.
 
 <img width="949" height="341" alt="move11" src="https://github.com/user-attachments/assets/c8f30c0e-3399-49d3-a7b8-8a1070a869d6" />
 
+Finalmente la revisamos, y le ingresamos código malicioso de python para que nos lance una shell como root, la ejecutamos y ¡Ya somos root!, máquina hackeada.-
+
 <img width="553" height="534" alt="move12" src="https://github.com/user-attachments/assets/86e7f643-1e86-46a6-81b4-a1e2efb80db2" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
