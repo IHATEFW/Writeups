@@ -9,9 +9,11 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
-El primer paso para comprometer esta máquina, será enumerar los puertos con la herramienta nmap, esto para lograr identificar posibles puertos abiertos/expuestos que tenga la máquina víctima, una vez ejecutado el primer escaneo, vemos que se visualizan tres puertos abiertos, el 22, 80 y 3000, correspondientes a SSH y SMB.
+El primer paso para comprometer esta máquina, será enumerar los puertos con la herramienta nmap, esto para lograr identificar posibles puertos abiertos/expuestos que tenga la máquina víctima, una vez ejecutado el primer escaneo, vemos que se visualizan tres puertos abiertos, el 22, 80 y 3000, correspondientes a SSH, HTTP y el último puerto se utiliza por defecto para entornos de desarrollo de software.
 
 <img width="886" height="638" alt="move2" src="https://github.com/user-attachments/assets/0b1fd2de-fee4-475e-a7d1-1527e58eb80d" />
+
+Una vez ya tenemos identificados los puertos abiertos, procederemos a seguir enumerando con nmap, pero esta vez, realizaremos un escaneo más exhaustivo, indicandole a nmap que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos encuentre la versión de dichos servicios, una vez ejecutado, podemos visualizar que está corriendo Grafana en el puerto 3000, vamos a revisarlo.
 
 <img width="1041" height="638" alt="move3" src="https://github.com/user-attachments/assets/8330288a-14e6-4aab-b3ac-5f1955956243" />
 
