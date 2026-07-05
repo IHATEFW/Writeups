@@ -45,11 +45,15 @@ En el home de daniela, existe un directorio llamado .secreto, donde se encuentra
 
 <img width="586" height="136" alt="extraviado11" src="https://github.com/user-attachments/assets/e8b1dcfa-2789-4c03-9d39-b77084981649" />
 
-Ya como el usuario diego, encontramos en el directorio .local/share una adivinanza, haciendo referencia a que la password correcta es "osoazul"
+Ya como el usuario diego, nos intentan despitar ocultando cadenas de base64 con credenciales falsas.
 
 <img width="669" height="490" alt="extraviado13" src="https://github.com/user-attachments/assets/108c39dc-2d9c-4e21-a717-ef8f583be0c1" />
 
+Luego de un rato, encontramos en el directorio .local/share una adivinanza, haciendo referencia a que la password correcta de root es "osoazul"
+
 <img width="461" height="167" alt="extraviado14" src="https://github.com/user-attachments/assets/86b0ac88-2a95-47cf-baf9-b3497cf9aea0" />
+
+¡Finalmente pivotamos como el usuario root!, máquina hackeada.
 
 <img width="462" height="509" alt="extraviado15" src="https://github.com/user-attachments/assets/2fc1629e-3ade-4233-b07e-323fa9fcd345" />
 
