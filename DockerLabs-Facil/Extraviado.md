@@ -27,11 +27,15 @@ En este punto, revisaremos la web de Apache2, y bajando, podemos visualizar una 
 
 <img width="921" height="391" alt="extraviado6" src="https://github.com/user-attachments/assets/ab9615a3-1b9a-4c66-afe5-791daa369379" />
 
-La decodeamos de la siguiente manea y nos encuentra las credenciales del usuario "daniela".
+La decodeamos de la siguiente manera y nos encuentra las credenciales del usuario "daniela".
 
 <img width="556" height="292" alt="extraviado7" src="https://github.com/user-attachments/assets/35ed498a-16a8-4a2e-85dc-ce322f7f35ee" />
 
+Nos logueamos por SSH y ¡Ganamos acceso a la máquina víctima!
+
 <img width="598" height="428" alt="extraviado8" src="https://github.com/user-attachments/assets/9a7d9a31-62e6-417b-aedd-498e315cc13d" />
+
+Una vez ya dentro de la máquina Daniela, procederemos a revisar el archivo /etc/passwd para ver si existen más usuarios dentro del sistema, y vemos que existe el usuario "diego", al cual tendremos que pivotar para despues llegar a root.
 
 <img width="619" height="566" alt="extraviado9" src="https://github.com/user-attachments/assets/5e73a953-a285-4910-ae8b-291760e41ad6" />
 
