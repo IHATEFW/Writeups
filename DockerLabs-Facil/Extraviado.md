@@ -21,9 +21,13 @@ Procederemos a realizar un ataque de fuerza bruta a directorios con la herramien
 
 <img width="932" height="556" alt="extraviado4" src="https://github.com/user-attachments/assets/46b93e50-e11e-4a3e-8363-bf18e78c08cb" />
 
+En este punto, revisaremos la web de Apache2, y bajando, podemos visualizar una posible credencial válida pero encodeada en base64.
+
 <img width="1113" height="632" alt="extraviado5" src="https://github.com/user-attachments/assets/aabd7652-114c-493c-99f0-871061348d83" />
 
 <img width="921" height="391" alt="extraviado6" src="https://github.com/user-attachments/assets/ab9615a3-1b9a-4c66-afe5-791daa369379" />
+
+La decodeamos de la siguiente manea y nos encuentra las credenciales del usuario "daniela".
 
 <img width="556" height="292" alt="extraviado7" src="https://github.com/user-attachments/assets/35ed498a-16a8-4a2e-85dc-ce322f7f35ee" />
 
