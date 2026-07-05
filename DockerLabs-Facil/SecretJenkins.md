@@ -27,6 +27,12 @@
 
 <img width="1142" height="538" alt="secret11" src="https://github.com/user-attachments/assets/cfec8157-897d-4106-9edf-9683e49d1bb7" />
 
+<img width="734" height="95" alt="secret12" src="https://github.com/user-attachments/assets/08ac78bf-8a79-4697-8f0b-d08e3dbef9d7" />
+
+<img width="618" height="508" alt="secret13" src="https://github.com/user-attachments/assets/d4e83882-b25b-4446-b687-ac1d77988df6" />
+
+<img width="668" height="486" alt="secret14" src="https://github.com/user-attachments/assets/d408be41-0013-4832-87b0-b833557eac8a" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
