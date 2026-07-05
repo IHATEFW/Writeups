@@ -13,6 +13,8 @@ Una vez que ya tenemos la ip de la máquina víctima, realizaremos un escaneo co
 
 <img width="792" height="542" alt="extraviado2" src="https://github.com/user-attachments/assets/5cd649d3-cdbd-46c8-80f7-abf088920e0b" />
 
+Una vez ya tenemos los puertos abiertos identificados, procederemos a seguir enumerando nuevamente con la herramienta nmap, esta vez, indicando que nos arroje un conjunto básico de scripts de reconocimiento, además, que nos enumere las versiones de dichos servicios, una vez ya ejecutado, podemos visualizar que no encontramos nada interesante, solo las típica página web por defecto de Apache2.
+
 <img width="843" height="632" alt="extraviado3" src="https://github.com/user-attachments/assets/f59dce03-4f5e-4e08-a2a2-c0a2769c27fd" />
 
 <img width="932" height="556" alt="extraviado4" src="https://github.com/user-attachments/assets/46b93e50-e11e-4a3e-8363-bf18e78c08cb" />
