@@ -1,3 +1,4 @@
+La máquina Extraviado de la plafaforma DockerLabs.es es una máquina de dificultad "Fácil", la cual nos enseña como con algunas pistas y con adivinanzas podemos encontrar la password de root y hackear la máquina completa. .
 
 # EXTRAVIADO
 
