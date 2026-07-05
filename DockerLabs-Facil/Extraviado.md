@@ -39,9 +39,13 @@ Una vez ya dentro de la máquina Daniela, procederemos a revisar el archivo /etc
 
 <img width="619" height="566" alt="extraviado9" src="https://github.com/user-attachments/assets/5e73a953-a285-4910-ae8b-291760e41ad6" />
 
+En el home de daniela, existe un directorio llamado .secreto, donde se encuentra un archivo con la password de diego, nuevamente encodeada en base64, se decodea de la misma manera, y vemos la password de diego.
+
 <img width="613" height="483" alt="extraviado10" src="https://github.com/user-attachments/assets/605e3bf0-89b8-4ae6-b1fa-3869ec8eea0c" />
 
 <img width="586" height="136" alt="extraviado11" src="https://github.com/user-attachments/assets/e8b1dcfa-2789-4c03-9d39-b77084981649" />
+
+Ya como el usuario diego, encontramos en el directorio .local/share una adivinanza, haciendo referencia a que la password correcta es "osoazul"
 
 <img width="669" height="490" alt="extraviado13" src="https://github.com/user-attachments/assets/108c39dc-2d9c-4e21-a717-ef8f583be0c1" />
 
