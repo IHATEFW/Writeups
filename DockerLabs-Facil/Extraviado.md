@@ -21,6 +21,8 @@ Procederemos a realizar un ataque de fuerza bruta a directorios con la herramien
 
 <img width="932" height="556" alt="extraviado4" src="https://github.com/user-attachments/assets/46b93e50-e11e-4a3e-8363-bf18e78c08cb" />
 
+## 💣 EXPLOTACIÓN
+
 En este punto, revisaremos la web de Apache2, y bajando, podemos visualizar una posible credencial válida pero encodeada en base64.
 
 <img width="1113" height="632" alt="extraviado5" src="https://github.com/user-attachments/assets/aabd7652-114c-493c-99f0-871061348d83" />
@@ -34,6 +36,8 @@ La decodeamos de la siguiente manera y nos encuentra las credenciales del usuari
 Nos logueamos por SSH y ¡Ganamos acceso a la máquina víctima!
 
 <img width="598" height="428" alt="extraviado8" src="https://github.com/user-attachments/assets/9a7d9a31-62e6-417b-aedd-498e315cc13d" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 Una vez ya dentro de la máquina Daniela, procederemos a revisar el archivo /etc/passwd para ver si existen más usuarios dentro del sistema, y vemos que existe el usuario "diego", al cual tendremos que pivotar para despues llegar a root.
 
@@ -56,7 +60,3 @@ Luego de un rato, encontramos en el directorio .local/share una adivinanza, haci
 ¡Finalmente pivotamos como el usuario root!, máquina hackeada.
 
 <img width="462" height="509" alt="extraviado15" src="https://github.com/user-attachments/assets/2fc1629e-3ade-4233-b07e-323fa9fcd345" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
