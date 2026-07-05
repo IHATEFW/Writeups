@@ -9,6 +9,8 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+Una vez que ya tenemos la ip de la máquina víctima, realizaremos un escaneo con la herramienta nmap, que nos arroje todos los puertos abiertos existentes para así lograr acceso a la máquina, esto con el siguiente comando, una vez ejecutado, nos damos cuenta que existen los puertos 21 y 80 expuestos, correspondientes a los servicios FTP y HTTP.
+
 <img width="792" height="542" alt="extraviado2" src="https://github.com/user-attachments/assets/5cd649d3-cdbd-46c8-80f7-abf088920e0b" />
 
 <img width="843" height="632" alt="extraviado3" src="https://github.com/user-attachments/assets/f59dce03-4f5e-4e08-a2a2-c0a2769c27fd" />
