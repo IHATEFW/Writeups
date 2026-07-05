@@ -17,6 +17,8 @@ Una vez ya tenemos los puertos abiertos identificados, procederemos a seguir enu
 
 <img width="843" height="632" alt="extraviado3" src="https://github.com/user-attachments/assets/f59dce03-4f5e-4e08-a2a2-c0a2769c27fd" />
 
+Procederemos a realizar un ataque de fuerza bruta a directorios con la herramienta GoBuster, esto para lograr identificar posibles directorios ocultos luego de la /, una vez ejecutado, no encontramos nada.
+
 <img width="932" height="556" alt="extraviado4" src="https://github.com/user-attachments/assets/46b93e50-e11e-4a3e-8363-bf18e78c08cb" />
 
 <img width="1113" height="632" alt="extraviado5" src="https://github.com/user-attachments/assets/aabd7652-114c-493c-99f0-871061348d83" />
