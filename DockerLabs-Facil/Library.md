@@ -23,6 +23,8 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 <img width="546" height="393" alt="library8" src="https://github.com/user-attachments/assets/0cfed223-b2b2-45df-9b31-edfdd114c8e0" />
 
+<img width="512" height="218" alt="library9" src="https://github.com/user-attachments/assets/a3d144f3-9745-4212-a867-117ea2f10b7f" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
