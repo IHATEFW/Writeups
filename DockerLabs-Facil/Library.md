@@ -21,9 +21,15 @@ Por lo tanto, seguiremos enumerando pero esta vez, realizaremos un ataque de fue
 
 <img width="1194" height="600" alt="library4" src="https://github.com/user-attachments/assets/6e05a84b-a694-47ce-895a-17f4203a69d4" />
 
+Ya dentro de index.php, podemos visualizar una cadena de texto, parecida a una posible contraseña, vamos a guardarla.
+
 <img width="949" height="353" alt="library5" src="https://github.com/user-attachments/assets/cfc4f225-19fc-4cb5-97c8-66b883268779" />
 
+En este punto, realizaremos un ataque de fuerza bruta de SSH con la herramienta hydra, esto para poder identificar algun usuario válido que le pertenezca dicha contraseña, una vez ejecutado, podemos visualizar que nos encontró al usuario "carlos".
+
 <img width="1025" height="353" alt="library6" src="https://github.com/user-attachments/assets/9086c565-5972-41e9-87b1-ca2b2acbe9d5" />
+
+Accedemos vía SSH como el usuario carlos, ¡finalmente logramos acceso a la máquina víctima!
 
 <img width="1025" height="267" alt="library7" src="https://github.com/user-attachments/assets/a59c3c49-0162-4af8-891b-fce38d6e5606" />
 
