@@ -13,7 +13,11 @@ Una vez ya tenemos la ip de la máquina víctima, procederemos a realizar un esc
 
 <img width="791" height="552" alt="library2" src="https://github.com/user-attachments/assets/76f7f334-6906-4d69-a417-bca2441f1532" />
 
+Una vez que ya tenemos el puerto abierto, procederemos a realizar otro escaneo con nmap, pero esta vez un poco más exhaustivo, indicandole a nmap que nos encuentre la versión de dichos serviciosy que nos arroje un conjunto básico de scripts de reconomiento, esto de la siguiente manera, una vez ejecutado, podemos visualizar que no existe nada interasante, solo la tipica web por defecto de Apache2.
+
 <img width="891" height="573" alt="library3" src="https://github.com/user-attachments/assets/b2a7b1a6-ef0e-41c9-8c1d-ae26f20c9620" />
+
+Por lo tanto, seguiremos enumerando pero esta vez, realizaremos un ataque de fuerza bruta a directorios con la herramienta GoBuster, esto para poder identificar posibles directorios ocultos y ver si existe más información, esto de la siguiente manera, una vez ejecutado, podemos visualizar que nos encontró un index.php, vamos a revisarlo.
 
 <img width="1194" height="600" alt="library4" src="https://github.com/user-attachments/assets/6e05a84b-a694-47ce-895a-17f4203a69d4" />
 
