@@ -1,3 +1,4 @@
+La máquina Library de la plataforma DockerLabs.es, es una máquina dificultar "Fácil", la cual nos enseña a no exponer contraseñas válidas en webs, debido a que con un simple ataque de fuerza bruta de SSH con hydra, podemos encontrar su usuario válido y lograr acceder a la máquina víctima, luego con un script con permisos de root logramos pivotar al usuario final. .
 
 # LIBRARY
 
@@ -25,9 +26,13 @@ Ya dentro de index.php, podemos visualizar una cadena de texto, parecida a una p
 
 <img width="949" height="353" alt="library5" src="https://github.com/user-attachments/assets/cfc4f225-19fc-4cb5-97c8-66b883268779" />
 
+## 💣 EXPLOTACIÓN
+
 En este punto, realizaremos un ataque de fuerza bruta de SSH con la herramienta hydra, esto para poder identificar algun usuario válido que le pertenezca dicha contraseña, una vez ejecutado, podemos visualizar que nos encontró al usuario "carlos".
 
 <img width="1025" height="353" alt="library6" src="https://github.com/user-attachments/assets/9086c565-5972-41e9-87b1-ca2b2acbe9d5" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 Accedemos vía SSH como el usuario carlos, ¡finalmente logramos acceso a la máquina víctima!, una vez dentro de la máquina, procederemos a dar el comando sudo -l para ver si tenemos privilegios de nivel de sudoers para ejecutar algun binario y efectivamente podemos ejecutar un script .py como el usuario root.
 
@@ -48,7 +53,3 @@ Le inyectamos que nos devuelva una bash como el usuario root cuando lo ejecutemo
 Lo ejecutamos y ¡ya somos root!, máquina hackeada.
 
 <img width="586" height="325" alt="library11" src="https://github.com/user-attachments/assets/356c2865-f5f9-4897-8ad0-4afe097400d0" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
