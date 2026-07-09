@@ -29,15 +29,23 @@ En este punto, realizaremos un ataque de fuerza bruta de SSH con la herramienta 
 
 <img width="1025" height="353" alt="library6" src="https://github.com/user-attachments/assets/9086c565-5972-41e9-87b1-ca2b2acbe9d5" />
 
-Accedemos vía SSH como el usuario carlos, ¡finalmente logramos acceso a la máquina víctima!
+Accedemos vía SSH como el usuario carlos, ¡finalmente logramos acceso a la máquina víctima!, una vez dentro de la máquina, procederemos a dar el comando sudo -l para ver si tenemos privilegios de nivel de sudoers para ejecutar algun binario y efectivamente podemos ejecutar un script .py como el usuario root.
 
 <img width="1025" height="267" alt="library7" src="https://github.com/user-attachments/assets/a59c3c49-0162-4af8-891b-fce38d6e5606" />
 
+Revisamos que hace el script y no hace nada importante.
+
 <img width="546" height="393" alt="library8" src="https://github.com/user-attachments/assets/0cfed223-b2b2-45df-9b31-edfdd114c8e0" />
+
+Le damos todos los privilegios con chmod 777 para poder modificarlo e inyectarle código malicioso.
 
 <img width="512" height="218" alt="library9" src="https://github.com/user-attachments/assets/a3d144f3-9745-4212-a867-117ea2f10b7f" />
 
+Le inyectamos que nos devuelva una bash como el usuario root cuando lo ejecutemos, importandole la librería "os".
+
 <img width="364" height="237" alt="library10" src="https://github.com/user-attachments/assets/86209c20-0c5d-4b4e-b741-54900864d411" />
+
+Lo ejecutamos y ¡ya somos root!, máquina hackeada.
 
 <img width="586" height="325" alt="library11" src="https://github.com/user-attachments/assets/356c2865-f5f9-4897-8ad0-4afe097400d0" />
 
