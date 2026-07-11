@@ -1,4 +1,4 @@
-La máquina "Los 3 Hackers", es una máquina de dificultad "Fácil", la cual nos enseña a explotar distintas técnicas de evasión, entre ellas SQLi con una blacklist de por medio + rate limit, una vez explotada accedemos al dashboard y nos obliga a seguir enumerando, logrando un comprimido con las credenciales del 1er usuario, ya dentro de la máquina víctima pivotamos a 2 usuarios más, abusando de un Port Forwarding, procesos cron mal configurados, y finalmente para acceder a root se explota un binario con permisos capabilities. .
+La máquina "Los 3 Hackers", es una máquina de dificultad "Fácil", la cual nos enseña a explotar distintas técnicas de evasión, entre ellas SQLi con una blacklist de por medio + rate limit, una vez explotada accedemos al dashboard y nos obliga a seguir enumerando, logrando encontrar un comprimido con las credenciales del 1er usuario, ya dentro de la máquina víctima pivotamos a 2 usuarios más, abusando de un Port Forwarding, procesos cron mal configurados, y finalmente para acceder a root se explota un binario con permisos capabilities. .
 
 # LOS 3 HACKERS
 
