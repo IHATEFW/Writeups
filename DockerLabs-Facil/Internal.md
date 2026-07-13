@@ -9,6 +9,8 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+Una vez que ya tenemos la ip de la máquina víctima, procederemos a realizar un escaneo con la herramienta nmap, que nos muestre todos los puertos abiertos exístentes para así lograr acceso a la máquina, esto con el siguiente comando, una vez ejecutado, nos damos cuenta que solamente exíste el puerto 80 expuesto, correspondiente al servicio HTTP.
+
 <img width="781" height="545" alt="internal2" src="https://github.com/user-attachments/assets/9c4b3827-0f96-44a8-ace9-1fb8476173c7" />
 
 <img width="837" height="636" alt="internal3" src="https://github.com/user-attachments/assets/2e3a83b3-6904-43fc-a7e8-c44dbb089460" />
