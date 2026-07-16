@@ -65,9 +65,13 @@ Recibimos el 200 OK, significa que la revshell ya está dentro de la máquina v�
 
 <img width="569" height="262" alt="internal15" src="https://github.com/user-attachments/assets/bb755383-039c-4748-91dc-fa63df6129f2" />
 
+Lo lanzamos con el comando "bash", y nos ponemos en escucha por el puerto 443 en nuestra máquina atacante y ¡Ganamos acceso a la máquina víctima!
+
 <img width="1235" height="610" alt="internal16" src="https://github.com/user-attachments/assets/66098dcb-fc0f-47c2-aa12-6472a1a8bb42" />
 
 <img width="657" height="462" alt="internal17" src="https://github.com/user-attachments/assets/7682b91c-b4b8-488b-bd2e-ae5424fd1997" />
+
+Lo primero que deberemos hacer en la máquina víctima, es realizar un tratamiento de la tty
 
 <img width="676" height="567" alt="internal18" src="https://github.com/user-attachments/assets/e35131b5-53a4-4662-8602-5ff660c2a1be" />
 
