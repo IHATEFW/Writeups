@@ -1,6 +1,5 @@
 La máquina Internal de la plataforma DockerLabs.es, es una máquina de dificultad "Fácil", la cual nos enseña a bypassear dentro de un panel una blacklist de comandos no permitidos para podemos ejecutar comandos a nivel de sistema, nos lanzamos una reverse shell y ganamos acceso a la máquina víctima, luego con un binario mal configurado y con permisos SUID, logramos acceder a root . .
 
-
 # INTERNAL
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
