@@ -21,9 +21,15 @@ Al cual si accedemos, nuestra máquina no sabe como resolver, por lo tanto, tend
 
 <img width="1086" height="636" alt="internal4" src="https://github.com/user-attachments/assets/dc491c23-1a92-4515-910c-425f249da523" />
 
+Lo agregamos de la siguiente manera:
+
 <img width="740" height="336" alt="internal5" src="https://github.com/user-attachments/assets/02f6201b-96a4-482d-a35e-3cdf3c946803" />
 
+Una vez ya tenemos el dominio en el /etc/hosts, procederemos a recargar la web, y listo, nos aparece la verdadera web del puerto 80, la examinamos, pero no encontramos nada interesante de lo cual podemos aprovecharnos.
+
 <img width="1246" height="635" alt="internal6" src="https://github.com/user-attachments/assets/78aa9e0b-4204-4f12-94be-15f97aad761f" />
+
+En este punto, procederemos a realizar un ataque de fuerza bruta de directorios con la herramienta GoBuster, esto para lograr identificar directorios ocultos luego de la /, una vez ejecutado, podemos ver que no encontramos nada importante.
 
 <img width="1199" height="572" alt="internal7" src="https://github.com/user-attachments/assets/bc624d5b-936e-47f3-a62c-f189eddd5cd5" />
 
