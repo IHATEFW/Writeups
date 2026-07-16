@@ -33,19 +33,35 @@ En este punto, procederemos a realizar un ataque de fuerza bruta de directorios 
 
 <img width="1199" height="572" alt="internal7" src="https://github.com/user-attachments/assets/bc624d5b-936e-47f3-a62c-f189eddd5cd5" />
 
+Como tenemos un dominio al que nos estamos enfrentando, seguiremos realizando fuzzing, pero esta vez con la herramienta ffuf, indicandole que nos encuentre algo delante de internal.dl, por ejemplo FUZZ.internal.dl, arrojamos el ataque y nos encuentra la palabra "backup" con código 200 válido. 
+
 <img width="1278" height="633" alt="internal8" src="https://github.com/user-attachments/assets/366a60ac-32a5-4e1e-b178-cc82c3d63581" />
+
+Agregamos el nuevo dominio a nuestro archivo /etc/hosts para que nuestra máquina lo resuelva sin inconvenientes.
 
 <img width="782" height="308" alt="internal9" src="https://github.com/user-attachments/assets/859e71e2-301e-4753-aefb-01cac64eca1f" />
 
+Accedemos a dicho nuevo dominio y vemos que la web es diferente, existe un campo donde podemos inyectar comandos, o más bien, especificar algun directorio dentro de la máquina víctima.
+
 <img width="1324" height="626" alt="internal10" src="https://github.com/user-attachments/assets/afe7699c-e788-4f5a-87cd-d9cdcafd7d30" />
+
+Intentamos leer el /etc/passwd, pero vemos que hay por detrás una blacklist con comandos no permitidos, pero sin embargo, logramos leer dicho archivo igual pero de la siguiente manera:
 
 <img width="1324" height="626" alt="internal11" src="https://github.com/user-attachments/assets/e89f71d7-a0fe-41fd-ad62-c5457fcb8a67" />
 
+Como ya podemos ejecutar comandos a nivel de sistema, podemos crear un archivo llamado revshell y le metemos la típica reverse shell en bash, para lanzarnos una conexión con netcat a nuestra máquina atacante.
+
 <img width="514" height="270" alt="internal12" src="https://github.com/user-attachments/assets/98d13c59-40a7-404d-8bc2-45b845ae5dc1" />
+
+Levantamos un servidor http con python por el puerto 80.
 
 <img width="514" height="270" alt="internal13" src="https://github.com/user-attachments/assets/4de21f82-2989-4ffc-aac8-c6408bf62fdf" />
 
+Y nos mandamos la revshell a la máquina víctima con el comando wget pero de la misma forma que hemos estamos evadiendo dicha blacklist
+
 <img width="1313" height="608" alt="internal14" src="https://github.com/user-attachments/assets/e1cddf40-7106-440c-9fbb-aae60a86f80c" />
+
+Recibimos el 200 OK, significa que la revshell ya está dentro de la máquina víctima.
 
 <img width="569" height="262" alt="internal15" src="https://github.com/user-attachments/assets/bb755383-039c-4748-91dc-fa63df6129f2" />
 
