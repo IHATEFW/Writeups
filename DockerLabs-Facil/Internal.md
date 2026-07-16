@@ -1,3 +1,5 @@
+La máquina Internal de la plataforma DockerLabs.es, es una máquina de dificultad "Fácil", la cual nos enseña a bypassear dentro de un panel una blacklist de comandos no permitidos para podemos ejecutar comandos a nivel de sistema, nos lanzamos una reverse shell y ganamos acceso a la máquina víctima, luego con un binario mal configurado y con permisos SUID, logramos acceder a root . .
+
 
 # INTERNAL
 
@@ -49,6 +51,8 @@ Intentamos leer el /etc/passwd, pero vemos que hay por detrás una blacklist con
 
 <img width="1324" height="626" alt="internal11" src="https://github.com/user-attachments/assets/e89f71d7-a0fe-41fd-ad62-c5457fcb8a67" />
 
+## 💣 EXPLOTACIÓN
+
 Como ya podemos ejecutar comandos a nivel de sistema, podemos crear un archivo llamado revshell y le metemos la típica reverse shell en bash, para lanzarnos una conexión con netcat a nuestra máquina atacante.
 
 <img width="514" height="270" alt="internal12" src="https://github.com/user-attachments/assets/98d13c59-40a7-404d-8bc2-45b845ae5dc1" />
@@ -83,16 +87,22 @@ reset xterm
 export TERM=xterm && export SHELL=bash
 ```
 
+Ya con la tty estable, procederemos a leer el archivo /etc/passwd, donde encontramos el usuario vault, al cual tendremos que pivotar para posteriormente llegar a root.
+
 <img width="676" height="567" alt="internal18" src="https://github.com/user-attachments/assets/e35131b5-53a4-4662-8602-5ff660c2a1be" />
+
+Seguiremos revisando la máquina y encontramos en el directorio /opt, un archivo .txt donde se exponen posiblemente las credenciales de dicho usuario.
 
 <img width="508" height="557" alt="internal19" src="https://github.com/user-attachments/assets/41fcb5bc-0d60-489a-aabf-2b579314e693" />
 
+Nos traemos dicho archivo .txt a nuestra máquina atacante y lanzamos un ataque de fuerza bruta ssh con la herramienta Hydra, logrando encontrar la contraseña válida de vault.
+
 <img width="777" height="634" alt="internal20" src="https://github.com/user-attachments/assets/6186277b-20d4-49c8-ad43-0567b80f2745" />
+
+Ya como el usuario vault, accedemos a su home y vemos una flag, la leemos y nos muestra todos los bypasses que explotamos.
 
 <img width="777" height="634" alt="internal21" src="https://github.com/user-attachments/assets/ce69f570-9edd-47e5-a458-38d001834ea3" />
 
+Finalmente, con el comando find / -perm -4000 2>/dev/null encontramos el binario vaultctl con permisos SUID, lo ejecutamos y ¡Ganamos acceso como root!, máquina hackeada. . 
+
 <img width="595" height="345" alt="internal22" src="https://github.com/user-attachments/assets/6fe12717-9c84-4f07-b594-a7801ffdf981" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
