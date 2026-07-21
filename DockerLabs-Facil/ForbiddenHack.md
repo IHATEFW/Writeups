@@ -45,6 +45,20 @@
 
 <img width="600" height="460" alt="forbidden20" src="https://github.com/user-attachments/assets/15fcf865-4712-410f-b44d-ae908f97fc54" />
 
+<img width="797" height="638" alt="forbidden21" src="https://github.com/user-attachments/assets/8bf62a82-1705-44d0-9365-e511adbdc53a" />
+
+<img width="704" height="257" alt="forbidden22" src="https://github.com/user-attachments/assets/c39a1152-313d-483b-9967-8d8d8366c6cc" />
+
+<img width="567" height="535" alt="forbidden23" src="https://github.com/user-attachments/assets/587fb19e-8da1-41c9-ba94-23369f215964" />
+
+<img width="567" height="535" alt="forbidden24" src="https://github.com/user-attachments/assets/f70decc2-e9bc-42aa-bb87-049d9ef7748b" />
+
+<img width="792" height="490" alt="forbidden25" src="https://github.com/user-attachments/assets/20f10ff7-6c9f-4188-8a97-36435a305f40" />
+
+<img width="652" height="535" alt="forbidden26" src="https://github.com/user-attachments/assets/5fd9dc5e-a04d-4157-bbe7-58da40ad7360" />
+
+<img width="668" height="409" alt="forbidden27" src="https://github.com/user-attachments/assets/6f1d363a-0fd7-4ed1-aa7a-d0ec1b0fcd78" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
