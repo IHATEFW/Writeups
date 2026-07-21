@@ -5,4 +5,8 @@
 
 ## 🔎 ENUMERACIÓN
 
+## 💣 EXPLOTACIÓN
+
 ## 🔑 ESCALADA DE PRIVILEGIOS
+
+
