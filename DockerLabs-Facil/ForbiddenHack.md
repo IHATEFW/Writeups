@@ -29,13 +29,23 @@ El cual, procederemos a agregar a nuestro archivo /etc/hosts para que nuestra m�
 
 <img width="782" height="342" alt="forbidden6" src="https://github.com/user-attachments/assets/9ece242e-abba-41f0-b8d5-5e2f2654b38d" />
 
+Volvemos a recargar la página, y nos muestra un estado 403 "Forbidden", significa que no tenemos acceso para visualizar dicho recurso.
+
 <img width="837" height="374" alt="forbidden7" src="https://github.com/user-attachments/assets/f82cc7e2-a321-43da-96e5-e80b4b133080" />
+
+Ahora, procederemos a abrirnos Burpsuite, para interceptar la petición al recargar nuevamente la página.
 
 <img width="1127" height="635" alt="forbidden8" src="https://github.com/user-attachments/assets/449ba0f7-9bb3-4df4-8b36-2e66cf14cac7" />
 
+Pero le agregaremos la cabecera "Referer:", haciendo referencia al dominio que hemos encontrado, esto de la siguiente manera, lanzamos la petición nuevamente, y vemos que se nos expone la web real.
+
 <img width="1127" height="635" alt="forbidden9" src="https://github.com/user-attachments/assets/a1ca21bb-3295-4a53-82ba-ab01f14a7a3d" />
 
+Como vemos que nos funcionó, seguiremos realizando fuzzing, pero esta vez, con la herramienta wfuzz, para lograr encontrar algun parametro para poder leer archivos dentro de la máquina víctima (LFI) y si es posible llegar a un RCE, esto adjuntandole la misma cabecera "Referer:", lanzamos el escaneo, y nos encontró el parametro "pages".
+
 <img width="1226" height="635" alt="forbidden10" src="https://github.com/user-attachments/assets/0a8e76f1-1c1f-423d-b965-4fe7110414d1" />
+
+Lo probamos en Burpsuite, para intentar leer el archivo /etc/passwd, y ¡efectivamente funciona!
 
 <img width="1226" height="635" alt="forbidden11" src="https://github.com/user-attachments/assets/f31fc313-57a7-481a-8fc2-a18fe717f9df" />
 
