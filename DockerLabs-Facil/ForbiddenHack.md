@@ -1,3 +1,4 @@
+La máquina llamada "ForbiddenHack" de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña a convertir un LFI en un RCE utilizando Wrappers de php, para así poder ejecutar comandos a nivel de sistema y lanzarnos una reverse shell para ganar acceso a la máquina víctima, una vez dentro, abusamos de permisos a nivel de sudoers para pivotar a root . .
 
 # FORBIDDEN HACK
 
@@ -49,6 +50,8 @@ Lo probamos en Burpsuite, para intentar leer el archivo /etc/passwd, y ¡efectiv
 
 <img width="1226" height="635" alt="forbidden11" src="https://github.com/user-attachments/assets/f31fc313-57a7-481a-8fc2-a18fe717f9df" />
 
+## 💣 EXPLOTACIÓN
+
 En este punto, comenzaremos con la fase de explotación, la meta es llegar a inyectar comandos a nivel de sistema para lanzarnos una reverse shell a nuestra máquina atacante, esto lo haremos con Wrappers de php, nos meteremos a este proyecto de Github.
 
 <img width="1078" height="621" alt="forbidden12" src="https://github.com/user-attachments/assets/b2559ab5-bbcf-4a82-afbf-fad5b3780f5a" />
@@ -81,6 +84,8 @@ Obviamente poniendonos en escucha en otra pestaña por el puerto que designamos,
 
 <img width="766" height="339" alt="forbidden19" src="https://github.com/user-attachments/assets/130e9655-b361-4e1e-8b3b-91dd4de7d3ee" />
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
 una vez dentro de la máquina víctima, procedemos a realizar el tratamiento de la tty con los siguientes comandos:
 
 ```bash
@@ -100,28 +105,26 @@ Accedemos al home de bambi, ya que es accesible, y vemos que existe otro directo
 
 <img width="797" height="638" alt="forbidden21" src="https://github.com/user-attachments/assets/8bf62a82-1705-44d0-9365-e511adbdc53a" />
 
-Ya como el usuario bambi, daremos sudo -l para ver si podemos ejecutar binarios a nivel de sudoers, y efectivamente podemos ejecutar el binario usr/bin/furb como el usuario root, lo lanzamos y no vemos nada interesante.
+Ya como el usuario bambi, daremos sudo -l para ver si podemos ejecutar binarios a nivel de sudoers, y efectivamente podemos ejecutar el binario usr/bin/furb como el usuario root.
 
 <img width="704" height="257" alt="forbidden22" src="https://github.com/user-attachments/assets/c39a1152-313d-483b-9967-8d8d8366c6cc" />
 
-En este punto con el comando strings, examinamos el binario y vemos que le falta el parametro "-r", el cual posiblemente sirve para leer archivos que no tenemos privilegios de leer.
+ lo lanzamos y no vemos nada interesante.
 
 <img width="567" height="535" alt="forbidden23" src="https://github.com/user-attachments/assets/587fb19e-8da1-41c9-ba94-23369f215964" />
 
-Intentamos leer el archivo /etc/shadow donde se exponen las credenciales de los usuarios pero en hashes, y efectivamente podemos.
+En este punto con el comando strings, examinamos el binario y vemos que le falta el parametro "-r", el cual posiblemente sirve para leer archivos que no tenemos privilegios de leer.
 
 <img width="567" height="535" alt="forbidden24" src="https://github.com/user-attachments/assets/f70decc2-e9bc-42aa-bb87-049d9ef7748b" />
 
-Seguiremos revisando la máquina y vemos que en /var/backups, existe un archivo .txt que nos da la pista de reutilizar el mismo nombre de archivo "furbRead.txt
+Intentamos leer el archivo /etc/shadow donde se exponen las credenciales de los usuarios pero en hashes, y efectivamente podemos.
 
 <img width="792" height="490" alt="forbidden25" src="https://github.com/user-attachments/assets/20f10ff7-6c9f-4188-8a97-36435a305f40" />
 
+Seguiremos revisando la máquina y vemos que en /var/backups, existe un archivo .txt que nos da la pista de reutilizar el mismo nombre de archivo "furbRead.txt
+
 <img width="652" height="535" alt="forbidden26" src="https://github.com/user-attachments/assets/5fd9dc5e-a04d-4157-bbe7-58da40ad7360" />
 
+Se nos ocurre leer un archivo con el mismo nombre pero dentro de /root y encontramos la password de dicho usuario, ¡máquina hackeada!
+
 <img width="668" height="409" alt="forbidden27" src="https://github.com/user-attachments/assets/6f1d363a-0fd7-4ed1-aa7a-d0ec1b0fcd78" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
-
-
