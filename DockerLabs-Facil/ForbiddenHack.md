@@ -13,7 +13,11 @@ Una vez que ya tenemos la ip de la máquina víctima, realizaremos un escaneo co
 
 <img width="756" height="512" alt="forbidden2" src="https://github.com/user-attachments/assets/23a445dd-5e5b-4d3e-b3d5-71866690411b" />
 
+Ya sabemos que está el puerto 80 abierto, ahora seguiremos realizando un escaneo pero más exhaustivo con nmap, esta vez indicandole que nos enumere la versión de dicho servicio HTTP y que nos arroje un conjunto básico de scripts de reconocimiento, de la siguiente manera, una vez ejecutado, vemos que no existe nada importante, solo vemos la web por defecto 
+
 <img width="880" height="630" alt="forbidden3" src="https://github.com/user-attachments/assets/3cc1d478-3236-43f2-b059-7726e7fcf3cd" />
+
+En este punto, realizaremos un ataque de fuerza bruta de directorios con la herramienta Gobuster
 
 <img width="988" height="599" alt="forbidden4" src="https://github.com/user-attachments/assets/87278fa8-0921-4c1e-b325-19a9510fe082" />
 
