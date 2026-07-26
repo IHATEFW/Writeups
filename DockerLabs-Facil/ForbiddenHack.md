@@ -81,15 +81,38 @@ Obviamente poniendonos en escucha en otra pestaña por el puerto que designamos,
 
 <img width="766" height="339" alt="forbidden19" src="https://github.com/user-attachments/assets/130e9655-b361-4e1e-8b3b-91dd4de7d3ee" />
 
+una vez dentro de la máquina víctima, procedemos a realizar el tratamiento de la tty con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+stty rows 50 columns 236
+```
+
+Ya con la tty más estable, procederemos a leer el archivo /etc/passwd para ver si existen más usuarios dentro de la máquina a los cuales tendramos que pivotar, y vemos que existe el usuario bambi.
+
 <img width="600" height="460" alt="forbidden20" src="https://github.com/user-attachments/assets/15fcf865-4712-410f-b44d-ae908f97fc54" />
+
+Accedemos al home de bambi, ya que es accesible, y vemos que existe otro directorio llamado .secret, accedemos y vemos un archivo .txt con una cadena en base64, la decodeamos y encontramos la contraseña de bambi, subimos privilegios a bambi.
 
 <img width="797" height="638" alt="forbidden21" src="https://github.com/user-attachments/assets/8bf62a82-1705-44d0-9365-e511adbdc53a" />
 
+Ya como el usuario bambi, daremos sudo -l para ver si podemos ejecutar binarios a nivel de sudoers, y efectivamente podemos ejecutar el binario usr/bin/furb como el usuario root, lo lanzamos y no vemos nada interesante.
+
 <img width="704" height="257" alt="forbidden22" src="https://github.com/user-attachments/assets/c39a1152-313d-483b-9967-8d8d8366c6cc" />
+
+En este punto con el comando strings, examinamos el binario y vemos que le falta el parametro "-r", el cual posiblemente sirve para leer archivos que no tenemos privilegios de leer.
 
 <img width="567" height="535" alt="forbidden23" src="https://github.com/user-attachments/assets/587fb19e-8da1-41c9-ba94-23369f215964" />
 
+Intentamos leer el archivo /etc/shadow donde se exponen las credenciales de los usuarios pero en hashes, y efectivamente podemos.
+
 <img width="567" height="535" alt="forbidden24" src="https://github.com/user-attachments/assets/f70decc2-e9bc-42aa-bb87-049d9ef7748b" />
+
+Seguiremos revisando la máquina y vemos que en /var/backups, existe un archivo .txt que nos da la pista de reutilizar el mismo nombre de archivo "furbRead.txt
 
 <img width="792" height="490" alt="forbidden25" src="https://github.com/user-attachments/assets/20f10ff7-6c9f-4188-8a97-36435a305f40" />
 
