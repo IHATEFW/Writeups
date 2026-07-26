@@ -13,15 +13,19 @@ Una vez que ya tenemos la ip de la máquina víctima, realizaremos un escaneo co
 
 <img width="756" height="512" alt="forbidden2" src="https://github.com/user-attachments/assets/23a445dd-5e5b-4d3e-b3d5-71866690411b" />
 
-Ya sabemos que está el puerto 80 abierto, ahora seguiremos realizando un escaneo pero más exhaustivo con nmap, esta vez indicandole que nos enumere la versión de dicho servicio HTTP y que nos arroje un conjunto básico de scripts de reconocimiento, de la siguiente manera, una vez ejecutado, vemos que no existe nada importante, solo vemos la web por defecto 
+Ya sabemos que está el puerto 80 abierto, ahora seguiremos realizando un escaneo pero más exhaustivo con nmap, esta vez indicandole que nos enumere la versión de dicho servicio HTTP y que nos arroje un conjunto básico de scripts de reconocimiento, de la siguiente manera, una vez ejecutado, vemos que no existe nada importante, solo vemos la web por defecto de Apache2.
 
 <img width="880" height="630" alt="forbidden3" src="https://github.com/user-attachments/assets/3cc1d478-3236-43f2-b059-7726e7fcf3cd" />
 
-En este punto, realizaremos un ataque de fuerza bruta de directorios con la herramienta Gobuster
+En este punto, realizaremos un ataque de fuerza bruta de directorios con la herramienta Gobuster, para ver si existen posibles directorios ocultos detrás de la / en la URL, pero vemos que una vez ejecutado no encontramos nada interesante. 
 
 <img width="988" height="599" alt="forbidden4" src="https://github.com/user-attachments/assets/87278fa8-0921-4c1e-b325-19a9510fe082" />
 
+Procederemos a revisar la web, vemos que por más que sea la tipica web por defecto de Apache2, de principio se expone una dominio "bypass403.pw
+
 <img width="1167" height="625" alt="forbidden5" src="https://github.com/user-attachments/assets/89e59977-878b-49b4-89df-845eed8cccc2" />
+
+El cual, procederemos a agregar a nuestro archivo /etc/hosts para que nuestra máquina sepa resolver dicho dominio y nos muestre la web real, esto de la siguiente manera:
 
 <img width="782" height="342" alt="forbidden6" src="https://github.com/user-attachments/assets/9ece242e-abba-41f0-b8d5-5e2f2654b38d" />
 
