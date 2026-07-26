@@ -53,17 +53,31 @@ En este punto, comenzaremos con la fase de explotación, la meta es llegar a iny
 
 <img width="1078" height="621" alt="forbidden12" src="https://github.com/user-attachments/assets/b2559ab5-bbcf-4a82-afbf-fad5b3780f5a" />
 
+Nos clonamos el repositorio en nuestra máquina atacante de la siguiente manera y accedemos al proyecto, esto de la siguiente manera:
+
 <img width="860" height="530" alt="forbidden13" src="https://github.com/user-attachments/assets/5aae9de1-a492-4d73-b016-3e19aff0373f" />
+
+Ahora con python3, lanzaremos crearemos el wrapper con el comando ls -l, esto para ver si podemos listar contenido dentro de la máquina víctima, si funciona, hemos explotado un RCE, una vez generado, lo copiamos completo.
 
 <img width="1331" height="632" alt="forbidden14" src="https://github.com/user-attachments/assets/d8ba5717-7dc6-4dcc-8e69-1a1cae7189dc" />
 
+En Burpsuite, lo pegamos detrás del parametro pages=, lanzamos nuevamente la petición, y efectivamente podemos listar contenido dentro de la máquina víctima.
+
 <img width="1331" height="632" alt="forbidden15" src="https://github.com/user-attachments/assets/84a9fe2e-edbf-4535-94bd-1137a260aff9" />
+
+Verificamos lo mismo pero a nivel de consola con la herramienta curl, y efectivamente podemos realizar lo mismo (listar contenido).
 
 <img width="1152" height="435" alt="forbidden16" src="https://github.com/user-attachments/assets/7888dd71-51c4-47c1-bda1-68edad1f39ce" />
 
+Ahora nos pondremos más maliciosos, nos crearemos otro wrapper pero esta vez creando el parametro 'a' con system $_GET, esto para lograr ejecutarnos la famosa reverse shell que queremos conseguir.
+
 <img width="1168" height="623" alt="forbidden17" src="https://github.com/user-attachments/assets/033211b5-0e22-428c-896a-6e61ce55dcb6" />
 
+Con curl nuevamente la url encodeamos y la lanzamos.
+
 <img width="1168" height="623" alt="forbidden18" src="https://github.com/user-attachments/assets/a6d418d8-b14d-4c06-b681-0cd69f198626" />
+
+Obviamente poniendonos en escucha en otra pestaña por el puerto que designamos, lo lanzamos y ¡Ganamos acceso a la máquina víctima!
 
 <img width="766" height="339" alt="forbidden19" src="https://github.com/user-attachments/assets/130e9655-b361-4e1e-8b3b-91dd4de7d3ee" />
 
