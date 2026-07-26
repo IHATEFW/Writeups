@@ -49,6 +49,8 @@ Lo probamos en Burpsuite, para intentar leer el archivo /etc/passwd, y ¡efectiv
 
 <img width="1226" height="635" alt="forbidden11" src="https://github.com/user-attachments/assets/f31fc313-57a7-481a-8fc2-a18fe717f9df" />
 
+En este punto, comenzaremos con la fase de explotación, la meta es llegar a inyectar comandos a nivel de sistema para lanzarnos una reverse shell a nuestra máquina atacante, esto lo haremos con Wrappers de php, nos meteremos a este proyecto de Github.
+
 <img width="1078" height="621" alt="forbidden12" src="https://github.com/user-attachments/assets/b2559ab5-bbcf-4a82-afbf-fad5b3780f5a" />
 
 <img width="860" height="530" alt="forbidden13" src="https://github.com/user-attachments/assets/5aae9de1-a492-4d73-b016-3e19aff0373f" />
