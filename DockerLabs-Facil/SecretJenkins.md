@@ -29,11 +29,19 @@ Ahora buscamos en la base de datos de exploit-db por dicha versión, pero no enc
 
 <img width="1107" height="277" alt="secret6" src="https://github.com/user-attachments/assets/061fa36d-b128-4a3c-a9dc-dceb28183343" />
 
+Es allí cuando googleamos y nos damos cuenta que dicha versión si es vulnerable a un Arbitrary Read File, por lo tanto, encontramos este repositorio en Github, con un script de python que nos permitirá leer archivos dentro de la máquina víctima.
+
 <img width="1234" height="634" alt="secret7" src="https://github.com/user-attachments/assets/be5db958-2328-40c6-a06e-b6e029602c4f" />
+
+Clonamos dicho repositorio, y ejecutamos el script de la siguiente manera, y vemos que efectivamente nos muestra el archivo /etc/passwd, donde se exponen 2 usuarios "bobby" y "pinguinito".
 
 <img width="1278" height="634" alt="secret8" src="https://github.com/user-attachments/assets/7d80d433-e86b-4416-8244-94076ca4310b" />
 
+Como ya tenemos 2 usuarios válidos del sistema, vamos a ejecutar fuerza bruta de SSH con la herramienta Hydra, recordar que tambien teníamos el puerto 22 abierto, logrando encontrar la contraseña del usuario bobby, nos logueamos por ssh y ¡Ganamos acceso a la máquina víctima!
+
 <img width="1278" height="634" alt="secret9" src="https://github.com/user-attachments/assets/0c94ee21-842e-4a76-befb-802fbfd74e0c" />
+
+Ya dentro de la máquina como el usuario bobby
 
 <img width="929" height="300" alt="secret10" src="https://github.com/user-attachments/assets/9259384c-0455-42b2-824c-a7bf4411bc65" />
 
