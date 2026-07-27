@@ -9,6 +9,8 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+Una vez que ya tenemos la ip de la máquina víctima, realizaremos un escaneo con la herramienta nmap, para que nos arroje todos los puertos abiertos existentes para así lograr acceso a la máquina, esto con el siguiente comando, una vez ejecutado, nos damos cuenta que existen los puertos 22 y 8080 abiertos, relacionados a SSH y un posible HTTP.
+
 <img width="768" height="552" alt="secret2" src="https://github.com/user-attachments/assets/0a1d3431-3329-4ed0-a82d-97d19ff095e3" />
 
 <img width="837" height="640" alt="secret3" src="https://github.com/user-attachments/assets/ee6d278d-f209-4aa9-9682-8192f0a77508" />
