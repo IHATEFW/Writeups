@@ -1,3 +1,4 @@
+La máquina SecretJenkins de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como explotar una vulnerabilidad LFI en una versión de Jenkins desactualizada, logrando encontrar 2 usuarios válidos del sistema, y con la herramienta Hydra encontramos la contraseña de uno de ellos, luego dentro de la máquina pivotamos a root con privilegios a nivel de sudoers . .
 
 # SECRETJENKINS
 
@@ -37,22 +38,30 @@ Clonamos dicho repositorio, y ejecutamos el script de la siguiente manera, y vem
 
 <img width="1278" height="634" alt="secret8" src="https://github.com/user-attachments/assets/7d80d433-e86b-4416-8244-94076ca4310b" />
 
+## 💣 EXPLOTACIÓN
+
 Como ya tenemos 2 usuarios válidos del sistema, vamos a ejecutar fuerza bruta de SSH con la herramienta Hydra, recordar que tambien teníamos el puerto 22 abierto, logrando encontrar la contraseña del usuario bobby, nos logueamos por ssh y ¡Ganamos acceso a la máquina víctima!
 
 <img width="1278" height="634" alt="secret9" src="https://github.com/user-attachments/assets/0c94ee21-842e-4a76-befb-802fbfd74e0c" />
 
-Ya dentro de la máquina como el usuario bobby
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Ya dentro de la máquina como el usuario bobby, damos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algun binario, y efectivamente podemos ejecutar python3 como el usuario pinguinito.
 
 <img width="929" height="300" alt="secret10" src="https://github.com/user-attachments/assets/9259384c-0455-42b2-824c-a7bf4411bc65" />
 
+En este punto, nos dirigiremos a la web gtfobins.org y filtramos por python3, copiamos el siguiente comando.
+
 <img width="1142" height="538" alt="secret11" src="https://github.com/user-attachments/assets/cfec8157-897d-4106-9edf-9683e49d1bb7" />
+
+Y los ejecutamos como el usuario pinguinito, y listo, ya pivotamos al usuario pinguinito.
 
 <img width="734" height="95" alt="secret12" src="https://github.com/user-attachments/assets/08ac78bf-8a79-4697-8f0b-d08e3dbef9d7" />
 
+Ya como el usuario pinguinito, daremos nuevamente el comando sudo -l y vemos que podemos ejecutar un script .py como el usuario root, lo vemos y no tiene nada interesante.
+
 <img width="618" height="508" alt="secret13" src="https://github.com/user-attachments/assets/d4e83882-b25b-4446-b687-ac1d77988df6" />
 
+Pero vemos que podemos modificar los permisos de dicho script, le damos permisos de ejecución con chmod 777 y le inyectamos código malicioso para lanzarnos una bash de manera privilegiada, la ejecutamos como root y listo ¡Máquina hackeada!, somos root.
+
 <img width="668" height="486" alt="secret14" src="https://github.com/user-attachments/assets/d408be41-0013-4832-87b0-b833557eac8a" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
