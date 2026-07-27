@@ -3,6 +3,8 @@
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
+Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprime con el comando unzip y se despliega de la siguiente manera:
+
 <img width="690" height="418" alt="secret1" src="https://github.com/user-attachments/assets/6ae7655b-b110-429b-88ba-fd7aecb60df3" />
 
 ## 🔎 ENUMERACIÓN
