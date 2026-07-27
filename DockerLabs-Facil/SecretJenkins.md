@@ -13,11 +13,19 @@ Una vez que ya tenemos la ip de la máquina víctima, realizaremos un escaneo co
 
 <img width="768" height="552" alt="secret2" src="https://github.com/user-attachments/assets/0a1d3431-3329-4ed0-a82d-97d19ff095e3" />
 
+Ya sabemos que está el puerto 80 abierto, ahora seguiremos realizando un escaneo pero más exhaustivo con nmap, esta vez indicandole que nos enumere la versión de dichos servicios SSH y HTTP y que nos arroje un conjunto básico de scripts de reconocimiento, de la siguiente manera, una vez ejecutado, vemos un header "Jetty 10.0.18", el cual posiblemente corresponde a un Jenkins.
+
 <img width="837" height="640" alt="secret3" src="https://github.com/user-attachments/assets/ee6d278d-f209-4aa9-9682-8192f0a77508" />
+
+Revisamos la web que corre en el puerto 8080 y efectivamente vemos que es un Jenkins, con el tipico panel de autenticación.
 
 <img width="1203" height="640" alt="secret4" src="https://github.com/user-attachments/assets/8a4db74a-50f3-48ce-b1c0-225cd6b91812" />
 
+En este punto, nuestra meta es verificar que versión corresponde a dicho Jenkins, para eso, lanzaremos el comando whatweb en nuestra terminal, logrando identificar que la versión es la 2.441.
+
 <img width="1107" height="277" alt="secret5" src="https://github.com/user-attachments/assets/70a8f264-8196-4144-b998-6b4747b4203d" />
+
+Ahora buscamos en la base de datos de exploit-db por dicha versión, pero no encontramos nada.
 
 <img width="1107" height="277" alt="secret6" src="https://github.com/user-attachments/assets/061fa36d-b128-4a3c-a9dc-dceb28183343" />
 
