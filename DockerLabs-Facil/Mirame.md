@@ -27,6 +27,7 @@
 
 <img width="665" height="537" alt="mirame11" src="https://github.com/user-attachments/assets/e98e9a4d-e217-44c5-b60d-c2ac1a6ea3e3" />
 
+<img width="931" height="557" alt="mirame12" src="https://github.com/user-attachments/assets/3d8d363f-0345-4e71-96a3-a82667601b39" />
 
 ## 💣 EXPLOTACIÓN
 
