@@ -29,13 +29,15 @@ Vemos que es vulnerable a una SQLi, ¡Logramos acceso al panel!
 
 <img width="1243" height="614" alt="mirame6" src="https://github.com/user-attachments/assets/92c4311b-1899-4017-a5eb-36663e2149d2" />
 
-Vemos que es una especie de consulta de clima por ciudad.
+Vemos que es una especie de consulta de clima por ciudad, probamos con la ciudad de Santiago y nos arroja una temperatura.
 
 <img width="1243" height="614" alt="mirame7" src="https://github.com/user-attachments/assets/a7ab978e-81dc-40c3-92fd-33032f3b2b76" />
 
-Probamos con la ciudad de Santiago y nos arroja una temperatura.
+En este punto, procederemos a abrirnos Burpsuite, para interceptar la petición de la SQLi.
 
 <img width="1165" height="591" alt="mirame8" src="https://github.com/user-attachments/assets/ae4f39bc-a8d1-4ab7-b6d1-37e07d78eb5a" />
+
+La volvemos a lanzar, pero en el campo de usuario ponemos admin y en la contraseña también.
 
 <img width="1134" height="620" alt="mirame9" src="https://github.com/user-attachments/assets/d1e86d41-1fee-410c-a779-8c56e2f5b3d8" />
 
