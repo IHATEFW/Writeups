@@ -1,3 +1,4 @@
+La máquina FindYourStyle de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como abusar de un gestor de contenido CMS llamado Drupal, en su versión vulnerable 8, nos lanzamos un script de ruby para ganar acceso a la máquina víctima pero a un contenedor de aquella, luego encontramos que podemos ejecutar un RCE utilizando el parametro ?c=, nos lanzamos una reverse shell y ya estamos dentro, finalmente pivotamos a root gracias a credenciales expuestas y binarios con permisos a nivel de sudoers. .
 
 # FINDYOURSTYLE
 
