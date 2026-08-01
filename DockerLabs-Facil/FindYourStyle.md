@@ -3,13 +3,21 @@
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
+Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprime con el comando unzip y se despliega de la siguiente manera:
+
 <img width="892" height="630" alt="find1" src="https://github.com/user-attachments/assets/5f5510f5-1e0d-4ef5-b297-40682035aaa9" />
 
 ## 🔎 ENUMERACIÓN
 
+Cuando ya tengamos la ip de la máquina víctima, se procederá a realizar un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos existentes abiertos/expuestos que tenga la máquina, esto con el siguiente comando, una vez ejecutado, podemos visualizar que solamente tenemos el puerto 80 abierto, relacionado al servicio HTTP.
+
 <img width="1208" height="593" alt="find2" src="https://github.com/user-attachments/assets/612087d7-c140-42bd-81f0-b118491a628c" />
 
+Ya cuando tengamos los puertos abiertos identificados, seguiremos realizando un escaneo pero más exhaustivo con nmap, esta vez indicandole que nos enumere la versión de dicho servicio HTTP y que nos arroje un conjunto básico de scripts de reconocimiento, de la siguiente manera, una vez ejecutado, vemos que al parecer la web que hay por detrás del puerto 80 expone un gestor de contenido CMS llamado Drupal, en su versión 8, además, existe el archivo robots.txt donde se exponen más directorios válidos.
+
 <img width="937" height="628" alt="find3" src="https://github.com/user-attachments/assets/154562b8-5d4e-4753-ab96-44820d21e123" />
+
+En este punto, vamos a revisar la web Drupal 8, accedemos y nos encontramos con esta web
 
 <img width="1317" height="628" alt="find4" src="https://github.com/user-attachments/assets/84423b3c-5273-4a51-a8ee-573158aee1f4" />
 
