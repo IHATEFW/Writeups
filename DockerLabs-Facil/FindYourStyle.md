@@ -33,13 +33,15 @@ Lo descargaremos en nuestra máquina con el siguiente comando:
 
 <img width="879" height="518" alt="find7" src="https://github.com/user-attachments/assets/63559b1c-092d-4122-8986-0f02c75be866" />
 
+## 💣 EXPLOTACIÓN
+
 Lo lanzamos de la siguiente manera y vemos que ganamos acceso a la máquina víctima, pero estamos dentro de un contenedor, también vemos que nos indica revisar el directorio /shell.php y adjuntarle el parametro ?c=
 
 <img width="837" height="622" alt="find8" src="https://github.com/user-attachments/assets/eb71167a-478b-4ddf-ad9c-3b9eec003ab7" />
 
 <img width="840" height="631" alt="find9" src="https://github.com/user-attachments/assets/d481b867-b1a4-4c8b-86ec-f7c9fb4e903d" />
 
-Lo probamos y ¡efectivamente logramos el RCE!
+Lo probamos y ¡efectivamente logramos el RCE! 🔥
 
 <img width="677" height="241" alt="find10" src="https://github.com/user-attachments/assets/ebe15f82-7c83-453e-af7c-2da8e5d50230" />
 
@@ -51,7 +53,7 @@ Nos lanzamos el siguiente oneliner de reverse shell típico de bash.
 
 <img width="800" height="165" alt="find12" src="https://github.com/user-attachments/assets/b4dda699-ad33-4973-858e-1b656ce59972" />
 
-Chequeamos la escucha y vemos que ¡logramos acceder a la máquina víctima!
+Chequeamos la escucha y vemos que ¡logramos acceder a la máquina víctima! 🔥
 
 <img width="694" height="325" alt="find13" src="https://github.com/user-attachments/assets/8a36989d-e65d-43f3-bbe0-3fab26ccda73" />
 
@@ -64,20 +66,32 @@ stty raw -echo;fg
 reset xterm
 export TERM=xterm && export SHELL=bash
 ```
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Ya con la tty estable, lo primero que realizaremos es leer el archivo /etc/passwd para ver si existen más usuarios dentro del sistema y vemos que existe el usuario "ballenita", al cual tendremos que pivotar para finalmente llegar a root.
+
 <img width="741" height="566" alt="find14" src="https://github.com/user-attachments/assets/1dcd9b5f-d570-450e-8005-00279fceff44" />
+
+Vemos que podemos acceder al home de ballenita, pero no existe nada importante, en este punto, procederemos a revisar si existe el archivo settings.php, el cual es muy comun en los gestores de contenido, ya que la mayoría son desarrollados en php, vemos que si existe.
 
 <img width="859" height="609" alt="find15" src="https://github.com/user-attachments/assets/67ae35eb-1a2c-485e-9baf-6491c95e542f" />
 
+Lo revisamos y vemos que se exponen las credenciales de ballenita.
+
 <img width="859" height="609" alt="find16" src="https://github.com/user-attachments/assets/441c21da-2a52-4956-8684-8633f66d3b1a" />
+
+Las probamos y ¡somos el usuario ballenita! 🔥, ahora daremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers y efectivamente podemos ejecutar los binarios /bin/ls y /bin/grep como el usuario root.
 
 <img width="960" height="344" alt="find17" src="https://github.com/user-attachments/assets/bd052ebf-c44f-4dbd-86c8-4e76db104d22" />
 
+con /bin/ls listamos el contenido del directorio /root y encontramos un archivo .txt con un secreto.
+
 <img width="577" height="69" alt="find18" src="https://github.com/user-attachments/assets/b2248d7a-745a-4ff9-8c92-f65a639b2d02" />
+
+Nos dirigiremos a nuestra biblia gtfobins.org y filtraremos por "grep", copiaremos el primer comando.
 
 <img width="1106" height="598" alt="find19" src="https://github.com/user-attachments/assets/237461a4-1130-4fa0-8d4b-89fe39a7ad15" />
 
+Lo lanzamos como root para que nos permita leer dicho archivo .txt y encontramos la contraseña de root, finalmente pivotamos a root, máquina hackeada 🔥. .
+
 <img width="696" height="188" alt="find20" src="https://github.com/user-attachments/assets/eeaf33d4-3977-493d-ab25-5f900a398c18" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
