@@ -37,21 +37,23 @@ Lo lanzamos de la siguiente manera y vemos que ganamos acceso a la máquina víc
 
 <img width="837" height="622" alt="find8" src="https://github.com/user-attachments/assets/eb71167a-478b-4ddf-ad9c-3b9eec003ab7" />
 
-Lo probamos y ¡efectivamente logramos el RCE!
-
 <img width="840" height="631" alt="find9" src="https://github.com/user-attachments/assets/d481b867-b1a4-4c8b-86ec-f7c9fb4e903d" />
 
-Nos pondremos en escucha con netcat por el puerto 443 para así lanzarnos una reverse shell desde la url.
+Lo probamos y ¡efectivamente logramos el RCE!
 
 <img width="677" height="241" alt="find10" src="https://github.com/user-attachments/assets/ebe15f82-7c83-453e-af7c-2da8e5d50230" />
 
-Nos lanzamos el siguiente oneliner de reverse shell típico de bash.
+Nos pondremos en escucha con netcat por el puerto 443 para así lanzarnos una reverse shell desde la url.
 
 <img width="682" height="240" alt="find11" src="https://github.com/user-attachments/assets/cf3399d6-8db0-4a72-9877-a9f267bd2e4d" />
 
-Chequeamos la escucha y vemos que ¡logramos acceder a la máquina víctima!
+Nos lanzamos el siguiente oneliner de reverse shell típico de bash.
 
 <img width="800" height="165" alt="find12" src="https://github.com/user-attachments/assets/b4dda699-ad33-4973-858e-1b656ce59972" />
+
+Chequeamos la escucha y vemos que ¡logramos acceder a la máquina víctima!
+
+<img width="694" height="325" alt="find13" src="https://github.com/user-attachments/assets/8a36989d-e65d-43f3-bbe0-3fab26ccda73" />
 
 Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
 
@@ -62,8 +64,6 @@ stty raw -echo;fg
 reset xterm
 export TERM=xterm && export SHELL=bash
 ```
-<img width="694" height="325" alt="find13" src="https://github.com/user-attachments/assets/8a36989d-e65d-43f3-bbe0-3fab26ccda73" />
-
 <img width="741" height="566" alt="find14" src="https://github.com/user-attachments/assets/1dcd9b5f-d570-450e-8005-00279fceff44" />
 
 <img width="859" height="609" alt="find15" src="https://github.com/user-attachments/assets/67ae35eb-1a2c-485e-9baf-6491c95e542f" />
