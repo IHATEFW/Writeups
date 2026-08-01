@@ -21,13 +21,15 @@
 
 <img width="1165" height="591" alt="mirame8" src="https://github.com/user-attachments/assets/ae4f39bc-a8d1-4ab7-b6d1-37e07d78eb5a" />
 
-<img width="1165" height="591" alt="mirame9" src="https://github.com/user-attachments/assets/2a8ae31c-9abb-43e8-9403-cc2d3583577e" />
+<img width="1134" height="620" alt="mirame9" src="https://github.com/user-attachments/assets/d1e86d41-1fee-410c-a779-8c56e2f5b3d8" />
 
-<img width="1165" height="591" alt="mirame10" src="https://github.com/user-attachments/assets/3ae895f7-e309-4f5b-91bd-f2b77eb1de03" />
+<img width="1105" height="549" alt="mirame10" src="https://github.com/user-attachments/assets/a95d7f2d-bac4-453b-a2f5-003fd006d274" />
 
-<img width="665" height="537" alt="mirame11" src="https://github.com/user-attachments/assets/e98e9a4d-e217-44c5-b60d-c2ac1a6ea3e3" />
+<img width="1144" height="624" alt="mirame11" src="https://github.com/user-attachments/assets/dd7827bf-7612-4184-b1bc-e5aecfb7683c" />
 
-<img width="931" height="557" alt="mirame12" src="https://github.com/user-attachments/assets/3d8d363f-0345-4e71-96a3-a82667601b39" />
+<img width="1144" height="624" alt="mirame12" src="https://github.com/user-attachments/assets/b65ad856-97a6-4501-89d4-4436544c1a1c" />
+
+<img width="1144" height="624" alt="mirame13" src="https://github.com/user-attachments/assets/3d92e03e-49cc-47f3-8326-ca24d34e7957" />
 
 ## 💣 EXPLOTACIÓN
 
