@@ -41,11 +41,19 @@ La volvemos a lanzar, pero en el campo de usuario ponemos admin y en la contrase
 
 <img width="1134" height="620" alt="mirame9" src="https://github.com/user-attachments/assets/d1e86d41-1fee-410c-a779-8c56e2f5b3d8" />
 
+Nos guardamos toda dicha petición en un archivo llamado request.txt
+
 <img width="1105" height="549" alt="mirame10" src="https://github.com/user-attachments/assets/a95d7f2d-bac4-453b-a2f5-003fd006d274" />
+
+Y lo ocuparemos para enumerar las bases de datos con SQLmap, esto de la siguiente manera:
 
 <img width="1144" height="624" alt="mirame11" src="https://github.com/user-attachments/assets/dd7827bf-7612-4184-b1bc-e5aecfb7683c" />
 
+Una vez ejecutado el escaneo, podemos visualizar que nos enumeró 2 bases de datos.
+
 <img width="1144" height="624" alt="mirame12" src="https://github.com/user-attachments/assets/b65ad856-97a6-4501-89d4-4436544c1a1c" />
+
+Ahora lanzaremos nuevamente el escaneo pero esta vez con el parametro -dump para dumpear todas las bases de datos y extraer información importante.
 
 <img width="1144" height="624" alt="mirame13" src="https://github.com/user-attachments/assets/3d92e03e-49cc-47f3-8326-ca24d34e7957" />
 
