@@ -9,17 +9,31 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+Cuando ya tengamos la ip de la máquina víctima, se procederá a realizar un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos existentes abiertos/expuestos que tenga la máquina, esto con el siguiente comando, una vez ejecutado, podemos visualizar que tenemos 2 puertos abiertos, el puerto 22 correspondiente al servicio SSH y el puerto 80 correspondiente a HTTP.
+
 <img width="807" height="550" alt="mirame2" src="https://github.com/user-attachments/assets/1e751819-87a8-4ff7-872f-0cf81ed1751c" />
+
+Ya cuando tengamos los puertos abiertos identificados, seguiremos realizando un escaneo pero más exhaustivo con nmap, esta vez indicandole que nos enumere la versión de dicho servicio HTTP y que nos arroje un conjunto básico de scripts de reconocimiento, de la siguiente manera, una vez ejecutado, vemos que al parecer la web que hay por detrás del puerto 80 tiene un panel de login de autenticación según nos arrojó el escaneo, vamos a revisarla.
 
 <img width="807" height="550" alt="mirame3" src="https://github.com/user-attachments/assets/5ca54f69-b2df-4c9c-9da1-f300a07d1824" />
 
+Efectivamente tenemos un login de autenticación, pero no tenemos ninguna credencial en este punto.
+
 <img width="1243" height="614" alt="mirame4" src="https://github.com/user-attachments/assets/e35f9833-d36d-4c1a-8b11-37f753bad1e1" />
+
+Por lo tanto, procederemos a probar una SQLi (Inyección SQL), esto de la siguinete manera:
 
 <img width="1243" height="614" alt="mirame5" src="https://github.com/user-attachments/assets/aea4acec-0f28-459b-a4d2-71a1cf274935" />
 
+Vemos que es vulnerable a una SQLi, ¡Logramos acceso al panel!
+
 <img width="1243" height="614" alt="mirame6" src="https://github.com/user-attachments/assets/92c4311b-1899-4017-a5eb-36663e2149d2" />
 
+Vemos que es una especie de consulta de clima por ciudad.
+
 <img width="1243" height="614" alt="mirame7" src="https://github.com/user-attachments/assets/a7ab978e-81dc-40c3-92fd-33032f3b2b76" />
+
+Probamos con la ciudad de Santiago y nos arroja una temperatura.
 
 <img width="1165" height="591" alt="mirame8" src="https://github.com/user-attachments/assets/ae4f39bc-a8d1-4ab7-b6d1-37e07d78eb5a" />
 
