@@ -41,6 +41,10 @@
 
 <img width="577" height="69" alt="find18" src="https://github.com/user-attachments/assets/b2248d7a-745a-4ff9-8c92-f65a639b2d02" />
 
+<img width="1106" height="598" alt="find19" src="https://github.com/user-attachments/assets/237461a4-1130-4fa0-8d4b-89fe39a7ad15" />
+
+<img width="696" height="188" alt="find20" src="https://github.com/user-attachments/assets/eeaf33d4-3977-493d-ab25-5f900a398c18" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
