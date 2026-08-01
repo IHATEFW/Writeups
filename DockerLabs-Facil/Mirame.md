@@ -31,6 +31,18 @@
 
 <img width="1144" height="624" alt="mirame13" src="https://github.com/user-attachments/assets/3d92e03e-49cc-47f3-8326-ca24d34e7957" />
 
+<img width="1144" height="624" alt="mirame14" src="https://github.com/user-attachments/assets/277e9665-4db5-4c4a-a8b7-cd5fe4aa6d42" />
+
+<img width="730" height="438" alt="mirame15" src="https://github.com/user-attachments/assets/de7386cb-9e77-427c-8480-3580d5c72bbb" />
+
+<img width="1062" height="568" alt="mirame16" src="https://github.com/user-attachments/assets/f91cdcd3-7878-4d92-9938-807f526cee2b" />
+
+<img width="1224" height="568" alt="mirame17" src="https://github.com/user-attachments/assets/8f6403d0-0cc6-422a-b765-94bf06e002d2" />
+
+<img width="750" height="633" alt="mirame18" src="https://github.com/user-attachments/assets/946698af-b9a7-4fb3-939c-a589e93297e3" />
+
+<img width="790" height="501" alt="mirame19" src="https://github.com/user-attachments/assets/f174c98f-189c-4ab3-b7c3-1a40b7232aa8" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
