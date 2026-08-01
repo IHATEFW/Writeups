@@ -14,7 +14,7 @@ Cuando ya tengamos la ip de la máquina víctima, se procederá a realizar un es
 
 <img width="807" height="550" alt="mirame2" src="https://github.com/user-attachments/assets/1e751819-87a8-4ff7-872f-0cf81ed1751c" />
 
-Ya cuando tengamos los puertos abiertos identificados, seguiremos realizando un escaneo pero más exhaustivo con nmap, esta vez indicandole que nos enumere la versión de dicho servicio HTTP y que nos arroje un conjunto básico de scripts de reconocimiento, de la siguiente manera, una vez ejecutado, vemos que al parecer la web que hay por detrás del puerto 80 tiene un panel de login de autenticación según nos arrojó el escaneo, vamos a revisarla.
+Ya cuando tengamos los puertos abiertos identificados, seguiremos realizando un escaneo pero más exhaustivo con nmap, esta vez indicandole que nos enumere la versión de dichos servicios y que nos arroje un conjunto básico de scripts de reconocimiento, de la siguiente manera, una vez ejecutado, vemos que al parecer la web que hay por detrás del puerto 80 tiene un panel de login de autenticación según nos arrojó el escaneo, vamos a revisarla.
 
 <img width="807" height="550" alt="mirame3" src="https://github.com/user-attachments/assets/5ca54f69-b2df-4c9c-9da1-f300a07d1824" />
 
