@@ -23,6 +23,20 @@
 
 <img width="1249" height="631" alt="walkingcms9" src="https://github.com/user-attachments/assets/5f9942c6-f36e-4168-b9fe-e46093edf8ba" />
 
+<img width="536" height="631" alt="walkingcms10" src="https://github.com/user-attachments/assets/666bf445-e5f8-4cf5-947a-357ca93eb14d" />
+
+<img width="1238" height="631" alt="walkingcms11" src="https://github.com/user-attachments/assets/e4c627bb-3bbb-40d5-ac75-0a4475c3b322" />
+
+<img width="1196" height="631" alt="walkingcms12" src="https://github.com/user-attachments/assets/007cadaa-879b-4737-98e1-77ec281152d5" />
+
+<img width="1196" height="631" alt="walkingcms13" src="https://github.com/user-attachments/assets/149a3ee4-d381-4112-ba4b-198006853dec" />
+
+<img width="1278" height="631" alt="walkingcms14" src="https://github.com/user-attachments/assets/ca82a578-1b2b-4d30-8a2c-54fd3faf1d6d" />
+
+<img width="1278" height="631" alt="walkingcms15" src="https://github.com/user-attachments/assets/b25fb29c-900a-482b-a8a7-7e34d6094355" />
+
+<img width="1278" height="631" alt="walkingcms16" src="https://github.com/user-attachments/assets/e8c3a95a-6c8f-403a-8239-34ae33201fc6" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
