@@ -9,9 +9,15 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+Cuando ya tengamos la ip de la máquina víctima, se procederá a realizar un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos existentes abiertos/expuestos que tenga la máquina, esto con el siguiente comando, una vez ejecutado, podemos visualizar que solamente tenemos el puerto 80 abierto, relacionado al servicio HTTP.
+
 <img width="1174" height="602" alt="walkingcms2" src="https://github.com/user-attachments/assets/4fd4cccf-9b7d-44db-b68f-3d1c32895da2" />
 
+Ya cuando tengamos los puertos abiertos identificados, seguiremos realizando un escaneo pero más exhaustivo con nmap, esta vez indicandole que nos enumere la versión de dicho servicio HTTP y que nos arroje un conjunto básico de scripts de reconocimiento, de la siguiente manera, una vez ejecutado, vemos que solo encontramos la típica web por defecto de Apache2, no hay nada más interesante.
+
 <img width="911" height="481" alt="walkingcms3" src="https://github.com/user-attachments/assets/91323fef-7b36-407c-8273-5dd14cb6393e" />
+
+En este punto, vamos a ejecutar un ataque de fuerza bruta de directorios con la herramienta Gobuster, esto para lograr identificar directorios escondidos detrás de la /, una vez ejecutado, podemos visualizar con nos encontró el directorio /wordpress, ya sabemos que nos enfrentamos a un gestor de contenido (CMS).
 
 <img width="1344" height="369" alt="walkingcms4" src="https://github.com/user-attachments/assets/67b80e35-c069-422f-95df-023f94348302" />
 
