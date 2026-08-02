@@ -1,3 +1,4 @@
+La máquina WalkingCMS de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como abusar de un gestor de contenido CMS llamado WordPress, utilizando la herramienta Wpscan para encontrar credenciales válidas, una vez dentro del dashboard, nos aprovechamos de un tema para editar un archivo .php de su configuración y lanzarnos una reverse shell, ya dentro de la máquina víctima logramos pivotar a root gracias a un binario expuesto con permisos SUID. .
 
 # WALKINGCMS
 
