@@ -21,17 +21,31 @@ En este punto, vamos a ejecutar un ataque de fuerza bruta de directorios con la 
 
 <img width="1344" height="369" alt="walkingcms4" src="https://github.com/user-attachments/assets/67b80e35-c069-422f-95df-023f94348302" />
 
+Vamos a revisar dicho directorio y vemos que una web diseñada por wordpress, que dice "Web Invulnerable".
+
 <img width="1230" height="631" alt="walkingcms5" src="https://github.com/user-attachments/assets/ee85ad40-a548-4bb5-b33b-d1fcaa5311a6" />
+
+Sabemos que en un gestor de contenido como wordpress existen directorios típicos como es el caso de /wp-login.php, por lo tanto, accederemos a él. 
 
 <img width="1230" height="631" alt="walkingcms6" src="https://github.com/user-attachments/assets/401ef7fb-3968-4ca4-9219-6fe13de81136" />
 
+Como no tenemos credenciales válidas, vamos a utilizar la herramienta Wpscan, para enumerar usuarios válidos del sistema, esto de la siguiente manera:
+
 <img width="896" height="631" alt="walkingcms7" src="https://github.com/user-attachments/assets/716da09e-1eaa-41c2-a10a-bc2248f58d0f" />
+
+Una vez finalice el escaneo, podemos ver que nos encontró el usuario "mario".-
 
 <img width="896" height="631" alt="walkingcms8" src="https://github.com/user-attachments/assets/e47933d7-0359-4302-a525-5907d1bcd5bc" />
 
+En esta ocasión, vamos a seguir enumerando con la herramienta Wpscan, pero esta vez utilizando el usuario mario y otorgándole un diccionario de contraseñas como es el rockyou.txt, para que nos encuentre su contraseña válida, esto de la siguiente manera:
+
 <img width="1249" height="631" alt="walkingcms9" src="https://github.com/user-attachments/assets/5f9942c6-f36e-4168-b9fe-e46093edf8ba" />
 
+Una vez finaliza el escaneo, podemos ver que nos encontró la contraseña válida.
+
 <img width="536" height="631" alt="walkingcms10" src="https://github.com/user-attachments/assets/666bf445-e5f8-4cf5-947a-357ca93eb14d" />
+
+La probamos en el login de autenticación anteriormente visto y ¡Logramos acceder al dashboard!
 
 <img width="1238" height="631" alt="walkingcms11" src="https://github.com/user-attachments/assets/e4c627bb-3bbb-40d5-ac75-0a4475c3b322" />
 
