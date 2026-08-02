@@ -45,32 +45,63 @@ Una vez finaliza el escaneo, podemos ver que nos encontró la contraseña válid
 
 <img width="536" height="631" alt="walkingcms10" src="https://github.com/user-attachments/assets/666bf445-e5f8-4cf5-947a-357ca93eb14d" />
 
+## 💣 EXPLOTACIÓN
+
 La probamos en el login de autenticación anteriormente visto y ¡Logramos acceder al dashboard!
 
 <img width="1238" height="631" alt="walkingcms11" src="https://github.com/user-attachments/assets/e4c627bb-3bbb-40d5-ac75-0a4475c3b322" />
 
+Nos dirigiremos al apartado de "Apariencia/Temas", y utilizaremos el tema Twenty-Twenty-Two.
+
 <img width="1196" height="631" alt="walkingcms12" src="https://github.com/user-attachments/assets/007cadaa-879b-4737-98e1-77ec281152d5" />
+
+Lo presionamos y nos vamos a la opción de "Theme Code Editor" para intentar encontrar algun archivo .php que podamos modificar e inyectar código malicioso.
 
 <img width="1196" height="631" alt="walkingcms13" src="https://github.com/user-attachments/assets/149a3ee4-d381-4112-ba4b-198006853dec" />
 
+Vamos a aprovecharnos del index.php que mostraré a continuación, para modificar su contenido e inyectar una reverse shell de php.
+
 <img width="1278" height="631" alt="walkingcms14" src="https://github.com/user-attachments/assets/ca82a578-1b2b-4d30-8a2c-54fd3faf1d6d" />
+
+Nos vamos a la web revshells.com para escoger la reverse shell de php PentestMonkey, la seteamos con nuestra ip de máquina atacante y con algún puerto que queramos ponernos a la escucha, la copiamos.
 
 <img width="1278" height="631" alt="walkingcms15" src="https://github.com/user-attachments/assets/b25fb29c-900a-482b-a8a7-7e34d6094355" />
 
+La pegamos en el index.php que estamos modificando y le damos "Update File".
+
 <img width="1278" height="631" alt="walkingcms16" src="https://github.com/user-attachments/assets/e8c3a95a-6c8f-403a-8239-34ae33201fc6" />
+
+Nos pondremos en una terminal en escucha con la herramienta netcat por el puerto 445.
 
 <img width="639" height="190" alt="walkingcms17" src="https://github.com/user-attachments/assets/f12a7d0a-64d9-4d41-a0aa-c758b21a4a1d" />
 
+Nos vamos al siguiente directorio y vemos que la web queda cargando, esa es una señal.
+
 <img width="900" height="202" alt="walkingcms18" src="https://github.com/user-attachments/assets/0c203493-5195-45ab-8cf2-01b7168715a7" />
+
+Verificamos el listener y vemos que ¡Ganamos acceso a la máquina víctima! 🔥, ya estamos dentro.
 
 <img width="1047" height="375" alt="walkingcms19" src="https://github.com/user-attachments/assets/210d7af7-a927-46b2-b5f4-a3c4fa0a2517" />
 
+Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+```
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Ya con la tty estable, procederemos a revisar con el siguiente comando si existen binarios con permisos SUID para ejecutar con privilegios de root y efectivamente encontramos el binario /bin/env
+
 <img width="522" height="356" alt="walkingcms20" src="https://github.com/user-attachments/assets/029b6c31-abf3-418c-8636-81400e50d3b2" />
+
+Nos vamos a nuestra biblia gtfobins.org y filtramos por "env", nos vamos al apartado de SUID y seleccionamos el primer comando.
 
 <img width="1136" height="606" alt="walkingcms21" src="https://github.com/user-attachments/assets/158bcfb5-3818-4e37-af36-a89f350f6906" />
 
+Lo lanzamos y listo, ¡Logramos pivotar al usuario root!, máquina hackeada 🔥
+
 <img width="1136" height="606" alt="walkingcms22" src="https://github.com/user-attachments/assets/3865d36d-9bf9-402c-b51a-5f0a7535ef7f" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
