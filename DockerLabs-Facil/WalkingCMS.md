@@ -3,6 +3,8 @@
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
+Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprime con el comando unzip y se despliega de la siguiente manera:
+
 <img width="812" height="620" alt="walkingcms1" src="https://github.com/user-attachments/assets/e8d3daae-8004-42e0-aa61-ba3c4fbf58db" />
 
 ## 🔎 ENUMERACIÓN
