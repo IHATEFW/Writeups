@@ -31,6 +31,26 @@
 
 <img width="616" height="184" alt="jen13" src="https://github.com/user-attachments/assets/8bb4be00-db5e-4130-8673-df075a717b6a" />
 
+<img width="943" height="618" alt="jen14" src="https://github.com/user-attachments/assets/1211d226-f7fd-4eea-89dc-4552802460e4" />
+
+<img width="384" height="618" alt="jen15" src="https://github.com/user-attachments/assets/6f3073e3-efce-4321-aac7-5bb944578c50" />
+
+<img width="708" height="355" alt="jen16" src="https://github.com/user-attachments/assets/e382f481-48c9-4290-b55f-2bdbead120ad" />
+
+<img width="680" height="623" alt="jen17" src="https://github.com/user-attachments/assets/12c7781d-e678-4d4e-82ac-2ee4e74ba2ae" />
+
+<img width="546" height="341" alt="jen18" src="https://github.com/user-attachments/assets/e9073642-a3ac-4abf-8a58-fd31061a4341" />
+
+<img width="999" height="524" alt="jen19" src="https://github.com/user-attachments/assets/28929127-2a9f-4175-8b65-8ee473fe05b1" />
+
+<img width="748" height="454" alt="jen20" src="https://github.com/user-attachments/assets/ffd83ab9-2bac-4e1a-9026-9276d131f8e2" />
+
+<img width="565" height="363" alt="jen21" src="https://github.com/user-attachments/assets/b6203f21-533e-4b51-b36b-4e5dfa3c3c83" />
+
+<img width="513" height="308" alt="jen22" src="https://github.com/user-attachments/assets/7797119f-f99a-47fd-a219-107847bd23fe" />
+
+<img width="771" height="495" alt="jen23" src="https://github.com/user-attachments/assets/44afaa64-8cdb-4ac3-b0d1-e0417f91504a" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
