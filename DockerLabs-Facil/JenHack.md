@@ -25,6 +25,12 @@
 
 <img width="1223" height="612" alt="jen10" src="https://github.com/user-attachments/assets/361d3bb4-8217-4a7c-b9bb-ca41657b7868" />
 
+<img width="1008" height="628" alt="jen11" src="https://github.com/user-attachments/assets/c9df020e-1b6f-48d9-be93-740e784ccdf7" />
+
+<img width="436" height="628" alt="jen12" src="https://github.com/user-attachments/assets/455752d5-f21e-4812-a262-3c0789ce9809" />
+
+<img width="616" height="184" alt="jen13" src="https://github.com/user-attachments/assets/8bb4be00-db5e-4130-8673-df075a717b6a" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
