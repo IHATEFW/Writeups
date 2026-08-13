@@ -21,13 +21,17 @@ Tambien podemos encontrar que en el puerto 8080 existe un servicio Jetty, por lo
 
 <img width="870" height="628" alt="jen4" src="https://github.com/user-attachments/assets/ac9e80be-a21f-41a4-816c-ce2b142af0c3" />
 
-Validamos la página web del puerto 80
+Validamos la página web del puerto 80 y no se ve nada interesante.
 
 <img width="1238" height="628" alt="jen5" src="https://github.com/user-attachments/assets/5fa65c39-bec3-4627-a29b-74d48535d0ee" />
 
 <img width="1238" height="628" alt="jen6" src="https://github.com/user-attachments/assets/ddf19f36-becc-4077-83db-b972d67a21ca" />
 
+Procederemos a incluir en nuestro archivo /etc/hosts el dominio que encontramos jenkhack.hl, lo guardamos.
+
 <img width="740" height="380" alt="jen7" src="https://github.com/user-attachments/assets/e56beca4-5d6f-40b4-bcc6-439f5127b844" />
+
+Buscamos en el navegador dicho dominio y nos redirecciona al típico login de autenticación de Jenkins.
 
 <img width="1149" height="603" alt="jen8" src="https://github.com/user-attachments/assets/61f3d4f3-cdd1-48d1-8297-0afb08acf38e" />
 
