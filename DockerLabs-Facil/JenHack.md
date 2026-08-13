@@ -49,13 +49,19 @@ Nos dirigiremos a admin > configuration y vemos que cada vez que se ejecuta un p
 
 <img width="436" height="628" alt="jen12" src="https://github.com/user-attachments/assets/455752d5-f21e-4812-a262-3c0789ce9809" />
 
-Nos pondremos en escucha con la herramienta netcat 
+Nos pondremos en escucha con la herramienta netcat por el puerto 443 (puede ser el de vuestra preferencia).
 
 <img width="616" height="184" alt="jen13" src="https://github.com/user-attachments/assets/8bb4be00-db5e-4130-8673-df075a717b6a" />
 
+Inyectamos el típico oneliner de una reverse shell de bash y lo guardamos.
+
 <img width="943" height="618" alt="jen14" src="https://github.com/user-attachments/assets/1211d226-f7fd-4eea-89dc-4552802460e4" />
 
+Lo ejecutamos en "Construir Ahora". 
+
 <img width="384" height="618" alt="jen15" src="https://github.com/user-attachments/assets/6f3073e3-efce-4321-aac7-5bb944578c50" />
+
+Revisamos nuestra escucha y ¡Ganamos acceso a la máquina víctima!
 
 <img width="708" height="355" alt="jen16" src="https://github.com/user-attachments/assets/e382f481-48c9-4290-b55f-2bdbead120ad" />
 
