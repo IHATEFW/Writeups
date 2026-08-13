@@ -3,15 +3,25 @@
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
+Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprime con el comando unzip y se despliega de la siguiente manera:
+
 <img width="858" height="633" alt="jen1" src="https://github.com/user-attachments/assets/9328a0f3-de35-494b-b46f-0612b451c0fc" />
 
 ## 🔎 ENUMERACIÓN
 
+Una vez que ya tenemos la ip de la máquina víctima, procederemos a realizar un escaneo con la herramienta nmap, que nos muestre todos los puertos abiertos exístentes para así lograr acceso a la máquina, esto con el siguiente comando, una vez ejecutado, nos damos cuenta que existen varios puertos abiertos, el 80, 443 y 8080, todos relacionados al servicio HTTP.
+
 <img width="1161" height="452" alt="jen2" src="https://github.com/user-attachments/assets/ae7eb28d-1bfc-410b-bc53-5186df653b4f" />
+
+Una vez tenemos identificados los puertos abiertos, seguiremos enumerando con la herramienta nmap, pero en esta ocasión, le indicaremos a nmap que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos encuentre la versión de dicho servicio HTTP, una vez ejecutado, podemos darnos cuenta que encontramos el titulo de la página web que corre detrás del puerto 80, se llama "Hacker - Nexus" y hace referencia a un dominio llamado jenkhack.hl
 
 <img width="1001" height="628" alt="jen3" src="https://github.com/user-attachments/assets/db5fc304-4a42-49c5-9fb5-d101db367584" />
 
+Tambien podemos encontrar que en el puerto 8080 existe un servicio Jetty, por lo cual, podemos darnos cuenta que corre un Jenkins por detrás.
+
 <img width="870" height="628" alt="jen4" src="https://github.com/user-attachments/assets/ac9e80be-a21f-41a4-816c-ce2b142af0c3" />
+
+Validamos la página web del puerto 80
 
 <img width="1238" height="628" alt="jen5" src="https://github.com/user-attachments/assets/5fa65c39-bec3-4627-a29b-74d48535d0ee" />
 
