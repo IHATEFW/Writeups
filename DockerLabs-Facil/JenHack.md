@@ -35,13 +35,21 @@ Buscamos en el navegador dicho dominio y nos redirecciona al típico login de au
 
 <img width="1149" height="603" alt="jen8" src="https://github.com/user-attachments/assets/61f3d4f3-cdd1-48d1-8297-0afb08acf38e" />
 
+Como no tenemos credenciales válidas, nos acordamos que nos faltó revisar el codigo fuente de la página web que corre por detrás el puerto 80, lo revisamos y encontramos una credencial.
+
 <img width="1149" height="603" alt="jen9" src="https://github.com/user-attachments/assets/2b1a7658-d48f-4552-8c34-ce7c5c37a4bf" />
 
+La probamos y logramos acceder al panel de admin al interior del Jenkins.
+
 <img width="1223" height="612" alt="jen10" src="https://github.com/user-attachments/assets/361d3bb4-8217-4a7c-b9bb-ca41657b7868" />
+
+Nos dirigiremos a admin > configuration y vemos que cada vez que se ejecuta un pod se ejecuta con un comando, en este caso "whoami", lo cual pensamos de inmediato en modificarlo para incluir código malicioso
 
 <img width="1008" height="628" alt="jen11" src="https://github.com/user-attachments/assets/c9df020e-1b6f-48d9-be93-740e784ccdf7" />
 
 <img width="436" height="628" alt="jen12" src="https://github.com/user-attachments/assets/455752d5-f21e-4812-a262-3c0789ce9809" />
+
+Nos pondremos en escucha con la herramienta netcat 
 
 <img width="616" height="184" alt="jen13" src="https://github.com/user-attachments/assets/8bb4be00-db5e-4130-8673-df075a717b6a" />
 
