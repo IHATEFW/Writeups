@@ -1,5 +1,6 @@
+La máquina JenkHack de la plataforma dockerlabs.es, es una máquina de dificultar "Fácil", la cual nos enseña a abusar de un Jenkins para mediante su ejecución de pods lanzarnos una reverse shell y ganar acceso a la máquina víctima, luego dentro, pivotamos a root gracias a credenciales expuestas y binarios con permisos a nivel de sudoers disponibles. .
 
-# JENHACK
+# JENKHACK
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
@@ -39,6 +40,8 @@ Como no tenemos credenciales válidas, nos acordamos que nos faltó revisar el c
 
 <img width="1149" height="603" alt="jen9" src="https://github.com/user-attachments/assets/2b1a7658-d48f-4552-8c34-ce7c5c37a4bf" />
 
+## 💣 EXPLOTACIÓN
+
 La probamos y logramos acceder al panel de admin al interior del Jenkins.
 
 <img width="1223" height="612" alt="jen10" src="https://github.com/user-attachments/assets/361d3bb4-8217-4a7c-b9bb-ca41657b7868" />
@@ -65,20 +68,42 @@ Revisamos nuestra escucha y ¡Ganamos acceso a la máquina víctima!
 
 <img width="708" height="355" alt="jen16" src="https://github.com/user-attachments/assets/e382f481-48c9-4290-b55f-2bdbead120ad" />
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+```
+
+Ya con la tty estable, procederemos a leer el archivo /etc/passwd para ver si existe más usuarios dentro del sistema a los cuales tendremos que pivotar, vemos que existe el usuario jenkhack.
+
 <img width="680" height="623" alt="jen17" src="https://github.com/user-attachments/assets/12c7781d-e678-4d4e-82ac-2ee4e74ba2ae" />
+
+En el directorio /var/www/jenkhack encontramos un archivo .txt con la contraseña en base85 del usuario jenkhack.
 
 <img width="546" height="341" alt="jen18" src="https://github.com/user-attachments/assets/e9073642-a3ac-4abf-8a58-fd31061a4341" />
 
+La decodeamos y obtenemos la password en texto claro.
+
 <img width="999" height="524" alt="jen19" src="https://github.com/user-attachments/assets/28929127-2a9f-4175-8b65-8ee473fe05b1" />
+
+Ya como el usuario jenkhack, daremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algun binario y vemos que podemos ejecutar como root el binario /usr/local/bin/bash, lo ejecutamos y vemos que se está ejecutando por detrás un posible script, tendremos que encontrarlo.
 
 <img width="748" height="454" alt="jen20" src="https://github.com/user-attachments/assets/ffd83ab9-2bac-4e1a-9026-9276d131f8e2" />
 
+Lo encontramos en el directorio /opt, lo leemos pero no hace nada importante.
+
 <img width="565" height="363" alt="jen21" src="https://github.com/user-attachments/assets/b6203f21-533e-4b51-b36b-4e5dfa3c3c83" />
+
+En este punto, se me ocurre eliminar dicho script y crear otro, para inyectarle codigo malicioso para intentar quitar la "x" del usuario root en el /etc/passwd, así no nos pedirá su contraseña.
 
 <img width="513" height="308" alt="jen22" src="https://github.com/user-attachments/assets/7797119f-f99a-47fd-a219-107847bd23fe" />
 
+Lo eliminamos, creamos otro, y le inyectamos el siguiente comando de sed -i, volvemos a ejecutar el binario /usr/local/bin/bash y probamos con su root y listo, somos root ¡Máquina hackeada!.
+
 <img width="771" height="495" alt="jen23" src="https://github.com/user-attachments/assets/44afaa64-8cdb-4ac3-b0d1-e0417f91504a" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
