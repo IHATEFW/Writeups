@@ -9,6 +9,10 @@
 
 <img width="1153" height="636" alt="grooti2" src="https://github.com/user-attachments/assets/08373499-2162-4787-b521-1589fcab98c3" />
 
+<img width="1153" height="636" alt="grooti3" src="https://github.com/user-attachments/assets/46a4b478-52bd-4adf-abde-ee15bfbbd5d7" />
+
+<img width="857" height="636" alt="grooti4" src="https://github.com/user-attachments/assets/d0a38237-8a93-4d9c-8d95-bf51bcb34061" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
