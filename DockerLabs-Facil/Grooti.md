@@ -19,6 +19,16 @@
 
 <img width="460" height="416" alt="grooti7" src="https://github.com/user-attachments/assets/b9046435-d012-43f8-8187-302dc99ccbfd" />
 
+<img width="480" height="206" alt="grooti8" src="https://github.com/user-attachments/assets/689104ba-6491-42de-a421-1dfbad5873e2" />
+
+<img width="959" height="591" alt="grooti9" src="https://github.com/user-attachments/assets/e37f070b-4f3f-4d16-9ac3-4a70d38e5ce8" />
+
+<img width="1095" height="618" alt="grooti10" src="https://github.com/user-attachments/assets/809ac0c3-03f2-4a29-a483-377f547c7d1d" />
+
+<img width="1095" height="618" alt="grooti11" src="https://github.com/user-attachments/assets/e74a1c72-8094-45ac-ae4a-245083639a4c" />
+
+<img width="1181" height="618" alt="grooti12" src="https://github.com/user-attachments/assets/eaede62a-1047-4711-9e9b-8cc093f30fda" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
