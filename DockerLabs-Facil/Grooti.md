@@ -29,6 +29,22 @@
 
 <img width="1181" height="618" alt="grooti12" src="https://github.com/user-attachments/assets/eaede62a-1047-4711-9e9b-8cc093f30fda" />
 
+<img width="533" height="624" alt="grooti13" src="https://github.com/user-attachments/assets/bd801371-27da-49ba-86eb-a415e98367f7" />
+
+<img width="814" height="551" alt="grooti14" src="https://github.com/user-attachments/assets/5be56a62-eb27-44d2-b58e-01a9c8e32e94" />
+
+<img width="634" height="624" alt="grooti15" src="https://github.com/user-attachments/assets/c93a13a8-0ab1-4636-b8f1-b0abf2984456" />
+
+<img width="1138" height="624" alt="grooti16" src="https://github.com/user-attachments/assets/04a1a1a8-520a-4fc6-847e-3a39c5f741b9" />
+
+<img width="1138" height="624" alt="grooti17" src="https://github.com/user-attachments/assets/b5d27ecd-1d63-4316-8b7c-47b039c24089" />
+
+<img width="1138" height="624" alt="grooti18" src="https://github.com/user-attachments/assets/8f3ebaec-76ce-4028-ad81-f03b3d9628ad" />
+
+<img width="1173" height="600" alt="grooti19" src="https://github.com/user-attachments/assets/b4b110f3-4d36-4fa7-a739-181e4f8fe816" />
+
+<img width="1173" height="600" alt="grooti20" src="https://github.com/user-attachments/assets/3eeba04b-7f92-4274-94ad-aa599739cc42" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
