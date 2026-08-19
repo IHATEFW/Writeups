@@ -23,11 +23,11 @@ Ahora lanzaremos el comando whatweb para identificar las tecnologias que están 
 
 <img width="1332" height="250" alt="grooti5" src="https://github.com/user-attachments/assets/2205569b-443b-4d42-85df-a40897287f57" />
 
-Revisaremos la web, la cual está ambientada en el personaje "Baby Groot" de la pelicula de los Guardianes de la Galaxia de MARVEL, en el apartado de "Mis Fotos" nos redirige a un directorio /imagenes, donde se expone un README.txt
+Revisaremos la web, la cual está ambientada en el personaje "Baby Groot" de la pelicula de los Guardianes de la Galaxia de MARVEL, el apartado de "Mis Fotos" nos redirige a un directorio /imagenes.
 
 <img width="1187" height="626" alt="grooti6" src="https://github.com/user-attachments/assets/43275be3-5ff8-4ed4-ad76-0f516062c27c" />
 
-Lo leemos y vemos que encontramos una contraseña (password1), pero nos dice Encuentra donde ponerla.
+Lo revisamos y vemos que se expone un README.txt, lo leemos.
 
 <img width="460" height="416" alt="grooti7" src="https://github.com/user-attachments/assets/b9046435-d012-43f8-8187-302dc99ccbfd" />
 
