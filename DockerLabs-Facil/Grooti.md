@@ -35,9 +35,15 @@ Vemos que encontramos una contraseña (password1), pero nos dice "Encuentra dond
 
 <img width="480" height="206" alt="grooti8" src="https://github.com/user-attachments/assets/689104ba-6491-42de-a421-1dfbad5873e2" />
 
+Volvemos a la web principal para revisar el código fuente con CTRL + U para ver si existe algo que no estemos viendo de primera, bajamos y vemos que nos hace referencia a un posible usuario llamado Rocket, que indica que entró a su base de datos, ahora todo cuadra ya que tambien está abierto el puerto 3306 de mysql.
+
 <img width="959" height="591" alt="grooti9" src="https://github.com/user-attachments/assets/e37f070b-4f3f-4d16-9ac3-4a70d38e5ce8" />
 
+Ahora seguiremos revisando, donde dice "Facturas de la nave", nos llega al directorio /archives, donde se expone una posible factura con precios, nada interesante.
+
 <img width="1095" height="618" alt="grooti10" src="https://github.com/user-attachments/assets/809ac0c3-03f2-4a29-a483-377f547c7d1d" />
+
+Volvemos a la terminal, para esta vez para ejecutar un ataque de fuerza bruta de directorios con la herramienta Gobuster, ya que queremos saber si existen directorio ocultos detrás de la / en la URL, lo ejecutamos y vemos que encontramos un directorio llamado /secret
 
 <img width="1095" height="618" alt="grooti11" src="https://github.com/user-attachments/assets/e74a1c72-8094-45ac-ae4a-245083639a4c" />
 
