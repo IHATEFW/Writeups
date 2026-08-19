@@ -1,3 +1,4 @@
+La máquina Grooti de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como utilizar de mejor manera la herramienta Burpsuite, especificamente el apartado de "Intruder", logrando ejecutar un ataque con un payload en especifico y encontrar la combinación correcta en base a su longitud, para luego extraernos un diccionario de contraseñas y acceder a la máquina víctima, finalmente se pivota a root con una shell mal configurada . .
 
 # GROOTI
 
@@ -55,6 +56,8 @@ Lo leemos y nos entrega un comando para ingresar a la BDD, con el usuario rocket
 
 <img width="533" height="624" alt="grooti13" src="https://github.com/user-attachments/assets/bd801371-27da-49ba-86eb-a415e98367f7" />
 
+## 💣 EXPLOTACIÓN
+
 Lo ejecutamos y nos pide una contraseña, utilizamos la (password1) que previamente nos habíamos encontrado, funciona, ¡Ganamos acceso a la BDD!, lanzaremos el comando show DATABASES; para que nos enumere toda la cantidad de bases de datos disponibles y encontramos una en particular que se llama files_secret
 
 <img width="814" height="551" alt="grooti14" src="https://github.com/user-attachments/assets/5be56a62-eb27-44d2-b58e-01a9c8e32e94" />
@@ -71,26 +74,40 @@ Hacemos la prueba colocando arriba "Hola" y abajo "1", automaticamente se descar
 
 <img width="1138" height="624" alt="grooti17" src="https://github.com/user-attachments/assets/b5d27ecd-1d63-4316-8b7c-47b039c24089" />
 
-En este punto nos abriremos el Burpsuite para interceptar la petición
+En este punto nos abriremos el Burpsuite para interceptar la petición y mandarla al "Repeater", vemos que se tramita los mismo.
 
 <img width="1138" height="624" alt="grooti18" src="https://github.com/user-attachments/assets/8f3ebaec-76ce-4028-ad81-f03b3d9628ad" />
 
+Ahora mandaremos la petición al "Intruder" para iniciar un ataque con un payload en especifico, realizamos el siguiente seteo y le damos "Start Attack".
+
 <img width="1173" height="600" alt="grooti19" src="https://github.com/user-attachments/assets/b4b110f3-4d36-4fa7-a739-181e4f8fe816" />
+
+Todas las peticiones comienzan a ejecutarse una tras otra y vemos que el numero "16" tiene otra longitud distinta a las demás, esto es clave ya que el unico numero que puede que sirva sería ese.
 
 <img width="1173" height="600" alt="grooti20" src="https://github.com/user-attachments/assets/3eeba04b-7f92-4274-94ad-aa599739cc42" />
 
+Volvemos a la web e ingresamos dicho numero "16", ahora la cosa cambia porque se nos descarga un comprimido .zip 
+
 <img width="1173" height="600" alt="grooti21" src="https://github.com/user-attachments/assets/54fbe721-f983-4a86-83a1-9ab66d7632cf" />
+
+Una vez lo descomprimimos y lo leemos, podemos visualizar un diccionario de contraseñas.
 
 <img width="632" height="600" alt="grooti22" src="https://github.com/user-attachments/assets/04df14b7-ceae-43f1-8d10-2c2368ea3017" />
 
+Como ya tenemos 3 usuarios posiblemente válidos, utilizaremos la herramienta Hydra para realizar un ataque de fuerza bruta SSH contra esos 3 usuarios adjuntandole la wordlist que nos encontramos, con el pasar de los minutos podemos visualizar que encontramos la password del usuario "grooti".
+
 <img width="1049" height="600" alt="grooti23" src="https://github.com/user-attachments/assets/5b28c741-1ea0-49b4-afe8-0b321a5ddd96" />
+
+Nos conectamos por SSH y ¡Ganamos acceso a la máquina víctima"
 
 <img width="736" height="533" alt="grooti24" src="https://github.com/user-attachments/assets/a34553e7-7c4c-427f-9988-1d225dd8368a" />
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Nos vamos al directorio /tmp y vemos que existe una shell llamada malicious.sh, de la cual tenemos permisos de escritura y ejecución.
+
 <img width="584" height="281" alt="grooti25" src="https://github.com/user-attachments/assets/a1658e79-a5d1-4f61-b122-bbd6bb79b996" />
 
+Inyectaremos código malicioso en dicha shell, para que el binario /bin/bash se le cambien los permisos y se convierta en SUID, para así lanzarnos una shell privilegiada con bash -p y automaticamente somos root, ¡Máquina Hackeada!
+
 <img width="616" height="268" alt="grooti26" src="https://github.com/user-attachments/assets/9404f7ff-43db-483a-bb41-ee249e408c92" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
