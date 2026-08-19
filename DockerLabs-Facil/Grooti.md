@@ -47,6 +47,8 @@ Volvemos a la terminal, para esta vez para ejecutar un ataque de fuerza bruta de
 
 <img width="1095" height="618" alt="grooti11" src="https://github.com/user-attachments/assets/e74a1c72-8094-45ac-ae4a-245083639a4c" />
 
+Nos vamos al navegador para revisarlo, y aquí se pone todo turbio ya que corroboramos los 2 usuarios que habíamos encontrado y se suma el usuario "Naia", tambien se expone un botón, donde nos descargamos un archivo .txt
+
 <img width="1181" height="618" alt="grooti12" src="https://github.com/user-attachments/assets/eaede62a-1047-4711-9e9b-8cc093f30fda" />
 
 <img width="533" height="624" alt="grooti13" src="https://github.com/user-attachments/assets/bd801371-27da-49ba-86eb-a415e98367f7" />
