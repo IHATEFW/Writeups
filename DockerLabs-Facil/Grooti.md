@@ -9,15 +9,25 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+Una vez que ya tenemos la ip de la máquina víctima, procederemos a realizar un escaneo con la herramienta nmap, que nos muestre todos los puertos abiertos exístentes para así lograr acceso a la máquina, esto con el siguiente comando, una vez ejecutado, nos damos cuenta que existen varios puertos abiertos, el 22, 80 y 3306, relacionados a los servicios SSH, HTTP y MySQL.
+
 <img width="1153" height="636" alt="grooti2" src="https://github.com/user-attachments/assets/08373499-2162-4787-b521-1589fcab98c3" />
+
+En este punto, continuaremos enumerando con la herramienta nmap, pero esta vez, indicandole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios que encontramos, esto de la siguiente manera, una vez ejecutado, podemos visualizar una web detrás del puerto 80 con el titulo de "Grooti's Web".
 
 <img width="1153" height="636" alt="grooti3" src="https://github.com/user-attachments/assets/46a4b478-52bd-4adf-abde-ee15bfbbd5d7" />
 
 <img width="857" height="636" alt="grooti4" src="https://github.com/user-attachments/assets/d0a38237-8a93-4d9c-8d95-bf51bcb34061" />
 
+Ahora lanzaremos el comando whatweb para identificar las tecnologias que están corriendo en dicha página web, encontrando HTML5, Apache2 (Ubuntu).
+
 <img width="1332" height="250" alt="grooti5" src="https://github.com/user-attachments/assets/2205569b-443b-4d42-85df-a40897287f57" />
 
+Revisaremos la web, la cual está ambientada en el personaje "Baby Groot" de la pelicula de los Guardianes de la Galaxia de MARVEL, en el apartado de "Mis Fotos" nos redirige a un directorio /imagenes, donde se expone un README.txt
+
 <img width="1187" height="626" alt="grooti6" src="https://github.com/user-attachments/assets/43275be3-5ff8-4ed4-ad76-0f516062c27c" />
+
+Lo leemos y vemos que encontramos una contraseña (password1), pero nos dice Encuentra donde ponerla.
 
 <img width="460" height="416" alt="grooti7" src="https://github.com/user-attachments/assets/b9046435-d012-43f8-8187-302dc99ccbfd" />
 
