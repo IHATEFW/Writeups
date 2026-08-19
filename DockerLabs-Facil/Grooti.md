@@ -31,6 +31,8 @@ Lo revisamos y vemos que se expone un README.txt, lo leemos.
 
 <img width="460" height="416" alt="grooti7" src="https://github.com/user-attachments/assets/b9046435-d012-43f8-8187-302dc99ccbfd" />
 
+Vemos que encontramos una contraseña (password1), pero nos dice "Encuentra donde ponerla", en este punto vamos bien.
+
 <img width="480" height="206" alt="grooti8" src="https://github.com/user-attachments/assets/689104ba-6491-42de-a421-1dfbad5873e2" />
 
 <img width="959" height="591" alt="grooti9" src="https://github.com/user-attachments/assets/e37f070b-4f3f-4d16-9ac3-4a70d38e5ce8" />
