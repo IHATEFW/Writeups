@@ -51,15 +51,27 @@ Nos vamos al navegador para revisarlo, y aquí se pone todo turbio ya que corrob
 
 <img width="1181" height="618" alt="grooti12" src="https://github.com/user-attachments/assets/eaede62a-1047-4711-9e9b-8cc093f30fda" />
 
+Lo leemos y nos entrega un comando para ingresar a la BDD, con el usuario rocket.
+
 <img width="533" height="624" alt="grooti13" src="https://github.com/user-attachments/assets/bd801371-27da-49ba-86eb-a415e98367f7" />
+
+Lo ejecutamos y nos pide una contraseña, utilizamos la (password1) que previamente nos habíamos encontrado, funciona, ¡Ganamos acceso a la BDD!, lanzaremos el comando show DATABASES; para que nos enumere toda la cantidad de bases de datos disponibles y encontramos una en particular que se llama files_secret
 
 <img width="814" height="551" alt="grooti14" src="https://github.com/user-attachments/assets/5be56a62-eb27-44d2-b58e-01a9c8e32e94" />
 
+La seleccionamos para ingresar a ella con el comando use files_secret; para luego arrojar el comando show tables; para que nos muestre las tablas de dicha BDD, y nos encuentra la tabla "rutas", ejecutamos el comando SELECT * FROM rutas; y se enumera un directorio que nos habíamos encontrado, llamado /unprivate/secret
+
 <img width="634" height="624" alt="grooti15" src="https://github.com/user-attachments/assets/c93a13a8-0ab1-4636-b8f1-b0abf2984456" />
+
+La revisamos y ganamos acceso a una especie de terminal donde podemos ingresar 2 datos, "Mensaje de acceso" y "Numero entre 1 y 100".
 
 <img width="1138" height="624" alt="grooti16" src="https://github.com/user-attachments/assets/04a1a1a8-520a-4fc6-847e-3a39c5f741b9" />
 
+Hacemos la prueba colocando arriba "Hola" y abajo "1", automaticamente se descarga un archivo .txt que indica "¡Buen intento!"
+
 <img width="1138" height="624" alt="grooti17" src="https://github.com/user-attachments/assets/b5d27ecd-1d63-4316-8b7c-47b039c24089" />
+
+En este punto nos abriremos el Burpsuite para interceptar la petición
 
 <img width="1138" height="624" alt="grooti18" src="https://github.com/user-attachments/assets/8f3ebaec-76ce-4028-ad81-f03b3d9628ad" />
 
