@@ -1,3 +1,4 @@
+La máquina Allien de la plataforma dockerlabs.es, es una máquina de dificultar "Fácil", la cual nos enseña como abusar del servicio Samba (SMB en Windows), para encontrar contraseñas y usuarios válidos expuestos, luego de acceder a la máquina víctima se logra pivotar mediante una reverse shell y mediante permisos a nivel de sudoers . .
 
 # ALLIEN
 
