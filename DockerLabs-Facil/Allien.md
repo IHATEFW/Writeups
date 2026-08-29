@@ -29,6 +29,16 @@
 
 <img width="935" height="416" alt="allien12" src="https://github.com/user-attachments/assets/e62e8e61-77d8-419c-bd50-748d70b29152" />
 
+<img width="1342" height="502" alt="allien13" src="https://github.com/user-attachments/assets/e52b9df2-de6a-47b9-9ef4-ba3e76b46037" />
+
+<img width="1281" height="630" alt="allien14" src="https://github.com/user-attachments/assets/62edfc5e-a754-4f35-a0c4-72fed465eb0a" />
+
+<img width="1142" height="630" alt="allien15" src="https://github.com/user-attachments/assets/e320be36-bbbc-48f4-bf93-0983cab0f1ef" />
+
+<img width="801" height="626" alt="allien16" src="https://github.com/user-attachments/assets/c1067a25-c27e-4de8-b66f-f5c490622c54" />
+
+<img width="731" height="468" alt="allien17" src="https://github.com/user-attachments/assets/3d174017-c5ff-4cee-998c-5d07f02c7a62" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
