@@ -9,19 +9,35 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+Una vez que ya tenemos la ip de la máquina víctima, procederemos a realizar un escaneo con la herramienta nmap, que nos muestre todos los puertos abiertos exístentes para así lograr acceso a la máquina, esto con el siguiente comando, una vez ejecutado, nos damos cuenta que existen varios puertos abiertos, entre ellos los puertos 22, 80, 139 y 445, correspondientes los servicios SSH, HTTP y Samba.
+
 <img width="1147" height="473" alt="allien2" src="https://github.com/user-attachments/assets/645d415a-2662-4134-a928-3e01ebcaf234" />
+
+Una vez ya tenemos los puertos abiertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere las versiones de los servicios que corren en dichos puertos, esto de la siguiente manera, una vez ejecutado, podemos visualizar el titulo de la página web del puerto 80, que dice "Login", al parecer es un panel de autenticación.
 
 <img width="1027" height="626" alt="allien3" src="https://github.com/user-attachments/assets/c142294f-66c4-42e3-8374-4a9d723d29aa" />
 
+Lo revisamos y efectivamente nos encontramos un panel de login de autenticación, se prueban distintas técnicas de SQli para intentar bypassearlo, pero no se logra éxito.
+
 <img width="1230" height="621" alt="allien4" src="https://github.com/user-attachments/assets/c821a5d4-9d1f-430f-b6dd-f86938c64fba" />
+
+En este punto, nos iremos a la terminal nuevamente, para efectuar un ataque de fuerza bruta de directorios con la herramienta Gobuster, esto para lograr identificar posibles directorio ocultos detrás de la /, una vez ejecutado, encontramos el directorio /productos.php
 
 <img width="1333" height="621" alt="allien5" src="https://github.com/user-attachments/assets/532e0ec3-dc85-44b7-947b-64410057f387" />
 
+Lo revisamos y vemos una especie de página que se ofrecen distintos productos, algo como un shop.
+
 <img width="1230" height="621" alt="allien6" src="https://github.com/user-attachments/assets/db51a15f-d689-4fec-9295-7840e899697c" />
+
+Scrolleando se puede identificar 3 campos para ingresar nombre, correo y algún mensaje, se prueba inyectar cosas pero sin éxito.
 
 <img width="1230" height="621" alt="allien7" src="https://github.com/user-attachments/assets/67eb994b-f23b-4fc9-922b-889f3a31b945" />
 
+En este punto, volvemos a la terminal, y vamos a tirar por los puertos de Samba 139 y 445, por lo tanto, vamos a enumerarlos, esto con la herramienta Enum4linux, tirando el comando enum4linux 172.17.0.2, una vez termina el escaneo, vemos que se exponen unas carpetas compartidas, de las cuales solo tenemos lectura y escritura de /myshare
+
 <img width="1177" height="621" alt="allien8" src="https://github.com/user-attachments/assets/2d421079-e5a4-4ce9-80f2-2c218d2ebbf6" />
+
+Bajando, podemos ver que se exponen varios usuarios válidos del sistema, entre ellos está satriani7 que nos llama la atención.
 
 <img width="1177" height="621" alt="allien9" src="https://github.com/user-attachments/assets/3e97453d-de87-4aa2-bb4d-9d00f7fe487f" />
 
