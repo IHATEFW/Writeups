@@ -41,13 +41,23 @@ Bajando, podemos ver que se exponen varios usuarios válidos del sistema, entre 
 
 <img width="1177" height="621" alt="allien9" src="https://github.com/user-attachments/assets/3e97453d-de87-4aa2-bb4d-9d00f7fe487f" />
 
+Ahora ocuparemos la herramienta netexec para adjuntarle dicho usuario y realizar una enumeración de contraseña con el diccionario rockyou.txt
+
 <img width="1332" height="621" alt="allien10" src="https://github.com/user-attachments/assets/88c8d5f7-cc6e-4ae8-a597-61359f842312" />
+
+Y ¡Logramos encontrar la password!
 
 <img width="1021" height="144" alt="allien11" src="https://github.com/user-attachments/assets/1638e79b-5d14-4460-9fe6-fb7a2513e615" />
 
+Nos conectamos vía samba con la herramienta smbclient de la siguiente manera y encontramos un archivo llamado access.txt, lo traemos a nuestra máquina atacante.
+
 <img width="935" height="416" alt="allien12" src="https://github.com/user-attachments/assets/e62e8e61-77d8-419c-bd50-748d70b29152" />
 
+Lo leemos y vemos que se trata de un Json Web Token (JWT).
+
 <img width="1342" height="502" alt="allien13" src="https://github.com/user-attachments/assets/e52b9df2-de6a-47b9-9ef4-ba3e76b46037" />
+
+Buscaremos en google alguna herramienta de JWT decode para decodear dicho token y vemos que nos encontró un correo electronico con un dominio.
 
 <img width="1281" height="630" alt="allien14" src="https://github.com/user-attachments/assets/62edfc5e-a754-4f35-a0c4-72fed465eb0a" />
 
