@@ -1,4 +1,4 @@
-La máquina llamada "Zabbixploit" es una máquina de dificultad "Medio", la cual nos enseña a explotar el CVE-2016-10134 en una versión de Zabbix vulnerable, que permite abusar de una SQLi basado en errores + Hijacking cookie de sesión, RCE por abuso de funcionalidad de administración remota, extracción de credenciales desde una base de datos local, comunicación manual con un socket TCP interno mediante descriptores de archivo, finalmente inyección de comandos vía sudo/eval para completar la escalada total hasta root . .
+La máquina llamada "Zabbixploit" es una máquina de dificultad "Medio", la cual nos enseña a explotar el CVE-2016-10134 en una versión vulnerable de Zabbix, permitiendo abusar de una SQLi basada en errores + hijacking de cookie de sesión, obtener RCE mediante el abuso de una funcionalidad de administración remota y establecer una reverse shell, extraer credenciales desde una base de datos local, comunicarnos manualmente con un socket TCP interno mediante descriptores de archivo y, finalmente, realizar una inyección de comandos vía sudo/eval para completar la escalada total hasta root.
 
 # ZABBIXPLOIT
 
@@ -38,7 +38,7 @@ Nos dirigiremos al apartado de "Latest data" para explotar el CVE-2016-10134 que
 
 <img width="1023" height="526" alt="zabbix8" src="https://github.com/user-attachments/assets/9fbdf74a-db37-42aa-9637-b0c5897f6293" />
 
-Buscamos el siguiente repositorio en github, donde se explica la vulnerabilidad, donde básicamente se trata de una versión vulnerable a SQLi error-based en el latest.php, el cual nos permite ejecutar arbitrariamente comandos abusando del parametro toggle_ids, esto adjuntando los últimos 16 caracteres de nuestra cookie de sesión zbx_sessionid para también poder concatenar un Hijacking para secuestrar la cookie de sesión del usuario Administrador y así convertirnos en él.
+Buscamos el siguiente repositorio en github https://github.com/vulhub/vulhub/tree/master/zabbix/CVE-2016-10134/, donde se explica la vulnerabilidad, donde básicamente se trata de una versión vulnerable a SQLi error-based en el latest.php, el cual nos permite ejecutar arbitrariamente comandos abusando del parametro toggle_ids, esto adjuntando los últimos 16 caracteres de nuestra cookie de sesión zbx_sessionid para también poder concatenar un Hijacking para secuestrar la cookie de sesión del usuario Administrador y así convertirnos en él.
 
 <img width="1187" height="638" alt="zabbix9" src="https://github.com/user-attachments/assets/be3e2a69-0ac0-49ce-983a-4d8edaaa56b4" />
 
