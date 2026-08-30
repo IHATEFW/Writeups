@@ -1,5 +1,7 @@
 La máquina llamada "Zabbixploit" es una máquina de dificultad "Medio", la cual nos enseña a explotar el CVE-2016-10134 en una versión vulnerable de Zabbix, permitiendo abusar de una SQLi basada en errores + hijacking de cookie de sesión, obtener RCE mediante el abuso de una funcionalidad de administración remota y establecer una reverse shell, extraer credenciales desde una base de datos local, comunicarnos manualmente con un socket TCP interno mediante descriptores de archivo y, finalmente, realizar una inyección de comandos vía sudo/eval para completar la escalada total hasta root.
 
+<img width="1672" height="941" alt="MINIATURA (2)" src="https://github.com/user-attachments/assets/32074c20-984d-43ed-bd20-d99780598f7a" />
+
 # ZABBIXPLOIT
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
