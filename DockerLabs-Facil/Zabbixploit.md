@@ -1,4 +1,4 @@
-La máquina llamada "Zabbixploit" es una máquina de dificultad "Fácil", la cual nos enseña a convertir un LFI en un RCE utilizando Wrappers de php, para así poder ejecutar comandos a nivel de sistema y lanzarnos una reverse shell para ganar acceso a la máquina víctima, una vez dentro, abusamos de permisos a nivel de sudoers para pivotar a root . 
+La máquina llamada "Zabbixploit" es una máquina de dificultad "Fácil", la cual nos enseña a explotar el CVE-2016-10134 en una versión de Zabbix vulnerable, que permite abusar de una SQLi basado en errores + Hijacking cookie de sesión, RCE por abuso de funcionalidad de administración remota, extracción de credenciales desde una base de datos local, comunicación manual con un socket TCP interno mediante descriptores de archivo, finalmente inyección de comandos vía sudo/eval para completar la escalada total hasta root . .
 
 # ZABBIXPLOIT
 
@@ -72,7 +72,7 @@ Probaremos el siguiente payload indicandole que nos enumere los primeros 16 cara
 
 <img width="1228" height="442" alt="zabbix17" src="https://github.com/user-attachments/assets/26a73507-3324-44e0-86f8-c9aeeff4604a" />
 
-Lo lanzamos y ¡Efectivamente logramos obtener los primeros caracteres de zbx_sessionid de Admin!
+Lo lanzamos y ¡Efectivamente logramos obtener los primeros caracteres de zbx_sessionid de Admin! 🔥
 
 <img width="1295" height="608" alt="zabbix18" src="https://github.com/user-attachments/assets/ec4580ae-c38d-46b5-9b93-7dc47f4a6096" />
 
@@ -90,7 +90,7 @@ La reemplazamos y recargamos la página web.
 
 <img width="1075" height="299" alt="zabbix22" src="https://github.com/user-attachments/assets/331b0c32-9724-4b05-8cd4-096686a69ca6" />
 
-¡Somos el usuario Zabbix Administrator!
+¡Somos el usuario Zabbix Administrator! 🔥
 
 <img width="510" height="384" alt="zabbix23" src="https://github.com/user-attachments/assets/6c20c1a9-4ff2-407e-b80f-4e36eddb1ac4" />
 
@@ -154,6 +154,6 @@ Ya como el usuario supervisor, iremos a /home/supervisor para encontrar una pist
 
 <img width="1188" height="244" alt="zabbix37" src="https://github.com/user-attachments/assets/22bf908b-7c4f-49c7-a922-bf0d398b280a" />
 
-Ahora daremos sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algun binario con privilegios de root, y efectivamente podemos ejecutar una shell, vemos que hace con el comando strings y nos damos cuenta que reinicia un servicio para lograr subir a root sin contraseña, se nos ocurre adjuntar un whoami para meter el binario /bin/bash y finalmente ser root, máquina hackeada . .
+Ahora daremos sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algun binario con privilegios de root, y efectivamente podemos ejecutar una shell, vemos que hace con el comando strings y nos damos cuenta que reinicia un servicio para lograr subir a root sin contraseña, se nos ocurre adjuntar un whoami para meter el binario /bin/bash y finalmente ser root, máquina hackeada 🔥 . .
 
 <img width="668" height="503" alt="zabbix36" src="https://github.com/user-attachments/assets/c92dd629-8988-4aef-b3cf-4c10150b3a9c" />
