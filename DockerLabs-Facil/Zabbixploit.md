@@ -37,6 +37,28 @@
 
 <img width="1238" height="577" alt="zabbix16" src="https://github.com/user-attachments/assets/ddffebbd-196a-495a-b4b9-4a406704fa7e" />
 
+<img width="1228" height="442" alt="zabbix17" src="https://github.com/user-attachments/assets/26a73507-3324-44e0-86f8-c9aeeff4604a" />
+
+<img width="1295" height="608" alt="zabbix18" src="https://github.com/user-attachments/assets/ec4580ae-c38d-46b5-9b93-7dc47f4a6096" />
+
+<img width="1212" height="461" alt="zabbix19" src="https://github.com/user-attachments/assets/c81d64e7-396a-4ed7-85ff-c02d7ec87d44" />
+
+<img width="1301" height="591" alt="zabbix20" src="https://github.com/user-attachments/assets/444c69d7-4a22-46ef-99ab-db06b657aa1e" />
+
+<img width="746" height="319" alt="zabbix21" src="https://github.com/user-attachments/assets/c45b6363-a91a-44e6-abc5-6a04446013fa" />
+
+<img width="1075" height="299" alt="zabbix22" src="https://github.com/user-attachments/assets/331b0c32-9724-4b05-8cd4-096686a69ca6" />
+
+<img width="510" height="384" alt="zabbix23" src="https://github.com/user-attachments/assets/6c20c1a9-4ff2-407e-b80f-4e36eddb1ac4" />
+
+<img width="855" height="545" alt="zabbix24" src="https://github.com/user-attachments/assets/db466aff-447a-49f4-bdd0-98d24521c16f" />
+
+<img width="1022" height="576" alt="zabbix25" src="https://github.com/user-attachments/assets/91cd15c5-b153-4d87-8354-71f12424f291" />
+
+<img width="721" height="454" alt="zabbix26" src="https://github.com/user-attachments/assets/717b62f7-cd06-4883-9a21-770057c145da" />
+
+<img width="626" height="590" alt="zabbix27" src="https://github.com/user-attachments/assets/353b9113-97a8-4519-8059-d2fb2d36b9e2" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
