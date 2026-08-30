@@ -1,3 +1,4 @@
+La máquina llamada "Zabbixploit" es una máquina de dificultad "Fácil", la cual nos enseña a convertir un LFI en un RCE utilizando Wrappers de php, para así poder ejecutar comandos a nivel de sistema y lanzarnos una reverse shell para ganar acceso a la máquina víctima, una vez dentro, abusamos de permisos a nivel de sudoers para pivotar a root . 
 
 # ZABBIXPLOIT
 
