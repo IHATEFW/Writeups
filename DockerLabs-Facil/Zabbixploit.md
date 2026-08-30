@@ -75,9 +75,9 @@
 
 <img width="626" height="282" alt="zabbix35" src="https://github.com/user-attachments/assets/a89732e1-e8f5-4c84-bd3a-0f471187641a" />
 
-<img width="668" height="503" alt="zabbix36" src="https://github.com/user-attachments/assets/c92dd629-8988-4aef-b3cf-4c10150b3a9c" />
-
 <img width="1188" height="244" alt="zabbix37" src="https://github.com/user-attachments/assets/22bf908b-7c4f-49c7-a922-bf0d398b280a" />
+
+<img width="668" height="503" alt="zabbix36" src="https://github.com/user-attachments/assets/c92dd629-8988-4aef-b3cf-4c10150b3a9c" />
 
 ## 💣 EXPLOTACIÓN
 
