@@ -54,6 +54,8 @@ Abrimos las herramientas de desarrollador en la web, nos copiamos nuestra zbx_se
 
 <img width="785" height="415" alt="zabbix13" src="https://github.com/user-attachments/assets/f91458f9-0743-4b74-8e8b-06e2b924b634" />
 
+## 💣 EXPLOTACIÓN
+
 Copiamos el payload que nos indica el repositorio adjuntándole los últimos 16 caracteres de nuestra zbx_sessionid, lo lanzamos y efectivamente nos responde con un error de sintaxis, pero nos enumera un usuario válido del sistema, significa que el payload funcionó, aquí se expone el SQLi basado en errores.
 
 <img width="1285" height="578" alt="zabbix14" src="https://github.com/user-attachments/assets/1eb6efe5-6098-45c6-98bb-757ed349b179" />
@@ -102,28 +104,56 @@ Volvemos al apartado de Monitoring > Triggers y daremos click en cualquier servi
 
 <img width="721" height="454" alt="zabbix26" src="https://github.com/user-attachments/assets/717b62f7-cd06-4883-9a21-770057c145da" />
 
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+```
+
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Ya dentro de la máquina víctima somos el usuario zabbix, ahora leeremos el archivo /etc/passwd para ver si existen más usuarios válidos antes de pivotar a root, y vemos que efectivamente existen los usuarios "operador" y "supervisor".
+
 <img width="626" height="590" alt="zabbix27" src="https://github.com/user-attachments/assets/353b9113-97a8-4519-8059-d2fb2d36b9e2" />
+
+Por lo tanto, iremos a /home donde encontramos una pista en un .txt, que nos indica que nos apresuremos ya que la tty puede morir por distintas razones.
 
 <img width="1328" height="283" alt="zabbix28" src="https://github.com/user-attachments/assets/e6af7dec-18b6-4f0b-a750-d9808a208836" />
 
+Dentro de /home/zabbix vemos otra pista.
+
 <img width="609" height="185" alt="zabbix29" src="https://github.com/user-attachments/assets/11d3924b-cd58-43bc-81d9-16759e4cf1c2" />
+
+Nos logueamos con dichas credenciales para acceder a MySQL, listamos las bases de datos y vemos la bdd zabbix, la damos use zabbix;
 
 <img width="693" height="587" alt="zabbix30" src="https://github.com/user-attachments/assets/8f9a772c-60aa-499d-ad2d-5d0b2066f757" />
 
+Luego listaremos las tablas con show tables; y nos muestra muchísimas tablas, la cual como indica la pista nos sirve "scripts", leeremos su contenido con select * from scripts; y nos muestra que posiblemente existe la contraseña del usuario operador en un directorio en especifico. 
+
 <img width="1193" height="597" alt="zabbix31" src="https://github.com/user-attachments/assets/609e65c0-4bc8-4b20-921b-c801bdff2d2b" />
+
+Lo leemos y encontramos la contraseña del usuario operador.
 
 <img width="551" height="104" alt="zabbix32" src="https://github.com/user-attachments/assets/4fe969bf-b99c-42f3-ab1d-7f4c7d47689d" />
 
+Nos loguemos por SSH como operador, accedemos a /home/operador y nos muestra otra pista en un archivo .txt, pero esta vez un poco más difícil de descifrarla, indicando que tendremos que mirar un servicio interno y que quizá tendremos que ocupar descriptor de archivos, tambien indica que sigamos revisando directorios comunes.
+
 <img width="722" height="614" alt="zabbix33" src="https://github.com/user-attachments/assets/11809f31-8a40-4566-a2de-8d9df8f07403" />
+
+Encontramos en /opt un directorio, donde se exponen 2 archivos que necesitaremos para acceder a dicho servicio interno que solo escucha en el localhost por el puerto 9001 con un token que tendremos que pasarle, como una especie de portforwarding pero através de /dev/tcp
 
 <img width="722" height="614" alt="zabbix34" src="https://github.com/user-attachments/assets/a5e45bfa-16e9-49a4-bcf7-60fef93abc87" />
 
+Utilizaremos la pista que nos dieron para usar el descriptor de archivo "3" para redirigir el stdout y el stdin a dicho descriptor de archivo, esto para lograr pivotar al usuario supervisor.
+
 <img width="626" height="282" alt="zabbix35" src="https://github.com/user-attachments/assets/a89732e1-e8f5-4c84-bd3a-0f471187641a" />
+
+Ya como el usuario supervisor, iremos a /home/supervisor para encontrar una pista nuevamente en un archivo .txt, donde indica que explotamos un Bash TCP socket mediante un descriptor de archivo.
 
 <img width="1188" height="244" alt="zabbix37" src="https://github.com/user-attachments/assets/22bf908b-7c4f-49c7-a922-bf0d398b280a" />
 
+Ahora daremos sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algun binario con privilegios de root, y efectivamente podemos ejecutar una shell, vemos que hace con el comando strings y nos damos cuenta que reinicia un servicio para lograr subir a root sin contraseña, se nos ocurre adjuntar un whoami para meter el binario /bin/bash y finalmente ser root, máquina hackeada . .
+
 <img width="668" height="503" alt="zabbix36" src="https://github.com/user-attachments/assets/c92dd629-8988-4aef-b3cf-4c10150b3a9c" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
