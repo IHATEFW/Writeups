@@ -4,23 +4,41 @@ La máquina llamada "Zabbixploit" es una máquina de dificultad "Fácil", la cua
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
+Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprime con el comando unzip y se despliega de la siguiente manera:
+
 <img width="923" height="604" alt="zabbix1" src="https://github.com/user-attachments/assets/c8d9f982-1821-4ea5-af41-b18d484fe774" />
 
 ## 🔎 ENUMERACIÓN
 
+Una vez que ya tenemos la ip de la máquina víctima, procederemos a realizar un escaneo con la herramienta nmap, para que nos muestre todos los puertos abiertos existentes para así lograr acceso a la máquina, esto con el siguiente comando, una vez ejecutado, nos damos cuenta que existen varios puertos abiertos, el 22, 80, 3306, 10050 y 10051, correspondiente a los servicios SSH, HTTP, MySQL y Zabbix
+
 <img width="1152" height="478" alt="zabbix2" src="https://github.com/user-attachments/assets/163598a2-94a8-4c71-b3b1-0c5943e201cb" />
+
+Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez indicandole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios que encontramos, esto de la siguiente manera, una vez ejecutado, podemos darnos cuenta que nos encontró el http-title de la web que es "Zabbix", a su vez nos confirma que estamos enfrentandonos a una BDD MariaDB.
 
 <img width="861" height="631" alt="zabbix3" src="https://github.com/user-attachments/assets/d6a8b1ef-326f-4c34-a237-3b61b33b43b1" />
 
+En este punto, accederemos a revisar la web del puerto 80, vemos el típico panel de autenticación de Zabbix, no tenemos credenciales válidas, probamos inyección SQL sin éxito.
+
 <img width="1239" height="631" alt="zabbix4" src="https://github.com/user-attachments/assets/f1407c85-b10b-409d-be3c-3cc127e9828a" />
+
+Daremos CTRL + U para revisar el código fuente y nos encontramos con un comentario/pista, indicando que podemos loguearnos con el usuario "guest" sin contraseña.
 
 <img width="644" height="119" alt="zabbix5" src="https://github.com/user-attachments/assets/86fb2292-851e-415b-b221-d5f688d53bdd" />
 
+Probamos:
+
 <img width="563" height="428" alt="zabbix6" src="https://github.com/user-attachments/assets/59f846e2-7e1d-4a49-8567-19889301fa0e" />
+
+Y ganamos acceso al dashboard de zabbix, donde se están monitoreando diversos servidores ya que vemos distintas alertas activas, indagando podemos darnos cuenta que es la versión 3.0.3 de Zabbix.
 
 <img width="1182" height="635" alt="zabbix7" src="https://github.com/user-attachments/assets/ed48c225-f117-4b9f-8079-1d627bed2d73" />
 
+Nos dirigiremos al apartado de "Latest data" para explotar el CVE-2016-10134 que sirve para esta versión de Zabbix.
+
 <img width="1023" height="526" alt="zabbix8" src="https://github.com/user-attachments/assets/9fbdf74a-db37-42aa-9637-b0c5897f6293" />
+
+Buscamos el siguiente repositorio en github, donde se explica la vulnerabilidad, donde básicamente se trata de una versión vulnerable a SQLi error-based en el latest.php, el cual nos permite ejecutar arbitrariamente comandos abusando del parametro toggle_ids, esto adjuntando los últimos 16 caracteres de nuestra cookie de sesión zbx_sessionid para también poder concatenar un Hijacking para secuestrar la cookie de sesión del usuario Administrador y así convertirnos en él.
 
 <img width="1187" height="638" alt="zabbix9" src="https://github.com/user-attachments/assets/be3e2a69-0ac0-49ce-983a-4d8edaaa56b4" />
 
