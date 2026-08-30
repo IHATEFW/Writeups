@@ -46,31 +46,57 @@ Buscamos el siguiente repositorio en github, donde se explica la vulnerabilidad,
 
 <img width="1280" height="519" alt="zabbix11" src="https://github.com/user-attachments/assets/eeb3f718-1b75-433d-85cb-0997ffc08a78" />
 
+Por lo tanto, ahora abriremos Burpsuite para interceptar la petición del latest.php, lo mandamos al Repetear.
+
 <img width="806" height="583" alt="zabbix12" src="https://github.com/user-attachments/assets/de70a31d-7e8b-4d62-b830-e8c512ed6858" />
+
+Abrimos las herramientas de desarrollador en la web, nos copiamos nuestra zbx_sessionid
 
 <img width="785" height="415" alt="zabbix13" src="https://github.com/user-attachments/assets/f91458f9-0743-4b74-8e8b-06e2b924b634" />
 
+Copiamos el payload que nos indica el repositorio adjuntándole los últimos 16 caracteres de nuestra zbx_sessionid, lo lanzamos y efectivamente nos responde con un error de sintaxis, pero nos enumera un usuario válido del sistema, significa que el payload funcionó, aquí se expone el SQLi basado en errores.
+
 <img width="1285" height="578" alt="zabbix14" src="https://github.com/user-attachments/assets/1eb6efe5-6098-45c6-98bb-757ed349b179" />
+
+En este punto, intentaremos ejecutar el Hijacking para robarnos la cookie de Administrador, nos urlencodearemos el siguiente payload que nos permitirá enumerar las tablas existentes de la base de datos, tenemos la sospecha que en la tabla sessions se guarda la zbx_sessionid de dicho usuario, esto lo haremos en el apartado "Decode" de burpsuite.
 
 <img width="1190" height="369" alt="zabbix15" src="https://github.com/user-attachments/assets/edbdf7a5-e509-45d7-a70d-5c538258c99f" />
 
+Lo lanzamos y podemos ver que nos está enumerando las 4 primeras tablas de la base de datos, pero no deja enumerar todas de una.
+
 <img width="1238" height="577" alt="zabbix16" src="https://github.com/user-attachments/assets/ddffebbd-196a-495a-b4b9-4a406704fa7e" />
+
+Probaremos el siguiente payload indicandole que nos enumere los primeros 16 caracteres del usuario Admin en la tabla sessions.
 
 <img width="1228" height="442" alt="zabbix17" src="https://github.com/user-attachments/assets/26a73507-3324-44e0-86f8-c9aeeff4604a" />
 
+Lo lanzamos y ¡Efectivamente logramos obtener los primeros caracteres de zbx_sessionid de Admin!
+
 <img width="1295" height="608" alt="zabbix18" src="https://github.com/user-attachments/assets/ec4580ae-c38d-46b5-9b93-7dc47f4a6096" />
 
+Ahora vamos con el siguiente payload a enumerar los otros 16 caracteres.
+
 <img width="1212" height="461" alt="zabbix19" src="https://github.com/user-attachments/assets/c81d64e7-396a-4ed7-85ff-c02d7ec87d44" />
+
+Lo lanzamos y completamos toda la cookie de sesión de Admin.
 
 <img width="1301" height="591" alt="zabbix20" src="https://github.com/user-attachments/assets/444c69d7-4a22-46ef-99ab-db06b657aa1e" />
 
 <img width="746" height="319" alt="zabbix21" src="https://github.com/user-attachments/assets/c45b6363-a91a-44e6-abc5-6a04446013fa" />
 
+La reemplazamos y recargamos la página web.
+
 <img width="1075" height="299" alt="zabbix22" src="https://github.com/user-attachments/assets/331b0c32-9724-4b05-8cd4-096686a69ca6" />
+
+¡Somos el usuario Zabbix Administrator!
 
 <img width="510" height="384" alt="zabbix23" src="https://github.com/user-attachments/assets/6c20c1a9-4ff2-407e-b80f-4e36eddb1ac4" />
 
+Iremos al apartado de Administration > Scripts para crearnos una reverse shell, el típico oneliner de bash, le damos que se ejecute en "Zabbix server", lo guardamos.
+
 <img width="855" height="545" alt="zabbix24" src="https://github.com/user-attachments/assets/db466aff-447a-49f4-bdd0-98d24521c16f" />
+
+Volvemos al apartado de Monitoring > Triggers y daremos click en cualquier servidor frutal, ya nos muestra nuestra reverse shell, la ejecutamos sin antes ponernos en escucha con la herramienta netcat en nuestra terminal, ¡Ganamos acceso a la máquina víctima!, realizaremos un tratamiento de la tty.
 
 <img width="1022" height="576" alt="zabbix25" src="https://github.com/user-attachments/assets/91cd15c5-b153-4d87-8354-71f12424f291" />
 
