@@ -3,23 +3,41 @@
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
+Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprime con el comando unzip y se despliega de la siguiente manera:
+
 <img width="1011" height="449" alt="choco1" src="https://github.com/user-attachments/assets/c4c3602d-9ddb-4755-9bbd-56a7841df130" />
 
 ## 🔎 ENUMERACIÓN
 
+En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que solo existe el puerto 80 abierto, correspondiente al servicio HTTP.
+
 <img width="1228" height="625" alt="choco2" src="https://github.com/user-attachments/assets/235ace51-99de-4ea6-acbc-e9fdb0fb3e56" />
+
+Seguiremos enumerando con la herramienta nmap, pero esta vez, indicandole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dicho servicio HTTP que está corriendo, esto de la siguiente manera, una vez ejecutado, podemos darnos cuenta que es la típica página web por defecto de Apache2, sin más novedades.
 
 <img width="1228" height="625" alt="choco3" src="https://github.com/user-attachments/assets/66c89f85-bbea-440b-9c81-4c60392621c0" />
 
+Vamos a revisarla y efectivamente es la web por defecto.
+
 <img width="1228" height="625" alt="choco4" src="https://github.com/user-attachments/assets/6840e604-8577-4c7b-bf55-49440ab1f094" />
+
+Revisaremos el código fuente con CTRL + U para ver si existe alguna pista que no estemos viendo y efectivamente se hace referencia a un CMS llamado Nibbleblog, en el directorio /nibbleblog.
 
 <img width="1228" height="625" alt="choco5" src="https://github.com/user-attachments/assets/1072af0a-e9cf-49f9-8a6f-626ab9ba3e37" />
 
+Lo revisamos y encontramos la siguiente web, básicamente este CMS se encarga de gestionar un blog sin base de datos como MySQL.
+
 <img width="1228" height="625" alt="choco6" src="https://github.com/user-attachments/assets/2f1986b5-0aba-4ed4-8c3e-f7cff77f51db" />
+
+Nuevamente abrimos el código fuente con CTRL + U y vemos que existe un /nibbleblog/feed.php
 
 <img width="1228" height="625" alt="choco7" src="https://github.com/user-attachments/assets/3a5a450b-9a9c-4cb9-9597-e579e1fea801" />
 
+Nos metemos y hace referencia a /nibbleblog/admin.php
+
 <img width="1228" height="625" alt="choco8" src="https://github.com/user-attachments/assets/d7c924f6-4863-40ef-96e6-887b06fe1954" />
+
+Lo revisamos y nos encontramos a una panel de login de dicho CMS.
 
 <img width="1228" height="625" alt="choco9" src="https://github.com/user-attachments/assets/5d9e3ce7-e095-40fe-894f-549a91e73d5b" />
 
