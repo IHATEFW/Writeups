@@ -1,3 +1,4 @@
+La máquina ChocolateLovers de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como explotar un CMS llamado Nibbleblog, el cual permite gestionar blogs con pocos recursos, esto lo hicimos subiendo una reverse shell dentro del plugin "My Image", ya dentro de la máquina víctima logramos pivotar a root abusando de permisos a nivel de sudoers y alterando un script que se ejecuta como root cada 5 segundos . .
 
 # CHOCOLATELOVERS
 
@@ -53,6 +54,8 @@ Buscamos en la web algun exploit que tenga Nibbleblog y nos hace referencia a qu
 
 <img width="1228" height="633" alt="choco12" src="https://github.com/user-attachments/assets/c87e9641-aa7f-421d-970a-e51f52199372" />
 
+## 💣 EXPLOTACIÓN
+
 Lo buscamos y efectivamente tiene un campo de subida de archivos, se nos ocurre subir una reverse shell en .php
 
 <img width="1228" height="633" alt="choco13" src="https://github.com/user-attachments/assets/c39133f3-9b00-401b-8f4c-a834b24c1bb2" />
@@ -77,19 +80,18 @@ reset xterm
 export TERM=xterm && export SHELL=bash
 stty rows 26 columns 148
 ```
+<img width="1188" height="366" alt="choco16" src="https://github.com/user-attachments/assets/fca2c18e-2bfb-46cd-bb74-bb6d3813911e" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 Ya con la tty más estable, procederemos a leer el archivo /etc/passwd para ver si existen más usuarios dentro de la máquina a los cuales tendremos que pivotar y nos encontramos con el usuario chocolate.
 
-<img width="1188" height="366" alt="choco16" src="https://github.com/user-attachments/assets/fca2c18e-2bfb-46cd-bb74-bb6d3813911e" />
+<img width="750" height="572" alt="choco17" src="https://github.com/user-attachments/assets/cf77fc66-f63f-4160-b111-559ee977179a" />
 
 Damos un sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algun binario con permisos de otros usuarios y efectivamente podemos ejecutar php como el usuario chocolate, lanzamos el siguiente comando y logramos pivotar a chocolate.
 
-<img width="750" height="572" alt="choco17" src="https://github.com/user-attachments/assets/cf77fc66-f63f-4160-b111-559ee977179a" />
-
 <img width="1087" height="408" alt="choco18" src="https://github.com/user-attachments/assets/bc09cb6a-9cec-45b7-a9a4-3d142976f69d" />
 
+Seguimos revisando y podemos ver que en /opt existe un script.php del cual somos dueño y que se ejecuta cada 5 segundos como el usuario root, esto lo corroboramos con un ps -aux, para eso comprobamos creando un directorio en /tmp llamado proof con el comando id y vemos que efectivamente el script.php se ejecuta como root, procedemos a modificar el binario /bin/bash para que se vuelva SUID y lanzamos una bash privilegiada con bash -p, finalmente somos root, máquina hackeada . .
+
 <img width="854" height="566" alt="choco19" src="https://github.com/user-attachments/assets/8fe4a961-4c34-4c56-9d8b-4dae916cf36d" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
