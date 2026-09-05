@@ -1,3 +1,4 @@
+La máquina WinFake de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos lograr acceder a la máquina víctima con pistas en el código fuente de la página web del puerto 80 . .
 
 # WINFAKE
 
@@ -25,16 +26,26 @@ Miraremos el código fuente con CTRL + U para ver si existe algo que se nos esca
 
 <img width="616" height="457" alt="win6" src="https://github.com/user-attachments/assets/6575d9f7-3b83-4d96-8939-295f0a48ebaa" />
 
+## 💣 EXPLOTACIÓN
+
+Procederemos a realizar un ataque de fuerza bruta de SSH con la herramienta Hydra, utilizando el diccionario de confianza rockyou.txt, despues de unos minutos logramos encontrar la password del usuario pipe.
+
 <img width="1217" height="391" alt="win7" src="https://github.com/user-attachments/assets/7b192422-2c22-4505-be23-bba66b31bb5d" />
+
+Accedemos vía SSH y ¡logramos entrar a la máquina víctima! 🔥, pese a que es un linux, se simula el la típica terminal de cmd o powershell de Windows.
+
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 <img width="740" height="626" alt="win8" src="https://github.com/user-attachments/assets/44716486-0fb9-4ba2-9a0f-eda8b8b258bb" />
 
+En la web, en el codigo fuente, logramos identificar una pista, que indica que estamos frente a un acróstico, si juntamos todas las iniciales de todas las noticias tech, logramos unir una posible contraseña. 
+
 <img width="884" height="558" alt="win5" src="https://github.com/user-attachments/assets/510c60c6-8184-47fc-a3f9-884ec01892f0" />
+
+La guardamos en un .txt
 
 <img width="469" height="208" alt="win9" src="https://github.com/user-attachments/assets/a41e1698-163e-499e-bf0c-7148422a9a3e" />
 
+La utilizamos para probarla pivotando al usuario root y ¡Efectivamente logramos acceder al usuario de máximos privilegios root!, máquina hackeada 🔥. .
+
 <img width="499" height="341" alt="win10" src="https://github.com/user-attachments/assets/2a1c0aae-3221-4a61-8883-13be19d6f5ca" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
