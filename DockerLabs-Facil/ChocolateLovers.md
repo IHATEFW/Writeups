@@ -29,6 +29,20 @@
 
 <img width="1228" height="633" alt="choco12" src="https://github.com/user-attachments/assets/c87e9641-aa7f-421d-970a-e51f52199372" />
 
+<img width="1228" height="633" alt="choco13" src="https://github.com/user-attachments/assets/c39133f3-9b00-401b-8f4c-a834b24c1bb2" />
+
+<img width="1228" height="633" alt="choco14" src="https://github.com/user-attachments/assets/fe6a438c-655e-4b5d-8d58-7a82497c5d66" />
+
+<img width="612" height="232" alt="choco15" src="https://github.com/user-attachments/assets/d4521c8a-1191-487c-b010-37a11140e624" />
+
+<img width="1188" height="366" alt="choco16" src="https://github.com/user-attachments/assets/fca2c18e-2bfb-46cd-bb74-bb6d3813911e" />
+
+<img width="750" height="572" alt="choco17" src="https://github.com/user-attachments/assets/cf77fc66-f63f-4160-b111-559ee977179a" />
+
+<img width="1087" height="408" alt="choco18" src="https://github.com/user-attachments/assets/bc09cb6a-9cec-45b7-a9a4-3d142976f69d" />
+
+<img width="854" height="566" alt="choco19" src="https://github.com/user-attachments/assets/8fe4a961-4c34-4c56-9d8b-4dae916cf36d" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
