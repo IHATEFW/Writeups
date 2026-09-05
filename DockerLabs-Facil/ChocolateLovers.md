@@ -37,21 +37,35 @@ Nos metemos y hace referencia a /nibbleblog/admin.php
 
 <img width="1228" height="625" alt="choco8" src="https://github.com/user-attachments/assets/d7c924f6-4863-40ef-96e6-887b06fe1954" />
 
-Lo revisamos y nos encontramos a una panel de login de dicho CMS.
+Lo revisamos y nos encontramos a una panel de login de dicho CMS, probaremos las siguientes credenciales admin:admin
 
 <img width="1228" height="625" alt="choco9" src="https://github.com/user-attachments/assets/5d9e3ce7-e095-40fe-894f-549a91e73d5b" />
 
+Logramos acceder al dashboard.
+
 <img width="1228" height="625" alt="choco10" src="https://github.com/user-attachments/assets/a4106fb7-918b-4908-88d1-388da606578c" />
+
+En el apartado de "Settings" scrolleamos hasta el final y vemos la versión de dicho Nibbleblog.
 
 <img width="1228" height="625" alt="choco11" src="https://github.com/user-attachments/assets/c4aab4cf-f16f-45c0-85b7-ab79473b6cc8" />
 
+Buscamos en la web algun exploit que tenga Nibbleblog y nos hace referencia a que la versión 4.0.3 es vulnerable a un RCE vía subida de archivos en el plugin "My Image".
+
 <img width="1228" height="633" alt="choco12" src="https://github.com/user-attachments/assets/c87e9641-aa7f-421d-970a-e51f52199372" />
+
+Lo buscamos y efectivamente tiene un campo de subida de archivos, se nos ocurre subir una reverse shell en .php
 
 <img width="1228" height="633" alt="choco13" src="https://github.com/user-attachments/assets/c39133f3-9b00-401b-8f4c-a834b24c1bb2" />
 
+En otra web, logramos identificar la URL de donde ejecutarlo.
+
 <img width="1228" height="633" alt="choco14" src="https://github.com/user-attachments/assets/fe6a438c-655e-4b5d-8d58-7a82497c5d66" />
 
+Nos levantamos un listening con la herramienta netcat por el puerto 443.
+
 <img width="612" height="232" alt="choco15" src="https://github.com/user-attachments/assets/d4521c8a-1191-487c-b010-37a11140e624" />
+
+Lanzamos la reverse shell y ¡Ganamos acceso a la máquina víctima!
 
 <img width="1188" height="366" alt="choco16" src="https://github.com/user-attachments/assets/fca2c18e-2bfb-46cd-bb74-bb6d3813911e" />
 
