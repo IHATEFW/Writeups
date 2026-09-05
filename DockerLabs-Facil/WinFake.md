@@ -3,9 +3,13 @@
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
+Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprime con el comando unzip y se despliega de la siguiente manera:
+
 <img width="814" height="628" alt="win1" src="https://github.com/user-attachments/assets/b74f091a-24e9-41bc-883e-33d73face9d1" />
 
 ## 🔎 ENUMERACIÓN
+
+Una vez que ya tenemos la ip de la máquina víctima, realizaremos un escaneo con la herramienta nmap, para que nos arroje todos los puertos abiertos existentes para así lograr acceso a la máquina, esto con el siguiente comando, una vez ejecutado, nos damos cuenta que existen los puertos 22 y 80 abiertos, relacionados a SSH y HTTP.
 
 <img width="1236" height="628" alt="win2" src="https://github.com/user-attachments/assets/1c609951-e0e6-45c3-a2e6-d9a3aab6e493" />
 
