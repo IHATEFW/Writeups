@@ -13,9 +13,15 @@ Una vez que ya tenemos la ip de la máquina víctima, realizaremos un escaneo co
 
 <img width="1236" height="628" alt="win2" src="https://github.com/user-attachments/assets/1c609951-e0e6-45c3-a2e6-d9a3aab6e493" />
 
+Seguiremos enumerando con la herramienta nmap, pero esta vez indicandole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios que están corriendo, esto de la siguiente manera, una vez ejecutado, podemos visualizar el titulo de la web, llamada "TechWorld Noticias".
+
 <img width="1236" height="628" alt="win3" src="https://github.com/user-attachments/assets/d0b25cc5-5b52-454b-94c4-6139767bfb9c" />
 
+Revisaremos y vemos que nos muestra una especie de web de noticias de tecnología, pero nada importante de primera vista.
+
 <img width="1236" height="628" alt="win4" src="https://github.com/user-attachments/assets/f823dc30-cbf8-4716-8200-6f0c6c5f03fe" />
+
+Miraremos el código fuente con CTRL + U para ver si existe algo que se nos escape y efectivamente logramos encontrar un posible usuario válido del sistema "pipe".
 
 <img width="616" height="457" alt="win6" src="https://github.com/user-attachments/assets/6575d9f7-3b83-4d96-8939-295f0a48ebaa" />
 
