@@ -67,7 +67,22 @@ Nos levantamos un listening con la herramienta netcat por el puerto 443.
 
 Lanzamos la reverse shell y ¡Ganamos acceso a la máquina víctima!
 
+una vez dentro de la máquina víctima, procedemos a realizar el tratamiento de la tty con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+stty rows 26 columns 148
+```
+
+Ya con la tty más estable, procederemos a leer el archivo /etc/passwd para ver si existen más usuarios dentro de la máquina a los cuales tendremos que pivotar y nos encontramos con el usuario chocolate.
+
 <img width="1188" height="366" alt="choco16" src="https://github.com/user-attachments/assets/fca2c18e-2bfb-46cd-bb74-bb6d3813911e" />
+
+Damos un sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algun binario con permisos de otros usuarios y efectivamente podemos ejecutar php como el usuario chocolate, lanzamos el siguiente comando y logramos pivotar a chocolate.
 
 <img width="750" height="572" alt="choco17" src="https://github.com/user-attachments/assets/cf77fc66-f63f-4160-b111-559ee977179a" />
 
