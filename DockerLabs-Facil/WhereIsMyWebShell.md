@@ -3,19 +3,33 @@
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
+Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprime con el comando unzip y se despliega de la siguiente manera:
+
 <img width="957" height="299" alt="where1" src="https://github.com/user-attachments/assets/4e6beef8-0646-4009-99d8-dba5fc3c65e7" />
 
 ## 🔎 ENUMERACIÓN
 
+En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que solo existe el puerto 80 abierto, correspondiente al servicio HTTP.
+
 <img width="1255" height="631" alt="where2" src="https://github.com/user-attachments/assets/66364a9e-7dc1-46aa-8694-a9f48ecde1c7" />
+
+Una vez ya tenemos el puerto abierto identificado, seguiremos enumerando con la herramienta nmap, pero esta vez, indicandole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dicho servicio HTTP, esto de la siguiente manera, una vez ejecutado, podemos visualizar el titulo de la página web, indicando "Academia de Inglés".
 
 <img width="1036" height="577" alt="where3" src="https://github.com/user-attachments/assets/38fb554f-975e-4a87-8ac1-a56c1de6567d" />
 
+Lanzamos el comando Whatweb para ver las tecnologías que se están empleando por detrás de la página web.
+
 <img width="1332" height="252" alt="where4" src="https://github.com/user-attachments/assets/d44e1761-58df-46b9-af55-3b7858e6a3a8" />
+
+Revisamos la web y efectivamente hace referencia a una Academia de Inglés.
 
 <img width="1226" height="627" alt="where5" src="https://github.com/user-attachments/assets/f39ccf5d-dd2e-45b3-ae52-4bf1991ba097" />
 
+Seguimos scrolleando hasta el final y nos entregan una pista, indicando que guardaron un secreto en el directorio /tmp
+
 <img width="1242" height="303" alt="where6" src="https://github.com/user-attachments/assets/6840ec59-eef1-451f-abb4-558a08313ae3" />
+
+En este punto
 
 <img width="1336" height="617" alt="where7" src="https://github.com/user-attachments/assets/036ed4fa-79cc-47e4-96b7-548c66c6cc7d" />
 
