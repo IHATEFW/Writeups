@@ -29,15 +29,23 @@ Seguimos scrolleando hasta el final y nos entregan una pista, indicando que guar
 
 <img width="1242" height="303" alt="where6" src="https://github.com/user-attachments/assets/6840ec59-eef1-451f-abb4-558a08313ae3" />
 
-En este punto
+En este punto realizaremos un ataque de fuerza bruta de directorios con la herramienta Gobuster, esto de la siguiente manera, una vez ejecutado, podemos visualizar que nos encontró 2 directorios importantes, un /warning.html y un /shell.php
 
 <img width="1336" height="617" alt="where7" src="https://github.com/user-attachments/assets/036ed4fa-79cc-47e4-96b7-548c66c6cc7d" />
 
+Revisamos el /warning.html y aparece un mensaje, indicando que la web ha sido hackeada ya por otro atacante y que la webshell tiene un parámetro que no se recuerda, esto nos hace entender que detrás de /shell.php existe un parámetro válido para lograr abusar de algo.
+
 <img width="1205" height="309" alt="where8" src="https://github.com/user-attachments/assets/391f51eb-0dd0-4832-a337-2c7e3e2e7d59" />
+
+Con la herramienta ffuf realizaremos fuzzing de para lograr encontrar el parámetro válido, esto de la siguiente manera, una vez ejecutado, nos encontró el parámetro llamado "parameter".
 
 <img width="1340" height="617" alt="where9" src="https://github.com/user-attachments/assets/ee500c72-fa05-4f1d-946c-7d7fa7493ed4" />
 
+Lo probamos para ver si logramos transformar todo esto en un RCE y ¡efectivamente!, logramos ejecución de comandos a nivel de sistema.
+
 <img width="657" height="212" alt="where10" src="https://github.com/user-attachments/assets/84a33102-64d3-458d-8a28-495c3f90a0c4" />
+
+Nos levantamos un listening con la herramienta netcat por el puerto 443 para ponernos a la escucha de una reverse shell que nos lanzaremos a nuestra máquina atacante.
 
 <img width="549" height="272" alt="where11" src="https://github.com/user-attachments/assets/fa6773df-1de4-4609-a064-2576e638e5ba" />
 
