@@ -1,3 +1,4 @@
+La máquina ApiBase de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como interactuar con API's nos puede ayudar a enumerar rutas válidas e información sensible, como en este caso usuarios y sus credenciales, ya dentro de la máquina víctima logramos pivotar a root ya que su password estaba expuesta en un archivo dentro de /home. .
 
 # APIBASE
 
