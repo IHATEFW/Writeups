@@ -29,6 +29,8 @@ Abrimos Burpsuite para ver como se está tramitando la petición.
 
 <img width="1540" height="915" alt="influ6" src="https://github.com/user-attachments/assets/daf65465-fb17-46f2-a317-eb0c6d504b82" />
 
+## 💣 EXPLOTACIÓN
+
 Ahora procederemos a realizar un ataque de fuerza bruta de SSH con la herramienta hydra, para que nos encuentre el posible usuario válido con su password, esto lo haremos con un diccionario de credenciales por defecto, cambien le especificamos el puerto 80 y el método de la petición que es get, también le indicamos que busque desde la raíz /, una vez finaliza el escaneo nos encuentra las credenciales válidas.
 
 <img width="1883" height="313" alt="influ7" src="https://github.com/user-attachments/assets/148fae9a-9173-4eb5-87a0-3da294cc2429" />
@@ -65,18 +67,16 @@ Nos loguemos por SSH y ¡Ganamos acceso a la máquina víctima!
 
 <img width="1181" height="454" alt="influ15" src="https://github.com/user-attachments/assets/84f24087-efaf-4040-9045-401acfdfc856" />
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
 Ya dentro de la máquina víctima, nos traeremos la siguiente herramienta llamada Sudo_BruteForce de Maalfer, la cual nos permitirá realizar fuerza bruta de contraseñas contra el usuario root.
 
 <img width="1056" height="863" alt="influ16" src="https://github.com/user-attachments/assets/ff8f27f1-ad93-483d-87c1-6b52c6ddfe20" />
 
-La traemos de la siguiente manera a /tmp
+La traemos de la siguiente manera a /tmp y la transferimos a la máquina víctima con el comando scp, también transferimos el rockyou.txt renombrado como diccionario.txt para utilizarlo en el ataque.
 
 <img width="1412" height="821" alt="influ17" src="https://github.com/user-attachments/assets/2de1e651-4c57-4689-b934-a2d032bd03d2" />
 
-La transferimos a la máquina víctima con el comando scp, también transferimos el rockyou.txt renombrado como diccionario.txt para utilizarlo en el ataque.
+Lanzamos la herramienta y nos encuentra la contraseña de root, pivotamos a root y completamos la máquina en su totalidad, máquina hackeada . .
 
 <img width="607" height="546" alt="influ18" src="https://github.com/user-attachments/assets/1558b3b7-aeed-4e6f-a599-71f0d922d6c1" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
