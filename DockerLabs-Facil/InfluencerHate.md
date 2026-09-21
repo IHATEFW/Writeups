@@ -27,6 +27,20 @@
 
 <img width="1520" height="803" alt="influ11" src="https://github.com/user-attachments/assets/7237b0e3-9bf3-4cd4-9610-86d457d6885d" />
 
+<img width="1440" height="901" alt="influ12" src="https://github.com/user-attachments/assets/cba040af-872b-46db-b7b2-79cdab94b2e1" />
+
+<img width="664" height="339" alt="influ13" src="https://github.com/user-attachments/assets/b1c39ec5-6bd0-4b6b-a11e-45d006ed394d" />
+
+<img width="1889" height="418" alt="influ14" src="https://github.com/user-attachments/assets/b37bda68-e693-482b-adcc-ac9c5f09a639" />
+
+<img width="1181" height="454" alt="influ15" src="https://github.com/user-attachments/assets/84f24087-efaf-4040-9045-401acfdfc856" />
+
+<img width="1056" height="863" alt="influ16" src="https://github.com/user-attachments/assets/ff8f27f1-ad93-483d-87c1-6b52c6ddfe20" />
+
+<img width="1412" height="821" alt="influ17" src="https://github.com/user-attachments/assets/2de1e651-4c57-4689-b934-a2d032bd03d2" />
+
+<img width="607" height="546" alt="influ18" src="https://github.com/user-attachments/assets/1558b3b7-aeed-4e6f-a599-71f0d922d6c1" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
