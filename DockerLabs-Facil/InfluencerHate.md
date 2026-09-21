@@ -45,19 +45,35 @@ Realizamos un fuzzing en el /login.php con las credenciales que encontramos y pr
 
 <img width="1055" height="670" alt="influ10" src="https://github.com/user-attachments/assets/0c416200-32cf-4212-9866-e12a330e1d1f" />
 
+Ingresamos a la primera, vemos la típica página web por defecto de Apache2.
+
 <img width="1520" height="803" alt="influ11" src="https://github.com/user-attachments/assets/7237b0e3-9bf3-4cd4-9610-86d457d6885d" />
+
+Ahora ingresamos al /login.php, nos loguemos con las credenciales de admin:chocolate 
 
 <img width="1440" height="901" alt="influ12" src="https://github.com/user-attachments/assets/cba040af-872b-46db-b7b2-79cdab94b2e1" />
 
+Nos enumera un posible usuario válido llamado "balutin".
+
 <img width="664" height="339" alt="influ13" src="https://github.com/user-attachments/assets/b1c39ec5-6bd0-4b6b-a11e-45d006ed394d" />
+
+Ahora que ya tenemos el usuario balutin, procederemos a realizar nuevamente ataque de fuerza bruta SSH con Hydra para encontrar su contraseña, una vez ejecutado, encontramos su password.
 
 <img width="1889" height="418" alt="influ14" src="https://github.com/user-attachments/assets/b37bda68-e693-482b-adcc-ac9c5f09a639" />
 
+Nos loguemos por SSH y ¡Ganamos acceso a la máquina víctima!
+
 <img width="1181" height="454" alt="influ15" src="https://github.com/user-attachments/assets/84f24087-efaf-4040-9045-401acfdfc856" />
+
+Ya dentro de la máquina víctima, nos traeremos la siguiente herramienta llamada Sudo_BruteForce de Maalfer, la cual nos permitirá realizar fuerza bruta de contraseñas contra el usuario root.
 
 <img width="1056" height="863" alt="influ16" src="https://github.com/user-attachments/assets/ff8f27f1-ad93-483d-87c1-6b52c6ddfe20" />
 
+La traemos de la siguiente manera a /tmp
+
 <img width="1412" height="821" alt="influ17" src="https://github.com/user-attachments/assets/2de1e651-4c57-4689-b934-a2d032bd03d2" />
+
+La transferimos a la máquina víctima con el comando scp, también transferimos el rockyou.txt renombrado como diccionario.txt para utilizarlo en el ataque.
 
 <img width="607" height="546" alt="influ18" src="https://github.com/user-attachments/assets/1558b3b7-aeed-4e6f-a599-71f0d922d6c1" />
 
