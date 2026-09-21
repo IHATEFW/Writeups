@@ -3,19 +3,33 @@
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
+Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprime con el comando unzip y se despliega de la siguiente manera:
+
 <img width="1236" height="867" alt="influ1" src="https://github.com/user-attachments/assets/e5a7a437-c6cf-4d04-b86a-cab6aadab7b9" />
 
 ## 🔎 ENUMERACIÓN
 
+En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que existen los puertos 22 y 80 abiertos, relacionados a los servicios SSH y HTTP.
+
 <img width="1511" height="615" alt="influ2" src="https://github.com/user-attachments/assets/23cbd1fb-5c12-49af-9efe-b093d602a200" />
+
+Una vez ya tenemos los puertos abiertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, esto de la siguiente manera, una vez ejecutado, podemos visualizar un http-auth indicando código 401 de unauthorized.
 
 <img width="1335" height="912" alt="influ3" src="https://github.com/user-attachments/assets/b7fe59b6-6f47-4376-a1e0-567de8b39641" />
 
+Arrojamos el comando whatweb para ver las tecnologías que corren por detrás y nos indica lo mismo.
+
 <img width="1885" height="287" alt="influ4" src="https://github.com/user-attachments/assets/ec022262-a06c-4fee-8589-a32cfff27545" />
+
+En este punto, procederemos a revisar la web, la cual nos muestra un campo de login, no tenemos credenciales válidas, probamos las típicas, inclusive probamos SQLi, pero no tenemos éxito.
 
 <img width="1266" height="565" alt="influ5" src="https://github.com/user-attachments/assets/bc464814-a909-45c6-8c9a-5f088f1a7754" />
 
+Abrimos Burpsuite para ver como se está tramitando la petición.
+
 <img width="1540" height="915" alt="influ6" src="https://github.com/user-attachments/assets/daf65465-fb17-46f2-a317-eb0c6d504b82" />
+
+Ahora procederemos a realizar un ataque de fuerza bruta de SSH con la herramienta hydra, para que nos encuentre el posible usuario válido con su password, esto lo haremos con un diccionario de credenciales por defecto, cambien le especificamos el puerto 80 y el método de la petición que es get, también le indicamos que busque desde la raíz /.
 
 <img width="1883" height="313" alt="influ7" src="https://github.com/user-attachments/assets/148fae9a-9173-4eb5-87a0-3da294cc2429" />
 
