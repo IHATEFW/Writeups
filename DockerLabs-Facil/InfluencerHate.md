@@ -29,13 +29,19 @@ Abrimos Burpsuite para ver como se está tramitando la petición.
 
 <img width="1540" height="915" alt="influ6" src="https://github.com/user-attachments/assets/daf65465-fb17-46f2-a317-eb0c6d504b82" />
 
-Ahora procederemos a realizar un ataque de fuerza bruta de SSH con la herramienta hydra, para que nos encuentre el posible usuario válido con su password, esto lo haremos con un diccionario de credenciales por defecto, cambien le especificamos el puerto 80 y el método de la petición que es get, también le indicamos que busque desde la raíz /.
+Ahora procederemos a realizar un ataque de fuerza bruta de SSH con la herramienta hydra, para que nos encuentre el posible usuario válido con su password, esto lo haremos con un diccionario de credenciales por defecto, cambien le especificamos el puerto 80 y el método de la petición que es get, también le indicamos que busque desde la raíz /, una vez finaliza el escaneo nos encuentra las credenciales válidas.
 
 <img width="1883" height="313" alt="influ7" src="https://github.com/user-attachments/assets/148fae9a-9173-4eb5-87a0-3da294cc2429" />
 
+Como ya tenemos las credenciales válidas, realizaremos un ataque de fuerza bruta de directorios con la herramienta Gobuster, adjuntandole las credenciales que encontramos, una vez finaliza el escaneo no encuentra un /login.php
+
 <img width="1885" height="749" alt="influ8" src="https://github.com/user-attachments/assets/d9582a3a-bed7-4564-958d-e344e2af037d" />
 
+Convertiremos las credenciales que encontramos en base64
+
 <img width="861" height="129" alt="influ9" src="https://github.com/user-attachments/assets/da11eb86-ad10-40b6-9d6f-d89ba9ecff17" />
+
+Realizamos un fuzzing en el /login.php con las credenciales que encontramos y probando encontrar la posible password del usuario admin, una vez finaliza el escaneo nos encuentra la password admin, ahora si procederemos a revisar todas las webs.
 
 <img width="1055" height="670" alt="influ10" src="https://github.com/user-attachments/assets/0c416200-32cf-4212-9866-e12a330e1d1f" />
 
