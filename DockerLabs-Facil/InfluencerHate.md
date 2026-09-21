@@ -1,4 +1,5 @@
 La máquina InfluencerHate de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como realizando ataques de fuerza bruta con Gobuster, Hydra y fuzzing con wfuzz podemos encontrar credenciales válidas del sistema, logrando acceder a la máquina víctima, finalmente con Sudo_BruteForce podemos encontrar la contraseña de root y hackear la máquina completa . .
+
 # INFLUENCERHATE
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
