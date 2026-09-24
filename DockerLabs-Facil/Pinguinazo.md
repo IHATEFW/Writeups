@@ -29,9 +29,15 @@ Ingresamos el nombre Prueba y le damos "Save all", vemos que se está interpreta
 
 <img width="743" height="291" alt="pingu6" src="https://github.com/user-attachments/assets/5c5dea24-900b-4df2-8fda-7785d1e1ed06" />
 
+En este punto, vemos que podemos explotar un SSTI (Server-Side Template Injection), una vulnerabilidad típica del OWASP top 10, la cual se explota de la siguiente manera, probaremos inyectar un 7*7 de la siguiente manera, debiese darnos como resultado el numero 49.
+
 <img width="1173" height="692" alt="pingu7" src="https://github.com/user-attachments/assets/fc3c7ddc-615f-4501-a699-38dfa607b0c8" />
 
+Efectivamente nos responde la multiplicación.
+
 <img width="697" height="283" alt="pingu8" src="https://github.com/user-attachments/assets/a11190c9-81de-47f9-8066-64d6b7909a3a" />
+
+Vamos a probar este payload que incorpora el comando "id", para que nos muestre el usuario activo de la máquina víctima.
 
 <img width="1212" height="794" alt="pingu9" src="https://github.com/user-attachments/assets/61fcb380-d5b2-4556-be11-aa44263371e3" />
 
