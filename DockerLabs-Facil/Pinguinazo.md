@@ -9,13 +9,23 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que solo existe el puerto 5000 abierto, correspondiente al servicio UPnP (Universal Plug and Play).
+
 <img width="1517" height="578" alt="pingu2" src="https://github.com/user-attachments/assets/85b901f4-7056-4509-8c4c-0de6fc12e6fe" />
+
+Una vez ya tenemos el puerto abierto identificado, seguiremos enumerando con la herramienta nmap, pero esta vez, indicandole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dicho servicio, esto de la siguiente manera, una vez ejecutado, podemos visualizar que está corriendo Werkzeug de Python, relacionado a una web, donde tambien podemos identificar su titulo, llamado "Pingu Flask Web"
 
 <img width="1242" height="704" alt="pingu3" src="https://github.com/user-attachments/assets/943d4023-1f8c-4eb0-9231-c95c2c271caf" />
 
+Lanzamos el comando Whatweb para detectar las tecnologias que se están empleando.
+
 <img width="1885" height="342" alt="pingu4" src="https://github.com/user-attachments/assets/d24ad960-f7ea-4e75-b513-ad05946cdc9e" />
 
+Ahora revisaremos la web detrás del puerto 5000, vemos un campo de registro, donde nos solicitan algun nombre, cumpleaños, email, etc.
+
 <img width="1385" height="673" alt="pingu5" src="https://github.com/user-attachments/assets/b64f4bf6-8696-4620-b26e-616a15203ac3" />
+
+Ingresamos el nombre Prueba y le damos "Save all", vemos que se está interpretando y apareciendo de la misma manera cualquier información que ingresemos.
 
 <img width="743" height="291" alt="pingu6" src="https://github.com/user-attachments/assets/5c5dea24-900b-4df2-8fda-7785d1e1ed06" />
 
