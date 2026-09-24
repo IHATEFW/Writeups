@@ -1,3 +1,4 @@
+La máquina Pinguinazo de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como explotar una vulnerabilidad del OWASP top 10, llamada SSTI (Server-Side Template Injection), la cual nos permite ejecutar un RCE para lanzarnos una reverse shell y ganar acceso a la máquina víctima, luego dentro, logramos pivotar a root abusando Java a nivel de sudoers . .
 
 # PINGUINAZO
 
