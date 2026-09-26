@@ -1,3 +1,4 @@
+La máquina Redirect de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos practicar la vulnerabilidad Open Redirect del OWASP Top 10 con 3 laboratorios distintos, luego nos entrega credenciales para acceder por SSH, una vez dentro de la máquina víctima logramos pivotar gracias a credenciales expuestas y a permisos a nivel de sudoers . .
 
 # REDIRECTION
 
@@ -16,6 +17,8 @@ En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap
 Una vez ya tenemos el puerto abierto identificado, seguiremos enumerando con la herramienta nmap, pero esta vez, indicandole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, una vez ejecutado, podemos visualizar en el http-title el titulo de la web, llamado "Laboratorio de Open Redirect".
 
 <img width="1514" height="871" alt="redi3" src="https://github.com/user-attachments/assets/13f3b758-8658-462b-9a86-d32fe40164a4" />
+
+## 💣 EXPLOTACIÓN
 
 Lo revisamos y podemos ver 3 laboratorios donde podemos practicar dicha vulnerabilidad relacionada al OWASP top 10.
 
@@ -41,38 +44,64 @@ Efectivamente nos redirige a dockerlabs.es, el laboratorio 1 se encuentra comple
 
 <img width="1628" height="704" alt="redi9" src="https://github.com/user-attachments/assets/3e7f804e-b421-4253-9957-946e117b5b4d" />
 
-Pasamos al laboratorio 2
+Pasamos al laboratorio 2, donde nuevamente nos indica que presionando el enlace nos redirigirá a google.com
 
 <img width="1628" height="704" alt="redi10" src="https://github.com/user-attachments/assets/319c8c94-f7bf-492f-9f77-198c14b4f92e" />
 
+Intentamos nuevamente que nos redirija a dockerlabs.es, pero esta vez nos sale un error de acción de permitida, tendremos que bypassear de otra manera esto.
+
 <img width="829" height="319" alt="redi11" src="https://github.com/user-attachments/assets/cd986222-2c81-40be-80e8-721d50662b57" />
+
+Volvemos a modificar la url colandole el google.com en primera instancia ya que sabemos que depende de dicha dirección y colocandole un "@" para concatenar dockerlabs.es
 
 <img width="878" height="295" alt="redi12" src="https://github.com/user-attachments/assets/b29136e1-aaa2-4e29-858c-4a382f5ce6b0" />
 
+Logramos redireccionamiento correcto, laboratorio 2 completado.
+
 <img width="1706" height="656" alt="redi13" src="https://github.com/user-attachments/assets/70966889-b71d-4641-a204-6bc43dd305ae" />
+
+Revisamos el laboratorio 3 y nos indica lo mismo.
 
 <img width="1527" height="759" alt="redi14" src="https://github.com/user-attachments/assets/26b8ad59-173e-4726-a74d-afac488348cd" />
 
+Probaremos la técnica anterior para ver si nos redirige a dockerlabs.es pero sale nuevamente error, tendremos que utilizar una 3era técnica.
+
 <img width="1089" height="341" alt="redi15" src="https://github.com/user-attachments/assets/452eabb3-007a-4d19-ae79-23083395dec7" />
+
+Intentamos nuevamente pero esta vez especificando un posible subdominio de google.com, que aún que no sea válido, si redirige estaremos explotándolo de igual manera, la idea es que no salga el error típico.
 
 <img width="874" height="291" alt="redi16" src="https://github.com/user-attachments/assets/ca84e80c-603d-43e0-b295-888c21926593" />
 
+Efectivamente logramos explotar nuevamente el redirect, laboratorio 3 completado.
+
 <img width="1383" height="744" alt="redi17" src="https://github.com/user-attachments/assets/46bdf1fc-d885-4745-9036-c6db5c72fe39" />
+
+Volvemos a la web principal, y damos click en "Clic cuando hayas completado los laboratorios", donde se exponen las credenciales del usuario balu para ingresar por SSH a la máquina víctima.
 
 <img width="1015" height="607" alt="redi18" src="https://github.com/user-attachments/assets/327aebed-8c69-48a2-9c0f-a7396ecb0b5f" />
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Ingresamos por SSH.
+
 <img width="1165" height="581" alt="redi19" src="https://github.com/user-attachments/assets/7d1a76f7-5732-4ca0-ac54-40a7d735aba0" />
+
+Ya dentro de la máquina víctima, leeremos el archivo /etc/passwd para ver si existen más usuarios válidos dentro del sistema para pivotar antes de llegar a root y podemos ver que existe el usuario balulito.
 
 <img width="845" height="770" alt="redi20" src="https://github.com/user-attachments/assets/f5dfeb89-c219-473d-b133-e627d312db00" />
 
+En la raíz de la máquina, encontramos un archivo llamado secret.bak, que si lo leemos nos entrega la contraseña de balulito.
+
 <img width="681" height="844" alt="redi21" src="https://github.com/user-attachments/assets/5885a251-e33e-4cae-b937-6fffe9bc1341" />
+
+Ya como el usuario balulito, daremos sudo -l para ver si podemos ejecutar algun comando o binario a nivel de sudoers como root y efectivamente podemos ejecutar el comando /bin/cp
 
 <img width="1297" height="313" alt="redi22" src="https://github.com/user-attachments/assets/07bf7cc4-8ad7-4dfa-ad59-d19f2f11c58a" />
 
+En este punto, se nos ocurre modificar el archivo /etc/passwd para quitarle la "x" a la línea del usuario root, para que no nos pida contraseña cuando demos su root, por lo tanto, copiaremos dicho contenido y nos creamos en nuestro directorio un nuevo archivo llamado "passwd" con el contenido modificado (sin x en línea root).
+
 <img width="856" height="871" alt="redi23" src="https://github.com/user-attachments/assets/8dd7db0f-03b8-45fa-84bd-70240ee45118" />
 
+Guardamos y ejecutamos de la siguiente manera, finalmente ya somos root, ¡máquina hackeada! . . 
+
 <img width="741" height="485" alt="redi24" src="https://github.com/user-attachments/assets/5267c7ca-c7ed-4c99-b61a-0d0d56c2c6c2" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
