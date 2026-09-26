@@ -9,21 +9,39 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que existen 2 puertos abiertos, el 22 correspondiente al servicio SSH y el 80 correspondiente a HTTP.
+
 <img width="1512" height="611" alt="redi2" src="https://github.com/user-attachments/assets/d66bbd69-b426-49e8-a2bf-b948b0316b52" />
+
+Una vez ya tenemos el puerto abierto identificado, seguiremos enumerando con la herramienta nmap, pero esta vez, indicandole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, una vez ejecutado, podemos visualizar en el http-title el titulo de la web, llamado "Laboratorio de Open Redirect".
 
 <img width="1514" height="871" alt="redi3" src="https://github.com/user-attachments/assets/13f3b758-8658-462b-9a86-d32fe40164a4" />
 
+Lo revisamos y podemos ver 3 laboratorios donde podemos practicar dicha vulnerabilidad relacionada al OWASP top 10.
+
 <img width="1514" height="871" alt="redi4" src="https://github.com/user-attachments/assets/9b2f5a6c-236f-4583-8419-ed8f6cf6c55a" />
+
+Probaremos el laboratorio 1, donde dice que si presionamos el enlace seremos redirigido un sitio web.
 
 <img width="1206" height="718" alt="redi5" src="https://github.com/user-attachments/assets/1b8f8de3-f5d0-4d6a-b796-2f22777e291a" />
 
+Nos redirige a google.com
+
 <img width="1206" height="718" alt="redi6" src="https://github.com/user-attachments/assets/04f4478a-9b9a-4581-9949-e10c99db2300" />
+
+Volvemos atrás y revisaremos el código fuente con CTRL + U para ver como se está tramitando esto por detrás, bajamos e identificamos el archivo redirect.php que hace efectivo dicho redirect, lo copiamos.
 
 <img width="800" height="906" alt="redi7" src="https://github.com/user-attachments/assets/6e3128c9-17a8-4651-a942-14a3cd936d86" />
 
+Lo pegamos en la url y cambiamos la web de google por dockerlabs.es para ver si nos deja.
+
 <img width="1029" height="610" alt="redi8" src="https://github.com/user-attachments/assets/517149ea-4b28-41bb-a8d5-9e0270988e84" />
 
+Efectivamente nos redirige a dockerlabs.es, el laboratorio 1 se encuentra completado con este ejercicio.
+
 <img width="1628" height="704" alt="redi9" src="https://github.com/user-attachments/assets/3e7f804e-b421-4253-9957-946e117b5b4d" />
+
+Pasamos al laboratorio 2
 
 <img width="1628" height="704" alt="redi10" src="https://github.com/user-attachments/assets/319c8c94-f7bf-492f-9f77-198c14b4f92e" />
 
