@@ -45,6 +45,16 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 <img width="1165" height="581" alt="redi19" src="https://github.com/user-attachments/assets/7d1a76f7-5732-4ca0-ac54-40a7d735aba0" />
 
+<img width="845" height="770" alt="redi20" src="https://github.com/user-attachments/assets/f5dfeb89-c219-473d-b133-e627d312db00" />
+
+<img width="681" height="844" alt="redi21" src="https://github.com/user-attachments/assets/5885a251-e33e-4cae-b937-6fffe9bc1341" />
+
+<img width="1297" height="313" alt="redi22" src="https://github.com/user-attachments/assets/07bf7cc4-8ad7-4dfa-ad59-d19f2f11c58a" />
+
+<img width="856" height="871" alt="redi23" src="https://github.com/user-attachments/assets/8dd7db0f-03b8-45fa-84bd-70240ee45118" />
+
+<img width="741" height="485" alt="redi24" src="https://github.com/user-attachments/assets/5267c7ca-c7ed-4c99-b61a-0d0d56c2c6c2" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
