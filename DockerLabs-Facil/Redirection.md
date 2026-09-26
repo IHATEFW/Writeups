@@ -1,4 +1,4 @@
-La máquina Redirect de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos practicar la vulnerabilidad Open Redirect del OWASP Top 10 con 3 laboratorios distintos, luego nos entrega credenciales para acceder por SSH, una vez dentro de la máquina víctima logramos pivotar gracias a credenciales expuestas y a permisos a nivel de sudoers . .
+La máquina Redirection de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos practicar la vulnerabilidad Open Redirect del OWASP Top 10 con 3 laboratorios distintos, luego nos entrega credenciales para acceder por SSH, una vez dentro de la máquina víctima logramos pivotar gracias a credenciales expuestas y a permisos a nivel de sudoers . .
 
 # REDIRECTION
 
