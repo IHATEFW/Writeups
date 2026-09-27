@@ -21,6 +21,20 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 <img width="881" height="922" alt="psycho7" src="https://github.com/user-attachments/assets/01243d66-2a81-43b8-ad27-0198d8ec1ede" />
 
+<img width="881" height="922" alt="psycho8" src="https://github.com/user-attachments/assets/c046cfc5-4a58-48f6-ae33-54fc24ff64d0" />
+
+<img width="961" height="471" alt="psycho9" src="https://github.com/user-attachments/assets/fdcfe5af-27f9-4e28-b634-5d9b351101ed" />
+
+<img width="1396" height="330" alt="psycho10" src="https://github.com/user-attachments/assets/60ba9ffe-5528-43b6-97f0-79155c97bbaf" />
+
+<img width="1370" height="627" alt="psycho11" src="https://github.com/user-attachments/assets/a2aa1e42-bf6e-4fee-9065-8bca3c9ad046" />
+
+<img width="1405" height="279" alt="psycho12" src="https://github.com/user-attachments/assets/40e196b1-4006-4262-85ff-074fe14f540e" />
+
+<img width="750" height="700" alt="psycho13" src="https://github.com/user-attachments/assets/8b92547b-19de-49a6-aaeb-8be61ec676d2" />
+
+<img width="964" height="402" alt="psycho14" src="https://github.com/user-attachments/assets/167a1aa9-464c-463a-8052-c7734db24daa" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
