@@ -1,3 +1,4 @@
+La máquina Psycho de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos explotar un LFI con un parámetro que encontramos realizando fuzzing, logrando luego leer el id_rsa de una usuario válido del sistema para conectarnos por SSH, luego dentro de la máquina víctima pivotamos entre usuarios con permisos a nivel de sudoers hasta llegar a root . .
 
 # PSYCHO
 
