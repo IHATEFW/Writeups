@@ -17,11 +17,19 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 
 <img width="1437" height="872" alt="psycho3" src="https://github.com/user-attachments/assets/0477553b-c494-4e04-be89-51b3955670c5" />
 
+En este punto, ejecutaremos una ataque de fuerza bruta con la herramienta Gobuster, esto para encontrar posibles directorios ocultos, una vez ejecutado, podemos visualizar un /index.php y un /assets, pero nada más interesante.
+
 <img width="1891" height="912" alt="psycho4" src="https://github.com/user-attachments/assets/1eed1ec6-0dd2-4245-97ce-f99614ee280b" />
+
+Vamos a revisar la página web, donde se expone un posible usuario válido llamado "Luisillo".
 
 <img width="1891" height="912" alt="psycho5" src="https://github.com/user-attachments/assets/14631750-121a-4a5f-825c-918f8aed4e17" />
 
+Ejecutaremos un fuzzing con la herramienta wfuzz para encontrar algún posible parametro válido que podamos concatenarle al /index.php, para ver si podemos efectuar algún LFI, una vez ejecutado, podemos visualizar que encontramos el parametro "secret"
+
 <img width="1891" height="912" alt="psycho6" src="https://github.com/user-attachments/assets/fe83fe6a-b04b-408e-b098-fb9391be4817" />
+
+Se nos ocurre ocuparlo para poder visualizar el archivo /etc/passwd de la máquina víctima a tráves de un LFI, y efectivamente podemos, logrando exponernos 2 usuarios válidos, "luisillo" y "vaxei".
 
 <img width="881" height="922" alt="psycho7" src="https://github.com/user-attachments/assets/01243d66-2a81-43b8-ad27-0198d8ec1ede" />
 
