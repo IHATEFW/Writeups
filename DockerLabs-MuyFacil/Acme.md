@@ -1,3 +1,4 @@
+La máquina Acme de la plataforma Dockerlabs.es, es una máquina de dificultad "Muy Fácil", la cual nos enseña como un portal de mantenimiento puede permitirnos realizar acciones de mantenedor del sistema sin precaución, logrando exponernos en plena web que podemos ingresar por SSH con cualquier usuario, luego al intentar loguearnos nos arroja un banner con credenciales en texto claro, las cuales nos permiten ingresar a la máquina víctima, una vez dentro, tenemos 2 binarios con permisos SUID para pivotar a root . .
 
 # ACME
 
@@ -31,7 +32,7 @@ Antes de ingresar, encontramos un /migration_notes.txt, el cual no tiene más in
 
 <img width="771" height="320" alt="acme6" src="https://github.com/user-attachments/assets/ae4d864f-0fd2-4590-9868-1beb19d5b685" />
 
-Ahora si probamos acceso por SSH con cualquier usuario, yo le pasé el usuario "prueba" y de inmediato me arrojó credenciales válidas para tareas de mantenimiento, me logueo con dichas credenciales y ¡ganamos acceso a la máquina víctima!
+Ahora si probamos acceso por SSH con cualquier usuario, yo le pasé el usuario "prueba" y de inmediato me arrojó un banner con credenciales válidas para tareas de mantenimiento, me logueo con dichas credenciales y ¡ganamos acceso a la máquina víctima!
 
 <img width="931" height="907" alt="acme7" src="https://github.com/user-attachments/assets/f15a3c79-24cc-4c46-b509-0b2553df81e0" />
 
