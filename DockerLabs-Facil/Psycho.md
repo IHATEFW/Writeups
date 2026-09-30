@@ -25,6 +25,8 @@ Vamos a revisar la página web, donde se expone un posible usuario válido llama
 
 <img width="1891" height="912" alt="psycho5" src="https://github.com/user-attachments/assets/14631750-121a-4a5f-825c-918f8aed4e17" />
 
+## 💣 EXPLOTACIÓN
+
 Ejecutaremos un fuzzing con la herramienta wfuzz para encontrar algún posible parametro válido que podamos concatenarle al /index.php, para ver si podemos efectuar algún LFI, una vez ejecutado, podemos visualizar que encontramos el parametro "secret"
 
 <img width="1891" height="912" alt="psycho6" src="https://github.com/user-attachments/assets/fe83fe6a-b04b-408e-b098-fb9391be4817" />
@@ -33,20 +35,32 @@ Se nos ocurre ocuparlo para poder visualizar el archivo /etc/passwd de la máqui
 
 <img width="881" height="922" alt="psycho7" src="https://github.com/user-attachments/assets/01243d66-2a81-43b8-ad27-0198d8ec1ede" />
 
+Como ya podemos efectuar un LFI, vamos a leer el archivo id_rsa del usuario vaxei, ya que intentando con usuario luisillo no funcionó.
+
 <img width="881" height="922" alt="psycho8" src="https://github.com/user-attachments/assets/c046cfc5-4a58-48f6-ae33-54fc24ff64d0" />
+
+Nos copiamos el private key en un archivo que llamaremos id_rsa en nuestra máquina atacante, le daremos permisos 600 y nos conectaremos por SSH, ¡Logrando acceso a la máquina víctima!
 
 <img width="961" height="471" alt="psycho9" src="https://github.com/user-attachments/assets/fdcfe5af-27f9-4e28-b634-5d9b351101ed" />
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Dentro de la máquina víctima, daremos el comando sudo -l para ver si podemos ejecutar algun binario/comando con permisos a nivel de sudoers y podemos ejecutar el lenguaje perl como el usuario luisillo.
+
 <img width="1396" height="330" alt="psycho10" src="https://github.com/user-attachments/assets/60ba9ffe-5528-43b6-97f0-79155c97bbaf" />
+
+Nos dirigiremos a la web gtfobins.org para filtrar por "perl" y copiarnos el primer comando.
 
 <img width="1370" height="627" alt="psycho11" src="https://github.com/user-attachments/assets/a2aa1e42-bf6e-4fee-9065-8bca3c9ad046" />
 
+Lo lanzamos y pivotamos con éxito al usuario luisillo, ahora nuevamente daremos el comando sudo -l y vemos que podemos ejecutar como root un script de python3.
+
 <img width="1405" height="279" alt="psycho12" src="https://github.com/user-attachments/assets/40e196b1-4006-4262-85ff-074fe14f540e" />
+
+Revisaremos dicho script y vemos que se exportan algunas librerías, donde podremos ejecutar un Python Library Hijacking, pero lo haremos más fácil.
 
 <img width="750" height="700" alt="psycho13" src="https://github.com/user-attachments/assets/8b92547b-19de-49a6-aaeb-8be61ec676d2" />
 
+Como tenemos permisos de escritura en el directorio /opt, vamos a mover todo el contenido de paw.py a otro archivo y nos crearemos otro paw.py pero con código malicioso, este código lo que hará es modificar el binario /bin/bash para convertirlo en SUID, ahora lo ejecutamos y nos lanzamos una shell privilegiada y somo root, ¡máquina hackeada! . .
+
 <img width="964" height="402" alt="psycho14" src="https://github.com/user-attachments/assets/167a1aa9-464c-463a-8052-c7734db24daa" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
