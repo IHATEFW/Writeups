@@ -13,7 +13,7 @@ En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap
 
 <img width="1496" height="602" alt="pnto2" src="https://github.com/user-attachments/assets/c94c1379-4776-43dd-bb05-d5fa17ee72cf" />
 
-Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, esto de la siguiente manera, una vez ejecutado, podemos visualizar el titulo de la página web, indicando "".
+Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, esto de la siguiente manera, una vez ejecutado, podemos visualizar el titulo de la página web, indicando "Advertencia: LeFvIrus".
 
 <img width="1397" height="866" alt="pnto3" src="https://github.com/user-attachments/assets/15369379-4945-43fe-b524-c0c97fa4b014" />
 
