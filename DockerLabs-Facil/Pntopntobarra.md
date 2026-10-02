@@ -1,3 +1,4 @@
+La máquina Pntopntobarra de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos explotar un LFI en una web que nos expone el parámetro ?images, pudiendo leer el archivo /etc/passwd, luego secuestramos el id_rsa de un usuario válido del sistema, logrando acceso a la máquina víctima, luego subimos a root con permisos a nivel de sudoers . .
 
 # PNTOPNTOBARRA
 
