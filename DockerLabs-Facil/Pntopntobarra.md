@@ -17,9 +17,15 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 
 <img width="1397" height="866" alt="pnto3" src="https://github.com/user-attachments/assets/15369379-4945-43fe-b524-c0c97fa4b014" />
 
+En este punto, arrojaremos el comando Whatweb para que me detecte las tecnologías que se están empleando detrás de dicha web, a su vez, lanzaremos un ataque de fuerza bruta de directorios con la herramienta Gobuster, esto para encontrar posibles directorios ocultos, una vez ejecutado, podemos visualizar un /index.php
+
 <img width="1899" height="866" alt="pnto4" src="https://github.com/user-attachments/assets/66210893-775b-4ff5-bde9-a683af83e385" />
 
+Revisamos la web y nos arroja un mensaje que dice que nuestra máquina está infectada y que actuemos ahora.
+
 <img width="1899" height="866" alt="pnto5" src="https://github.com/user-attachments/assets/4d0954d2-e93c-47a4-8f84-acdd1c0df885" />
+
+Clickearemos en el botón que dice "Ejemplos de computadoras infectadas" y está haciendo referencia al archivo ejemplos.php, concatenando el parámetro ?images, por lo tanto, se nos ocurre intentar efectuar un LFI (Local File Inclusion), para intentar leer el archivo /etc/passwd, el cual conseguimos con éxito, podemos ver el usuario "nico" válido del sistema. 
 
 <img width="1899" height="866" alt="pnto6" src="https://github.com/user-attachments/assets/01d668e6-d3bb-4ba2-a173-d6f8b5a7df57" />
 
