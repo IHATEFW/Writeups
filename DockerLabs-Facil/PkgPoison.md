@@ -21,15 +21,27 @@ En este punto, lanzaremos el comando Whatweb para que nos detecte las tecnologí
 
 <img width="1788" height="914" alt="pkg4" src="https://github.com/user-attachments/assets/7647a953-25f2-45a3-aac5-ae75f7a5f52b" />
 
+Revisamos la web y efectivamente el titulo nos engaño ya que no es un 404 Not Found, más bien nos aparece una imagen, pero nada más interesante.
+
 <img width="1788" height="914" alt="pkg5" src="https://github.com/user-attachments/assets/6edfebbf-10c4-4d43-81ce-ade775ccc5ed" />
+
+Como encontramos /notes, iremos a revisar dicho directorio y se trata de un mensaje que nos expone unas posibles credenciales válidas del usuario dev.
 
 <img width="953" height="344" alt="pkg6" src="https://github.com/user-attachments/assets/c5f18bc1-0cdb-429a-a0be-24994207e57f" />
 
+Intentamos conectarnos por SSH pero no funcionan las credenciales, en este punto podemos intuir que el developer ya cambió las credenciales como sugiere el mensaje.
+
 <img width="959" height="397" alt="pkg7" src="https://github.com/user-attachments/assets/7e0a721b-604e-415e-b856-f55231dd8f09" />
+
+Pero como tenemos un posible usuario válido llamado dev, realizaremos un ataque de fuerza bruta de SSH con la herramienta Hydra, esto para encontrar la contraseña del usuario, adjuntandole un diccionario de contraseñas, en este caso el rockyou.txt, una vez ejecutado, logramos encontrar la password del usuario.
 
 <img width="1557" height="342" alt="pkg8" src="https://github.com/user-attachments/assets/4ea16edc-ba48-418f-9f7b-76e936c8dac0" />
 
+Nos conectamos por SSH y ¡ganamos acceso a la máquina víctima!
+
 <img width="869" height="510" alt="pkg9" src="https://github.com/user-attachments/assets/1dc028b7-28cb-48c7-9778-bb9cb3a4a151" />
+
+Dentro de la máquina víctima, leeremos el archivo /etc/passwd para ver si existen más usuarios válidos en el sistema a los cuales tendremos que pivotar antes de llegar a root.
 
 <img width="994" height="773" alt="pkg10" src="https://github.com/user-attachments/assets/17413a39-9ed1-4dcb-86fd-25ef03ccdac9" />
 
