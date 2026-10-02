@@ -25,18 +25,26 @@ Revisamos la web y nos arroja un mensaje que dice que nuestra máquina está inf
 
 <img width="1899" height="866" alt="pnto5" src="https://github.com/user-attachments/assets/4d0954d2-e93c-47a4-8f84-acdd1c0df885" />
 
+## 💣 EXPLOTACIÓN
+
 Clickearemos en el botón que dice "Ejemplos de computadoras infectadas" y está haciendo referencia al archivo ejemplos.php, concatenando el parámetro ?images, por lo tanto, se nos ocurre intentar efectuar un LFI (Local File Inclusion), para intentar leer el archivo /etc/passwd, el cual conseguimos con éxito, podemos ver el usuario "nico" válido del sistema. 
 
 <img width="1899" height="866" alt="pnto6" src="https://github.com/user-attachments/assets/01d668e6-d3bb-4ba2-a173-d6f8b5a7df57" />
 
+Realizaremos un ataque de fuerza bruta de SSH al usuario nico para poder encontrar su contraseña, pasandole el diccionario de contraseñas rockyou.txt, pero sin éxito.
+
 <img width="1566" height="467" alt="pnto7" src="https://github.com/user-attachments/assets/afea9993-9e5b-4e31-9c42-bfb3282f14ae" />
+
+Como no nos queda otra, secuestraremos el id_rsa del usuario nico, para poder intentar loguearnos sin que nos pida contraseña.
 
 <img width="991" height="913" alt="pnto8" src="https://github.com/user-attachments/assets/7962ac84-5417-4b63-8760-933ef869749a" />
 
+La pegamos en un archivo que llamaremos id_rsa, le daremos permisos 600 y nos conectaremos con ssh -i id_rsa nico@172.17.0.2
+
 <img width="1184" height="892" alt="pnto9" src="https://github.com/user-attachments/assets/d2faca5f-d2f9-4a93-8e3d-8776d946ee54" />
 
-<img width="1286" height="626" alt="pnto10" src="https://github.com/user-attachments/assets/8fa76786-dac9-4537-beec-f64c71a0188f" />
-
-## 💣 EXPLOTACIÓN
-
 ## 🔑 ESCALADA DE PRIVILEGIOS
+
+Ya dentro de la máquina víctima, daremos el comando sudo -l para ver si podemos ejecutar algún binario con permisos a nivel de sudoers, y efectivamente podemos ejecutar /bin/env, nos lanzamos una shell privilegiada y somos root, máquina hackeada . .
+
+<img width="1286" height="626" alt="pnto10" src="https://github.com/user-attachments/assets/8fa76786-dac9-4537-beec-f64c71a0188f" />
