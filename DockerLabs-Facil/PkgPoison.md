@@ -17,6 +17,8 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 
 <img width="1433" height="914" alt="pkg3" src="https://github.com/user-attachments/assets/2c68eda5-6c7c-4972-872e-adc4807cbddb" />
 
+En este punto, lanzaremos el comando Whatweb para que nos detecte las tecnologías que se están empleando detrás de la página web, luego efectuaremos un ataque de fuerza bruta de directorios para encontrar posibles directorios ocultos, esto lo haremos con la herramienta Gobuster, una vez ejecutado, podemos ver que nos encontró un /notes.
+
 <img width="1788" height="914" alt="pkg4" src="https://github.com/user-attachments/assets/7647a953-25f2-45a3-aac5-ae75f7a5f52b" />
 
 <img width="1788" height="914" alt="pkg5" src="https://github.com/user-attachments/assets/6edfebbf-10c4-4d43-81ce-ade775ccc5ed" />
