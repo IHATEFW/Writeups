@@ -1,4 +1,4 @@
-La máquina PkgPoison de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos explotar un envenenamiento de paquetes o más conocido como package poison, esto con python3 a tráves del comando pip3, en principio ganamos acceso a la máquina víctima con unas credenciales expuestas que nos dan un usuario válido, una vez dentro, vamos pivotando entre usuarios hasta que admin tiene que efecturar dicho envenenamiento para subir a root, nos creamos una variable para almacenar dicho paquete, lo lanzamos y somos root . .
+La máquina PkgPoison de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos explotar un envenenamiento de paquetes o más conocido como package poison, esto con python3 a tráves del comando pip3, en principio ganamos acceso a la máquina víctima con unas credenciales expuestas que nos dan un usuario válido, una vez dentro, vamos pivotando entre usuarios hasta que admin tiene que efectuar dicho envenenamiento para subir a root, nos creamos una variable para almacenar dicho paquete, lo lanzamos y somos root . .
 
 # PKGPOISON
 
