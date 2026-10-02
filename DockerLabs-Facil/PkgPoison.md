@@ -21,6 +21,8 @@ En este punto, lanzaremos el comando Whatweb para que nos detecte las tecnologí
 
 <img width="1788" height="914" alt="pkg4" src="https://github.com/user-attachments/assets/7647a953-25f2-45a3-aac5-ae75f7a5f52b" />
 
+## 💣 EXPLOTACIÓN
+
 Revisamos la web y efectivamente el titulo nos engaño ya que no es un 404 Not Found, más bien nos aparece una imagen, pero nada más interesante.
 
 <img width="1788" height="914" alt="pkg5" src="https://github.com/user-attachments/assets/6edfebbf-10c4-4d43-81ce-ade775ccc5ed" />
@@ -41,18 +43,24 @@ Nos conectamos por SSH y ¡ganamos acceso a la máquina víctima!
 
 <img width="869" height="510" alt="pkg9" src="https://github.com/user-attachments/assets/1dc028b7-28cb-48c7-9778-bb9cb3a4a151" />
 
-Dentro de la máquina víctima, leeremos el archivo /etc/passwd para ver si existen más usuarios válidos en el sistema a los cuales tendremos que pivotar antes de llegar a root.
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Dentro de la máquina víctima, leeremos el archivo /etc/passwd para ver si existen más usuarios válidos en el sistema a los cuales tendremos que pivotar antes de llegar a root y efectivamente existe el usuario admin.
 
 <img width="994" height="773" alt="pkg10" src="https://github.com/user-attachments/assets/17413a39-9ed1-4dcb-86fd-25ef03ccdac9" />
 
+En el directorio /opt/scripts/__pycache__ encontramos una password en texto claro, posible password de admin, intentamos subir y lo logramos, somos admin.
+
 <img width="1892" height="502" alt="pkg11" src="https://github.com/user-attachments/assets/935b730a-18a0-483c-abfd-fdc769afaed5" />
+
+Ya como el usuario admin, daremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algún binario como el usuario root y efectivamente podemos ejeucutar /usr/bin/pip3 install * como el usuario root.
 
 <img width="1298" height="153" alt="pkg12" src="https://github.com/user-attachments/assets/474f41d5-d474-4850-96ef-d6ba32f3bea2" />
 
+En gtfobins.org filtramos por "pip" y nos copiamos el segundo comando que aparezca, en este punto nos damos cuenta que podemos ejecutar un envenenamiento de paquetes o un package poison como se le dice, el comando que nos copiaremos hace referencia a importar la librería os, para lanzarnos una /bin/sh privilegiada para así tener una tty interactiva.
+
 <img width="1333" height="444" alt="pkg13" src="https://github.com/user-attachments/assets/c1e6ddce-57bf-498b-8054-93dcd49e9279" />
 
+Tendremos que irnos al directorio /tmp para crearnos una variable llamada TF$= para así crear con el comando mktemp -d un directorio temporal donde almacenar un setup.py que será el supuesto paquete malicioso, agregamos el payload al setup.py pasandole tambien la variable y finalmente lo ejecutamos, somos root, máquina hackeada . .
+
 <img width="1341" height="172" alt="pkg14" src="https://github.com/user-attachments/assets/5dfc15c6-79dd-431c-928d-357e8b4f566c" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
