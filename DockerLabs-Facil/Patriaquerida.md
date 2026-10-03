@@ -17,6 +17,8 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 
 <img width="1498" height="904" alt="patria3" src="https://github.com/user-attachments/assets/006db39d-57a2-4c45-a59f-209a929e78a6" />
 
+## 💣 EXPLOTACIÓN
+
 En este punto, vamos a realizar un ataque de fuerza bruta con la herramienta Gobuster, esto para poder identificar directorios ocultos, una vez ejecutado, podemos visualizar que nos encontró un /index.php
 
 <img width="1904" height="904" alt="patria4" src="https://github.com/user-attachments/assets/38b58923-341e-4c28-8769-f0bc0cf621f1" />
@@ -33,20 +35,32 @@ Como tenemos el /index.php, vamos a ver si podemos concatenar un parámetro para
 
 <img width="1911" height="693" alt="patria7" src="https://github.com/user-attachments/assets/25911d33-0b64-4c81-93e0-164b4577166b" />
 
+Abusaremos de dicho parámetro para lograr explotar un LFI y leer el archivo /etc/passwd, y efectivamente podemos lograr leer usuarios válidos del sistema, encontramos el usuario mario y el usuario pinguino.
+
 <img width="1913" height="414" alt="patria8" src="https://github.com/user-attachments/assets/bd4e2b3d-f20a-47f3-9b6b-b45c2f89595a" />
+
+Como ya podemos explotar un LFI, vamos a leer el archivo oculto que nos indicaban hace un rato, logrando encontrar una posible password "balu".
 
 <img width="919" height="253" alt="patria9" src="https://github.com/user-attachments/assets/e4f70a8e-e527-4986-9d03-c4e1b37708b5" />
 
+Probamos conexión por SSH con el usuario pinguino y password balu, ¡ganando acceso a la máquina víctima!
+
 <img width="957" height="772" alt="patria10" src="https://github.com/user-attachments/assets/2477e49a-bcd1-4a69-841f-9896236a1cdd" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+En el directorio /home/pinguino existe un archivo .txt que expone la password del usuario mario, logramos pivotar a mario.
 
 <img width="799" height="588" alt="patria11" src="https://github.com/user-attachments/assets/c5f15059-38f0-4e34-a95c-75dd7ad31b48" />
 
+Ya como el usuario mario, daremos el siguiente comando para ver si podemos ejecutar algun binario con permisos SUID y efectivamente podemos ejecutar python3 como el usuario root.
+
 <img width="799" height="588" alt="patria12" src="https://github.com/user-attachments/assets/4c712f6b-2d03-4105-972a-787fc81f2971" />
+
+Nos vamos a la web gtfobins.org y filtramos por "python", nos vamos al apartado "SUID" y copiamos el primer comando.
 
 <img width="1443" height="886" alt="patria13" src="https://github.com/user-attachments/assets/1b6250e5-2d63-4be1-99c3-24f955dbdd2e" />
 
+Lo ejecutamos y finalmente somos root, máquina hackeada . .
+
 <img width="1002" height="796" alt="patria14" src="https://github.com/user-attachments/assets/571b23a5-2a17-49c4-a1b7-0d24135e18a6" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
