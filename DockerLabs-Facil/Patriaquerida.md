@@ -1,3 +1,4 @@
+La máquina Patriquerida de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos explotar un LFI con un parámetro que encontramos realizando fuzzing, logrando leer el archivo /etc/passwd y luego leer un archivo en un directorio oculto que se expone en el index.php encontrando una contraseña válida, una vez dentro de la máquina víctima pivotamos entre los usuarios gracias a credenciales expuestas y permisos SUID hasta llegar a root ..
 
 # PATRIAQUERIDA
 
