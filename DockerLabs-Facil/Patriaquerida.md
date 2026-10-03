@@ -9,15 +9,27 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que existen los puertos abiertos 22 y 80, correspondientes a los servicios SSH y HTTP.
+
 <img width="1506" height="608" alt="patria2" src="https://github.com/user-attachments/assets/6888d6fc-6bdb-4c14-8ccc-bd1efa9c5792" />
+
+Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, esto de la siguiente manera, una vez ejecutado, podemos visualizar que la página web que corre en el puerto 80 es la típica web por defecto de Apache2.
 
 <img width="1498" height="904" alt="patria3" src="https://github.com/user-attachments/assets/006db39d-57a2-4c45-a59f-209a929e78a6" />
 
+En este punto, vamos a realizar un ataque de fuerza bruta con la herramienta Gobuster, esto para poder identificar directorios ocultos, una vez ejecutado, podemos visualizar que nos encontró un /index.php
+
 <img width="1904" height="904" alt="patria4" src="https://github.com/user-attachments/assets/38b58923-341e-4c28-8769-f0bc0cf621f1" />
+
+Esta es la página web que encontramos en el index.html
 
 <img width="1904" height="904" alt="patria5" src="https://github.com/user-attachments/assets/0bbea23e-3483-47b4-b6ea-a87f10c19e65" />
 
+Nos vamos al /index.php y vemos que hace referencia a un directorio /var/www/html/.hidden_pass, indica que no olvidemos visualizar el archivo oculto.
+
 <img width="1386" height="386" alt="patria6" src="https://github.com/user-attachments/assets/046172de-664a-4ba5-8053-f5f0acea01d0" />
+
+Como tenemos el /index.php, vamos a ver si podemos concatenar un parámetro para lograr explotar algun LFI o un RCE, esto lo haremos con la herramienta Wfuzz, para hacer fuzzing de dicho parámetro, una vez ejecutado, podemos ver que encontramos el parámetro "page".
 
 <img width="1911" height="693" alt="patria7" src="https://github.com/user-attachments/assets/25911d33-0b64-4c81-93e0-164b4577166b" />
 
