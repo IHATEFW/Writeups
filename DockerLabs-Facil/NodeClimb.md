@@ -9,6 +9,8 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que existen los puertos abiertos 21 y 22, correspondientes a los servicios FTP y SSH.
+
 <img width="1505" height="604" alt="node2" src="https://github.com/user-attachments/assets/1e8cce6c-45e9-4a3a-88e3-6e6d470434c0" />
 
 <img width="1261" height="904" alt="node3" src="https://github.com/user-attachments/assets/0a4cdf66-ce2f-4dd1-9574-b4cad247d23b" />
