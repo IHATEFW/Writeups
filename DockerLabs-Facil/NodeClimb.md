@@ -17,6 +17,8 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 
 <img width="1261" height="904" alt="node3" src="https://github.com/user-attachments/assets/0a4cdf66-ce2f-4dd1-9574-b4cad247d23b" />
 
+Nos loguearemos con el usuario Anonymous por el puerto 21, una vez dentro, nos traemos a nuestra máquina atacante el archivo .zip con el comando "get".
+
 <img width="1340" height="793" alt="node4" src="https://github.com/user-attachments/assets/b34137c9-1b02-428b-a78c-a5bb13ae267b" />
 
 <img width="1450" height="793" alt="node5" src="https://github.com/user-attachments/assets/0cea4bff-4aa9-4f43-be57-aa18387f8d39" />
