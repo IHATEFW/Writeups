@@ -1,3 +1,4 @@
+La máquina NodeClimb de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña a utilizar la herramienta Fcrackzip para realizar un ataque de fuerza bruta utilizando un diccionario para intentar descomprimir un archivo .zip que está protegido con contraseña, además, nos enseña como podemos inyectar código malicioso Javascript a un script.js encontrado en el home de un usuario válido, una vez ejecutado logramos pivotar al usuario root . .
 
 # NODECLIMB
 
