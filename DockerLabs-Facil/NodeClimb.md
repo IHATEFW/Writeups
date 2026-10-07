@@ -21,18 +21,26 @@ Nos loguearemos con el usuario Anonymous por el puerto 21, una vez dentro, nos t
 
 <img width="1340" height="793" alt="node4" src="https://github.com/user-attachments/assets/b34137c9-1b02-428b-a78c-a5bb13ae267b" />
 
+## 💣 EXPLOTACIÓN
+
 En este punto, lo intentaremos descomprimir con el comando "unzip" pero está protegido con contraseña, para esta situación, utilizaremos la herramienta Fcrackzip para realizar un ataque de fuerza bruta con algún diccionario para intentar encontrar dicha contraseña, una vez ejecutado nos encuentra la contraseña para descomprimirlo, la utilizamos y podemos visualizar un archivo .txt con unas credenciales posiblemente válidas para loguearnos por SSH.
 
 <img width="1450" height="793" alt="node5" src="https://github.com/user-attachments/assets/0cea4bff-4aa9-4f43-be57-aa18387f8d39" />
 
+Nos logueamos por SSH y ¡ganamos acceso a la máquina víctima!
+
 <img width="1180" height="605" alt="node6" src="https://github.com/user-attachments/assets/f96e3cbf-ebd2-4867-9657-5a2f5787646e" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Una vez dentro, daremos el comando sudo -l para ver si podemos ejecutar algún binario con permisos a nivel de sudoers y vemos que podemos ejecutar /usr/bin/node para lanzar un script.js que existe en el home de mario, leemos dicho script pero no tiene contenido, pero como está en nuestro home tenemos permisos de escritura.
 
 <img width="1293" height="605" alt="node7" src="https://github.com/user-attachments/assets/5d70b761-b7d8-4e9d-af72-797539edb779" />
 
+Se nos ocurre inyectarle código malicioso javascript para lanzarnos una bash privilegiada, esto de la siguiente manera:
+
 <img width="901" height="306" alt="node8" src="https://github.com/user-attachments/assets/47d7c3e9-a54b-403f-acff-f2df77a23f45" />
 
+Guardamos y lo ejecutamos como root, posterior a esto, ya somos root, máquina hackeada . .
+
 <img width="1274" height="662" alt="node9" src="https://github.com/user-attachments/assets/a898bffa-8a5b-48b5-8cbe-f755f1e2660f" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
