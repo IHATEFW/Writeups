@@ -21,6 +21,8 @@ Nos loguearemos con el usuario Anonymous por el puerto 21, una vez dentro, nos t
 
 <img width="1340" height="793" alt="node4" src="https://github.com/user-attachments/assets/b34137c9-1b02-428b-a78c-a5bb13ae267b" />
 
+En este punto, lo intentaremos descomprimir con el comando "unzip" pero está protegido con contraseña, para esta situación, utilizaremos la herramienta Fcrackzip para realizar un ataque de fuerza bruta con algún diccionario para intentar encontrar dicha contraseña, una vez ejecutado nos encuentra la contraseña para descomprimirlo, la utilizamos y podemos visualizar un archivo .txt con unas credenciales posiblemente válidas para loguearnos por SSH.
+
 <img width="1450" height="793" alt="node5" src="https://github.com/user-attachments/assets/0cea4bff-4aa9-4f43-be57-aa18387f8d39" />
 
 <img width="1180" height="605" alt="node6" src="https://github.com/user-attachments/assets/f96e3cbf-ebd2-4867-9657-5a2f5787646e" />
