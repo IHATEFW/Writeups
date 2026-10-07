@@ -13,6 +13,8 @@ En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap
 
 <img width="1505" height="604" alt="node2" src="https://github.com/user-attachments/assets/1e8cce6c-45e9-4a3a-88e3-6e6d470434c0" />
 
+Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, esto de la siguiente manera, una vez ejecutado, podemos visualizar que nos permite loguearnos con el usuario Anonymous sin contraseña, a su vez, un archivo .zip el cual se encuentra dentro del puerto 21, el puerto 22 lo descartaremos de momento ya que no tenemos credenciales válidas.
+
 <img width="1261" height="904" alt="node3" src="https://github.com/user-attachments/assets/0a4cdf66-ce2f-4dd1-9574-b4cad247d23b" />
 
 <img width="1340" height="793" alt="node4" src="https://github.com/user-attachments/assets/b34137c9-1b02-428b-a78c-a5bb13ae267b" />
