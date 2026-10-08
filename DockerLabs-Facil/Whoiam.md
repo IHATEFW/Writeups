@@ -43,6 +43,18 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 <img width="900" height="757" alt="who18" src="https://github.com/user-attachments/assets/c521c7d5-0351-4310-9260-bc3788aa0ef4" />
 
+<img width="1433" height="338" alt="who19" src="https://github.com/user-attachments/assets/09366746-002a-4606-8507-1431c8e29adc" />
+
+<img width="1615" height="722" alt="who20" src="https://github.com/user-attachments/assets/8d26c2e2-4ca7-4432-93eb-f859c02f323c" />
+
+<img width="1412" height="415" alt="who21" src="https://github.com/user-attachments/assets/6d95dfb9-c979-4c73-884c-446c1fc85db8" />
+
+<img width="1537" height="758" alt="who22" src="https://github.com/user-attachments/assets/50cdd257-0837-49d4-88d0-1a246b925b95" />
+
+<img width="1418" height="593" alt="who23" src="https://github.com/user-attachments/assets/07d73823-312c-4694-8101-d01765b03742" />
+
+<img width="1390" height="893" alt="who24" src="https://github.com/user-attachments/assets/3e77f025-bdd7-4be8-b18d-6bd8dfde5607" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
