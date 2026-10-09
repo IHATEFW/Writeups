@@ -29,6 +29,8 @@ Ahora revisaremos el /wp-admin que nos encontramos realizando el ataque de fuerz
 
 <img width="1574" height="866" alt="who6" src="https://github.com/user-attachments/assets/64b8bc40-bbfb-4156-bccd-660eb54fe5a5" />
 
+## 💣 EXPLOTACIÓN
+
 Como no tenemos credenciales válidas, ejecutaremos la herramienta Wpscan para enumerar usuarios válidos del sistema, esto con la siguiente combinatoria de comandos.
 
 <img width="1574" height="866" alt="who7" src="https://github.com/user-attachments/assets/ae7c0314-c948-4283-b8f2-729dc9caefac" />
@@ -73,6 +75,8 @@ Sin antes ponernos en escucha con la herramienta netcat por el puerto 443, la la
 
 <img width="981" height="385" alt="who17" src="https://github.com/user-attachments/assets/adf3859e-1a63-4129-ad06-55913742f807" />
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
 Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
 
 ```bash
@@ -98,14 +102,14 @@ Lo lanzamos y somos el usuario rafa, una vez más daremos sudo -l y vemos que po
 
 <img width="1412" height="415" alt="who21" src="https://github.com/user-attachments/assets/6d95dfb9-c979-4c73-884c-446c1fc85db8" />
 
-Nos vamos nuevamente a gtfobins.org y filtramos por debugfs
+Nos vamos nuevamente a gtfobins.org y filtramos por debugfs, nos copiamos los comandos.
 
 <img width="1537" height="758" alt="who22" src="https://github.com/user-attachments/assets/50cdd257-0837-49d4-88d0-1a246b925b95" />
 
+Los lanzamos como el usuario ruben y ganamos acceso como ruben, daremos nuevamente sudo -l y vemos que podemos ejecutar como root una /bin/bash en el script /opt/penguin.sh
+
 <img width="1418" height="593" alt="who23" src="https://github.com/user-attachments/assets/07d73823-312c-4694-8101-d01765b03742" />
 
+Reivsamos que hace dicho script y vemos que si ingresamos el numero 42 acepta como correcta la petición, por lo tanto, se nos ocurre colarle un "chmod u+s /bin/bash" adelante del numero 42 para que la interprete correctamente y le de permisos de SUID al binario /bin/bash, para así lanzarnos una bash privilegiada, lo hacemos y luego damos bash -p y somos root, máquina hackeada . .
+
 <img width="1390" height="893" alt="who24" src="https://github.com/user-attachments/assets/3e77f025-bdd7-4be8-b18d-6bd8dfde5607" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
