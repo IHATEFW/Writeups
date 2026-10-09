@@ -53,15 +53,23 @@ En este punto, nos vamos al apartado donde dice "Plugins" para revisar posibles 
 
 <img width="1625" height="797" alt="who12" src="https://github.com/user-attachments/assets/2ddc2289-50f4-4556-810c-d6caa4837595" />
 
-Volvemos a la terminal y buscamos el la base de datos de exploitdb, con el comando searchsploit y filtrando por "Modern Events Calendar Elite", nos muestra 2 resultados válidos, entre ellos un RCE.
+Volvemos a la terminal y buscamos el la base de datos de exploitdb, con el comando searchsploit y filtrando por "Modern Events Calendar Elite", nos muestra 2 resultados válidos, entre ellos un RCE en un script de python.
 
 <img width="1852" height="400" alt="who13" src="https://github.com/user-attachments/assets/2b95e768-9141-4d3b-8bf6-31dfc2cbdcbc" />
 
+Lo descargamos y lo ejecutamos de la siguiente manera, con el cual conseguimos cargar un archivo llamado shell.php en un directorio del sistema, esto se supone que nos dará acceso al RCE.
+
 <img width="1657" height="902" alt="who14" src="https://github.com/user-attachments/assets/4b9a0f8d-ee05-4675-8a83-6f6919906787" />
+
+Revisamos la ruta donde se subió el archivo y efectivamente logramos levantar una especie de "terminal" interactiva. 
 
 <img width="1657" height="902" alt="who15" src="https://github.com/user-attachments/assets/14ada3ec-4d76-42a8-aacf-a8a24e30f74e" />
 
+Probamos el típico oneliner de reverse shell de bash para poder lanzarnos la reverse shell que nos dará acceso a la máquina víctima.
+
 <img width="1657" height="902" alt="who16" src="https://github.com/user-attachments/assets/79dee909-1535-4c0c-ad99-18f4d6347eb0" />
+
+Sin antes ponernos en escucha con la herramienta netcat por el puerto 443, la lanzamos y ¡ganamos acceso a la máquina víctima!
 
 <img width="981" height="385" alt="who17" src="https://github.com/user-attachments/assets/adf3859e-1a63-4129-ad06-55913742f807" />
 
