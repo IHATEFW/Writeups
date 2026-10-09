@@ -29,19 +29,31 @@ Ahora revisaremos el /wp-admin que nos encontramos realizando el ataque de fuerz
 
 <img width="1574" height="866" alt="who6" src="https://github.com/user-attachments/assets/64b8bc40-bbfb-4156-bccd-660eb54fe5a5" />
 
-Como no tenemos credenciales válidas, 
+Como no tenemos credenciales válidas, ejecutaremos la herramienta Wpscan para enumerar usuarios válidos del sistema, esto con la siguiente combinatoria de comandos.
 
 <img width="1574" height="866" alt="who7" src="https://github.com/user-attachments/assets/ae7c0314-c948-4283-b8f2-729dc9caefac" />
 
+Una vez finalizado el escaneo, nos encuentra 2 usuarios válidos, "erik" y "developer"
+
 <img width="1361" height="907" alt="who8" src="https://github.com/user-attachments/assets/b4c390f1-6c19-4c75-9efd-13fe348b1243" />
+
+En este punto, revisaremos el directorio /backups que tambien anteriormente encontramos, el cual nos expone un archivo .zip que nos descargaremos en nuestra máquina atacante.
 
 <img width="764" height="492" alt="who9" src="https://github.com/user-attachments/assets/3cc6d6b3-e104-4b58-b3d5-bc11b612212b" />
 
+Descomprimiéndolo con el comando unzip, vemos su contenido y tiene las credenciales válidas del usuario "developer" para ingresar al dashboard de Wordpress.
+
 <img width="764" height="492" alt="who10" src="https://github.com/user-attachments/assets/706a317f-9334-4c31-85a9-c21646975e8d" />
+
+Logramos ingresar con éxito al dashboard de Wordpress.
 
 <img width="1906" height="895" alt="who11" src="https://github.com/user-attachments/assets/1d4c13a4-0e96-42c5-bd6e-bbff97b9f9bf" />
 
+En este punto, nos vamos al apartado donde dice "Plugins" para revisar posibles plugins de los cuales podríamos abusar, nos llama la atención un plugin desactualizado, llamado "Modern Events Calendar Elite".
+
 <img width="1625" height="797" alt="who12" src="https://github.com/user-attachments/assets/2ddc2289-50f4-4556-810c-d6caa4837595" />
+
+Volvemos a la terminal y buscamos el la base de datos de exploitdb, con el comando searchsploit y filtrando por "Modern Events Calendar Elite", nos muestra 2 resultados válidos, entre ellos un RCE.
 
 <img width="1852" height="400" alt="who13" src="https://github.com/user-attachments/assets/2b95e768-9141-4d3b-8bf6-31dfc2cbdcbc" />
 
