@@ -1,3 +1,4 @@
+La máquina Whoiam de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos abusar de un CMS (Gestor de contenido) llamado Wordpress, logrando encontrar usuarios válidos con la herramienta Wpscan y una contraseña en un .zip de un directorio oculto, ya dentro del dashboard explotaremos un RCE en uno de sus plugins desactualizados, para así ganar acceso a la máquina víctima, luego pivotamos entre usuarios gracias a los permisos a nivel de sudoers que poseían, hasta llegar al usuario root . . 
 
 # WHOIAM
 
