@@ -82,14 +82,23 @@ stty raw -echo;fg
 reset xterm
 export TERM=xterm && export SHELL=bash
 ```
+Ya con la tty interactiva, procederemos a leer el archivo /etc/passwd para ver si existen más usuarios válidos en el sistema a los cuales tendremos que pivotar antes de llegar a root y vemos que existen 2 usuarios más, "rafa" y "ruben".
 
 <img width="900" height="757" alt="who18" src="https://github.com/user-attachments/assets/c521c7d5-0351-4310-9260-bc3788aa0ef4" />
 
+Daremos el comando sudo -l para ver si podemos ejecutar algun binario con permisos de a nivel de sudoers y vemos que podemos ejecutar como el usuario rafa el binario /usr/bin/find
+
 <img width="1433" height="338" alt="who19" src="https://github.com/user-attachments/assets/09366746-002a-4606-8507-1431c8e29adc" />
+
+Filtramos en la web gtfobins.org por la palabra "find" y nos copiamos el primer resultado.
 
 <img width="1615" height="722" alt="who20" src="https://github.com/user-attachments/assets/8d26c2e2-4ca7-4432-93eb-f859c02f323c" />
 
+Lo lanzamos y somos el usuario rafa, una vez más daremos sudo -l y vemos que podemos ejecutar /usr/sbin/debugfs como el usuario ruben
+
 <img width="1412" height="415" alt="who21" src="https://github.com/user-attachments/assets/6d95dfb9-c979-4c73-884c-446c1fc85db8" />
+
+Nos vamos nuevamente a gtfobins.org y filtramos por debugfs
 
 <img width="1537" height="758" alt="who22" src="https://github.com/user-attachments/assets/50cdd257-0837-49d4-88d0-1a246b925b95" />
 
