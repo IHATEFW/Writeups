@@ -9,15 +9,27 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que solo existe el puerto 80, relacionado al servicio HTTP.
+
 <img width="1501" height="591" alt="who2" src="https://github.com/user-attachments/assets/ae6de02c-625b-4d9d-8f67-cfa3601ee7ea" />
+
+Una vez ya tenemos el único puerto abierto identificado, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dicho servicio, esto de la siguiente manera, una vez ejecutado, podemos visualizar que al parecer nos enfrentaremos a un CMS (gestor de contenido), llamado Wordpress, además, podemos ver el http-title, llamado Whoiam.
 
 <img width="1196" height="721" alt="who3" src="https://github.com/user-attachments/assets/630691d8-231e-478b-8259-ed874cdfe5f1" />
 
+Lanzaremos el comando Whatweb para ver las tecnologias que se están empleando detrás de la página web, a su vez, lanzaremos un ataque de fuerza bruta con la herramienta Gobuster para poder identificar directorios ocultos, una vez ejecutado, nos llama la atención varios directorios que luego los revisaremos, de momento, nos iremos por el /index.php
+
 <img width="1904" height="896" alt="who4" src="https://github.com/user-attachments/assets/05942a6e-c386-4ce0-a122-edec9126bba1" />
+
+Dentro del /index.php, vemos la página web hecha en Wordpress, nada interesante.
 
 <img width="1613" height="616" alt="who5" src="https://github.com/user-attachments/assets/080656c2-8766-4c54-a54a-566a919a22b8" />
 
+Ahora revisaremos el /wp-admin que nos encontramos realizando el ataque de fuerza bruta, el cual automaticamente nos redigire a /wp-login.php, que básicamente es el típico login de autenticación que tiene Wordpress.
+
 <img width="1574" height="866" alt="who6" src="https://github.com/user-attachments/assets/64b8bc40-bbfb-4156-bccd-660eb54fe5a5" />
+
+Como no tenemos credenciales válidas, 
 
 <img width="1574" height="866" alt="who7" src="https://github.com/user-attachments/assets/ae7c0314-c948-4283-b8f2-729dc9caefac" />
 
