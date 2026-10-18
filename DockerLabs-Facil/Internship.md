@@ -129,6 +129,8 @@ Ya con el archivo dentro de la máquina atacante, aplicamos el comando steghide 
 
 <img width="732" height="200" alt="inter29" src="https://github.com/user-attachments/assets/74ebcba6-dade-4170-893a-51b23a3e909d" />
 
+Daremos el 
+
 <img width="596" height="225" alt="inter30" src="https://github.com/user-attachments/assets/d6ed1f41-8ac1-4ec1-954f-83dc41a20039" />
 
 <img width="976" height="913" alt="inter31" src="https://github.com/user-attachments/assets/ae33e34e-c9f0-4802-a3aa-981f7b083f9b" />
