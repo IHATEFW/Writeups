@@ -47,6 +47,28 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 <img width="1801" height="680" alt="inter20" src="https://github.com/user-attachments/assets/f3dcb9f3-c109-4ac6-99ff-1b8c1bdac6c8" />
 
+<img width="1192" height="662" alt="inter21" src="https://github.com/user-attachments/assets/dcf21963-7fe8-499c-aeb9-c2a4c0853831" />
+
+<img width="852" height="822" alt="inter22" src="https://github.com/user-attachments/assets/380b1e24-06be-45e9-bf0c-10482ac679cc" />
+
+<img width="747" height="905" alt="inter23" src="https://github.com/user-attachments/assets/41eedb7d-c517-48ea-aaf0-0a303b62e253" />
+
+<img width="772" height="317" alt="inter24" src="https://github.com/user-attachments/assets/1124c0ed-4873-47ad-81c1-f864de427477" />
+
+<img width="1452" height="902" alt="inter25" src="https://github.com/user-attachments/assets/a37e7b20-d6c0-4d57-8608-f3fd6de39ad8" />
+
+<img width="945" height="337" alt="inter26" src="https://github.com/user-attachments/assets/83a8e7f7-eff2-4f5e-a5ba-07fa869d8e80" />
+
+<img width="807" height="870" alt="inter27" src="https://github.com/user-attachments/assets/758ea4ac-38c3-4010-8af1-66db38f717bc" />
+
+<img width="912" height="290" alt="inter28" src="https://github.com/user-attachments/assets/cc8ca164-78a6-45be-976f-133d93c0785e" />
+
+<img width="732" height="200" alt="inter29" src="https://github.com/user-attachments/assets/74ebcba6-dade-4170-893a-51b23a3e909d" />
+
+<img width="596" height="225" alt="inter30" src="https://github.com/user-attachments/assets/d6ed1f41-8ac1-4ec1-954f-83dc41a20039" />
+
+<img width="976" height="913" alt="inter31" src="https://github.com/user-attachments/assets/ae33e34e-c9f0-4802-a3aa-981f7b083f9b" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
