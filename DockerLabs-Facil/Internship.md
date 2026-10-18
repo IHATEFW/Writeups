@@ -103,7 +103,17 @@ Lo editamos y le agregamos la típica reverse shell de bash ya que vemos que se 
 
 <img width="1452" height="902" alt="inter25" src="https://github.com/user-attachments/assets/a37e7b20-d6c0-4d57-8608-f3fd6de39ad8" />
 
-Nos ponemos en escucha 
+Nos ponemos en escucha y esperamos unos segundos a que se ejecute sola la shell y finalmente somos valentina.
+
+Ejecutaremos los siguientes comandos para tener una tty estable, esto se llama tratamiento de la tty y se realiza con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+```
 
 <img width="945" height="337" alt="inter26" src="https://github.com/user-attachments/assets/83a8e7f7-eff2-4f5e-a5ba-07fa869d8e80" />
 
