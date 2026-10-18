@@ -59,29 +59,51 @@ Lo leo y necesito encontrar donde diga "Employees", vemos que se hace referencia
 
 <img width="1227" height="336" alt="inter14" src="https://github.com/user-attachments/assets/e1cc38fc-c1ef-467f-8f51-fb0fc524ebeb" />
 
-Si le tiro una petición
+Si le tiro una petición a dicho archivo vemos que nos expone todos los empleados del portal de recursos humanos, incluidos los pasantes.
 
 <img width="768" height="890" alt="inter15" src="https://github.com/user-attachments/assets/8d71c2c3-3d90-405b-9154-1b4bd11ffb53" />
 
+En este punto agregaré el dominio que encontramos al archivo /etc/hosts 
+
 <img width="872" height="428" alt="inter16" src="https://github.com/user-attachments/assets/3c04abf0-9520-4385-aaa9-d8520a46a8c5" />
+
+Lanzo nuevamente un ataque de fuerza bruta con Gobuster pero a dicho dominio y nos encuentra un directorio /spam
 
 <img width="1905" height="868" alt="inter17" src="https://github.com/user-attachments/assets/2ffeaf78-9e07-4772-975a-52d5f712a64d" />
 
+Lo revisamos y nos muestra un comentario con información que posiblemente sea ROT13.
+
 <img width="730" height="436" alt="inter18" src="https://github.com/user-attachments/assets/3583f08f-fb04-4fb8-b5f3-b751bf9b3a7b" />
+
+Identificaremos los nombres de los pasantes, encontramos a Pedro y Valentina.
 
 <img width="661" height="700" alt="inter19" src="https://github.com/user-attachments/assets/34084de4-1846-4b40-b805-9aa0cd144693" />
 
+Buscaremos alguna web que permita realizar un decoded del comentario en ROT13 y encontramos la contraseña de uno de esos pasantes.
+
 <img width="1801" height="680" alt="inter20" src="https://github.com/user-attachments/assets/f3dcb9f3-c109-4ac6-99ff-1b8c1bdac6c8" />
+
+Probamos con valentina y no funciona, probamos con pedro y ¡ganamos acceso a la máquina víctima!
 
 <img width="1192" height="662" alt="inter21" src="https://github.com/user-attachments/assets/dcf21963-7fe8-499c-aeb9-c2a4c0853831" />
 
+Una vez dentro de la máquina víctima, leeremos el archivo /etc/password para ver si existen más usuarios a los cuales pivotar aparte de valentina y vemos que solo existe valentina antes de llegar a root.
+
 <img width="852" height="822" alt="inter22" src="https://github.com/user-attachments/assets/380b1e24-06be-45e9-bf0c-10482ac679cc" />
+
+Nos encontramos la siguiente flag en el directorio de pedro.
 
 <img width="747" height="905" alt="inter23" src="https://github.com/user-attachments/assets/41eedb7d-c517-48ea-aaf0-0a303b62e253" />
 
+Seguimos buscando algo para pivotar y en el directorio /opt encontramos una shell que tiene permisos de escritura por parte nuestra, pero no de ejecución.
+
 <img width="772" height="317" alt="inter24" src="https://github.com/user-attachments/assets/1124c0ed-4873-47ad-81c1-f864de427477" />
 
+Lo editamos y le agregamos la típica reverse shell de bash ya que vemos que se ejecuta en un cron cada 45 segundos como el usuario valentina.
+
 <img width="1452" height="902" alt="inter25" src="https://github.com/user-attachments/assets/a37e7b20-d6c0-4d57-8608-f3fd6de39ad8" />
+
+Nos ponemos en escucha 
 
 <img width="945" height="337" alt="inter26" src="https://github.com/user-attachments/assets/83a8e7f7-eff2-4f5e-a5ba-07fa869d8e80" />
 
