@@ -9,7 +9,11 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que existen los puertos abiertos 22 y 80, correspondientes a los servicios SSH y HTTP.
+
 <img width="1500" height="603" alt="inter2" src="https://github.com/user-attachments/assets/1196d1cf-2bd3-4a92-a1ee-952cc04031f1" />
+
+Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, esto de la siguiente manera, una vez ejecutado, podemos visualizar el titulo de la página web, indicando "GateKeeper HR | Tu Portal de Recursos Humanos".
 
 <img width="1288" height="866" alt="inter3" src="https://github.com/user-attachments/assets/92c68a8d-4d82-46df-bf73-8a771dacb7e6" />
 
