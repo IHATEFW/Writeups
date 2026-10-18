@@ -1,3 +1,4 @@
+La máquina Internship de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos ganar acceso a un portal de recursos humanos mediante un dominio que encontramos en el codigo fuente de la web, dicho dominio nos permitió ganar acceso al dashboard mediante una SQLi, logrando identificar empleados validos incluyendo pasantes, luego encontramos un directorio oculto que exponía una password encodeada en ROT13, entramos por SSH y una vez dentro logramos pivotar entre usuarios mediante una shell que se ejecutaba por cron cada ciertos segundos, finalmente aplicamos esteganografía para encontrar la password del usuario final y pivotar a root . .
 
 # INTERNSHIP
 
@@ -20,6 +21,8 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 En este punto, lanzaremos el comando Whatweb para ver las tecnologías que se están empleando por detrás de dicha web, a su vez, ejecutaremos un ataque de fuerza bruta de directorios con la herramienta Gobuster para ver si encontramos posibles directorios ocultos, pero no encontramos nada interesante.
 
 <img width="1905" height="907" alt="inter4" src="https://github.com/user-attachments/assets/d7a3f909-cd5f-4dd4-bf5a-2a3cf3a50a6f" />
+
+## 💣 EXPLOTACIÓN
 
 Vamos a revisar la web y efectivamente es un portal de recursos humanos, vemos un botón para iniciar sesión pero haciendo hovering por lo botones vemos que ninguno está funcional.
 
@@ -87,6 +90,8 @@ Probamos con valentina y no funciona, probamos con pedro y ¡ganamos acceso a la
 
 <img width="1192" height="662" alt="inter21" src="https://github.com/user-attachments/assets/dcf21963-7fe8-499c-aeb9-c2a4c0853831" />
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
 Una vez dentro de la máquina víctima, leeremos el archivo /etc/password para ver si existen más usuarios a los cuales pivotar aparte de valentina y vemos que solo existe valentina antes de llegar a root.
 
 <img width="852" height="822" alt="inter22" src="https://github.com/user-attachments/assets/380b1e24-06be-45e9-bf0c-10482ac679cc" />
@@ -129,12 +134,10 @@ Ya con el archivo dentro de la máquina atacante, aplicamos el comando steghide 
 
 <img width="732" height="200" alt="inter29" src="https://github.com/user-attachments/assets/74ebcba6-dade-4170-893a-51b23a3e909d" />
 
-Daremos el 
+Esta es la contraseña, posiblemente de valentina o root.
 
 <img width="596" height="225" alt="inter30" src="https://github.com/user-attachments/assets/d6ed1f41-8ac1-4ec1-954f-83dc41a20039" />
 
+Probamos dando un su root y nos pide la contraseña de valentina, otorgamos dicha password y efectivamente era de valentina, somos root, máquina hackeada . .
+
 <img width="976" height="913" alt="inter31" src="https://github.com/user-attachments/assets/ae33e34e-c9f0-4802-a3aa-981f7b083f9b" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
