@@ -105,6 +105,8 @@ Lo editamos y le agregamos la típica reverse shell de bash ya que vemos que se 
 
 Nos ponemos en escucha y esperamos unos segundos a que se ejecute sola la shell y finalmente somos valentina.
 
+<img width="945" height="337" alt="inter26" src="https://github.com/user-attachments/assets/83a8e7f7-eff2-4f5e-a5ba-07fa869d8e80" />
+
 Ejecutaremos los siguientes comandos para tener una tty estable, esto se llama tratamiento de la tty y se realiza con los siguientes comandos:
 
 ```bash
@@ -115,11 +117,15 @@ reset xterm
 export TERM=xterm && export SHELL=bash
 ```
 
-<img width="945" height="337" alt="inter26" src="https://github.com/user-attachments/assets/83a8e7f7-eff2-4f5e-a5ba-07fa869d8e80" />
+Encontramos la siguiente flag en el directorio de valentina, que nos anima a seguir por root.
 
 <img width="807" height="870" alt="inter27" src="https://github.com/user-attachments/assets/758ea4ac-38c3-4010-8af1-66db38f717bc" />
 
+Aparte, encontramos una imagen, posiblemente se esté empleando esteganografía en dicha imagen, pero como en esta máquina no existen herramientas para revisar, nos tendremos que llevar dicha imagen a la máquina atacante, esto con el comando scp de la siguiente manera.
+
 <img width="912" height="290" alt="inter28" src="https://github.com/user-attachments/assets/cc8ca164-78a6-45be-976f-133d93c0785e" />
+
+Ya con el archivo dentro de la máquina atacante, aplicamos el comando steghide --extract -sf para extraer metadatos o alguna información en dicha imagen, logrando encontrar un secret.txt que expone una posible contraseña.
 
 <img width="732" height="200" alt="inter29" src="https://github.com/user-attachments/assets/74ebcba6-dade-4170-893a-51b23a3e909d" />
 
