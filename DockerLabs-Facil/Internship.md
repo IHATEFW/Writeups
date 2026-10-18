@@ -17,25 +17,45 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 
 <img width="1288" height="866" alt="inter3" src="https://github.com/user-attachments/assets/92c68a8d-4d82-46df-bf73-8a771dacb7e6" />
 
+En este punto, lanzaremos el comando Whatweb para ver las tecnologías que se están empleando por detrás de dicha web, a su vez, ejecutaremos un ataque de fuerza bruta de directorios con la herramienta Gobuster para ver si encontramos posibles directorios ocultos, pero no encontramos nada interesante.
+
 <img width="1905" height="907" alt="inter4" src="https://github.com/user-attachments/assets/d7a3f909-cd5f-4dd4-bf5a-2a3cf3a50a6f" />
+
+Vamos a revisar la web y efectivamente es un portal de recursos humanos, vemos un botón para iniciar sesión pero haciendo hovering por lo botones vemos que ninguno está funcional.
 
 <img width="1867" height="905" alt="inter5" src="https://github.com/user-attachments/assets/c7718244-1db6-497b-88c8-ad6f3bd0de2c" />
 
+Revisaremos el código fuente por CTRL + U para ver si existe algo por detrás que no veamos a simple vista y vemos que si se está empleando el login (login modal) de autenticación pero está deshabilitado a simple vista, tambien vemos que se está haciendo referencia a un archivo llamado script.js
+
 <img width="946" height="905" alt="inter6" src="https://github.com/user-attachments/assets/01a2c61d-c402-466b-9b75-aaa011bf4d85" />
+
+Abriremos las devTools y podemos ver que en el CSS de la etiqueta div de HTML está en modo "none" el display de dicho login, la cambiaremos a "block" y automáticamente nos aparece el login de autenticación que estabamos esperando, pero al recargar la página se pierde nuevamente.
 
 <img width="1555" height="397" alt="inter7" src="https://github.com/user-attachments/assets/d728f51c-720a-4f62-96f6-8155de87768a" />
 
+En el apartado de Network vemos que se está haciendo referencia al dominio gatekeeperhr.com 
+
 <img width="1708" height="711" alt="inter8" src="https://github.com/user-attachments/assets/9d0b443e-4fd8-42b5-83b1-e73c345cfa4e" />
+
+Le lanzaremos por la terminal una petición con curl para ver el código fuente.
 
 <img width="1812" height="711" alt="inter9" src="https://github.com/user-attachments/assets/ed7675f8-e62b-41a5-83f2-68bb4fb0994f" />
 
+Vemos que encontramos un comentario, indicando que los pasantes tienen usuarios válidos para conectarse por SSH, necesitamos ganar acceso al dashboard para ver dichos usuarios o necesitamos extraerlos de alguna forma.
+
 <img width="1276" height="911" alt="inter10" src="https://github.com/user-attachments/assets/3ee6b1ce-b44b-4708-8f97-4bc592c1d9d8" />
 
+Me traigo con curl nuevamente todo el contenido del script.js que habíamos encontrado, y lo renombro gatekeeper.js en el directorio /tmp
+
 <img width="1276" height="911" alt="inter11" src="https://github.com/user-attachments/assets/b3d5902a-cb73-4979-b2df-ae6fafee4afa" />
+
+Lo leo y necesito encontrar donde diga "Employees", vemos que se hace referencia a 2 rutas, un /lab/login y un /lab/employees.php
 
 <img width="727" height="237" alt="inter12" src="https://github.com/user-attachments/assets/97f7703e-20ae-4212-91f1-8e7d1b053a6c" />
 
 <img width="1770" height="792" alt="inter13" src="https://github.com/user-attachments/assets/1a7d58e5-4ae0-4030-9300-12a6ae223c06" />
+
+Si le tiro una petición
 
 <img width="1227" height="336" alt="inter14" src="https://github.com/user-attachments/assets/e1cc38fc-c1ef-467f-8f51-fb0fc524ebeb" />
 
