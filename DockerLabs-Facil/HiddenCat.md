@@ -9,21 +9,37 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que existen los puertos abiertos 22, 8009 y 8080, correspondientes a los servicios SSH, AJP y HTTP.
+
 <img width="1513" height="636" alt="hi2" src="https://github.com/user-attachments/assets/350a0a48-e28c-44ac-bdb1-e696090de5ec" />
+
+Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, esto de la siguiente manera, una vez ejecutado, podemos visualizar que detrás del puerto 8080 se está empleando un servidor web llamado Tomcat, en su versión 9.0.30
 
 <img width="1594" height="909" alt="hi3" src="https://github.com/user-attachments/assets/eb9b58b2-e684-46e0-96ac-ff109611722a" />
 
+Vamos a revisar la web del puerto 8080 y vemos que nos muestra la típica web por defecto de Tomcat.
+
 <img width="1594" height="909" alt="hi4" src="https://github.com/user-attachments/assets/c5866765-3c91-44db-8b8f-58e5b58a04db" />
+
+En la siguiente ruta logramos encontrar credenciales por defecto para loguearnos tomcat:s3cret, pero tenemos un código 403 Access Denied.
 
 <img width="1487" height="691" alt="hi5" src="https://github.com/user-attachments/assets/11403da5-39ce-4296-89e0-447cba6a73d3" />
 
+Nos vamos a la web y filtramos por dicha versión que encontramos y vemos que es vulnerable a un LFI, dicha vulnerabilidad se llamó Ghostcat y se le asigno el CVE-2020-1938.
+
 <img width="1487" height="691" alt="hi6" src="https://github.com/user-attachments/assets/9aeec615-10bf-4efe-adf5-f6ac9b6d6f09" />
 
+Volvemos a la terminal y buscamos en la base de datos de exploitdb filtrando por Ghostcat, nos arroja 2 scripts que podemos ocupar, un .py y un .rb
+
 <img width="1863" height="401" alt="hi7" src="https://github.com/user-attachments/assets/36e11af5-1008-4481-a644-4527a489d74e" />
+
+En este punto, decidimos escoger el siguiente repositorio de Github para clonarlo y traernos el siguiente script.
 
 <img width="1897" height="782" alt="hi8" src="https://github.com/user-attachments/assets/e4e48b09-9c1f-4d05-859b-4abcd9e02197" />
 
 <img width="1468" height="864" alt="hi9" src="https://github.com/user-attachments/assets/b9d815f6-7ac3-47c8-94ec-f5be8eaf3424" />
+
+Le damos todos los permisos de ejecución y lo lanzamos según las instrucciones del archivo .md del repo, logrando efectuar el LFI y encontrar un usuario válido del sistema, como es Jerry.
 
 <img width="1463" height="892" alt="hi10" src="https://github.com/user-attachments/assets/db16b33a-d23c-43f0-bd40-8eb5bdbb8269" />
 
