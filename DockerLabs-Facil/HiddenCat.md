@@ -43,11 +43,19 @@ Le damos todos los permisos de ejecución y lo lanzamos según las instrucciones
 
 <img width="1463" height="892" alt="hi10" src="https://github.com/user-attachments/assets/db16b33a-d23c-43f0-bd40-8eb5bdbb8269" />
 
+Realizaremos un ataque de fuerza bruta por SSH para intentar encontrar la contraseña de SSH de Jerry, y efectivamente, encontramos la password.
+
 <img width="1898" height="449" alt="hi11" src="https://github.com/user-attachments/assets/6fc6d51a-0fb9-469b-a67f-fc4d8b6d4497" />
+
+¡Ganamos acceso a la máquina víctima!
 
 <img width="1174" height="661" alt="hi12" src="https://github.com/user-attachments/assets/5e632658-15fc-41db-8e80-2991080b2488" />
 
+Daremos el siguiente comando para buscar desde la raíz binarios con permisos SUID y encontramos varios, como perl y python.
+
 <img width="653" height="590" alt="hi13" src="https://github.com/user-attachments/assets/dace72a6-d9e9-4164-b654-2bf172b4d416" />
+
+Nos vamos a la web gtfobins.org y filtramos por Python.
 
 <img width="1586" height="866" alt="hi14" src="https://github.com/user-attachments/assets/710a7862-fcfe-4f99-b3c0-8edca53158f1" />
 
