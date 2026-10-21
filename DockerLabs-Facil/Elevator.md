@@ -37,13 +37,19 @@ Ahora ocuparemos la herramienta Gobuster para seguir enumerando directorios ocul
 
 <img width="1903" height="895" alt="ele8" src="https://github.com/user-attachments/assets/7429e5fe-d5cd-4a89-8994-bd7652b618c4" />
 
-Revisamos el /archivo.html y vemos que se puede subir una imagen en formato JPG
+Revisamos el /archivo.html y vemos que se puede subir una imagen en formato JPG, se nos ocurre subir una reverse shell en php pero la renombraremos revshell.php.jpg para ver si deja subirla.
 
 <img width="1903" height="895" alt="ele9" src="https://github.com/user-attachments/assets/25c1b2c3-489d-4840-b3e0-34e1f57f4042" />
 
+Nos vamos a la web revshells.com para configurar nuestra reverse shell con la ip de nuestra máquina atacante y un puerto que escojamos. 
+
 <img width="1903" height="895" alt="ele10" src="https://github.com/user-attachments/assets/709ea7b0-7973-4d81-8aad-4f6068719340" />
 
+La copiamos en un archivo llamado revshell.php.jpg y la guardamos.
+
 <img width="1152" height="390" alt="ele11" src="https://github.com/user-attachments/assets/75b3cee0-0a21-4f1f-84d0-15f7b61e31e4" />
+
+La logramos subir con éxito a la web.
 
 <img width="1152" height="390" alt="ele12" src="https://github.com/user-attachments/assets/386f650c-8536-45a2-8a1f-8733d7047ee7" />
 
