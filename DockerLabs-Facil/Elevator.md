@@ -17,15 +17,27 @@ Una vez ya tenemos el puerto identificado, seguiremos enumerando con la herramie
 
 <img width="1340" height="701" alt="ele3" src="https://github.com/user-attachments/assets/57c13426-79e8-492e-8bb2-40fd6bbf7423" />
 
+Nos vamos a revisar la web, donde aparece un ascensor con un botón que dice "¡Abre el Ascensor!".
+
 <img width="1601" height="873" alt="ele4" src="https://github.com/user-attachments/assets/85142305-8faa-4a0f-a27b-6597a3386194" />
+
+Una vez presionamos el botón, nos arroja el siguiente mensaje, sobre una historia de Scooby-Doo.
 
 <img width="1601" height="873" alt="ele5" src="https://github.com/user-attachments/assets/26678a98-1817-4136-8086-fbe861f6cb2f" />
 
+Como ya no tenemos nada más que hacer en dicha web, nos vamos a la terminal, para seguir enumerando, esta vez ejecutaremos la herramienta dirb para poder encontrar directorios ocultos, una vez ejecutado, nos llamada la atención un directorio llamado /themes
+
 <img width="982" height="880" alt="ele6" src="https://github.com/user-attachments/assets/ab0b0be8-cea1-4607-b9ba-47402e55e547" />
+
+Pero no tenemos permisos para ver que hay dentro de él.
 
 <img width="1202" height="549" alt="ele7" src="https://github.com/user-attachments/assets/19b79a9a-1da6-4f63-acd5-58d9566b5e62" />
 
+Ahora ocuparemos la herramienta Gobuster para seguir enumerando directorios ocultos, pero el ataque de fuerza bruta lo lanzaremos a dicho directorio /themes, encontrando 2 archivos interesantes, un /archivo.html y un /upload.php
+
 <img width="1903" height="895" alt="ele8" src="https://github.com/user-attachments/assets/7429e5fe-d5cd-4a89-8994-bd7652b618c4" />
+
+Revisamos el /archivo.html y vemos que se puede subir una imagen en formato JPG
 
 <img width="1903" height="895" alt="ele9" src="https://github.com/user-attachments/assets/25c1b2c3-489d-4840-b3e0-34e1f57f4042" />
 
