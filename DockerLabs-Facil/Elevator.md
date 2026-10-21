@@ -9,7 +9,11 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que existe solamente el puerto 80 abierto.
+
 <img width="1532" height="574" alt="ele2" src="https://github.com/user-attachments/assets/1a19387d-63ec-4d31-8d8e-a79ccbd61aa1" />
+
+Una vez ya tenemos el puerto identificado, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dicho servicio, una vez ejecutado, podemos darnos cuenta que encontramos el http-title de la web, llamada "El Ascensor Embrujado - Un Misterio de Scooby-Doo"
 
 <img width="1340" height="701" alt="ele3" src="https://github.com/user-attachments/assets/57c13426-79e8-492e-8bb2-40fd6bbf7423" />
 
