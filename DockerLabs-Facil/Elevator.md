@@ -1,3 +1,4 @@
+La máquina Elevator de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como enumerando directorios podemos encontrar una vía potencial para ganar acceso a la máquina víctima subiendo una reverse shell en un apartado de subida de archivos, que principalmente solo deja subir archivos .jpg, pero lo renombramos y dejó subirlo con éxito, una vez dentro de la máquina víctima pivotamos entre usuarios gracias que todos tenían permisos a nivel de sudoers . .
 
 # ELEVATOR
 
