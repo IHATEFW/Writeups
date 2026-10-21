@@ -17,6 +17,8 @@ Una vez ya tenemos el puerto identificado, seguiremos enumerando con la herramie
 
 <img width="1340" height="701" alt="ele3" src="https://github.com/user-attachments/assets/57c13426-79e8-492e-8bb2-40fd6bbf7423" />
 
+## 💣 EXPLOTACIÓN
+
 Nos vamos a revisar la web, donde aparece un ascensor con un botón que dice "¡Abre el Ascensor!".
 
 <img width="1601" height="873" alt="ele4" src="https://github.com/user-attachments/assets/85142305-8faa-4a0f-a27b-6597a3386194" />
@@ -59,6 +61,8 @@ Nos vamos al directorio /themes/uploads y la vemos arriba.
 
 Nos ponemos en escucha con la herramienta Netcat con el puerto 443 y presionamos dicho archivo en la web, ¡Ganamos acceso a la máquina víctima!
 
+<img width="1307" height="499" alt="ele14" src="https://github.com/user-attachments/assets/37376d96-ff5c-4ca2-9161-c852c80efb38" />
+
 Ejecutaremos los siguientes comandos para tener una tty estable, esto se llama tratamiento de la tty y se realiza con los siguientes comandos:
 
 ```bash
@@ -68,21 +72,28 @@ stty raw -echo;fg
 reset xterm
 export TERM=xterm && export SHELL=bash
 ```
+## 🔑 ESCALADA DE PRIVILEGIOS
 
-<img width="1307" height="499" alt="ele14" src="https://github.com/user-attachments/assets/37376d96-ff5c-4ca2-9161-c852c80efb38" />
+Ya con una tty estable, daremos el comando sudo -l para ver si podemos ejecutar algún binario con privilegios de otro usuario e ir pivotando hasta llegar a root, vemos que podemos ejecutar /usr/bin/env como el usuario daphne, lo ejecutamos de la siguiente manera y somos daphne.
 
 <img width="1307" height="499" alt="ele15" src="https://github.com/user-attachments/assets/3e3b25f5-632c-4d42-bd6a-fe0928189455" />
 
+Damos nuevamente sudo -l y vemos que podemos ejecutar /usr/bin/ash como el usuario vilma, lo ejecutamos de la siguiente manera y somos vilma.
+
 <img width="1307" height="499" alt="ele16" src="https://github.com/user-attachments/assets/9fb09172-f7a8-4bce-b0f8-230a0d82fc6d" />
+
+Daremos nuevamente sudo -l y vemos que podemos ejecutar /usr/bin/ruby como el usuario shaggy, lo ejecutamos de la siguiente manera y somos shaggy.
 
 <img width="1302" height="486" alt="ele17" src="https://github.com/user-attachments/assets/7768fd64-e1c8-41f3-ad43-bfea56581fb1" />
 
+Damos nuevamente sudo -l y vemos que podemos ejecutar /usr/bin/lua como el usuario fred, lo ejecutamos de la siguiente manera y somos fred.
+
 <img width="1302" height="486" alt="ele18" src="https://github.com/user-attachments/assets/08a200d9-79e8-4dd8-bf74-fe0ea4b69d7b" />
+
+Damos nuevamente sudo -l y vemos que podemos ejecutar /usr/bin/gcc como el usuario scooby, lo ejecutamos de la siguiente manera y somos scooby.
 
 <img width="1302" height="486" alt="ele19" src="https://github.com/user-attachments/assets/f6b97390-3c4d-4031-bd8c-6125e0413766" />
 
+Finalmente damos una vez más sudo -l y vemos que podemos ejecutar /usr/bin/sudo como el usuario root, lo ejecutamos de la siguiente manera y somos root, máquina hackeada . .
+
 <img width="1302" height="486" alt="ele20" src="https://github.com/user-attachments/assets/19462c79-1f44-4897-bc29-aa1a6d140ec1" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
