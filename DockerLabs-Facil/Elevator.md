@@ -53,7 +53,21 @@ La logramos subir con éxito a la web.
 
 <img width="1152" height="390" alt="ele12" src="https://github.com/user-attachments/assets/386f650c-8536-45a2-8a1f-8733d7047ee7" />
 
+Nos vamos al directorio /themes/uploads y la vemos arriba.
+
 <img width="1057" height="445" alt="ele13" src="https://github.com/user-attachments/assets/cc745f8d-7fe0-47e2-8c42-3cfbb8c8dd48" />
+
+Nos ponemos en escucha con la herramienta Netcat con el puerto 443 y presionamos dicho archivo en la web, ¡Ganamos acceso a la máquina víctima!
+
+Ejecutaremos los siguientes comandos para tener una tty estable, esto se llama tratamiento de la tty y se realiza con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+```
 
 <img width="1307" height="499" alt="ele14" src="https://github.com/user-attachments/assets/37376d96-ff5c-4ca2-9161-c852c80efb38" />
 
