@@ -19,6 +19,14 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 <img width="1542" height="696" alt="tron6" src="https://github.com/user-attachments/assets/491dc513-7e83-47bf-8340-bdcf0552b657" />
 
+<img width="924" height="788" alt="tron7" src="https://github.com/user-attachments/assets/377ea346-d287-4f28-be0c-92504d1541ab" />
+
+<img width="1907" height="908" alt="tron8" src="https://github.com/user-attachments/assets/26864b7a-754c-4fb2-803f-a16dcdd66104" />
+
+<img width="953" height="678" alt="tron9" src="https://github.com/user-attachments/assets/d94112ac-cc10-4c1a-9138-0808623b2668" />
+
+<img width="1398" height="704" alt="tron10" src="https://github.com/user-attachments/assets/4c2c4931-be18-4064-a3d3-6796efe029b5" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
