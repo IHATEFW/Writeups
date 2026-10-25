@@ -1,3 +1,4 @@
+La máquina Tron de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos abusar de una imagen que encontramos en la web del puerto 80 logrando ejecutar esteganografía, nos enumera un usuario válido y nos damos cuenta que la máquina está ambientada en la película TRON, nos creamos nuestro diccionario de contraseñas y encontramos la password del usuario tron, una vez dentro, pivotamos a root mediante permisos a nivel de sudoers . .
 
 # TRON
 
