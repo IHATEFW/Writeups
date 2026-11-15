@@ -1,3 +1,4 @@
+La máquina Flynn de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos encontrar un usuario válido detrás de la web del puerto 80, del cual nos aprovechamos realizando un ataque de fuerza bruta con Hydra para encontrar su password, una vez dentro de la máquina víctima, pivotamos a root abusando de un permiso a nivel de sudoers mal configurado.
 
 # FLYNN
 
