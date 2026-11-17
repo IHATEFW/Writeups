@@ -26,6 +26,8 @@ Por el puerto 9229 vemos que efectivamente espera peticiones tipo WebSockets.
 
 <img width="1347" height="507" alt="autoescu5" src="https://github.com/user-attachments/assets/0ac917b7-bd70-40cb-a130-5db6f629c519" />
 
+## 💣 EXPLOTACIÓN
+
 Volvemos a la terminal y probaremos con la herramienta curl enviar peticiones a los siguientes directorios, los cuales responden datos sensibles como un usuario válido del sistema /webuser y un archivo en /node_app/app.js
 
 <img width="1891" height="875" alt="autoescu6" src="https://github.com/user-attachments/assets/9105c696-949f-4182-ad49-f78c64e283c9" />
@@ -41,6 +43,8 @@ Probaremos conectarnos vía node inspect, otorgandole la ip de la máquina víct
 Sin antes ponernos en escucha con la herramienta netcat por el puerto 4444, lanzamos el comando anterior y ¡ganamos acceso a la máquina víctima!
 
 <img width="1891" height="875" alt="autoescu9" src="https://github.com/user-attachments/assets/2327f685-da8f-48d7-a6df-04600c7624d0" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 Dentro de la máquina víctima, lo primero que haremos es leer el archivo /etc/passwd para ver si existen más usuarios válidos en el sistema para intentar pivotar hasta llegar a root, vemos que solamente existen los usuarios webuser y ubuntu.
 
@@ -109,7 +113,3 @@ En la máquina víctima lo traemos con el comando curl, sin antes habernos puest
 ¡Ganamos acceso a la máquina víctima! nuevamente pero esta vez como root, máquina hackeada . .
 
 <img width="1843" height="867" alt="autoescu26" src="https://github.com/user-attachments/assets/7be5c14e-1203-4e21-b47a-89ea4dcb0a2e" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
