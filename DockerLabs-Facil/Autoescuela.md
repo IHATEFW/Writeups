@@ -17,15 +17,27 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 
 <img width="1788" height="866" alt="autoescu3" src="https://github.com/user-attachments/assets/44c30e87-e6a7-4103-9d14-81e354a09f84" />
 
+Visitamos la página web del puerto 8080, es una academia para aprender a conducir, nada interesante.
+
 <img width="1788" height="866" alt="autoescu4" src="https://github.com/user-attachments/assets/b8a375df-6d13-414a-b8ec-de56c5919b54" />
+
+Por el puerto 9229 vemos que efectivamente espera peticiones tipo WebSockets.
 
 <img width="1347" height="507" alt="autoescu5" src="https://github.com/user-attachments/assets/0ac917b7-bd70-40cb-a130-5db6f629c519" />
 
+Volvemos a la terminal y probaremos con la herramienta curl enviar peticiones a los siguientes directorios, los cuales responden datos sensibles como un usuario válido del sistema /webuser y un archivo en /node_app/app.js
+
 <img width="1891" height="875" alt="autoescu6" src="https://github.com/user-attachments/assets/9105c696-949f-4182-ad49-f78c64e283c9" />
+
+Nos conectamos vía WebSocket de la siguiente manera, pero al enviarle distintas peticiones los puertos se cierran y tenemos que reiniciar la máquina.
 
 <img width="1891" height="875" alt="autoescu7" src="https://github.com/user-attachments/assets/e9e266d6-3f9d-4cbb-8a16-b1cafc7d82dc" />
 
+Probaremos conectarnos vía node inspect, otorgandole la ip de la máquina víctima y el puerto 9229, logramos una ejecución remota de comandos (RCE), por lo tanto, nos lanzaremos la típica reverse shell de bash para ganar acceso a la máquina.
+
 <img width="1891" height="875" alt="autoescu8" src="https://github.com/user-attachments/assets/4ad3e49e-fefd-455f-95fa-9d1a9cc0c5d9" />
+
+Sin antes ponernos en escucha con la herramienta netcat por el puerto 4444, lanzamos el comando anterior y ¡ganamos acceso a la máquina víctima!
 
 <img width="1891" height="875" alt="autoescu9" src="https://github.com/user-attachments/assets/2327f685-da8f-48d7-a6df-04600c7624d0" />
 
