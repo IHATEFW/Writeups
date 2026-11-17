@@ -1,3 +1,4 @@
+La máquina Autoescuela de la plataforma Dockerlabs.es, es una máquina de dificultad "Fácil", la cual nos enseña como podemos abusar una versión vulnerable de Node.js/Express mediante conexiones vía WebSockets, la cual posteriormente nos permite una ejecución remota de comandos (RCE) mediante el CVE (CVE-2025-55182).
 
 # AUTOESCUELA
 
