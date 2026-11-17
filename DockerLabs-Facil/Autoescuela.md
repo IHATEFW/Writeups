@@ -39,6 +39,26 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 <img width="1891" height="875" alt="autoescu16" src="https://github.com/user-attachments/assets/c6266418-7f7f-4738-afeb-e1561cb30e64" />
 
+<img width="1891" height="875" alt="autoescu17" src="https://github.com/user-attachments/assets/6cbaa40a-9742-49a6-ac46-21f95ee83ab5" />
+
+<img width="1891" height="875" alt="autoescu18" src="https://github.com/user-attachments/assets/ad484d6e-31aa-479f-90b4-d430bf9419d6" />
+
+<img width="1891" height="875" alt="autoescu19" src="https://github.com/user-attachments/assets/1421a84b-1aac-40bd-a73d-8134993acf0e" />
+
+<img width="1891" height="875" alt="autoescu20" src="https://github.com/user-attachments/assets/754a6fcd-b714-4642-a579-f605f7106a22" />
+
+<img width="1891" height="875" alt="autoescu21" src="https://github.com/user-attachments/assets/4c46052b-64cf-45a1-8480-5d8c8714a573" />
+
+<img width="1367" height="465" alt="autoescu22" src="https://github.com/user-attachments/assets/aa0e86ce-49c1-4974-a623-a47c77d512a3" />
+
+<img width="1327" height="372" alt="autoescu23" src="https://github.com/user-attachments/assets/0b6f2d5c-ebab-4967-90f1-3e3ece20c29b" />
+
+<img width="1327" height="372" alt="autoescu24" src="https://github.com/user-attachments/assets/46e651ba-8b7b-45c8-a966-22b1143e63ce" />
+
+<img width="1546" height="515" alt="autoescu25" src="https://github.com/user-attachments/assets/20da43fe-9636-4f08-9129-822a4ea41e11" />
+
+<img width="1843" height="867" alt="autoescu26" src="https://github.com/user-attachments/assets/7be5c14e-1203-4e21-b47a-89ea4dcb0a2e" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
