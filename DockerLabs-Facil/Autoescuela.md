@@ -9,7 +9,11 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 ## 🔎 ENUMERACIÓN
 
+En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que existen los puertos abiertos 8080 y 9229, correspondientes a los servicios HTTP-PROXY y un servicio desconocido.
+
 <img width="1788" height="866" alt="autoescu2" src="https://github.com/user-attachments/assets/8e664113-104b-4efb-9e35-01012bf4982f" />
+
+Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, esto de la siguiente manera, una vez ejecutado, podemos visualizar que detrás del puerto 8080 corre un Node.js (Express middleware), además del http-title que hace referencia a: Autoescuela - Hackcar - Inicio. Por el puerto 9229 podemos ver que aparentemente espera conexiones WebSockets.
 
 <img width="1788" height="866" alt="autoescu3" src="https://github.com/user-attachments/assets/44c30e87-e6a7-4103-9d14-81e354a09f84" />
 
