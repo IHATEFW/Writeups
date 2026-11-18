@@ -83,13 +83,23 @@ Anteriormente en el comprimido .zip nos mostró un shell.php5, por lo tanto, pod
 
 <img width="1830" height="897" alt="root20" src="https://github.com/user-attachments/assets/757a185e-5e58-401c-8192-4d93a41eceb8" />
 
+Nos vamos al directorio /uploads que previamente encontramos con la herramienta Gobuster, allí es donde aparece nuestra reverse shell que subimos.
+
 <img width="1197" height="426" alt="root21" src="https://github.com/user-attachments/assets/1870d7fc-7474-4b67-857d-48205dc7c6dc" />
+
+Levantamos un listening con la herramienta netcat y presionamos en la web dicho archivo, ¡Ganamos acceso a la máquina víctima!
 
 <img width="1867" height="872" alt="root22" src="https://github.com/user-attachments/assets/05861e6e-eaa1-4433-bd7e-e799ad2b7ffa" />
 
+Una vez dentro de la máquina víctima, daremos el siguiente comando para encontrar la 1era flag user.txt como indica la próxima pregunta en TryHackMe, encontramos que se encuentra en el directorio /var/www/, lo leemos y copiamos la flag.
+
 <img width="1330" height="360" alt="root23" src="https://github.com/user-attachments/assets/ff03645f-ad30-47c0-a2bb-eea474e312cf" />
 
+Pegamos la flag en la respuesta, le damos enter.
+
 <img width="1828" height="882" alt="root24" src="https://github.com/user-attachments/assets/cafed569-04fd-4d73-94b2-0a33d1e1c8aa" />
+
+Ahora 
 
 <img width="1828" height="882" alt="root25" src="https://github.com/user-attachments/assets/cc23c0b6-d753-42f4-bfe6-f19f91faecdf" />
 
