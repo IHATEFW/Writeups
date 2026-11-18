@@ -37,6 +37,34 @@
 
 <img width="1800" height="887" alt="root16" src="https://github.com/user-attachments/assets/cfd0cf6b-8185-4ca5-8785-9aca623e4ce8" />
 
+<img width="1800" height="887" alt="root17" src="https://github.com/user-attachments/assets/dfea8b52-2a7d-4796-aea2-fd653a39d7c5" />
+
+<img width="1800" height="887" alt="root18" src="https://github.com/user-attachments/assets/81ba35d5-4ff7-4c97-8f85-cdc3e3bbced4" />
+
+<img width="1821" height="441" alt="root19" src="https://github.com/user-attachments/assets/76de0acb-6a49-4846-a918-e4f5a7dccdf3" />
+
+<img width="1830" height="897" alt="root20" src="https://github.com/user-attachments/assets/757a185e-5e58-401c-8192-4d93a41eceb8" />
+
+<img width="1197" height="426" alt="root21" src="https://github.com/user-attachments/assets/1870d7fc-7474-4b67-857d-48205dc7c6dc" />
+
+<img width="1867" height="872" alt="root22" src="https://github.com/user-attachments/assets/05861e6e-eaa1-4433-bd7e-e799ad2b7ffa" />
+
+<img width="1330" height="360" alt="root23" src="https://github.com/user-attachments/assets/ff03645f-ad30-47c0-a2bb-eea474e312cf" />
+
+<img width="1828" height="882" alt="root24" src="https://github.com/user-attachments/assets/cafed569-04fd-4d73-94b2-0a33d1e1c8aa" />
+
+<img width="1828" height="882" alt="root25" src="https://github.com/user-attachments/assets/cc23c0b6-d753-42f4-bfe6-f19f91faecdf" />
+
+<img width="1828" height="882" alt="root26" src="https://github.com/user-attachments/assets/a7fbd420-ec44-40a5-bf40-2f876c9169cd" />
+
+<img width="1828" height="882" alt="root27" src="https://github.com/user-attachments/assets/107d4c1d-a76a-481a-b0ad-f9a32cffb96c" />
+
+<img width="1828" height="882" alt="root28" src="https://github.com/user-attachments/assets/adc43ea5-0dac-4a95-87ec-fdfe9a9ac739" />
+
+<img width="1828" height="882" alt="root29" src="https://github.com/user-attachments/assets/cbef7215-8ba0-4f61-a2ad-ec65b3dd48fc" />
+
+<img width="1828" height="882" alt="root30" src="https://github.com/user-attachments/assets/8f7ae767-a2fd-431f-81f5-270f53ef97eb" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
