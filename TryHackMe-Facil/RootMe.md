@@ -1,3 +1,4 @@
+La máquina RootMe de la plataforma TryHackMe.com es una máquina de dificultad "Fácil", que nos enseña los primeros pasos para comenzar a hackear nuestras primeras máquinas, desde ataques de fuerza bruta con la herramienta Gobuster, hasta ponernos en escucha con netcat para lanzarnos una reverse shell, finalmente dentro de la máquina víctima logramos pivotar a root debido a que encontramos binarios con permisos SUID mal configurados . .
 
 # ROOTME
 
