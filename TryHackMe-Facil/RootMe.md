@@ -35,6 +35,8 @@ La 3era pregunta hace referencia a que servicio está corriendo por el puerto 22
 
 <img width="1800" height="887" alt="root8" src="https://github.com/user-attachments/assets/09aa1a41-31a2-4b1c-a8b3-ce925545a9ba" />
 
+## 💣 EXPLOTACIÓN
+
 Lanzamos un ataque de fuerza bruta con Gobuster de la siguiente manera, nos encuentra distintos directorios pero el que nos interesa es /panel
 
 <img width="1800" height="887" alt="root9" src="https://github.com/user-attachments/assets/8dae3d27-f9f3-4995-84f2-d391c52f4e96" />
@@ -91,7 +93,20 @@ Levantamos un listening con la herramienta netcat y presionamos en la web dicho 
 
 <img width="1867" height="872" alt="root22" src="https://github.com/user-attachments/assets/05861e6e-eaa1-4433-bd7e-e799ad2b7ffa" />
 
-Una vez dentro de la máquina víctima, daremos el siguiente comando para encontrar la 1era flag user.txt como indica la próxima pregunta en TryHackMe, encontramos que se encuentra en el directorio /var/www/, lo leemos y copiamos la flag.
+Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+stty rows 50 columns 236
+```
+
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+Ahora daremos el siguiente comando para encontrar la 1era flag user.txt como indica la próxima pregunta en TryHackMe, encontramos que se encuentra en el directorio /var/www/, lo leemos y copiamos la flag.
 
 <img width="1330" height="360" alt="root23" src="https://github.com/user-attachments/assets/ff03645f-ad30-47c0-a2bb-eea474e312cf" />
 
@@ -99,20 +114,26 @@ Pegamos la flag en la respuesta, le damos enter.
 
 <img width="1828" height="882" alt="root24" src="https://github.com/user-attachments/assets/cafed569-04fd-4d73-94b2-0a33d1e1c8aa" />
 
-Ahora 
+Ahora la próxima pregunta nos indica que busquemos binarios con permisos SUID que encontremos raros.
 
 <img width="1828" height="882" alt="root25" src="https://github.com/user-attachments/assets/cc23c0b6-d753-42f4-bfe6-f19f91faecdf" />
 
+Lanzaremos el siguiente comando y podemos ver que un binario raro es /usr/bin/python2.7
+
 <img width="1828" height="882" alt="root26" src="https://github.com/user-attachments/assets/a7fbd420-ec44-40a5-bf40-2f876c9169cd" />
+
+Pegamos dicho binario en la web pero solo le ponemos /usr/bin/python, le damos enter, ahora nos indica que encontremos alguna forma de ser root.
 
 <img width="1828" height="882" alt="root27" src="https://github.com/user-attachments/assets/107d4c1d-a76a-481a-b0ad-f9a32cffb96c" />
 
+En este punto, nos iremos a la web gtfobins.org para filtrar por python y escoger el comando adecuado para subir privilegios a root, nos vamos al apartado de SUID y copiamos el primer comando.
+
 <img width="1828" height="882" alt="root28" src="https://github.com/user-attachments/assets/adc43ea5-0dac-4a95-87ec-fdfe9a9ac739" />
+
+Lo lanzamos de la siguiente manera y ¡somos root!, máquina hackeada con éxito, nos vamos al directorio /root y encontramos la flag root.txt
 
 <img width="1828" height="882" alt="root29" src="https://github.com/user-attachments/assets/cbef7215-8ba0-4f61-a2ad-ec65b3dd48fc" />
 
+Pegamos la última flag en la web y nos aparece el mensaje de finalización.
+
 <img width="1828" height="882" alt="root30" src="https://github.com/user-attachments/assets/8f7ae767-a2fd-431f-81f5-270f53ef97eb" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
