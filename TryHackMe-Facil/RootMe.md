@@ -43,23 +43,43 @@ Ingresamos /panel en la próxima respuesta y le damos enter.
 
 <img width="1800" height="887" alt="root10" src="https://github.com/user-attachments/assets/17e4c7ac-72f5-4a12-99a3-931efc5767a6" />
 
+En este punto, abriremos el navegador y visitaremos la web detrás del puerto 80, vemos que dice "Can you root me?", pero nada más interesante.
+
 <img width="1800" height="887" alt="root11" src="https://github.com/user-attachments/assets/994f0a77-b655-49cd-ac13-3386c893b7dc" />
+
+Ahora nos iremos al directorio que encontramos /panel, vemos que existe un campo de subida de archivos, esto tiene buena pinta ya que quizá podremos lanzarnos una reverse shell.
 
 <img width="1800" height="887" alt="root12" src="https://github.com/user-attachments/assets/00b0bf75-5686-419b-ab93-d26d4b45fb7d" />
 
+En el anterior ataque de fuerza bruta que realizamos con Gobuster, nos encontró un .zip, lo ingresamos en la web y lo descargamos, lo guardamos en nuestro directorio donde estamos trabajando.
+
 <img width="1800" height="887" alt="root13" src="https://github.com/user-attachments/assets/b4d971ae-3fc8-4074-b6b7-a81f2dcddb43" />
+
+Lo descomprimiremos con el comando unzip, vemos que nos arrojó distintas rutas válidas del sistema, algunas que no encontramos con Gobuster, nos llama la atención el shell.php5
 
 <img width="1800" height="887" alt="root14" src="https://github.com/user-attachments/assets/ca3db96f-e5bf-4d65-8916-d664d7e36cde" />
 
+Sin más rodeos, nos lanzaremos una reverse shell, para eso tendremos que identificar nuestra ip atacante, que no es la misma que la de nuestra máquina atacante, ya que como estamos conectados por VPN en TryHackMe, siempre está en la tun0, para identificarla le damos ip addr.
+
 <img width="1800" height="887" alt="root15" src="https://github.com/user-attachments/assets/e9eaa026-85f6-4b40-b2ec-979a696c224b" />
+
+Nos vamos a nuestra web de confianza revshells.com para configurar nuestra reverse shell, le otorgamos la ip de la máquina atacante y escogemos un puerto en el cual deberemos ponernos en escucha con netcat.
 
 <img width="1800" height="887" alt="root16" src="https://github.com/user-attachments/assets/cfd0cf6b-8185-4ca5-8785-9aca623e4ce8" />
 
+Nos copiamos la reverse shell, yo recomiendo siempre utilizar la Pentest Monkey de PHP, en nuestra terminal nos creamos un archivo llamado revshell.php y le pegamos todo el contenido que nos entregaron.
+
 <img width="1800" height="887" alt="root17" src="https://github.com/user-attachments/assets/dfea8b52-2a7d-4796-aea2-fd653a39d7c5" />
+
+La intentamos subir en el directorio /panel, pero nos indica que no permite código PHP.
 
 <img width="1800" height="887" alt="root18" src="https://github.com/user-attachments/assets/81ba35d5-4ff7-4c97-8f85-cdc3e3bbced4" />
 
+Anteriormente en el comprimido .zip nos mostró un shell.php5, por lo tanto, podemos intuir que está interpretando la extensión .php5, renombramos nuestra reverse shell de la siguiente manera.
+
 <img width="1821" height="441" alt="root19" src="https://github.com/user-attachments/assets/76de0acb-6a49-4846-a918-e4f5a7dccdf3" />
+
+¡Ahora la logramos subir con éxito!
 
 <img width="1830" height="897" alt="root20" src="https://github.com/user-attachments/assets/757a185e-5e58-401c-8192-4d93a41eceb8" />
 
