@@ -3,6 +3,8 @@
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
 
+Para desplegar una máquina en TryHackMe, tendrás que descargar el archivo de la vpn, que tendrá como extensión .ovpn y te conectas desde tu terminal ejecutando sudo openvpn archivo.ovpn. Una vez establecida la conexión (mensaje Initialization Sequence Completed), ingresas a la habitación que deseas resolver y presionas Start Machine. TryHackMe desplegará una máquina virtual víctima y, cuando termine de iniciarse, te entregará la dirección ip de la máquina víctima.
+
 <img width="1751" height="900" alt="root1" src="https://github.com/user-attachments/assets/031177ff-b97a-44db-8484-b167c4cfc729" />
 
 <img width="1751" height="900" alt="root2" src="https://github.com/user-attachments/assets/970588d2-e7b2-4fca-a9b0-5bd25b91a48d" />
