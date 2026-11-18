@@ -15,13 +15,23 @@ Comenzaremos con la fase de enumeración/reconocimiento, en primera instancia, l
 
 <img width="1751" height="900" alt="root3" src="https://github.com/user-attachments/assets/729b50f2-c72e-4e63-8711-5da8fd767400" />
 
+Realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que existen los puertos abiertos 22 y 80, correspondientes a los servicios SSH y HTTP.
+
 <img width="1811" height="651" alt="root4" src="https://github.com/user-attachments/assets/e9e5b2fb-ec12-48e5-bfa5-80962b546422" />
+
+Nos dirigiremos a la web de TryHackMe para comenzar a responder las preguntas, la primera nos pregunta cuantos puertos encontramos abiertos, indicamos que 2.
 
 <img width="1800" height="887" alt="root5" src="https://github.com/user-attachments/assets/516bb837-fc12-4b8c-a93b-e71f1a6c5dc8" />
 
+Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, esto de la siguiente manera, una vez ejecutado, podemos visualizar el servicio web que corre detrás del puerto 80, en su versión 2.4.41, que es la respuesta de la próxima pregunta.
+
 <img width="1800" height="887" alt="root6" src="https://github.com/user-attachments/assets/958df195-1216-4430-926c-4a9e8c8523b5" />
 
+Ingresamos 2.4.41 y le damos enter.
+
 <img width="1800" height="887" alt="root7" src="https://github.com/user-attachments/assets/91874b9b-d6c5-4d9c-b14b-4b850af429a5" />
+
+La 3era pregunta hace referencia a que servicio está corriendo por el puerto 22, como sabemos que es SSH, ingresamos esa respuesta y le damos enter.
 
 <img width="1800" height="887" alt="root8" src="https://github.com/user-attachments/assets/09aa1a41-31a2-4b1c-a8b3-ce925545a9ba" />
 
