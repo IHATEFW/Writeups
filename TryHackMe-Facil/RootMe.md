@@ -31,11 +31,15 @@ Ingresamos 2.4.41 y le damos enter.
 
 <img width="1800" height="887" alt="root7" src="https://github.com/user-attachments/assets/91874b9b-d6c5-4d9c-b14b-4b850af429a5" />
 
-La 3era pregunta hace referencia a que servicio está corriendo por el puerto 22, como sabemos que es SSH, ingresamos esa respuesta y le damos enter.
+La 3era pregunta hace referencia a que servicio está corriendo por el puerto 22, como sabemos que es SSH, ingresamos esa respuesta y le damos enter, la próxima pregunta es como una indicación, ya que nos indica que realicemos un ataque de fuerza bruta con la herramienta Gobuster para lograr identificar directorios ocultos.
 
 <img width="1800" height="887" alt="root8" src="https://github.com/user-attachments/assets/09aa1a41-31a2-4b1c-a8b3-ce925545a9ba" />
 
+Lanzamos un ataque de fuerza bruta con Gobuster de la siguiente manera, nos encuentra distintos directorios pero el que nos interesa es /panel
+
 <img width="1800" height="887" alt="root9" src="https://github.com/user-attachments/assets/8dae3d27-f9f3-4995-84f2-d391c52f4e96" />
+
+Ingresamos /panel en la próxima respuesta y le damos enter.
 
 <img width="1800" height="887" alt="root10" src="https://github.com/user-attachments/assets/17e4c7ac-72f5-4a12-99a3-931efc5767a6" />
 
