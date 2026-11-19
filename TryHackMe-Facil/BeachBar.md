@@ -39,7 +39,11 @@ Lo guardamos y lo leemos por la terminal, indica una playlist, el género de la 
 
 <img width="1735" height="764" alt="beach9" src="https://github.com/user-attachments/assets/a4358d2c-3f33-4eec-b848-8f3694212332" />
 
+Ahora nos vamos al botón de importar, donde pegamos el contenido del archivo .yml y lo cargamos, no arroja nada interesante pero se interpretan distintas etiquetas de dicho código que pegamos.
+
 <img width="1762" height="910" alt="beach10" src="https://github.com/user-attachments/assets/f49194f9-62fd-4d5d-a608-c5aef7115fe4" />
+
+En este punto, probaremos una técnica llamada "YAML Deserialization (Insecure Deserialization) en Python", el cual es una vulnerabilidad que ocurre cuando una aplicación procesa archivos o datos YAML sin validar correctamente su contenido, permitiendo que un atacante introduzca objetos o instrucciones que el programa termina interpretando, todo esto aparece en la web https://ctffactory.com/learn/card-by-spec/172, dicho esto, le concatenamos el comando "id", efectivamente nos muestra el usuario válido de la máquina víctima "bartender".
 
 <img width="1762" height="910" alt="beach11" src="https://github.com/user-attachments/assets/e3bb6c0c-c849-4177-81b3-444b894ad1eb" />
 
