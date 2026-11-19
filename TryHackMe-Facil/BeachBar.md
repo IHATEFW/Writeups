@@ -15,6 +15,8 @@ Comenzaremos con la fase de enumeración/reconocimiento, en primera instancia, l
 
 <img width="1765" height="908" alt="beach3" src="https://github.com/user-attachments/assets/9ae8c471-3c23-4c16-a108-13b5c35d13ae" />
 
+Realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que existen los puertos abiertos 22 y 80, correspondientes a los servicios SSH y HTTP.
+
 <img width="1777" height="745" alt="beach4" src="https://github.com/user-attachments/assets/25392c22-57db-44cb-8a84-b00bb5b1cc0e" />
 
 <img width="1794" height="856" alt="beach5" src="https://github.com/user-attachments/assets/fdc55f60-9707-46a3-9e8a-c6579b1c264a" />
