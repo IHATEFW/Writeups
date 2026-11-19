@@ -19,7 +19,11 @@ Realizaremos un escaneo de puertos con la herramienta nmap, esto para poder iden
 
 <img width="1777" height="745" alt="beach4" src="https://github.com/user-attachments/assets/25392c22-57db-44cb-8a84-b00bb5b1cc0e" />
 
+Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, esto de la siguiente manera, una vez ejecutado, podemos visualizar el http-title que corre en la web del puerto 80, que indica "Beach Bar // Sign in".
+
 <img width="1794" height="856" alt="beach5" src="https://github.com/user-attachments/assets/fdc55f60-9707-46a3-9e8a-c6579b1c264a" />
+
+Revisaremos la web del puerto 80, es un típico apartado de login de autenticación, probamos una inyección SQL pero no tenemos resultado éxitoso.
 
 <img width="1794" height="856" alt="beach6" src="https://github.com/user-attachments/assets/c5ebc61b-e808-4aec-87f4-605468dc76c1" />
 
