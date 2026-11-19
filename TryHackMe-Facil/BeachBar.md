@@ -27,9 +27,15 @@ Revisaremos la web del puerto 80, es un típico apartado de login de autenticaci
 
 <img width="1794" height="856" alt="beach6" src="https://github.com/user-attachments/assets/c5ebc61b-e808-4aec-87f4-605468dc76c1" />
 
+En este punto, como no tenemos credenciales válidas, revisaremos el código fuente de la web con CTRL + U para ver si existe alguna pista o alguna información que no veamos a simple vista, efectivamente encontramos un comentario que hace referencia a las credenciales dj:dj 
+
 <img width="1794" height="856" alt="beach7" src="https://github.com/user-attachments/assets/79674527-f524-4485-bf24-a7f9d853c113" />
 
+Logramos ingresar con dichas credenciales al dashboard, basicamente es como una plataforma de gestión de música para un bar o local nocturno, en el cual, se puede administrar la música que se reproducirá en el evento, en el apartado "Playlists" podemos exportar un archivo .yml y guardalo en nuestra máquina.
+
 <img width="1794" height="856" alt="beach8" src="https://github.com/user-attachments/assets/c7d46e29-c524-461c-938d-8f7947649ce5" />
+
+Lo guardamos y lo leemos por la terminal, indica una playlist, el género de la música, los artistas y los nombres de las canciones.
 
 <img width="1735" height="764" alt="beach9" src="https://github.com/user-attachments/assets/a4358d2c-3f33-4eec-b848-8f3694212332" />
 
