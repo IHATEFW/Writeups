@@ -23,6 +23,8 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 
 <img width="1794" height="856" alt="beach5" src="https://github.com/user-attachments/assets/fdc55f60-9707-46a3-9e8a-c6579b1c264a" />
 
+## 💣 EXPLOTACIÓN
+
 Revisaremos la web del puerto 80, es un típico apartado de login de autenticación, probamos una inyección SQL pero no tenemos resultado éxitoso.
 
 <img width="1794" height="856" alt="beach6" src="https://github.com/user-attachments/assets/c5ebc61b-e808-4aec-87f4-605468dc76c1" />
@@ -55,6 +57,8 @@ Levantamos el listening con netcat, lanzamos el comando por la web y ¡ganamos a
 
 <img width="1762" height="910" alt="beach13" src="https://github.com/user-attachments/assets/28db0b8c-5899-4898-8c42-a6fef8d1ef2a" />
 
+## 🔑 ESCALADA DE PRIVILEGIOS
+
 Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
 
 ```bash
@@ -70,16 +74,18 @@ Ahora iremos al directorio /home/bartender y buscaremos la primera flag, encontr
 
 <img width="1762" height="910" alt="beach14" src="https://github.com/user-attachments/assets/0ca5b3eb-b243-4611-96fa-14921627a413" />
 
-Pegamos la flag en la web de TryHackMe y tenemos la primera respuesta éxitosa.
+Pegamos la flag en la web de TryHackMe y tenemos la primera respuesta éxitosa, ahora nos falta la flag de root.
 
 <img width="1762" height="910" alt="beach15" src="https://github.com/user-attachments/assets/ba848123-9226-41c5-ae13-95672f0625b3" />
 
+Revisando toda la máquina, lo único que encontramos es que con el comando ps -aux podemos ver los procesos que corren a nivel de sistema y a nivel de crontab en la máquina, logrando identificar una posible contraseña del usuario root, desencadenada por un script de python llamado jukeboxd.py
+
 <img width="1762" height="910" alt="beach16" src="https://github.com/user-attachments/assets/8e401005-b1fd-46fe-aa5c-25e0bb75badb" />
+
+Intentamos pivotar a root con dicha contraseña y efectivamente ¡somos root!, nos vamos al directorio /root y encontramos la 2da flag en root.txt
 
 <img width="1762" height="910" alt="beach17" src="https://github.com/user-attachments/assets/e373ebdb-5949-4e0a-b76b-83a3f4ed6530" />
 
+Pegamos la flag en la web de TryHackMe y terminamos, máquina hackeada . .
+
 <img width="1762" height="910" alt="beach18" src="https://github.com/user-attachments/assets/4d154823-53bb-46e2-8b2c-f6afcf250d46" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
