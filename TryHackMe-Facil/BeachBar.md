@@ -53,6 +53,8 @@ Como ya logramos efectuar un RCE, nos lanzaremos la típica reverse shell de bas
 
 Levantamos el listening con netcat, lanzamos el comando por la web y ¡ganamos acceso a la máquina víctima!
 
+<img width="1762" height="910" alt="beach13" src="https://github.com/user-attachments/assets/28db0b8c-5899-4898-8c42-a6fef8d1ef2a" />
+
 Ya en la máquina víctima, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
 
 ```bash
@@ -64,9 +66,11 @@ export TERM=xterm && export SHELL=bash
 stty rows 50 columns 236
 ```
 
-<img width="1762" height="910" alt="beach13" src="https://github.com/user-attachments/assets/28db0b8c-5899-4898-8c42-a6fef8d1ef2a" />
+Ahora iremos al directorio /home/bartender y buscaremos la primera flag, encontramos user.txt y ya la tenemos.
 
 <img width="1762" height="910" alt="beach14" src="https://github.com/user-attachments/assets/0ca5b3eb-b243-4611-96fa-14921627a413" />
+
+Pegamos la flag en la web de TryHackMe y tenemos la primera respuesta éxitosa.
 
 <img width="1762" height="910" alt="beach15" src="https://github.com/user-attachments/assets/ba848123-9226-41c5-ae13-95672f0625b3" />
 
