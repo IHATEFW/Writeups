@@ -47,7 +47,11 @@ En este punto, probaremos una técnica llamada "YAML Deserialization (Insecure D
 
 <img width="1762" height="910" alt="beach11" src="https://github.com/user-attachments/assets/e3bb6c0c-c849-4177-81b3-444b894ad1eb" />
 
+Como ya logramos efectuar un RCE, nos lanzaremos la típica reverse shell de bash, con la ip de nuestra máquina atacante (la de interfaz tun0), y escogemos un puerto cualquier por el cual nos pondremos a la escucha con la herramienta netcat.
+
 <img width="1762" height="910" alt="beach12" src="https://github.com/user-attachments/assets/b255b8ed-9394-4f0a-8e48-6875e6aacd33" />
+
+Levantamos el listening con netcat, lanzamos el comando por la web y ¡ganamos acceso a la máquina víctima!
 
 <img width="1762" height="910" alt="beach13" src="https://github.com/user-attachments/assets/28db0b8c-5899-4898-8c42-a6fef8d1ef2a" />
 
