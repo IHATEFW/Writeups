@@ -1,4 +1,4 @@
-La máquina Beach Bar de la plataforma TryHackMe.com es una máquina de dificultad "Fácil", que nos enseña como abusar de una técnica llamada "YAML Deserialization (Insecure Deserialization) en Python, logrando desencadenar un RCE para lanzarnos una reverse shell y ganar acceso a la máquina víctima, dentro de la máquina pivotamos a root mediante una exposición de credenciales en los procesos del sistema . . 
+La máquina Beach Bar de la plataforma TryHackMe.com es una máquina de dificultad "Fácil", que nos enseña como abusar de una técnica llamada "YAML Deserialization (Insecure Deserialization)" en Python, logrando desencadenar un RCE para lanzarnos una reverse shell y ganar acceso a la máquina víctima, dentro de la máquina pivotamos a root mediante una exposición de credenciales en los procesos del sistema . . 
 
 # BEACH BAR
 
