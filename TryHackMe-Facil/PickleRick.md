@@ -51,21 +51,21 @@ Revisamos el apartado "Potions" y vemos un mensaje que dice que solo el verdader
 
 <img width="1663" height="884" alt="rick12" src="https://github.com/user-attachments/assets/7faf0869-081e-482c-9313-084d494dfda7" />
 
-Intentamos decodearla y vemos que nos muestra otra cadena en base64, arrojaremos el siguiente código en python3 para que la desencripte de manera recursiva, logrando encontrar la palabra "rabbit hole", que es una trampa.
-
 <img width="1663" height="884" alt="rick13" src="https://github.com/user-attachments/assets/a32644b5-85d7-4d83-b840-1a499df52a0f" />
 
-Volvemos al apartado "Commands" y probamos algún comando, le damos whoami y nos muestra el usuario www-data de la máquina víctima, vemos que se puede ejecutar un RCE, esto tiene buena pinta porque podremos lanzarnos una reverse shell y ganar acceso a la máquina víctima.
+Intentamos decodearla y vemos que nos muestra otra cadena en base64, arrojaremos el siguiente código en python3 para que la desencripte de manera recursiva, logrando encontrar la palabra "rabbit hole", que es una trampa.
 
 <img width="1852" height="884" alt="rick14" src="https://github.com/user-attachments/assets/9746e829-825c-4393-bb28-999115c52370" />
 
-Preparamos la reverse shell, la típica de bash.
+Volvemos al apartado "Commands" y probamos algún comando, le damos whoami y nos muestra el usuario www-data de la máquina víctima, vemos que se puede ejecutar un RCE, esto tiene buena pinta porque podremos lanzarnos una reverse shell y ganar acceso a la máquina víctima.
 
 <img width="1832" height="754" alt="rick15" src="https://github.com/user-attachments/assets/2dc397d0-c73b-4ace-93a9-68daae3488e9" />
 
-Nos levantamos un listening por el puerto 443 y lanzamos el comando en la web, ¡ganamos acceso a la máquina víctima!
+Preparamos la reverse shell, la típica de bash.
 
 <img width="1832" height="754" alt="rick16" src="https://github.com/user-attachments/assets/bbb2bb36-5708-4bb3-9f43-7f7712d6e5b5" />
+
+Nos levantamos un listening por el puerto 443 y lanzamos el comando en la web, ¡ganamos acceso a la máquina víctima!
 
 <img width="1838" height="445" alt="rick17" src="https://github.com/user-attachments/assets/73632160-09a9-4749-9b04-818bc4b3a11b" />
 
