@@ -26,6 +26,8 @@ En este punto, arrojaremos el comando whatweb, el cual actúa como un wappalyzer
 
 <img width="1833" height="445" alt="red6" src="https://github.com/user-attachments/assets/fe71fb55-49af-46ac-8f05-64a0533a2b2e" />
 
+Ahora revisaremos la web del puerto 80, en la cual podemos visualizar que se hace referencia a una plantilla moderna y totalmente adaptable, pero nada interesante, solo un comentario que indica "Blue is a loser :p"
+
 <img width="1877" height="873" alt="red7" src="https://github.com/user-attachments/assets/501be197-3390-4973-bbf8-95bb12e43cc4" />
 
 <img width="1877" height="873" alt="red8" src="https://github.com/user-attachments/assets/2efbe698-dc31-4ad9-ad05-52ff856bb7d2" />
