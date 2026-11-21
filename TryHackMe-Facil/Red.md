@@ -22,6 +22,8 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 
 <img width="1836" height="907" alt="red5" src="https://github.com/user-attachments/assets/602269ab-b33d-442c-91e4-21233fb31f46" />
 
+En este punto, arrojaremos el comando whatweb, el cual actúa como un wappalyzer pero a nivel de consola, detectando todas las tecnologías que se están empleando en la web del puerto 80, vemos que se hace referencia a un /index.php?page=home.html
+
 <img width="1833" height="445" alt="red6" src="https://github.com/user-attachments/assets/fe71fb55-49af-46ac-8f05-64a0533a2b2e" />
 
 <img width="1877" height="873" alt="red7" src="https://github.com/user-attachments/assets/501be197-3390-4973-bbf8-95bb12e43cc4" />
