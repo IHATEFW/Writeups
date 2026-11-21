@@ -30,11 +30,17 @@ Ahora revisaremos la web del puerto 80, en la cual podemos visualizar que se hac
 
 <img width="1877" height="873" alt="red7" src="https://github.com/user-attachments/assets/501be197-3390-4973-bbf8-95bb12e43cc4" />
 
+Volvemos a la terminal y le lanzaremos una petición con el comando curl a la url, concatenando un wrapper en PHP para ver si podemos leer o escribir datos desde distintos orígenes o aplicar filtros de forma uniforme, esta vez lo arrojaremos para ver si podemos leer el código del /index.php, lo arrojamos y vemos cosas interesantes, vemos que se está intentando sanitizar las cadenas ../ y ./, pero al parecer la sanitización es insuficiente, lo cual posiblemente nos permitirá efectuar la vulnerabilidad de LFI.
+
 <img width="1877" height="873" alt="red8" src="https://github.com/user-attachments/assets/2efbe698-dc31-4ad9-ad05-52ff856bb7d2" />
+
+Intentamos leer el archivo /etc/passwd de la máquina víctima y efectivamente podemos leerlo, descubriendo 2 usuarios válidos del sistema, como red y blue.
 
 <img width="1877" height="873" alt="red9" src="https://github.com/user-attachments/assets/ae67387b-3cb8-4fbc-bf55-03038470295c" />
 
 <img width="1877" height="873" alt="red10" src="https://github.com/user-attachments/assets/3794aee3-d406-4bf5-992c-35bd70c228e0" />
+
+Como podemos ejecutar un LFI, leeremos el archivo .bash_history del directorio /home/blue, para ver el historial de comandos del usuario blue, vemos que se utilizó el comando Hashcat para generar una lista de posibles contraseñas modificadas a partir del contenido del archivo .reminder  
 
 <img width="1877" height="873" alt="red11" src="https://github.com/user-attachments/assets/79c05c82-7c0e-48d4-a87b-28a46e7da015" />
 
