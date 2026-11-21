@@ -82,6 +82,17 @@ Nos volvemos a loguear, obviamente tuvimos que encontrar la nueva contraseña de
 
 <img width="1794" height="437" alt="red21" src="https://github.com/user-attachments/assets/92ef5a91-6b09-426a-9e0f-7e2529aaa0c8" />
 
+Ya como el usuario red, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+stty rows 50 columns 236
+```
+
 Nos vamos al directorio /home/red y vemos la segunda flag, la copiaremos y la pegaremos en la web de TryHackMe.
 
 <img width="1794" height="597" alt="red22" src="https://github.com/user-attachments/assets/c703e4bc-b3f0-430a-a119-d350364c2886" />
