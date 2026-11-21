@@ -99,6 +99,28 @@ Nos vamos al directorio /home/red y vemos la segunda flag, la copiaremos y la pe
 
 <img width="1843" height="892" alt="red23" src="https://github.com/user-attachments/assets/7d64a747-22bf-4137-9428-cd604a2e9276" />
 
+<img width="1384" height="750" alt="red24" src="https://github.com/user-attachments/assets/357db64f-e267-4367-89c2-2fd5a304440c" />
+
+<img width="1583" height="899" alt="red25" src="https://github.com/user-attachments/assets/5f3ab74e-eb3e-41eb-9f9c-3a2059eac788" />
+
+<img width="1583" height="899" alt="red26" src="https://github.com/user-attachments/assets/9137f48a-bc80-49ec-a190-ecdd07abcb2d" />
+
+<img width="1583" height="899" alt="red27" src="https://github.com/user-attachments/assets/9e9317c3-6910-4cf0-b6bf-ae805c129199" />
+
+<img width="1573" height="806" alt="red28" src="https://github.com/user-attachments/assets/f8191b8d-5729-4ba3-8d4a-c3837ed08463" />
+
+<img width="1573" height="806" alt="red29" src="https://github.com/user-attachments/assets/1d618688-19cd-4a2e-a654-871d44026555" />
+
+<img width="1511" height="739" alt="red30" src="https://github.com/user-attachments/assets/e687c063-56c5-4753-b0bb-3f38bbd45133" />
+
+<img width="1292" height="298" alt="red31" src="https://github.com/user-attachments/assets/6cc8a458-44a6-46bf-9f37-135b55354ef5" />
+
+<img width="1897" height="500" alt="red32" src="https://github.com/user-attachments/assets/d82fc1a9-0778-471f-86c6-1c5e517a76b0" />
+
+<img width="943" height="793" alt="red33" src="https://github.com/user-attachments/assets/13d4c977-e305-4304-b484-5b098f7580e1" />
+
+<img width="1867" height="900" alt="red34" src="https://github.com/user-attachments/assets/5010c8e6-b737-48f4-81f5-44210f2301f2" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
