@@ -82,6 +82,8 @@ Nos volvemos a loguear, obviamente tuvimos que encontrar la nueva contraseña de
 
 <img width="1794" height="437" alt="red21" src="https://github.com/user-attachments/assets/92ef5a91-6b09-426a-9e0f-7e2529aaa0c8" />
 
+Nos vamos al directorio /home/red y vemos la segunda flag, la copiaremos y la pegaremos en la web de TryHackMe.
+
 <img width="1794" height="597" alt="red22" src="https://github.com/user-attachments/assets/c703e4bc-b3f0-430a-a119-d350364c2886" />
 
 <img width="1843" height="892" alt="red23" src="https://github.com/user-attachments/assets/7d64a747-22bf-4137-9428-cd604a2e9276" />
