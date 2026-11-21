@@ -30,6 +30,8 @@ Ahora revisaremos la web del puerto 80, en la cual podemos visualizar que se hac
 
 <img width="1877" height="873" alt="red7" src="https://github.com/user-attachments/assets/501be197-3390-4973-bbf8-95bb12e43cc4" />
 
+## 💣 EXPLOTACIÓN
+
 Volvemos a la terminal y le lanzaremos una petición con el comando curl a la url, concatenando un wrapper en PHP para ver si podemos leer o escribir datos desde distintos orígenes o aplicar filtros de forma uniforme, esta vez lo arrojaremos para ver si podemos leer el código del /index.php, lo arrojamos y vemos cosas interesantes, vemos que se está intentando sanitizar las cadenas ../ y ./, pero al parecer la sanitización es insuficiente, lo cual posiblemente nos permitirá efectuar la vulnerabilidad de LFI.
 
 <img width="1877" height="873" alt="red8" src="https://github.com/user-attachments/assets/2efbe698-dc31-4ad9-ad05-52ff856bb7d2" />
@@ -61,6 +63,8 @@ Como ya tenemos un diccionario de contraseñas, arrojaremos un ataque de fuerza 
 <img width="1857" height="887" alt="red15" src="https://github.com/user-attachments/assets/3e7f8cf9-b633-4889-9fd4-f384ac8d995f" />
 
 <img width="1857" height="887" alt="red16" src="https://github.com/user-attachments/assets/16536bf3-394a-4b19-ad88-a2ee71ae7124" />
+
+## 🔑 ESCALADA DE PRIVILEGIOS
 
 Dentro de la máquina víctima, nos vamos al directorio /home/blue y encontramos la primera flag, la pegamos en la web de TryHackMe.
 
@@ -99,28 +103,46 @@ Nos vamos al directorio /home/red y vemos la segunda flag, la copiaremos y la pe
 
 <img width="1843" height="892" alt="red23" src="https://github.com/user-attachments/assets/7d64a747-22bf-4137-9428-cd604a2e9276" />
 
+Ahora, en el directorio /home/red, vemos que existen un directorio llamado .git, nos metemos en él y se puede visualizar el servicio pkexec, que es una utilidad de línea de comandos de polkit (PolicyKit) en sistemas Linux que permite a un usuario autorizado ejecutar un programa como otro usuario, por lo general root, le damos un --version para ver la versión, la copiamos.
+
 <img width="1384" height="750" alt="red24" src="https://github.com/user-attachments/assets/357db64f-e267-4367-89c2-2fd5a304440c" />
+
+Buscamos en el navegador si la versión es vulnerable y si existe algun exploit que nos permita abusar de dicha versión, encontramos el siguiente repositorio de Github, que hace referencia a la CVE-2021-4034.
 
 <img width="1583" height="899" alt="red25" src="https://github.com/user-attachments/assets/5f3ab74e-eb3e-41eb-9f9c-3a2059eac788" />
 
+Bajamos hasta el final y nos copiamos el siguiente comando.
+
 <img width="1583" height="899" alt="red26" src="https://github.com/user-attachments/assets/9137f48a-bc80-49ec-a190-ecdd07abcb2d" />
+
+Lo pegamos en un bloc de nota y le agregamos el numero 1 en ambos PWnKit.
 
 <img width="1583" height="899" alt="red27" src="https://github.com/user-attachments/assets/9e9317c3-6910-4cf0-b6bf-ae805c129199" />
 
+Nos clonaremos el repositorio de la siguiente manera en nuestra terminal, nos metemos en él.
+
 <img width="1573" height="806" alt="red28" src="https://github.com/user-attachments/assets/f8191b8d-5729-4ba3-8d4a-c3837ed08463" />
+
+Y vamos directo a modificar el archivo PwnKit.c, buscamos la siguiente linea y escribimos /home/red/.git/pkexec, lo guardamos.
 
 <img width="1573" height="806" alt="red29" src="https://github.com/user-attachments/assets/1d618688-19cd-4a2e-a654-871d44026555" />
 
+Y nos creamos un nuevo archivo pero llamado PwnKit1.c, arrojamos el comando que nos habíamos copiado.
+
 <img width="1511" height="739" alt="red30" src="https://github.com/user-attachments/assets/e687c063-56c5-4753-b0bb-3f38bbd45133" />
+
+En este punto, moveremos dicho directorio PwnKit al directorio /tmp y nos vamos a levantar un servidor con python3 por el puerto 8000 para traspasar dicha herramienta a la máquina víctima.
 
 <img width="1292" height="298" alt="red31" src="https://github.com/user-attachments/assets/6cc8a458-44a6-46bf-9f37-135b55354ef5" />
 
+En la máquina víctima arrojamos el comando wget de la siguiente manera para traerlo y listo.
+
 <img width="1897" height="500" alt="red32" src="https://github.com/user-attachments/assets/d82fc1a9-0778-471f-86c6-1c5e517a76b0" />
+
+Le daremos permisos de ejecución con chmod +x y lo lanzamos con ./ y listo ¡somos el usuario root!, nos vamos al directorio /root para encontrar la última flag y la copiamos para pegarla en la web de TryHackMe.
 
 <img width="943" height="793" alt="red33" src="https://github.com/user-attachments/assets/13d4c977-e305-4304-b484-5b098f7580e1" />
 
+La pegamos y listo, máquina hackeada . . 
+
 <img width="1867" height="900" alt="red34" src="https://github.com/user-attachments/assets/5010c8e6-b737-48f4-81f5-44210f2301f2" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
