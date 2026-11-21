@@ -21,6 +21,8 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 
 <img width="1882" height="871" alt="rick4" src="https://github.com/user-attachments/assets/0727b2c7-6610-4cde-8208-812a2c5ec011" />
 
+## 💣 EXPLOTACIÓN
+
 Seguiremos realizando un ataque de fuerza bruta con la herramienta Gobuster, esto para lograr identificar directorios ocultos que no sean posibles acceder a primera vista, lo lanzamos y encontramos un /login.php.
 
 <img width="1882" height="871" alt="rick5" src="https://github.com/user-attachments/assets/32fd2448-99b8-423c-a2c9-d766ae01a7f1" />
@@ -69,20 +71,43 @@ Nos levantamos un listening por el puerto 443 y lanzamos el comando en la web, �
 
 <img width="1838" height="445" alt="rick17" src="https://github.com/user-attachments/assets/73632160-09a9-4749-9b04-818bc4b3a11b" />
 
+Ya como el usuario red, procederemos a realizar tratamiento de la TTY, para que tengamos una terminal estable, que podamos ejecutar CTRL + L y se nos limpie la pantalla, que podamos ejecutar CTRL + C y la reverse shell no se caíga, esto lo haremos con los siguientes comandos:
+
+```bash
+script /dev/null -c bash
+CTRL + Z
+stty raw -echo;fg
+reset xterm
+export TERM=xterm && export SHELL=bash
+stty rows 50 columns 236
+```
+
+## 🔑 ESCALADA DE PRIVILEGIOS
+
+En el mismo directorio /var/www/html encontramos el primer ingrediente en un archivo .txt
+
 <img width="1546" height="566" alt="rick18" src="https://github.com/user-attachments/assets/b0e9779d-843d-4943-aa69-74d895eb905f" />
+
+Lo pegamos en la web de TryHackMe.
 
 <img width="1852" height="905" alt="rick19" src="https://github.com/user-attachments/assets/5053f2cb-ddc4-45be-9b49-d688c87bea06" />
 
+Luego vemos otro archivo llamado clue.txt, que nos indica que sigamos revisando en los archivos para encontrar el 2do ingrediente.
+
 <img width="802" height="107" alt="rick20" src="https://github.com/user-attachments/assets/90279fb9-bab8-46d6-a62f-7c5c12cd708b" />
+
+En el directorio /home/rick encontramos el 2do ingrediente con éxito.
 
 <img width="1343" height="847" alt="rick21" src="https://github.com/user-attachments/assets/22bf0fb9-6e6f-469c-ac1e-5569cf647a60" />
 
+Lo pegamos en la web de TryHackMe, ahora nos queda solo el último ingrediente.
+
 <img width="1888" height="889" alt="rick22" src="https://github.com/user-attachments/assets/e9fd0439-9abf-4885-80bc-01101a9de5bf" />
+
+Arrojaremos el comando sudo -l para ver si tenemos privilegios a nivel de sudoers para ejecutar algun binario con permisos de root y efectivamente podemos ejecutar cualquier comando como root, damos sudo su y ¡somos root!, el directorio /root encontramos el 3er ingrediente.
 
 <img width="1732" height="765" alt="rick23" src="https://github.com/user-attachments/assets/1a6930c7-5cd6-4c1c-b5c1-3860428fcfb2" />
 
+Lo pegamos en la web de TryHackMe y damos por hackeada la máquina con éxito . .
+
 <img width="1857" height="901" alt="rick24" src="https://github.com/user-attachments/assets/21830f54-e554-4a9e-b730-385fae0dfa85" />
-
-## 💣 EXPLOTACIÓN
-
-## 🔑 ESCALADA DE PRIVILEGIOS
