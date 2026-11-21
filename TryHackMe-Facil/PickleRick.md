@@ -41,13 +41,13 @@ Anteriormente, con el ataque de fuerza bruta que habíamos arrojado, tambien nos
 
 <img width="1727" height="150" alt="rick9" src="https://github.com/user-attachments/assets/35a377d2-a4be-4671-a82b-5a61266c0203" />
 
-Nos logramos loguear con el usuario y la contraseña, ¡ganamos acceso al dashboard!
-
 <img width="1385" height="265" alt="rick10" src="https://github.com/user-attachments/assets/57cfa892-3fcb-4480-b6a7-1f90548b25e1" />
 
-Revisamos el apartado "Potions" y vemos un mensaje que dice que solo el verdadero Rick puede ver esta página, miraremos el código fuente con CTRL + U y encontramos una cadena en base64, la copiamos.
+Nos logramos loguear con el usuario y la contraseña, ¡ganamos acceso al dashboard!
 
 <img width="1831" height="733" alt="rick11" src="https://github.com/user-attachments/assets/193287ad-08ab-4b0a-b015-e0f263b35648" />
+
+Revisamos el apartado "Potions" y vemos un mensaje que dice que solo el verdadero Rick puede ver esta página, miraremos el código fuente con CTRL + U y encontramos una cadena en base64, la copiamos.
 
 <img width="1663" height="884" alt="rick12" src="https://github.com/user-attachments/assets/7faf0869-081e-482c-9313-084d494dfda7" />
 
