@@ -9,9 +9,15 @@ Para desplegar una máquina en TryHackMe, tendrás que descargar el archivo de l
 
 ## 🔎 ENUMERACIÓN
 
+Comenzaremos con la fase de enumeración/reconocimiento, en primera instancia, lanzaremos una traza ICMP con el comando ping a la dirección ip que nos entregaron, esto para ver si la máquina víctima está encendida, vemos que efectivamente está encendida, a su vez le lanzamos un traceroute que nos indica que estamos pasando por nodos intermediarios tanto en la ida como en la vuelta, por eso el TTL es 62 y no 64 que indica que nos enfrentamos a una máquina linux.
+
 <img width="1882" height="910" alt="rick2" src="https://github.com/user-attachments/assets/435bcada-3af9-4689-be0e-9bf4d48216a8" />
 
+Realizaremos un escaneo de puertos con la herramienta nmap, esto para poder identificar los puertos abiertos/expuestos que tenga la máquina víctima, con el siguiente comando, una vez ejecutado, podemos darnos cuenta que existen los puertos abiertos 22 y 80, correspondientes a los servicios SSH y HTTP.
+
 <img width="1872" height="649" alt="rick3" src="https://github.com/user-attachments/assets/0466da97-d910-41ad-b14c-9c119c92ac73" />
+
+Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, esto de la siguiente manera, una vez ejecutado, podemos visualizar el http-title que corre en la web del puerto 80, que indica "Rick is sup4r cool".
 
 <img width="1882" height="871" alt="rick4" src="https://github.com/user-attachments/assets/0727b2c7-6610-4cde-8208-812a2c5ec011" />
 
