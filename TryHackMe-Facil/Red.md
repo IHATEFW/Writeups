@@ -1,3 +1,5 @@
+La máquina Red de la plataforma TryHackMe.com es una máquina de dificultad "Fácil", que nos enseña a utilizar un wrapper en PHP para abusar de un LFI y ver el código fuente de /index.php, allí se estaba intentando sanitizar las cadenas ../ y ./, pero la sanitización no fue suficiente, logrando leer bash_history del usuario Blue para así recuperar información sobre su antigua contraseña y generar un diccionario utilizando Hashcat y best64.rule, finalmente se explota PwnKit (CVE-2021-4034) para conseguir privilegios de root.
+
 # RED
 
 ## 🚀 DESPLIEGUE DE MÁQUINA
