@@ -10,6 +10,8 @@ Para desplegar una máquina en TryHackMe, tendrás que descargar el archivo de l
 
 ## 🔎 ENUMERACIÓN
 
+Comenzaremos con la fase de enumeración/reconocimiento, en primera instancia, lanzaremos una traza ICMP con el comando ping a la dirección ip que nos entregaron, esto para ver si la máquina víctima está encendida, vemos que efectivamente está encendida, a su vez le lanzamos un traceroute que nos indica que estamos pasando por nodos intermediarios tanto en la ida como en la vuelta, por eso el TTL es 62 y no 64 que indica que nos enfrentamos a una máquina linux.
+
 <img width="1836" height="907" alt="red3" src="https://github.com/user-attachments/assets/d0ea58d8-e838-44e2-95fb-d8205d57cff4" />
 
 <img width="1836" height="907" alt="red4" src="https://github.com/user-attachments/assets/62cf87e3-c81c-4415-b796-208e2f93d09b" />
