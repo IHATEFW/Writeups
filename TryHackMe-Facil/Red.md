@@ -44,15 +44,25 @@ Como podemos ejecutar un LFI, leeremos el archivo .bash_history del directorio /
 
 <img width="1877" height="873" alt="red11" src="https://github.com/user-attachments/assets/79c05c82-7c0e-48d4-a87b-28a46e7da015" />
 
+Vemos que contiene ese archivo .reminder y encontramos una contraseña.
+
 <img width="1877" height="873" alt="red12" src="https://github.com/user-attachments/assets/a7e45169-e9af-4278-a3d2-972f977c9dfb" />
+
+Creamos un archivo password.txt y la agregamos.
 
 <img width="1837" height="492" alt="red13" src="https://github.com/user-attachments/assets/be213291-cd6f-4e21-b159-d89e79fbe237" />
 
+En este punto, utilizaremos el mismo comando que encontramos de Hashcat pero le adjuntamos el archivo password.txt que creamos, redigiriremos todas las instrucciones de best64.rule a passlist.txt, una vez finaliza la ejecución del comando, leemos passlist.txt y ya tenemos combinaciones en base a la contraseña que encontramos en .reminder
+
 <img width="1856" height="870" alt="red14" src="https://github.com/user-attachments/assets/82f67c53-a3a4-4f50-8a1d-b95a679de253" />
+
+Como ya tenemos un diccionario de contraseñas, arrojaremos un ataque de fuerza bruta de SSH con la herramienta Hydra para intentar encontrar la password correcta del usuario blue, lo arrojamos y encontramos su password, por lo tanto, ¡ya podemos loguearnos por SSH y ganar acceso a la maquina víctima! 
 
 <img width="1857" height="887" alt="red15" src="https://github.com/user-attachments/assets/3e7f8cf9-b633-4889-9fd4-f384ac8d995f" />
 
 <img width="1857" height="887" alt="red16" src="https://github.com/user-attachments/assets/16536bf3-394a-4b19-ad88-a2ee71ae7124" />
+
+Dentro de la máquina víctima, nos vamos al directorio /home/blue y encontramos la primera flag, la pegamos en la web de TryHackMe.
 
 <img width="1857" height="887" alt="red17" src="https://github.com/user-attachments/assets/a15fa1cb-dece-4fab-a25a-80b6d6c0a020" />
 
