@@ -66,11 +66,19 @@ Dentro de la máquina víctima, nos vamos al directorio /home/blue y encontramos
 
 <img width="1857" height="887" alt="red17" src="https://github.com/user-attachments/assets/a15fa1cb-dece-4fab-a25a-80b6d6c0a020" />
 
+En este punto, lanzaremos el comando ps -aux para ver que procesos se están ejecutando a nivel de sistemas y a nivel de crontab, vemos que red está ejecutando una reverse shell de bash, intentando establecer una conexión desde la máquina víctima a un servidor remoto, también vemos el dominio redrules.thm, también vemos que se está haciendo referencia a un puerto 9001.
+
 <img width="1857" height="887" alt="red18" src="https://github.com/user-attachments/assets/f994732b-5257-4a4e-97df-a26b90e5c8d6" />
+
+Intentaremos agregar dicho dominio con nuestra ip de la máquina atacante al /etc/hosts de la máquina víctima e intentaremos ponernos en escucha en nuestra máquina atacante por el puerto 9001 con la herramienta netcat.
 
 <img width="1784" height="882" alt="red19" src="https://github.com/user-attachments/assets/d63ebd69-6663-427e-bb95-ee9a701e186f" />
 
+Nos dificultan las acciones del usuario red, ya que como indica la finalidad de la máquina dicho usuario hará lo posible para entorpecernos el camino, en este caso nos botó la shell y nos cambio la contraseña de blue.
+
 <img width="1803" height="253" alt="red20" src="https://github.com/user-attachments/assets/309e8881-b369-4bc0-8a70-2e728a244a65" />
+
+Nos volvemos a loguear, obviamente tuvimos que encontrar la nueva contraseña de blue con la herramienta Hydra nuevamente, esperamos unos minutos y en el listening que nos levantamos ya recibimos la conexión de la reverse shell, ¡somos el usuario red!
 
 <img width="1794" height="437" alt="red21" src="https://github.com/user-attachments/assets/92ef5a91-6b09-426a-9e0f-7e2529aaa0c8" />
 
