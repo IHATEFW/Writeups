@@ -1,3 +1,4 @@
+La máquina Pickle Rick de la plataforma TryHackMe.com es una máquina de dificultad "Fácil", que nos enseña como encontrando información sensible expuesta tanto en el código fuente .html como en robots.txt nos permite conseguír las credenciales para acceder al panel administrativo, donde se puede descubrir una funcionalidad que permitía ejecutar comandos de Linux desde el navegador (RCE). Una vez dentro, se comenzó a revisar todos los directorios para encontrar los ingredientes y finalmente se identificó una mala configuración de permisos a nivel de sudoers, lo que me permitió escalar privilegios de www-data a root y obtener el control completo de la máquina . .
 
 # PICKLE RICK
 
