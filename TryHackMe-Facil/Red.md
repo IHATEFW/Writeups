@@ -18,6 +18,8 @@ Realizaremos un escaneo de puertos con la herramienta nmap, esto para poder iden
 
 <img width="1836" height="907" alt="red4" src="https://github.com/user-attachments/assets/62cf87e3-c81c-4415-b796-208e2f93d09b" />
 
+Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, esto de la siguiente manera, una vez ejecutado, podemos visualizar el http-title que corre en la web del puerto 80, que indica "Atlanta - Free business bootstrap template".
+
 <img width="1836" height="907" alt="red5" src="https://github.com/user-attachments/assets/602269ab-b33d-442c-91e4-21233fb31f46" />
 
 <img width="1833" height="445" alt="red6" src="https://github.com/user-attachments/assets/fe71fb55-49af-46ac-8f05-64a0533a2b2e" />
