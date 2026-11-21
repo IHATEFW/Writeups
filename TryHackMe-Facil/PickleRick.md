@@ -21,27 +21,49 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 
 <img width="1882" height="871" alt="rick4" src="https://github.com/user-attachments/assets/0727b2c7-6610-4cde-8208-812a2c5ec011" />
 
+Seguiremos realizando un ataque de fuerza bruta con la herramienta Gobuster, esto para lograr identificar directorios ocultos que no sean posibles acceder a primera vista, lo lanzamos y encontramos un /login.php.
+
 <img width="1882" height="871" alt="rick5" src="https://github.com/user-attachments/assets/32fd2448-99b8-423c-a2c9-d766ae01a7f1" />
+
+Revisaremos la web detrás del puerto 80 y vemos que se presenta una situación, Rick ha sido convertido en pepinillo y no puede volver a su forma original, para eso le pide ayuda a Morty para encontrar 3 ingredientes secretos.
 
 <img width="1882" height="871" alt="rick6" src="https://github.com/user-attachments/assets/71cbc924-6cf9-4b93-8049-52e33b88eed1" />
 
+Miraremos el código fuente por CTRL + U para ver si encontramos algo por detrás y efectivamente encontramos un usuario en un comentario, lo guardamos.
+
 <img width="1882" height="871" alt="rick7" src="https://github.com/user-attachments/assets/4ba5260a-6358-4b12-ace6-2ed5858b040c" />
+
+Ahora nos vamos a revisar el /login.php, el cual es un tipico login que pide credenciales, probamos una inyección SQL sin éxito.
 
 <img width="1882" height="871" alt="rick8" src="https://github.com/user-attachments/assets/c97fa47f-3ee8-48d5-8489-0a9ffb041141" />
 
+Anteriormente, con el ataque de fuerza bruta que habíamos arrojado, tambien nos encontró un /robots.txt, lo revisamos y encontramos una posible contraseña.
+
 <img width="1727" height="150" alt="rick9" src="https://github.com/user-attachments/assets/35a377d2-a4be-4671-a82b-5a61266c0203" />
 
+Nos logramos loguear con el usuario y la contraseña, ¡ganamos acceso al dashboard!
+
 <img width="1385" height="265" alt="rick10" src="https://github.com/user-attachments/assets/57cfa892-3fcb-4480-b6a7-1f90548b25e1" />
+
+Revisamos el apartado "Potions" y vemos un mensaje que dice que solo el verdadero Rick puede ver esta página, miraremos el código fuente con CTRL + U y encontramos una cadena en base64, la copiamos.
 
 <img width="1831" height="733" alt="rick11" src="https://github.com/user-attachments/assets/193287ad-08ab-4b0a-b015-e0f263b35648" />
 
 <img width="1663" height="884" alt="rick12" src="https://github.com/user-attachments/assets/7faf0869-081e-482c-9313-084d494dfda7" />
 
+Intentamos decodearla y vemos que nos muestra otra cadena en base64, arrojaremos el siguiente código en python3 para que la desencripte de manera recursiva, logrando encontrar la palabra "rabbit hole", que es una trampa.
+
 <img width="1663" height="884" alt="rick13" src="https://github.com/user-attachments/assets/a32644b5-85d7-4d83-b840-1a499df52a0f" />
+
+Volvemos al apartado "Commands" y probamos algún comando, le damos whoami y nos muestra el usuario www-data de la máquina víctima, vemos que se puede ejecutar un RCE, esto tiene buena pinta porque podremos lanzarnos una reverse shell y ganar acceso a la máquina víctima.
 
 <img width="1852" height="884" alt="rick14" src="https://github.com/user-attachments/assets/9746e829-825c-4393-bb28-999115c52370" />
 
+Preparamos la reverse shell, la típica de bash.
+
 <img width="1832" height="754" alt="rick15" src="https://github.com/user-attachments/assets/2dc397d0-c73b-4ace-93a9-68daae3488e9" />
+
+Nos levantamos un listening por el puerto 443 y lanzamos el comando en la web, ¡ganamos acceso a la máquina víctima!
 
 <img width="1832" height="754" alt="rick16" src="https://github.com/user-attachments/assets/bbb2bb36-5708-4bb3-9f43-7f7712d6e5b5" />
 
