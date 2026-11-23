@@ -53,19 +53,35 @@ Verificamos y efectivamente es la respuesta correcta, nos vamos a la 3era pregun
 
 <img width="1882" height="911" alt="ana12" src="https://github.com/user-attachments/assets/916f3c7c-81bb-463d-b564-b9bb45bebf0e" />
 
+Revisamos los logs y encontramos un HTTP GET /uploads/ HTTP/1.1 y encontramos el User-agent correspondiente del atacante, lo copiaremos para responder.
+
 <img width="1882" height="911" alt="ana13" src="https://github.com/user-attachments/assets/e739722a-f6fd-4e96-864c-1267db634c75" />
+
+Verificamos y efectivamente es la respuesta correcta, nos vamos a la 4ta pregunta, donde nos preguntan a que ruta (script) del servidor se envían las peticiones POST que suben el archivo.
 
 <img width="1882" height="911" alt="ana14" src="https://github.com/user-attachments/assets/78732cf6-f4a0-4cf0-930e-a2ce0bdecbcc" />
 
+Revisamos y encontramos una petición POST /reviews/upload.php HTTP/1.1, el cual es el script donde se envían las solicitudes POST para subir el archivo.
+
 <img width="1882" height="911" alt="ana15" src="https://github.com/user-attachments/assets/06a4d601-f2a4-4bff-8ee3-bfe68befcb9e" />
+
+Verificamos y efectivamente es la respuesta correcta, nos vamos a la 5ta pregunta, donde nos preguntan cual es la ruta real de subida de archivos del sitio.
 
 <img width="1882" height="911" alt="ana16" src="https://github.com/user-attachments/assets/44f93bb1-3fc0-483b-a311-6f0ec3784a6f" />
 
+Revisamos los logs y encontramos un HTTP GET /reviews/uploads/, dicha ruta es la real donde se suben los archivos, lo copiamos.
+
 <img width="1882" height="911" alt="ana17" src="https://github.com/user-attachments/assets/fe780225-5de7-41ca-8e60-befa0813ac77" />
+
+Verificamos y efectivamente es la respuesta correcta, nos vamos a la 6ta pregunta, donde nos pregunta como se llama el archivo que se consigue subirse.
 
 <img width="1882" height="911" alt="ana18" src="https://github.com/user-attachments/assets/7741fd43-f0c6-4f5b-baa6-08a0af94d130" />
 
+Encontramos una petición HTTP/1.1 200 OK donde se hace referencia al archivo /image.jpg.php, dicho archivo es el que se subió al servidor web, lo copiamos.
+
 <img width="1882" height="911" alt="ana19" src="https://github.com/user-attachments/assets/e97c7d8c-ea58-4b32-92a2-27dbc659a5ff" />
+
+Verificamos y efectivamente es la respuesta correcta.
 
 <img width="1882" height="911" alt="ana20" src="https://github.com/user-attachments/assets/39add498-ae7d-4352-848b-56d33c739f63" />
 
