@@ -25,6 +25,8 @@ Bajando un poco más, vemos 2 archivos que podemos descargar, un .pcap y un .jso
 
 <img width="1878" height="909" alt="ana5" src="https://github.com/user-attachments/assets/5d9f994e-1a5e-4d64-b160-cbb65ad932db" />
 
+## 💣 EXPLOTACIÓN
+
 Nos vamos a la terminal y abriremos Wireshark de la siguiente manera.
 
 <img width="1191" height="225" alt="ana6" src="https://github.com/user-attachments/assets/60859b1f-7256-42d7-a315-330ff528254c" />
@@ -81,26 +83,40 @@ Encontramos una petición HTTP/1.1 200 OK donde se hace referencia al archivo /i
 
 <img width="1882" height="911" alt="ana19" src="https://github.com/user-attachments/assets/e97c7d8c-ea58-4b32-92a2-27dbc659a5ff" />
 
-Verificamos y efectivamente es la respuesta correcta.
+Verificamos y efectivamente es la respuesta correcta, nos vamos a la 7ma pregunta, donde nos preguntan a que puerto se conecta/abre la conexión saliente.
 
 <img width="1882" height="911" alt="ana20" src="https://github.com/user-attachments/assets/39add498-ae7d-4352-848b-56d33c739f63" />
 
+Revisamos la siguiente petición donde se hace referencia al puerto 8080.
+
 <img width="1882" height="911" alt="ana21" src="https://github.com/user-attachments/assets/d20e8822-2047-4f22-a0fe-4fc3b00711e9" />
+
+Verificamos y efectivamente es la respuesta correcta, nos vamos a la pregunta 8va, donde nos preguntan a que fichero se intenta leer con el comando cat.
 
 <img width="1882" height="911" alt="ana22" src="https://github.com/user-attachments/assets/90cdc864-80f4-46eb-91e6-29fee9bc0392" />
 
+Revisamos y seguimos una petición en modo TCP stream donde se apertura un archivo con toda la información, el archivo que intenta leer el atacante es el /etc/passwd.
+
 <img width="1600" height="900" alt="ana23" src="https://github.com/user-attachments/assets/0b8c4294-a31c-4c9f-85ce-2cf982ce4e08" />
+
+Verificamos y efectivamente es la respuesta correcta, nos vamos a la última pregunta, donde nos preguntan cual es el nombre del usuario que el atacante ejecuta un script para resetearle la contraseña.
 
 <img width="1600" height="900" alt="ana24" src="https://github.com/user-attachments/assets/bdd02752-a27d-4d3d-abb6-f73cbf108498" />
 
+En el mismo archivo anterior nos indica que el usuario es "pinguinito".
+
 <img width="1600" height="900" alt="ana25" src="https://github.com/user-attachments/assets/2d988167-c818-4c90-8f1a-b38616e92077" />
+
+Verificamos y efectivamente es la respuesta correcta. 
 
 <img width="1600" height="900" alt="ana26" src="https://github.com/user-attachments/assets/6b81543a-7d4b-4e13-8e15-25ae0f4954df" />
 
+Ya finalizando toda la serie de pregunta, nos aparece la credencial filtrada para poder conectarnos por SSH, recordar que al principio cuando realizamos el escaneo con nmap también aparecía el puerto 22 abierto.
+
 <img width="1600" height="900" alt="ana27" src="https://github.com/user-attachments/assets/16af9264-7890-4818-9c76-17a50588c244" />
 
-<img width="1600" height="900" alt="ana28" src="https://github.com/user-attachments/assets/1b04b64e-c03d-4671-8650-113b3529565e" />
-
-## 💣 EXPLOTACIÓN
-
 ## 🔑 ESCALADA DE PRIVILEGIOS
+
+Nos logueamos por SSH con las credenciales que nos entregaron y ¡ganamos acceso a la máquina víctima", daremos el comando sudo -l para ver si podemos ejecutar binarios con permisos a nivel de sudoers y efectivamente podemos ejecutar cualquier binario como el usuario root, daremos sudo su y pivotamos de inmediato al usuario root, máquina hackeada . .
+
+<img width="1600" height="900" alt="ana28" src="https://github.com/user-attachments/assets/1b04b64e-c03d-4671-8650-113b3529565e" />
