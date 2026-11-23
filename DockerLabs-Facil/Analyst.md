@@ -13,6 +13,8 @@ En primera instancia, realizaremos un escaneo de puertos con la herramienta nmap
 
 <img width="1819" height="656" alt="ana2" src="https://github.com/user-attachments/assets/e5e23442-600a-40ae-b69f-e5ff69b02304" />
 
+Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herramienta nmap, pero esta vez, indicándole que nos arroje un conjunto básico de scripts de reconocimiento, a su vez, que nos enumere la versión de dichos servicios, esto de la siguiente manera, una vez ejecutado, podemos visualizar el titulo de la página web, indicando "El caso de Pinguinito / Lab Blue Team".
+
 <img width="1808" height="786" alt="ana3" src="https://github.com/user-attachments/assets/3a7590c2-681e-4b30-9d27-8f2c2f0eea29" />
 
 <img width="1878" height="909" alt="ana4" src="https://github.com/user-attachments/assets/1314e7e3-f4fa-4a70-858c-607806d94289" />
