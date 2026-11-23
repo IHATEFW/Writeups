@@ -17,9 +17,15 @@ Una vez ya tenemos los puertos identificados, seguiremos enumerando con la herra
 
 <img width="1808" height="786" alt="ana3" src="https://github.com/user-attachments/assets/3a7590c2-681e-4b30-9d27-8f2c2f0eea29" />
 
+Revisaremos la página web detrás del puerto 80, una vez dentro, podemos visualizar un ticket de incidente, en el cual somos el analista asignado para resolverlo, ya que han detectado un archivo sospechoso dentro del servidor web.
+
 <img width="1878" height="909" alt="ana4" src="https://github.com/user-attachments/assets/1314e7e3-f4fa-4a70-858c-607806d94289" />
 
+Bajando un poco más, vemos 2 archivos que podemos descargar, un .pcap y un .json, indicando que abramos el .pcap con las herramientas Wireshark o tshark para revisar los logs, en este punto utilizaremos Wireshark.
+
 <img width="1878" height="909" alt="ana5" src="https://github.com/user-attachments/assets/5d9f994e-1a5e-4d64-b160-cbb65ad932db" />
+
+Nos vamos a la terminal y abriremos Wireshark de la siguiente manera.
 
 <img width="1191" height="225" alt="ana6" src="https://github.com/user-attachments/assets/60859b1f-7256-42d7-a315-330ff528254c" />
 
