@@ -35,6 +35,34 @@ Una vez descargado el archivo .zip de la plataforma dockerlabs.es, se descomprim
 
 <img width="1882" height="911" alt="ana14" src="https://github.com/user-attachments/assets/78732cf6-f4a0-4cf0-930e-a2ce0bdecbcc" />
 
+<img width="1882" height="911" alt="ana15" src="https://github.com/user-attachments/assets/06a4d601-f2a4-4bff-8ee3-bfe68befcb9e" />
+
+<img width="1882" height="911" alt="ana16" src="https://github.com/user-attachments/assets/44f93bb1-3fc0-483b-a311-6f0ec3784a6f" />
+
+<img width="1882" height="911" alt="ana17" src="https://github.com/user-attachments/assets/fe780225-5de7-41ca-8e60-befa0813ac77" />
+
+<img width="1882" height="911" alt="ana18" src="https://github.com/user-attachments/assets/7741fd43-f0c6-4f5b-baa6-08a0af94d130" />
+
+<img width="1882" height="911" alt="ana19" src="https://github.com/user-attachments/assets/e97c7d8c-ea58-4b32-92a2-27dbc659a5ff" />
+
+<img width="1882" height="911" alt="ana20" src="https://github.com/user-attachments/assets/39add498-ae7d-4352-848b-56d33c739f63" />
+
+<img width="1882" height="911" alt="ana21" src="https://github.com/user-attachments/assets/d20e8822-2047-4f22-a0fe-4fc3b00711e9" />
+
+<img width="1882" height="911" alt="ana22" src="https://github.com/user-attachments/assets/90cdc864-80f4-46eb-91e6-29fee9bc0392" />
+
+<img width="1600" height="900" alt="ana23" src="https://github.com/user-attachments/assets/0b8c4294-a31c-4c9f-85ce-2cf982ce4e08" />
+
+<img width="1600" height="900" alt="ana24" src="https://github.com/user-attachments/assets/bdd02752-a27d-4d3d-abb6-f73cbf108498" />
+
+<img width="1600" height="900" alt="ana25" src="https://github.com/user-attachments/assets/2d988167-c818-4c90-8f1a-b38616e92077" />
+
+<img width="1600" height="900" alt="ana26" src="https://github.com/user-attachments/assets/6b81543a-7d4b-4e13-8e15-25ae0f4954df" />
+
+<img width="1600" height="900" alt="ana27" src="https://github.com/user-attachments/assets/16af9264-7890-4818-9c76-17a50588c244" />
+
+<img width="1600" height="900" alt="ana28" src="https://github.com/user-attachments/assets/1b04b64e-c03d-4671-8650-113b3529565e" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
