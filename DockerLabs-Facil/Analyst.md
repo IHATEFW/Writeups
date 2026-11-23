@@ -29,9 +29,15 @@ Nos vamos a la terminal y abriremos Wireshark de la siguiente manera.
 
 <img width="1191" height="225" alt="ana6" src="https://github.com/user-attachments/assets/60859b1f-7256-42d7-a315-330ff528254c" />
 
+Abriremos el .pcap que nos facilitaron y vemos distintas peticiones, tanto HTTP, TCP, ARP, etc.
+
 <img width="1882" height="911" alt="ana7" src="https://github.com/user-attachments/assets/8440b2a4-0744-46e1-9d2c-0816957ac367" />
 
+Abriremos el caso y comenzaremos a responder las preguntas, la primera nos pregunta cual es la dirección ip real del atacante (la que permite subir el archivo sospechoso), nos vamos a revisar las peticiones y encontramos un HTTP/1.1 200 OK con la ip del atacante, la examinamos y nos indica "Archivo subido correctamente".
+
 <img width="1882" height="911" alt="ana8" src="https://github.com/user-attachments/assets/1be2b28c-61d8-483a-9e98-003a37c20f68" />
+
+Verificamos y efectivamente es la respuesta correcta, vamos con la segunda
 
 <img width="1882" height="911" alt="ana9" src="https://github.com/user-attachments/assets/a454bd1c-c14a-485c-be40-be8d4f95501e" />
 
