@@ -33,17 +33,23 @@ Abriremos el .pcap que nos facilitaron y vemos distintas peticiones, tanto HTTP,
 
 <img width="1882" height="911" alt="ana7" src="https://github.com/user-attachments/assets/8440b2a4-0744-46e1-9d2c-0816957ac367" />
 
-Abriremos el caso y comenzaremos a responder las preguntas, la primera nos pregunta cual es la dirección ip real del atacante (la que permite subir el archivo sospechoso), nos vamos a revisar las peticiones y encontramos un HTTP/1.1 200 OK con la ip del atacante, la examinamos y nos indica "Archivo subido correctamente".
+Abriremos el caso y comenzaremos a responder las preguntas, la primera nos pregunta cual es la dirección ip real del atacante (la que permite subir el archivo sospechoso).
 
 <img width="1882" height="911" alt="ana8" src="https://github.com/user-attachments/assets/1be2b28c-61d8-483a-9e98-003a37c20f68" />
 
-Verificamos y efectivamente es la respuesta correcta, vamos con la segunda
+Nos vamos a revisar las peticiones y encontramos un HTTP/1.1 200 OK con la ip del atacante, la examinamos y nos indica "Archivo subido correctamente".
 
 <img width="1882" height="911" alt="ana9" src="https://github.com/user-attachments/assets/a454bd1c-c14a-485c-be40-be8d4f95501e" />
 
+Verificamos y efectivamente es la respuesta correcta, vamos con la segunda, nos pregunta cual es el país de donde procede dicha ip.
+
 <img width="1882" height="911" alt="ana10" src="https://github.com/user-attachments/assets/8ef8d549-c287-48b4-b5ec-b6fe4455f17e" />
 
+En este punto, iremos a la terminal y leeremos el archivo .json que nos entregaron y nos aparece el país de donde proviene dicha ip, en este caso "Vietnam".
+
 <img width="1882" height="911" alt="ana11" src="https://github.com/user-attachments/assets/f4bde241-c5a4-4b96-9fc7-032262984855" />
+
+Verificamos y efectivamente es la respuesta correcta, nos vamos a la 3era pregunta, nos preguntan cual es el User-agent que usa el atacante en sus peticiones HTTP.
 
 <img width="1882" height="911" alt="ana12" src="https://github.com/user-attachments/assets/916f3c7c-81bb-463d-b564-b9bb45bebf0e" />
 
