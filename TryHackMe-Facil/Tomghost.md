@@ -29,6 +29,32 @@ Para desplegar una máquina en TryHackMe, tendrás que descargar el archivo de l
 
 <img width="1671" height="823" alt="tom11" src="https://github.com/user-attachments/assets/094e9481-a7a1-4fed-9d83-f71a3e87c790" />
 
+<img width="1671" height="823" alt="tom12" src="https://github.com/user-attachments/assets/4517dcc5-dcde-4bfe-a01e-0b5c6e0568b7" />
+
+<img width="1671" height="823" alt="tom13" src="https://github.com/user-attachments/assets/182af2f0-4120-4314-9263-b1d0bf13adb6" />
+
+<img width="1254" height="823" alt="tom14" src="https://github.com/user-attachments/assets/77bb226c-e444-47b0-a267-0d5c2c877bc7" />
+
+<img width="1214" height="374" alt="tom15" src="https://github.com/user-attachments/assets/1632a6c1-6f11-4a48-9710-e6e54938b229" />
+
+<img width="1854" height="901" alt="tom16" src="https://github.com/user-attachments/assets/d99ac5a3-8c85-45ac-9aea-3e42f3c79a76" />
+
+<img width="872" height="901" alt="tom17" src="https://github.com/user-attachments/assets/8297dece-cc3b-462e-8676-5ce9e3c71bb4" />
+
+<img width="771" height="605" alt="tom18" src="https://github.com/user-attachments/assets/e5f9d408-b544-4b80-96c6-2764b0a675a9" />
+
+<img width="1012" height="874" alt="tom19" src="https://github.com/user-attachments/assets/179f2190-dab5-42a5-8f0e-8a33f6b3b3b1" />
+
+<img width="1183" height="309" alt="tom20" src="https://github.com/user-attachments/assets/77f8134c-bda3-4652-8ba3-99e87c4255b9" />
+
+<img width="1728" height="521" alt="tom21" src="https://github.com/user-attachments/assets/8aff6437-a122-4eaa-a763-f6d1adbbf760" />
+
+<img width="1356" height="846" alt="tom22" src="https://github.com/user-attachments/assets/d577cbb2-03c9-4e71-8a7d-29535e2e9da4" />
+
+<img width="913" height="439" alt="tom23" src="https://github.com/user-attachments/assets/48f145ac-f454-4b1e-a19b-33e3d22c367c" />
+
+<img width="1854" height="901" alt="tom24" src="https://github.com/user-attachments/assets/f0b2a73c-9ad7-45db-b67c-980ccfca2ddb" />
+
 ## 💣 EXPLOTACIÓN
 
 ## 🔑 ESCALADA DE PRIVILEGIOS
