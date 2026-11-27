@@ -96,7 +96,7 @@ Volvemos a la máquina víctima y desciframos el archivo credential.pgp con gpg 
 
 <img width="1356" height="846" alt="tom22" src="https://github.com/user-attachments/assets/d577cbb2-03c9-4e71-8a7d-29535e2e9da4" />
 
-Ejecutamos el comando de GTFOBins y ¡somos root!, máquina hackeada con éxito. Nos dirigimos al directorio /root y encontramos la última flag root.txt.
+Ejecutamos el comando de GTFOBins y ¡somos root!, máquina hackeada con éxito. Nos dirigimos al directorio /root y encontramos la última flag root.txt
 
 <img width="913" height="439" alt="tom23" src="https://github.com/user-attachments/assets/48f145ac-f454-4b1e-a19b-33e3d22c367c" />
 
