@@ -70,7 +70,7 @@ Intentamos autenticarnos por SSH probando esa credencial con los usuarios jake y
 
 <img width="1846" height="674" alt="bro16" src="https://github.com/user-attachments/assets/537699ea-bb27-463b-b11d-7b143887344b" />
 
-Realizaremos un ataque de fuerza bruta contra el servicio SSH con la herramienta Hydra, indicándole el usuario jake (-l jake), el diccionario rockyou.txt (-P), el protocolo ssh contra nuestra ip víctima, limitando a 4 tareas en paralelo (-T 4) y pidiéndole que se detenga en cuanto encuentre una credencial válida (-I). Lo lanzamos y al poco tiempo Hydra encuentra la contraseña del usuario jake: 987654321.
+Realizaremos un ataque de fuerza bruta contra el servicio SSH con la herramienta Hydra, indicándole el usuario jake (-l jake), el diccionario rockyou.txt (-P), el protocolo ssh contra nuestra ip víctima, limitando a 4 tareas en paralelo (-T 4) y pidiéndole que se detenga en cuanto encuentre una credencial válida (-I). Lo lanzamos y al poco tiempo Hydra encuentra la contraseña del usuario jake: 987654321
 
 <img width="1836" height="507" alt="bro17" src="https://github.com/user-attachments/assets/fc3d02bc-af6a-4ba3-8386-633a97270f93" />
 
