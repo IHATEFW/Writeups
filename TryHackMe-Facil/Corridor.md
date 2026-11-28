@@ -54,7 +54,7 @@ echo -n "0" | md5sum
 
 <img width="1365" height="312" alt="co9" src="https://github.com/user-attachments/assets/36630892-2768-4632-8f6e-ce0962b75554" />
 
-Ingresamos a la ruta /cfcd208495d565ef66e7dff9f98764da en el navegador y efectivamente, ¡hemos encontrado la habitación oculta!, dentro de ella está la flag, la copiamos y la pegamos en la web de TryHackMe.
+Ingresamos a la ruta /cfcd208495d565ef66e7dff9f98764da en el navegador y efectivamente, ¡hemos encontrado la habitación oculta!, dentro de ella está la flag, la copiamos y la pegamos en la web de TryHackMe
 
 <img width="1869" height="905" alt="co10" src="https://github.com/user-attachments/assets/a13b879e-bb02-40db-b477-7f0a71449488" />
 
